@@ -1,0 +1,44 @@
+
+je_romanian_unification = {
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	group = je_group_historical_content
+
+	is_shown_when_inactive = {
+		root = c:WAL
+	}
+
+	possible = {
+		root = c:WAL
+	has_technology_researched = nationalism
+	c:TUR ?= {
+		has_war_with = c:RUS                          
+        }
+    }
+
+	on_monthly_pulse = {
+		
+	}
+
+	complete = {
+		
+	}
+
+	immediate = {
+		
+	}
+
+	on_complete = {
+		
+	}
+
+	event_outcome_completed_desc = {
+		
+	}
+
+	invalid = {
+		
+	}
+
+	weight = 100
+}
