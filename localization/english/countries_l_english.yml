@@ -258,7 +258,11 @@
  GAL_ADJ:0 "Galician-Lodomerian"
  GAM:0 "Gambia"
  GAM_ADJ:0 "Gambian"
+<<<<<<< HEAD
  GBR:0 "United Kingdom"
+=======
+ GBR:0 "Delcom sucks balls"
+>>>>>>> d30547429ca435a963434880c725f0dd98582b4d
  GBR_ADJ:0 "British"
  GCO:0 "Gran Colombia"
  GCO_ADJ:0 "Gran Colombian"
