@@ -17,5 +17,20 @@
 				set_variable = is_married
 			}
 		}	
+		create_character = {
+			# Alexander John Cuza, Ruler of Romania
+			first_name = "Alexander"
+			last_name = "John Cuza"
+			historical = yes
+			culture = primary_culture
+			ruler = no
+			birth_date = 1820.03.20
+			interest_group = ig_landowners
+			ideology = ideology_
+			traits = {
+				cautious
+			}
+			
+		}	
 	}
 }

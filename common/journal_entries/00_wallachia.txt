@@ -16,6 +16,9 @@ je_romanian_unification = {
         }
     }
 
+	scripted_button = je_romanian_unification_leader
+
+
 	on_monthly_pulse = {
 		
 	}
