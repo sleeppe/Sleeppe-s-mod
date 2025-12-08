@@ -6,8 +6,8 @@
 			last_name = "Ghica"
 			historical = yes
 			culture = primary_culture
-			ruler = no 
 			age = 39
+			ruler = yes
 			interest_group = ig_landowners
 			ideology = ideology_abolitionist
 			traits = {
@@ -19,25 +19,7 @@
 		}	
 		
 		create_character = {
-			# Alexander John Cuza, Ruler of Romania
-			first_name = "Alexander"
-			last_name = "John Cuza"
-			historical = yes
-			culture = primary_culture
-			birth_date = 1820.03.20
-			age = 15
-			interest_group = ig_landowners
-			ideology = ideology_land_reformer
-			traits = {
-				tactful, meticulous
-			}
-			earliest_usage_date = 1836.1.1
-      		latest_usage_date = 1863.1.1
-     		chance = 100
-			role = general
-      		earliest_usage_date = 1836.1.1
-      		latest_usage_date = 1860.1.1
-      		chance = 75
+			template = WAL_Alexander_John_Cuza
 		}	
 	}
 }

@@ -17,10 +17,6 @@
     }
 
     effect = {
-        change_leader = {
-        country = WAL 
-        leader = character:wal_alexander_john_cuza 
-    }
         create_diplomatic_pact = {
                     country = c:MOL
                     type = personal_union

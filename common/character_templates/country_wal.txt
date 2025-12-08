@@ -1,0 +1,15 @@
+WAL_Alexander_John_Cuza = { 
+	first_name = alexander_ioan_cuza_first_name
+    last_name = alexander_ioan_cuza_last_name
+    historical = yes
+    birth_date = 1820.03.20
+	ruler = no
+    dna = dna_alexander_ioan_cuza
+    culture = primary_culture
+    interest_group = ig_landowners
+    ideology = ideology_land_reformer
+    traits = {
+    	tactful
+        meticulous
+    }
+}
