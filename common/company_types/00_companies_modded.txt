@@ -10,13 +10,14 @@ company_john_cockerill = {
 	preferred_headquarters = { STATE_WALLONIA STATE_FLANDERS }
 
 	building_types = {
-		building_steel_mills
-		building_tooling_workshops
+		building_steel_mill
+		building_tooling_workshop
 		building_motor_industry
 	}
 
 	extension_building_types = {
 		building_iron_mine
+		building_explosives_factory
 	}
 
 	possible_prestige_goods = {
@@ -61,7 +62,8 @@ company_john_cockerill = {
 
 	prosperity_modifier = {
 		building_railway_throughput_add = 0.1
-		building_steel_mills_throughput_add = 0.15
+		building_steel_mill_throughput_add = 0.05
+		building_group_bg_manufacturing_throughput_add = 0.07
 	}
 
 	ai_will_do = {
@@ -395,6 +397,63 @@ company_heineken = {
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_food_industry
+				level >= 3
+			}
+		}
+	}
+}
+
+# Marzotto, founded 1836
+company_marzotto = {
+	icon = "gfx/interface/icons/company_icons/modded_company_icons/marzotto_logo_dds.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_VENETIA }
+
+	building_types = {
+		building_textile_mill
+		building_silk_plantation
+		building_cotton_plantation
+	}
+
+	extension_building_types = {
+		building_dye_plantation
+	}
+
+	possible_prestige_goods = {
+		prestige_good_generic_clothes
+	}
+
+	potential = {
+		OR = {
+			country_has_primary_culture = cu:north_italian
+			country_has_primary_culture = cu:south_italian
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_VENETIA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mill
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_group_bg_plantations_throughput_add = 0.15
+		building_textile_mill_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mill
 				level >= 3
 			}
 		}
