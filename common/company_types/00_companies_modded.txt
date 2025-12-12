@@ -284,7 +284,7 @@ company_porceleyne_fles = {
 # Van Houtum en Palm
 company_van_houtum_en_palm = {
 	icon = "gfx/interface/icons/company_icons/basic_paper.dds"
-	background = "gfx/interface/icons/company_icons/modded_company_backgrounds/comp_illu_manufacturing_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
@@ -347,7 +347,7 @@ company_van_houtum_en_palm = {
 # Heineken (aka Heineken Brouwerij), founded in 1864
 company_heineken = {
 	icon = "gfx/interface/icons/company_icons/modded_company_icons/heineken_logo_dds.dds"
-	background = "gfx/interface/icons/company_icons/modded_company_backgrounds/comp_illu_manufacturing_light.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
