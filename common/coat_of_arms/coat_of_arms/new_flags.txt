@@ -10,8 +10,8 @@ SAX = {
 }
 SAX_absolute_monarchy = {
 	pattern = "saxony_pattern.dds"
-	color1 = "green"
-	color2 = "white"
+	color1 = "white"
+	color2 = "green"
 
 	textured_emblem = {
 		texture = "saxony_coat_of_arms.dds"
