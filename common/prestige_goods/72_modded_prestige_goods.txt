@@ -1,0 +1,25 @@
+##New Prestige Goods
+
+prestige_good_delftware = {
+	base_good = porcelain
+	prestige_bonus = 0.8
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/delftware_dds.dds"
+}
+
+prestige_good_cockerill_tools = {
+	base_good = tools
+	prestige_bonus = 0.3
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/cockerill_tools_dds.dds"
+}
+
+prestige_good_congo_rubber = {
+	base_good = rubber
+	prestige_bonus = 0.2
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/congo_rubber_dds.dds"
+}
+
+prestige_good_heineken_beer = {
+	base_good = liquor
+	prestige_bonus = 0.5
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/heineken_beer_dds.dds"
+}
