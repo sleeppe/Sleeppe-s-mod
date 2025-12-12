@@ -1,0 +1,70 @@
+SAX = {
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "green"
+		color2 = "green"
+	}
+}
+SAX_absolute_monarchy = {
+	pattern = "saxony_pattern.dds"
+	color1 = "green"
+	color2 = "white"
+
+	textured_emblem = {
+		texture = "saxony_coat_of_arms.dds"
+		instance = { scale = { 0.7 0.7 } position = { 0.5 0.5 } }
+	}
+}
+SAX_republic = {
+	# pre 1815 colours and coa design (barruly)
+
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.125 } }
+		instance = { scale = { 1.0 0.25 } position = { 0.5 0.625 } }
+	}
+}
+SAX_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_frame_circle_per_fess.dds"
+		color1 = "yellow"
+		color2 = "white"
+		color3 = "green"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.5 0.5 } position = { 0.5 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.44 0.44 } position = { 0.5 0.50 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.14 0.14 } position = { 0.5 0.195 } }
+	}
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.9 0.88 } position = { 0.5 0.5 } }
+	}
+}
