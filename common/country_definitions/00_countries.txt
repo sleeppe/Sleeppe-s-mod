@@ -1,7 +1,7 @@
 ﻿# Important note: Only use capital letters and numbers for tags, or else you may get weird bugs in civil wars
 
 GER = {
-	color = { 147 130 110 }
+	color = { 0 0 0 }
 
 	country_type = recognized
 
@@ -34,7 +34,7 @@ SCA = {
 }
 
 RUS = {
-	color = { 47 91 18 }
+	color = { 29 53 21 }
 
 	country_type = recognized
 
@@ -45,7 +45,7 @@ RUS = {
 }
 
 FRA = {
-	color = { 20  50  210 }
+	color = { 5  55  117 }
 
 	country_type = recognized
 
@@ -56,7 +56,7 @@ FRA = {
 }
 
 PRU = {
-	color = { 6 25 59 }
+	color = { 1 9 18 }
 
 	country_type = recognized
 
@@ -91,7 +91,7 @@ POM = {
 }
 
 AUS = {
-	color = { 211  220  240 }
+	color = { 173  182  199 }
 
 	country_type = recognized
 
