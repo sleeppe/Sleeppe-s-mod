@@ -12,7 +12,7 @@ GER = {
 }
 
 GBR = {
-	color = hsv{ 0.99  0.7  0.9 }
+	color = { 173 14 27 }
 
 	country_type = recognized
 
@@ -106,7 +106,7 @@ AUS = {
 }
 
 USA = {
-	color = { 66  94  193 }
+	color = { 48 71 150 }
 
 	country_type = recognized
 
@@ -2144,7 +2144,7 @@ ATL = {
 }
 
 MEX = {
-	color = { 56 143 53 }
+	color = { 41 105 39 }
 
 	country_type = recognized
 
@@ -2331,7 +2331,7 @@ BOL = {
 }
 
 BRZ = {
-	color = hsv360{ 143  75  61 }
+	color = hsv360{ 143  75  34 }
 
 	country_type = recognized
 
