@@ -1018,7 +1018,7 @@ CYP = {
 }
 
 GRE = {
-	color = { 122  180  210 }
+	color = { 84  131  156 }
 
 	country_type = recognized
 
@@ -1041,7 +1041,7 @@ ION = {
 }
 
 MOL = {
-	color = { 136  157  23 }
+	color = { 90  102  22 }
 
 	country_type = recognized
 
@@ -1078,7 +1078,7 @@ ROM = {
 }
 
 SER = {
-	color = { 166  72  57 }
+	color = { 89  22  12 }
 
 	country_type = recognized
 
@@ -1101,7 +1101,7 @@ SLO = {
 }
 
 TUR = {
-	color = { 140 46 39 }
+	color = { 124 12 4 }
 
 	country_type = recognized
 
@@ -1112,7 +1112,7 @@ TUR = {
 }
 
 WAL = {
-	color = { 161  126  128 }
+	color = { 99  64  66 }
 
 	country_type = recognized
 
