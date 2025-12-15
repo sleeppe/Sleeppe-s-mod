@@ -24,7 +24,7 @@ CON = {
 }
 
 EGY = {
-	color = { 255  205  155 }
+	color = { 173 136 99 }
 
 	country_type = unrecognized
 
