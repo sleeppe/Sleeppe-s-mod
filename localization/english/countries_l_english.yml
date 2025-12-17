@@ -1773,18 +1773,19 @@
  dyn_c_spanish_kingdom_adj: "Spanish"
  dyn_c_spanish_commune: "Spanish Communist Republic"
  dyn_c_spanish_commune_adj: "Spanish"
- dyn_c_spanish_anarchy: "Spanish Anarchist Commune" # REMINDER! ANARCHY CURRENTLY DOESN'T WORK, DON'T KNOW WHY, FIGURE IT OUT FUTURE ME.
+ dyn_c_spanish_anarchy: "Spanish Anarchist Commune" 
  dyn_c_spanish_anarchy_adj: "Spanish"
 
 # Portugal
  dyn_c_portuguese_republic: "Portuguese Republic"
  dyn_c_portuguese_republic_adj: "Portuguese"
+ dyn_c_portuguese_empire: "Portuguese Empire"
  dyn_c_portuguese_kingdom: "Kingdom of Portugal"
  dyn_c_portuguese_kingdom_adj: "Portuguese"
  dyn_c_portuguese_commune: "Portuguese Socialist Republic"
  dyn_c_portuguese_commune_adj: "Portuguese"
 
-# Prussia - CURRENTLY DOESN'T WORK, NEED TO DETERMINE WHY, MOST LIKELY ISSUE IS A SPELLING MISTAKE OR A MISTAKE IN 00_dynamic_country_names.txt
+# Prussia
  dyn_c_prussian_kingdom: "Kingdom of Prussia"
  dyn_c_prussian_kingdom_adj: "Prussian"
  dyn_c_prussian_republic: "Republic of Prussia"
@@ -1792,5 +1793,12 @@
  dyn_c_prussian_commune: "Commune of Prussia"
  dyn_c_prussian_commune_adj: "Prussian"
 
-# Austria
+# Austria   - Code simplified
+ dyn_c_austrian_empire: "Empire of Austria"
+ dyn_c_austrian_kingdom: "Kingdom of Austria"
+ dyn_c_austrian_republic: "Republic of Austria"
+ dyn_c_austrian_commune: "Socialist Republic of Austria"
+ dyn_c_austrian_anarchist: "Anarchist Republic of Austria"
+
+# Russia
 

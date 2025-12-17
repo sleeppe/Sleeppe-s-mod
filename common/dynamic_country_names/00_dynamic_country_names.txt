@@ -4610,24 +4610,6 @@ KUK = {
 	}
 }
 
-AUS = {
-	dynamic_country_name = {
-		name = dyn_c_federal_state_of_austria
-		adjective = AUS_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				has_law_or_variant = law_type:law_corporate_state
-			}
-		}
-	}
-}
-
-
 MON = { # serbian_montenegro
 	dynamic_country_name = {
 		name = dyn_c_serbian_montenegro
@@ -4998,8 +4980,8 @@ SPA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
+				country_is_great_power = yes
 				has_law = law_type:law_monarchy
-				has_law = law_type:law_autocracy
 			}
 		}
 	}
@@ -5033,8 +5015,6 @@ SPA = {
 			exists = scope:actor
 			scope:actor ?= {
 				has_law = law_type:law_monarchy
-
-				
 			}
 		}
 	}
@@ -5118,6 +5098,22 @@ POR = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
+				country_is_great_power = no
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
+		dynamic_country_name = {
+		name = dyn_c_portuguese_empire
+		adjective = dyn_c_portuguese_kingdom_adj
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = yes
 				has_law = law_type:law_monarchy
 			}
 		}
@@ -5181,6 +5177,99 @@ PRU = {
 			exists = scope:actor
 			scope:actor ?= {
 				has_law = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+AUS = {
+	dynamic_country_name = {
+		name = dyn_c_federal_state_of_austria
+		adjective = AUS_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_corporate_state
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austrian_empire
+		adjective = AUS_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = yes
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austrian_kingdom
+		adjective = AUS_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = no
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austrian_republic
+		adjective = AUS_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austrian_commune
+		adjective = AUS_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_austrian_anarchist
+		adjective = AUS_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
 			}
 		}
 	}
