@@ -5003,6 +5003,7 @@ SPA = {
 			}
 		}
 	}
+
 	dynamic_country_name = {
 		name = dyn_c_spanish_republic
 		adjective = dyn_c_spanish_republic_adj
@@ -5020,6 +5021,7 @@ SPA = {
 			}
 		}
 	}
+
 	dynamic_country_name = {
 		name = dyn_c_spanish_kingdom
 		adjective = dyn_c_spanish_kingdom_adj
@@ -5036,6 +5038,7 @@ SPA = {
 			}
 		}
 	}
+
 	dynamic_country_name = {
 		name = dyn_c_spanish_commune
 		adjective = dyn_c_spanish_commune_adj
@@ -5050,23 +5053,26 @@ SPA = {
 			}
 		}
 	}
-	# doesn't work for some reason, gotta look into it further
+
 	dynamic_country_name = {
 		name = dyn_c_spanish_anarchy
 		adjective = dyn_c_spanish_anarchy_adj
 
 		is_main_tag_only = yes
-		priority = 10
+		priority = 11
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
 				AND = {				
 					has_law = law_type:law_council_republic
 					has_law = law_type:law_anarchy
+				}
 			}
 		}
 	}
 }
+
+
 
 POR = {
 	dynamic_country_name = {
