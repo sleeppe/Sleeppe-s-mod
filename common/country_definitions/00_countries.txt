@@ -1813,7 +1813,7 @@ CAM = {
 }
 
 CHI = {
-	color = { 252 185 61 }
+	color = { 145 133 0 }
 
 	country_type = unrecognized
 
