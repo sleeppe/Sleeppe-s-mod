@@ -620,13 +620,13 @@
  POL_ADJ:0 "Polish"
  POM:0 "Pomerania"
  POM_ADJ:0 "Pomeranian"
- POR:0 "Kingdom of Portugal"
+ POR:0 "Portugal"
  POR_ADJ:0 "Portuguese"
  PPU:0 "Papua"
  PPU_ADJ:0 "Papuan"
  PRG:0 "Paraguay"
  PRG_ADJ:0 "Paraguayan"
- PRU:0 "Kingdom of Prussia"
+ PRU:0 "Prussia"
  PRU_ADJ:0 "Prussian"
  PCO:0 "Puerto Rico"
  PCO_ADJ:0 "Puerto Rican"
@@ -693,7 +693,7 @@
  SNG_ADJ:0 "Sangu"
  SOK:0 "Sokoto"
  SOK_ADJ:0 "Sokoto"
- SPA:0 "Kingdom of Spain"
+ SPA:0 "Spain"
  SPA_ADJ:0 "Spanish"
  SRR:0 "Serer"
  SRR_ADJ:0 "Serer"
@@ -1764,3 +1764,33 @@
  dyn_c_spanish_republic: "Spanish Republic"
 
  dyn_c_antilles_union: "Antillean Union"
+
+# Sleeppe's mod additions
+# Spain
+ dyn_c_spanish_empire: "Spanish Empire"
+ dyn_c_spanish_empire_adj: "Spanish"
+ dyn_c_spanish_kingdom: "Kingdom of Spain"
+ dyn_c_spanish_kingdom_adj: "Spanish"
+ dyn_c_spanish_commune: "Spanish Communist Republic"
+ dyn_c_spanish_commune_adj: "Spanish"
+ dyn_c_spanish_anarchy: "Spanish Anarchist Commune" # REMINDER! ANARCHY CURRENTLY DOESN'T WORK, DON'T KNOW WHY, FIGURE IT OUT FUTURE ME.
+ dyn_c_spanish_anarchy_adj: "Spanish"
+
+# Portugal
+ dyn_c_portuguese_republic: "Portuguese Republic"
+ dyn_c_portuguese_republic_adj: "Portuguese"
+ dyn_c_portuguese_kingdom: "Kingdom of Portugal"
+ dyn_c_portuguese_kingdom_adj: "Portuguese"
+ dyn_c_portuguese_commune: "Portuguese Socialist Republic"
+ dyn_c_portuguese_commune_adj: "Portuguese"
+
+# Prussia - CURRENTLY DOESN'T WORK, NEED TO DETERMINE WHY, MOST LIKELY ISSUE IS A SPELLING MISTAKE OR A MISTAKE IN 00_dynamic_country_names.txt
+ dyn_c_prussian_kingdom: "Kingdom of Prussia"
+ dyn_c_prussian_kingdom_adj: "Prussian"
+ dyn_c_prussian_republic: "Republic of Prussia"
+ dyn_c_prussian_republic_adj: "Prussian"
+ dyn_c_prussian_commune: "Commune of Prussia"
+ dyn_c_prussian_commune_adj: "Prussian"
+
+# Austria
+
