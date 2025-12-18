@@ -71,7 +71,7 @@
  BAS_ADJ:0 "Bastar"
  BAV:0 "Kingdom of Bavaria"
  BAV_ADJ:0 "Bavarian"
- BEL:0 "Kingdom of Belgium"
+ BEL:0 "Belgium"
  BEL_ADJ:0 "Belgian"
  BEN:0 "Benin"
  BEN_ADJ:0 "Benin"
@@ -153,7 +153,7 @@
  CAN:0 "Canada"
  CAN_ADJ:0 "Canadian"
  CAS:0 "Castile"
- CAS_ADJ:0 "Castilian"
+ CAS_ADJ:0 "Castilian"ENG
  CAT:0 "Catalonia"
  CAT_ADJ:0 "Catalonian"
  CAY:0 "Cayor"
@@ -262,7 +262,7 @@
  GAL_ADJ:0 "Galician-Lodomerian"
  GAM:0 "Gambia"
  GAM_ADJ:0 "Gambian"
- GBR:0 "United Kingdom of Great Britain and Ireland"
+ GBR:0 "British Empire"
  GBR_ADJ:0 "British"
  GCO:0 "Gran Colombia"
  GCO_ADJ:0 "Gran Colombian"
@@ -547,7 +547,7 @@
  NEN_ADJ:0 "New Englander"
  NEP:0 "Nepal"
  NEP_ADJ:0 "Nepali"
- NET:0 "Kingdom of Netherlands"
+ NET:0 "Netherlands"
  NET_ADJ:0 "Dutch"
  NEW:0 "Newfoundland"
  NEW_ADJ:0 "Newfoundlander"
@@ -555,7 +555,7 @@
  NGF_ADJ:0 "North German"
  NIC:0 "Nicaragua"
  NIC_ADJ:0 "Nicaraguan"
- NOR:0 "Kingdom of Norway"
+ NOR:0 "Norway"
  NOR_ADJ:0 "Norwegian"
  NRU:0 "Nauru"
  NRU_ADJ:0 "Nauru"
@@ -699,7 +699,7 @@
  SRR_ADJ:0 "Serer"
  SSU:0 "Susu"
  SSU_ADJ:0 "Susu"
- SWE:0 "Kingdom of Sweden"
+ SWE:0 "Sweden"
  SWE_ADJ:0 "Swedish"
  SWI:0 "Swiss Confederation"
  SWI_ADJ:0 "Swiss"
@@ -1800,5 +1800,33 @@
  dyn_c_austrian_commune: "Socialist Republic of Austria"
  dyn_c_austrian_anarchist: "Anarchist Republic of Austria"
 
-# Russia
+# Russia - already properly defined
 
+# Great Britain
+ dyn_c_british_socialist: "British Socialist Republic"
+ dyn_c_british_anarchist: "The Anarchy"
+
+# Netherlands
+ dyn_c_dutch_kingdom: "Kingdom of the Netherlands"
+ dyn_c_dutch_empire: "Dutch Empire"
+ dyn_c_dutch_republic: "The United Provinces"
+ dyn_c_dutch_socialist: "The Dutch Socialist Republic"
+ dyn_c_dutch_anarchist: "Free Territories of the Lowlands"
+
+# Belgium
+ dyn_c_belgian_kingdom: "Kingdom of Belgium"
+ dyn_c_belgian_empire: "Empire of Belgium"
+ dyn_c_belgian_socialist: "Socialist Republic of Belgium"
+ dyn_c_belgian_anarchist: "Free Territories of Belgium"
+
+ # Sweden
+ dyn_c_swedish_kingdom: "Kingdom of Sweden"
+ dyn_c_swedish_empire: "Swedish Empire"
+ dyn_c_swedish_republic: "Republic of Sweden"
+ dyn_c_swedish_socialist: "Socialist Republic of Sweden"
+ dyn_c_swedish_anarchist: "Free Territories of Sweden"
+
+# Norway
+ dyn_c_norwegian_kingdom: "Kingdom of Norway"
+ dyn_c_norwegian_republic: "Republic of Norway"
+ dyn_c_norwegian_socialist: "Socialist Republic of Norway"

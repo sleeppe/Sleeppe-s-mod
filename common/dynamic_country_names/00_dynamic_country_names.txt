@@ -823,23 +823,6 @@ DEFAULT = {
 	}
 }
 
-SWE = {
-	dynamic_country_name = {
-		name = dyn_c_gotland_revolt
-		adjective = dyn_c_gotland_revolt_adj
-
-		is_revolutionary = yes
-		priority = 0
-
-		trigger = {
-			exists = scope:actor
-			scope:actor ?= {
-				capital = { state_region = s:STATE_GOTLAND }
-			}
-		}
-	}
-}
-
 ACE = { # Sumatra
 	dynamic_country_name = {
 		name = dyn_c_sumatra
@@ -999,21 +982,6 @@ BAV = { # Bavaria
 
 		trigger = {
 			coa_def_communist_flag_trigger = yes
-		}
-	}
-}
-
-BEL = { # Belgium
-	dynamic_country_name = {
-		name = dyn_c_united_belgian_states
-		adjective = BEL_ADJ
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-			NOT = { coa_def_communist_flag_trigger = yes }
 		}
 	}
 }
@@ -1634,62 +1602,6 @@ UBD = { # Baltic
 					type = puppet
 					is_initiator = yes
 				}
-			}
-		}
-	}
-}
-
-GBR = { # Great Britain of United Kingdom
-	dynamic_country_name = {
-		name = dyn_c_british_republic
-		adjective = GBR_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-			scope:actor ?= { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_british_commonwealth
-		adjective = dyn_c_british_commonwealth_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_dictatorship_flag_trigger = yes
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_greater_manchester
-		adjective = dyn_c_greater_manchester_adj
-		is_main_tag_only = yes
-		priority = 10
-
-		trigger = {
-			exists = scope:actor
-			NOT = { has_game_rule = plausible_formable_nations }
-			scope:actor ?= {
-				NOT = { has_law_or_variant = law_type:law_council_republic }
-				exists = capital
-				capital = { state_region = s:STATE_LANCASHIRE }
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = dyn_c_mancunian_commune
-		adjective = dyn_c_mancunian_commune_adj
-		is_main_tag_only = yes
-		priority = 10
-
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-			scope:actor ?= {
-				exists = capital
-				capital = { state_region = s:STATE_LANCASHIRE }
 			}
 		}
 	}
@@ -2431,69 +2343,6 @@ QUE = { # Quebec
 					who = c:QUE
 					type = colony
 					is_initiator = yes
-				}
-			}
-		}
-	}
-}
-
-RUS = { # Russia
-	dynamic_country_name = {
-		name = dyn_c_russian_republic
-		adjective = dyn_c_russian_republic_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_republic_flag_trigger = yes
-		}
-	}
-
-	dynamic_country_name = {
-		name = dyn_c_rsfsr
-		adjective = dyn_c_rsfsr_adj
-
-		is_main_tag_only = yes
-		priority = 5
-
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-		}
-	}
-
-	dynamic_country_name = {
-		name = dyn_c_union_of_new_people
-		adjective = dyn_c_union_of_new_people_adj
-
-		is_main_tag_only = yes
-		priority = 10
-
-		trigger = {
-			exists = c:RUS
-			coa_def_nihilist_flag_trigger = yes
-		}
-	}
-
-	dynamic_country_name = {
-		name = dyn_c_soviet_union
-		adjective = dyn_c_soviet_union_adj
-
-		is_main_tag_only = yes
-		priority = 25
-
-		trigger = {
-			coa_def_communist_flag_trigger = yes
-			scope:actor ?= {
-				OR = {
-					any_scope_state = {
-						state_region = {
-							NOT = {
-								is_homeland = cu:russian
-							}
-						}
-						count >= 15
-					}
 				}
 			}
 		}
@@ -5270,6 +5119,446 @@ AUS = {
 			scope:actor ?= {
 				has_law_or_variant = law_type:law_council_republic
 				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+RUS = { # Russia
+	dynamic_country_name = {
+		name = dyn_c_russian_republic
+		adjective = dyn_c_russian_republic_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_rsfsr
+		adjective = dyn_c_rsfsr_adj
+
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_union_of_new_people
+		adjective = dyn_c_union_of_new_people_adj
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = c:RUS
+			coa_def_nihilist_flag_trigger = yes
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_soviet_union
+		adjective = dyn_c_soviet_union_adj
+
+		is_main_tag_only = yes
+		priority = 25
+
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor ?= {
+				OR = {
+					any_scope_state = {
+						state_region = {
+							NOT = {
+								is_homeland = cu:russian
+							}
+						}
+						count >= 15
+					}
+				}
+			}
+		}
+	}
+}
+
+GBR = { # Great Britain of United Kingdom
+	dynamic_country_name = {
+		name = dyn_c_british_republic
+		adjective = GBR_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			scope:actor ?= { NOT = { capital = { state_region = s:STATE_LANCASHIRE } } }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_british_commonwealth
+		adjective = dyn_c_british_commonwealth_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_dictatorship_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_greater_manchester
+		adjective = dyn_c_greater_manchester_adj
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			NOT = { has_game_rule = plausible_formable_nations }
+			scope:actor ?= {
+				NOT = { has_law_or_variant = law_type:law_council_republic }
+				exists = capital
+				capital = { state_region = s:STATE_LANCASHIRE }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_mancunian_commune
+		adjective = dyn_c_mancunian_commune_adj
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			coa_def_communist_flag_trigger = yes
+			scope:actor ?= {
+				exists = capital
+				capital = { state_region = s:STATE_LANCASHIRE }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_british_socialist
+		adjective = GBR_ADJ
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_british_anarchist
+		adjective = GBR_ADJ
+
+		is_main_tag_only = yes
+		priority = 12
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+NET = {
+	dynamic_country_name = {
+		name = dyn_c_dutch_kingdom
+		adjective = NET_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = no
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_dutch_empire
+		adjective = NET_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = yes
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_dutch_republic
+		adjective = NET_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_dutch_socialist
+		adjective = NET_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_dutch_anarchist
+		adjective = NET_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+BEL = { # Belgium
+	dynamic_country_name = {
+		name = dyn_c_united_belgian_states
+		adjective = BEL_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_republic_flag_trigger = yes
+			NOT = { coa_def_communist_flag_trigger = yes }
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_belgian_kingdom
+		adjective = BEL_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = no
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_belgian_empire
+		adjective = BEL_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = yes
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_belgian_socialist
+		adjective = BEL_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_belgian_anarchist
+		adjective = BEL_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+SWE = {
+	dynamic_country_name = {
+		name = dyn_c_gotland_revolt
+		adjective = dyn_c_gotland_revolt_adj
+
+		is_revolutionary = yes
+		priority = 0
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				capital = { state_region = s:STATE_GOTLAND }
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_swedish_kingdom
+		adjective = SWE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = no
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_swedish_empire
+		adjective = SWE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				country_is_great_power = yes
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_swedish_republic
+		adjective = SWE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_swedish_socialist
+		adjective = SWE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_swedish_anarchist
+		adjective = SWE_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+NOR = {
+	dynamic_country_name = {
+		name = dyn_c_norwegian_kingdom
+		adjective = NOR_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_norwegian_republic
+		adjective = NOR_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_norwegian_socialist
+		adjective = NOR_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
 			}
 		}
 	}
