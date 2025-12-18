@@ -205,7 +205,7 @@ company_john_cockerill = {
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_steel_mills
+				is_building_type = building_steel_mill
 				level >= 5
 			}
 		}
