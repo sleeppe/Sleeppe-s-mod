@@ -73,6 +73,8 @@
 		von_Zieten von_Zwierlein
 
 		von_Jons
+
+		Hitler
 	}
 	common_last_names = {
 		Abegg Anger Arendt Ackermann Arntz
@@ -97,6 +99,7 @@
 		Venedy Vogt Volhard Varrentrapp Vorwerck
 		Weydemeyer Wittfeld Woehlert Wiesner Wislicenus Wachendorf Waldschmidt Weckbecker Welcker WerlE_ Wesendonck Weilhelmi Winneritz Wirtz Wolfermann Wigard Wuttke Wippermann Wentorp Wendhausen
 		Zerrahn ZO_ller Zell Zimmermann ZachariA_ Zulauf Zais
+		Hitler
 	}
 
 	male_regal_first_names = {
@@ -199,6 +202,8 @@ south_german= {
 		von_Weigert von_Wittelsbach von_Wurttemberg von_Wrede von_WA_chter von_Waechter-Spittler von_WO_llwarth von_Waldburg-Zeil von_Wirthmann von_WalderstO_tten von_Wallbrunn von_Welsch von_Winneberger
 		von_Xylander
 		von_Zahringen von_Zandt von_Zwanziger
+
+		Hitler
 	}
 	common_last_names = {
 		Auerbach Aldinger
@@ -225,6 +230,8 @@ south_german= {
 		Voelcker Veiel
 		Wagner Wittmann Willich Wolf Wiedmann Walchner Welcker Weller Welte Werner Winter Weiss-Jonak
 		Zeller Zenger Zink Zentner Zittel Zerreiss
+
+		Hitler
 	}
 	male_regal_first_names = {
 		Albert
