@@ -1,0 +1,9 @@
+##Modifiers for the low countries (Netherlands, Belgium, Luxembourg and the United Netherlands)
+
+#Gateway to Europe
+modifier_gateway_europe = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_prestige_mult = 0.1
+	state_migration_pull_mult = 0.2
+	country_mass_migration_attraction_mult = 0.15
+}

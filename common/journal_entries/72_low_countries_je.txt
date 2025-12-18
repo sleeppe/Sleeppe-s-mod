@@ -1,0 +1,43 @@
+## New Journal Entries for the Netherlands, Belgium, Luxembourg and the United Netherlands
+
+#Gateway to Europe
+je_rotterdam_port = {
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	group = je_group_low_country_happenings
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:dutch
+		owns_entire_state_region = STATE_HOLLAND
+	}
+
+	possible = {
+		has_technology_researched = identification_documents
+		year >= 1870
+	}
+
+	complete = {
+		any_scope_state = {
+			is_incorporated = yes
+			state_region = s:STATE_HOLLAND
+			any_scope_building = {
+				is_building_type = building_port
+				level >= 25
+			}
+		}
+		has_law = law_type:law_no_migration_controls
+		OR = {
+			has_law = law_type:law_free_trade
+			has_law = law_type:law_protectionism
+		}
+		bureaucracy > 200
+	}
+
+	on_complete = {
+		add_modifier = {name = modifier_gateway_europe}
+	}
+
+	weight = 100
+
+	should_be_pinned_by_default = yes
+}

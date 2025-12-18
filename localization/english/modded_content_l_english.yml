@@ -1,0 +1,24 @@
+﻿l_english:
+##Modded Companies
+
+ company_amsterdamse_effectenbeurs: "Amsterdamse Effectenbeurs"
+ company_porceleyne_fles: "De Koninklijke Porceleyne Fles"
+ company_van_houtum_en_palm: "Van Houtum en Palm"
+ company_heineken: "Heineken Brouwerij"
+ company_marzotto: "Lanificio Luigi Marzotto & Figli"
+
+
+
+##Modded Goods
+
+ prestige_good_delftware: "Delftware"
+ prestige_good_cockerill_tools: "Cockerill Tools"
+ prestige_good_congo_rubber: "Congolese Rubber"
+ prestige_good_heineken_beer: "Heineken Pilsener"
+
+##Modded JE's
+
+ je_group_low_country_happenings:0 "Societal Changes"
+ modifier_gateway_europe: "The Gateway To Europe Opened"
+ je_rotterdam_port:0 "The Gateway to Europe?"
+ je_rotterdam_port_reason:3 "With the recent surges in growth across the Contient, our beloved old Lady, Europe; and recent expasions of #yellow the Ports of Rotterdam #! we have essentially grown into a contiental trade hub that punches far above its weight.\nWe can use this newly found prominence to our leverage!\n\nBy opening our ports and making extensive use of new identification documents, we can surely convince many from overseas to move to the Netherlands and work here. We are few, so skilled foreignand especially cheap labour is a great for our economy. Let us make use of the two way tool that a Port is!"
