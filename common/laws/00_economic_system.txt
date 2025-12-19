@@ -80,10 +80,12 @@ law_interventionism = {
 		country_disable_nationalization_without_compensation_bool = yes
 		country_private_construction_allocation_mult = 0.5
 		building_nationalization_investment_return_add = 0.5
-		country_government_dividends_reinvestment_add = 0.5
+		country_government_dividends_reinvestment_add = 0.35
 		country_government_dividends_efficiency_add = 0.35
 		country_free_charters_add = 1
+
 		country_minting_mult = 0.15
+		country_loan_interest_rate_mult = -0.10
 	}
 
 	ai_enact_weight_modifier = { #Petitions
@@ -477,9 +479,9 @@ law_laissez_faire = {
 	}
 
 	modifier = {
-		country_loan_interest_rate_mult = -0.25
+		country_loan_interest_rate_mult = -0.20
 		state_shopkeepers_investment_pool_efficiency_mult = 0.25
-		state_capitalists_investment_pool_efficiency_mult = 0.25
+		state_capitalists_investment_pool_efficiency_mult = 0.3
 		country_private_construction_allocation_mult = 0.75
 		country_government_dividends_reinvestment_add = 1.0
 		country_free_charters_add = 2
@@ -655,7 +657,7 @@ law_command_economy = {
 		country_bureaucrats_pol_str_mult = 0.25
 		building_nationalization_cost_mult = -0.5
 		building_nationalization_radicals_mult = -0.75
-		country_government_dividends_efficiency_add = 0.4
+		country_government_dividends_efficiency_add = 0.7
 		country_private_construction_allocation_mult = 0.1
 		building_company_government_dividends_add = 0.75
 		country_free_charters_add = 1
