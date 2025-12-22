@@ -1607,35 +1607,6 @@ UBD = { # Baltic
 	}
 }
 
-GER = { # Germany
-	dynamic_country_name = {
-		name = dyn_c_german_empire
-		adjective = GER_ADJ
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			scope:actor ?= {
-				country_rank >= rank_value:major_power
-			}
-		}
-	}
-
-	dynamic_country_name = {
-		name = nihilist_germany_name
-		adjective = nihilist_germany_name_adj
-
-		is_main_tag_only = yes
-		priority = 10
-
-		trigger = {
-			coa_def_nihilist_flag_trigger = yes
-		}
-	}
-}
-
 HAI = { # Haiti
 	dynamic_country_name = {
 		name = dyn_c_saint-domingue
@@ -5558,6 +5529,270 @@ NOR = {
 		trigger = {
 			exists = scope:actor
 			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+HUN = {
+	dynamic_country_name = {
+		name = dyn_c_hungarian_kingdom
+		adjective = HUN_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hungarian_republic
+		adjective = HUN_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hungarian_socialist
+		adjective = HUN_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_hungarian_anarchy
+		adjective = HUN_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+GRE = {
+	dynamic_country_name = {
+		name = dyn_c_greek_kingdom
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_greek_republic
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+		
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_greek_socialist
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_greek_anarchy
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+BYZ = {
+	dynamic_country_name = {
+		name = dyn_c_byzantine_empire
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_byzantine_republic
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_byzantine_socialist
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_byzantine_anarchy
+		adjective = GRE_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+}
+
+GER = { # Germany
+	dynamic_country_name = {
+		name = dyn_c_german_empire
+		adjective = GER_ADJ
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor ?= {
+				country_rank >= rank_value:major_power
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = nihilist_germany_name
+		adjective = nihilist_germany_name_adj
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			coa_def_nihilist_flag_trigger = yes
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_german_republic
+		adjective = GER_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_german_socialist
+		adjective = GER_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_german_anarchy
+		adjective = GER_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
 				has_law_or_variant = law_type:law_council_republic
 			}
 		}
