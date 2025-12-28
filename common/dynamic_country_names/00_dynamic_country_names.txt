@@ -6009,3 +6009,22 @@ EGY = {
 		}
 	}
 }
+
+## not modded before
+
+SAR = { # Sardinia
+	dynamic_country_name = { #north italy
+		name = dyn_c_north_italy
+		adjective = ITA_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_variable = central_italy 
+			}
+		}
+	}
+}

@@ -878,16 +878,3 @@ iberia_esperanto = {
 }
 
 ## modded
-
-central_italy = {
-	color = {125  171  84}
-
-	possible = {
-		any_primary_culture = { # Only one primary culture
-			count = 1
-		}
-		root = c:TUS
-		owns_entire_state_region = STATE_ROMAGNA
-		owns_entire_state_region = STATE_EMILIA
-	}
-}

@@ -1858,12 +1858,15 @@
  dyn_c_central_italy: "United Provinces of Central Italy"
  dyn_c_central_italy_adj: "Central Italian"
 
-<<<<<<< HEAD
  # empire of italy omg guys is itwoke
  dyn_c_empire_italy: "Italian Empire"
+ 
  # dark maga kingdom of italy
  dyn_c_kingdom_italy: "Kingdom of Italy"
-=======
+
+ # north italy
+ dyn_c_north_italy: "North Italian Federation"
+
  # Brazil
  dyn_c_brazilian_empire: "Empire of Brazil"
  dyn_c_brazilian_republic: "Republic of Brazil"
@@ -1877,4 +1880,3 @@
  dyn_c_egyptian_republic: "Republic of Egypt"
  dyn_c_egyptian_commune: "Socialist Republic of Egypt"
  dyn_c_egyptian_anarchy: "Free Territories of Egypt"
->>>>>>> ee75e001d24cee5f3f7dc66aa2c449cbb771fceb

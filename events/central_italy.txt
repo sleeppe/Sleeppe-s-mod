@@ -25,7 +25,14 @@ central_italy.1 = {
 		ruler = {
 			save_scope_as = italian_king_2_scope
 		}
+		c:SAR = {
+			set_variable = {
+			name = central_italy
+			value = 1
+		}
 	}
+	}
+
 	option = {
 		name = central_italy.1.a
 		c:SAR = {
