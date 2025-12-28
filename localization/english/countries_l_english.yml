@@ -128,7 +128,7 @@
  BRN_ADJ:0 "Borana"
  BRU:0 "Brunei"
  BRU_ADJ:0 "Brunei"
- BRZ:0 "Empire of Brazil"
+ BRZ:0 "Brazil"
  BRZ_ADJ:0 "Brazilian"
  BST: "Basutoland"
  BST_ADJ:0 "Basuto"
@@ -228,7 +228,7 @@
  DZG_ADJ:0 "Danziger"
  ECU:0 "Ecuador"
  ECU_ADJ:0 "Ecuadorian"
- EGY:0 "Khedivate of Egypt"
+ EGY:0 "Egypt"
  EGY_ADJ:0 "Egyptian"
  ELS:0 "El Salvador"
  ELS_ADJ:0 "El Salvadorian"
@@ -1442,7 +1442,7 @@
  dyn_c_communist_states_of_america:0 "Communist States of America"
  dyn_c_communist_states_of_america_adj:0 "Communist American"
  dyn_c_confederate_synods_of_america:0 "Confederate Synods of America"
- dyn_c_great_qing:0 "Qing Empire"
+ dyn_c_great_qing:0 "Qing"
  dyn_c_great_qing_adj:0 "Qing"
  dyn_c_bavarian_raterepublic:0 "Bavarian Räterepublik"
  dyn_c_bremener_raterepublic:0 "Bremener Räterepublik"
@@ -1858,7 +1858,23 @@
  dyn_c_central_italy: "United Provinces of Central Italy"
  dyn_c_central_italy_adj: "Central Italian"
 
+<<<<<<< HEAD
  # empire of italy omg guys is itwoke
  dyn_c_empire_italy: "Italian Empire"
  # dark maga kingdom of italy
  dyn_c_kingdom_italy: "Kingdom of Italy"
+=======
+ # Brazil
+ dyn_c_brazilian_empire: "Empire of Brazil"
+ dyn_c_brazilian_republic: "Republic of Brazil"
+ dyn_c_brazilian_commune: "Socialist Republic of Brazil"
+ dyn_c_brazilian_anarchy: "Free Territories of Brazil"
+
+ # Egypt
+ dyn_c_egyptian_khedivate: "Khedivate of Egypt"
+ dyn_c_egyptian_kingdom: "Kingdom of Egypt"
+ dyn_c_egyptian_empire: "Egyptian Empire"
+ dyn_c_egyptian_republic: "Republic of Egypt"
+ dyn_c_egyptian_commune: "Socialist Republic of Egypt"
+ dyn_c_egyptian_anarchy: "Free Territories of Egypt"
+>>>>>>> ee75e001d24cee5f3f7dc66aa2c449cbb771fceb
