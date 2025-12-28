@@ -1760,6 +1760,34 @@ ITA = { # Italy
 			}
 		}
 	}
+	dynamic_country_name = { # Empire of Italy
+		name = dyn_c_empire_italy
+		adjective = ITA_ADJ
+
+		is_main_tag_only = yes
+		priority = 5
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				global_country_ranking <= 3
+			}
+		}
+	}
+	dynamic_country_name = { # Kingdom of Italy
+		name = dyn_c_kingdom_italy
+		adjective = ITA_ADJ
+
+		is_main_tag_only = yes
+		priority = 4
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law = law_type:law_monarchy
+			}
+		}
+	}
 }
 
 JAP = { # Japan
