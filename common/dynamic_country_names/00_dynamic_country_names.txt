@@ -5812,3 +5812,172 @@ GER = { # Germany
 		}
 	}
 }
+
+BRZ = {
+	dynamic_country_name = {
+		name = dyn_c_brazilian_empire
+		adjective = BRZ_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_brazilian_republic
+		adjective = BRZ_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_parliamentary_republic
+					has_law_or_variant = law_type:law_presidential_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_brazilian_commune
+		adjective = BRZ_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_brazilian_anarchy
+		adjective = BRZ_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
+
+EGY = {
+	dynamic_country_name = {
+		name = dyn_c_egyptian_khedivate
+		adjective = EGY_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			c:TUR ?= {
+				OR = { 
+					has_diplomatic_pact = {
+                    who = c:EGY
+                    type = puppet
+                    is_initiator = yes
+                }
+					has_diplomatic_pact = {
+                    who = c:EGY
+                    type = protectorate
+                    is_initiator = yes
+                }
+			}
+        } 
+		    scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+			}
+		
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_egyptian_kingdom
+		adjective = EGY_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+				country_is_great_power = no
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_egyptian_empire
+		adjective = EGY_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_monarchy
+				country_is_great_power = yes
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_egyptian_republic
+		adjective = EGY_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				OR = {
+					has_law_or_variant = law_type:law_presidential_republic
+					has_law_or_variant = law_type:law_parliamentary_republic
+				}
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_egyptian_commune
+		adjective = EGY_ADJ
+
+		is_main_tag_only = yes
+		priority = 10
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_council_republic
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_egyptian_anarchy
+		adjective = EGY_ADJ
+
+		is_main_tag_only = yes
+		priority = 11
+
+		trigger = {
+			exists = scope:actor
+			scope:actor ?= {
+				has_law_or_variant = law_type:law_anarchy
+			}
+		}
+	}
+}
