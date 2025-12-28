@@ -25,7 +25,6 @@ je_central_italy = {
 	}
 
 	on_complete = {
-		
 		trigger_event = { id = central_italy.1 }
 	}
 
