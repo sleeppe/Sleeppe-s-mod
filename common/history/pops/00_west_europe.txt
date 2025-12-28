@@ -74,6 +74,16 @@
 				size = 548908
 			}
 		}
+		region_state:SCH = {
+			create_pop = {
+				culture = danish
+				size = 8000
+			}
+			create_pop = {
+				culture = north_german
+				size = 2000
+			}
+		}
 	}
 	s:STATE_ZEALAND = {
 		region_state:DEN = {
@@ -1599,11 +1609,11 @@
 		region_state:SCH = {
 			create_pop = {
 				culture = north_german
-				size = 200000
+				size = 180000
 			}
 			create_pop = {
 				culture = danish
-				size = 136404
+				size = 180000
 			}
 		}
 	}

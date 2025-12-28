@@ -3792,7 +3792,11 @@ STATES = {
 			country = c:DEN
 			owned_provinces = { x00BFDF x83E6B1 x951AF2 x770871 x2D2259 xBA6413 x8041E0 x1F29B8 x94468F xB0B469 xEBF079 x0040DF }
 		}
-
+		create_state = {
+			country = c:SCH
+			owned_provinces = { x78B203 xE3C876 }
+		}
+		
 		add_homeland = cu:danish
 	}
 	s:STATE_ZEALAND = {
@@ -8105,7 +8109,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:SCH
-			owned_provinces = { x00C060 x78B203 xE3C876 xBFCC21 }
+			owned_provinces = { x00C060 xBFCC21 }
 		}
 
 		add_homeland = cu:danish
