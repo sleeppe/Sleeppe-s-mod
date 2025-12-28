@@ -7272,7 +7272,12 @@ STATES = {
 	s:STATE_KAUNAS = {
 		create_state = {
 			country = c:RUS
-			owned_provinces = { x00E0A0 x0980C8 x0B6577 x21F318 x232B98 x406DC9 x4177AF x4678E5 x577C69 x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xA916E3 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
+			owned_provinces = { x0980C8 x0B6577 x21F318 x232B98 x406DC9 x4177AF x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
+			state_type = unincorporated
+		}
+		create_state = {
+			country = c:POL
+			owned_provinces = { x4678E5 xA916E3 x00E0A0 x577C69 }
 			state_type = unincorporated
 		}
 
@@ -8279,26 +8284,31 @@ STATES = {
 	}
 	s:STATE_GREATER_POLAND = {
 		create_state = {
-			country = c:RUS
+			country = c:POL
 			owned_provinces = { x0E40DA x1CB894 x1F6F99 x24BBED x29408F x2F0D92 x471A61 x577EE4 x57A53D x5FF022 x6000DF x738072 x8FE2DB x955F09 x9FEDC5 xA03316 xA3A3A9 xA7B86B xAB3C62 xC02B8C xC061A0 xC0E0A0 xD0A0E0 xDE06BA }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 
 		add_homeland = cu:polish
 	}
 	s:STATE_LESSER_POLAND = {
 		create_state = {
-			country = c:RUS
+			country = c:POL
 			owned_provinces = { x40DF20 x4161A0 x44ACBB x46B950 x496950 x51A0E0 x9444C9 xAEB9A5 xB491B1 xE0BB00 xEB0783 xF73169 }
-			state_type = unincorporated
+			state_type = incorporated
 		}
 
 		add_homeland = cu:polish
 	}
 	s:STATE_MAZOVIA = {
 		create_state = {
+			country = c:POL
+			owned_provinces = { x009F60 x1AA8FB x46B451  x4F022C x802161 x809F60 xC17590 xDC58D0 xE165F5 xF8C8F6 xDE551D }
+			state_type = incorporated
+		}
+		create_state = {
 			country = c:RUS
-			owned_provinces = { x009F60 x1AA8FB x46B451  x4F022C x802161 x809F60 xC17590 xDC58D0 xE165F5 xF8C8F6 xDE551D x117AE1 x4969E4 xC06121 x0087C9 }
+			owned_provinces = { x4969E4 xC06121 x117AE1 x0087C9 }
 			state_type = unincorporated
 		}
 

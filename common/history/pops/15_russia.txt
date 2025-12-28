@@ -249,9 +249,44 @@
 				size = 16056
 			}
 		}
+		region_state:POL = {
+			create_pop = { # Most Lithuanian aristocrats identified as Polish
+				culture = polish
+				pop_type = aristocrats
+				size = 45
+			}
+			create_pop = {
+				culture = lithuanian
+				size = 4422
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 916
+			}
+			create_pop = {
+				culture = latvian
+				size = 153
+			}
+			create_pop = {
+				culture = polish
+				size = 15
+			}
+			create_pop = {
+				culture = east_german
+				size = 263
+			}
+			create_pop = {
+				culture = russian
+				size = 93
+			}
+			create_pop = {
+				culture = byelorussian
+				size = 160
+			}
+		}
 	}
 	s:STATE_MAZOVIA = { #Mazovia - DONE
-		region_state:RUS = {
+		region_state:POL = {
 			create_pop = {
 				culture = polish
 				pop_type = aristocrats
@@ -282,9 +317,40 @@
 				size = 21106
 			}
 		}
+		region_state:RUS = {
+			create_pop = {
+				culture = polish
+				pop_type = aristocrats
+				size = 124
+			}
+			create_pop = {
+				culture = polish
+				size = 9583
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1805
+			}
+			create_pop = {
+				culture = east_german
+				size = 394
+			}
+			create_pop = {
+				culture = russian
+				size = 530
+			}
+			create_pop = {
+				culture = byelorussian
+				size = 504
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 211
+			}
+		}
 	}
 	s:STATE_GREATER_POLAND = { #Warszawa - DONE
-		region_state:RUS = {
+		region_state:POL = {
 			create_pop = {
 				culture = polish
 				pop_type = aristocrats
@@ -319,7 +385,7 @@
 		}
 	}
 	s:STATE_LESSER_POLAND = { #Lublin - DONE
-		region_state:RUS = {
+		region_state:POL = {
 			create_pop = {
 				culture = polish
 				size = 633163
