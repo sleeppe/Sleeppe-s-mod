@@ -1853,3 +1853,7 @@
  dyn_c_byzantine_republic: "Byzantine Republic"
  dyn_c_byzantine_socialist: "Socialist Republic of Byzantium"
  dyn_c_byzantine_anarchy: "Free Territories of Byzantium"
+
+ # central italy
+ dyn_c_central_italy: "United Provinces of Central Italy"
+ dyn_c_central_italy_adj: "Central Italian"
