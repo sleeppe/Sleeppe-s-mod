@@ -208,7 +208,7 @@ STATES = {
 	s:STATE_VENETIA = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { xB001A0 x3083C8 x3080A0 x8EEB7A xB080A0 x5141E0 x605424 x6984B4 x554866 xC02A3F }
+			owned_provinces = { xB001A0 x3083C8 x3080A0 x8EEB7A xB080A0 x5141E0 x605424 x6984B4 x554866 xC02A3F x50C060 }
 		}
 
 		add_homeland = cu:north_italian
@@ -7898,7 +7898,7 @@ STATES = {
 	s:STATE_LOMBARDY = {
 		create_state = {
 			country = c:AUS
-			owned_provinces = { x3F1E38 xD04060 x9AC196 x867A90 xA40CE9 x50C060 x70B8A9 x4713EE }
+			owned_provinces = { x3F1E38 xD04060 x9AC196 x867A90 xA40CE9 x70B8A9 x4713EE }
 		}
 
 		add_homeland = cu:north_italian

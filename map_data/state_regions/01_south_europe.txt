@@ -1,7 +1,7 @@
 ﻿STATE_LOMBARDY = {
     id = 76
     subsistence_building = "building_subsistence_farm"
-    provinces = { "x3F1E38" "x4713EE" "x50C060" "x70B8A9" "x867A90" "x9AC196" "xA40CE9" "xD04060" }
+    provinces = { "x3F1E38" "x4713EE" "x70B8A9" "x867A90" "x9AC196" "xA40CE9" "xD04060" }
     traits = { "state_trait_po_river" }
     city = "xD04060"
     farm = "x867A90"
@@ -293,7 +293,7 @@ STATE_LAZIO = {
 STATE_VENETIA = {
     id = 91
     subsistence_building = "building_subsistence_farm"
-    provinces = { "x3080A0" "x3083C8" "x5141E0" "x554866" "x605424" "x6984B4" "x8EEB7A" "xB001A0" "xB080A0" "xC02A3F" }
+    provinces = { "x3080A0" "x3083C8" "x5141E0" "x554866" "x605424" "x6984B4" "x8EEB7A" "xB001A0" "xB080A0" "xC02A3F" "x50C060" }
     traits = { "state_trait_po_river" "state_trait_venetian_lagoon" }
     city = "x3083C8"
     port = "xB001A0"
