@@ -280,7 +280,7 @@
  GLC_ADJ:0 "Gold Coast"
  GLD:0 "Geledi"
  GLD_ADJ:0 "Geledi"
- GRE:0 "Kingdom of Greece"
+ GRE:0 "Greece"
  GRE_ADJ:0 "Greek"
  GRI:0 "Avañe'ẽ"
  GRI_ADJ:0 "Avañe'ẽ"
@@ -324,7 +324,7 @@
  HON_ADJ:0 "Honduran"
  HRO:0 "Herero"
  HRO_ADJ:0 "Herero"
- HUN:0 "Kingdom of Hungary"
+ HUN:0 "Hungary"
  HUN_ADJ:0 "Hungarian"
  HYD:0 "Hyderabad"
  HYD_ADJ:0 "Hyderabadi"
@@ -1793,12 +1793,23 @@
  dyn_c_prussian_commune: "Commune of Prussia"
  dyn_c_prussian_commune_adj: "Prussian"
 
+# Germany
+ dyn_c_german_republic: "Federal Republic of Germany"
+ dyn_c_german_socialist: "German Democratic Republic"
+ dyn_c_german_anarchy: "Free Territories of Germany"
+
 # Austria   - Code simplified
  dyn_c_austrian_empire: "Empire of Austria"
  dyn_c_austrian_kingdom: "Kingdom of Austria"
  dyn_c_austrian_republic: "Republic of Austria"
  dyn_c_austrian_commune: "Socialist Republic of Austria"
  dyn_c_austrian_anarchist: "Anarchist Republic of Austria"
+
+# Hungary
+ dyn_c_hungarian_kingdom: "Kingdom of Hungary"
+ dyn_c_hungarian_republic: "Republic of Hungary"
+ dyn_c_hungarian_socialist: "Socialist Republic of Hungary"
+ dyn_c_hungarian_anarchy: "Free Territories of Hungary"
 
 # Russia - already properly defined
 
@@ -1830,3 +1841,15 @@
  dyn_c_norwegian_kingdom: "Kingdom of Norway"
  dyn_c_norwegian_republic: "Republic of Norway"
  dyn_c_norwegian_socialist: "Socialist Republic of Norway"
+
+# Greece
+ dyn_c_greek_kingdom: "Kingdom of Greece"
+ dyn_c_greek_republic: "Hellenic Republic"
+ dyn_c_greek_socialist: "Socialist Republic of Greece"
+ dyn_c_greek_anarchy: "Free Territories of greece"
+
+# Byzantium
+ dyn_c_byzantine_empire: "Eastern Roman Empire"
+ dyn_c_byzantine_republic: "Byzantine Republic"
+ dyn_c_byzantine_socialist: "Socialist Republic of Byzantium"
+ dyn_c_byzantine_anarchy: "Free Territories of Byzantium"
