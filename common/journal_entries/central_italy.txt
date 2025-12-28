@@ -1,0 +1,69 @@
+je_central_italy = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+	
+	possible = {
+		has_technology_researched = nationalism
+		NOR = {
+			country_tier = hegemony
+			country_tier = empire
+		}
+	}
+
+	is_shown_in_lobby = {
+		root = c:SAR
+	}
+
+	is_shown_when_inactive = {
+		root = c:SAR
+	}
+
+	complete = {
+		country_or_subject_owns_entire_state_region = STATE_LOMBARDY
+		has_journal_entry = je_risorgimento
+	}
+
+	on_complete = {
+		
+		trigger_event = { id = central_italy.1 }
+	}
+
+    event_outcome_completed_desc = {
+        first_valid = {
+            triggered_desc = {
+                desc = event_effects_central_italy.1_tt
+            }
+        }
+    }
+
+	fail = {
+		OR = {
+			NOT = {
+				exists = c:SAR
+			}
+			trigger_if = {
+				NOT = {
+					exists = c:SAR
+				}
+			}
+		}
+	}
+
+
+	invalid = {
+		NOT = {
+			exists = c:SAR
+		}
+	}
+
+
+	goal_add_value = {
+		add = 120
+	}
+
+	should_be_pinned_by_default = yes
+
+	weight = 100
+}
+

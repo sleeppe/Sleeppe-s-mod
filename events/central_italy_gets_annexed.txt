@@ -1,0 +1,30 @@
+﻿namespace = central_italian_annexation
+
+central_italian_annexation.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = central_italian_annexation.1.t
+	desc = central_italian_annexation.1.d # probably want a triggered desc here
+	flavor = central_italian_annexation.1.f
+
+	event_image = {
+		video = "unspecific_signed_contract"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = central_italian_annexation.1.a
+		c:SAR = { annex = c:TUS }
+		c:SAR = {
+			trigger_event = { id =  march_of_the_thousand.1 days = 180 }
+		}
+	}
+}

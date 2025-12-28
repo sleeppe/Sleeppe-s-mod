@@ -1,0 +1,28 @@
+﻿namespace = tuscan_italy
+
+tuscan_italy.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = tuscan_italy.1.t
+	desc = tuscan_italy.1.d # probably want a triggered desc here
+	flavor = tuscan_italy.1.f
+
+	event_image = {
+		video = "unspecific_military_parade"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+
+	}
+	option = {
+		name = tuscan_italy.1.a
+		c:TUS = { annex = ROOT }
+	}
+}

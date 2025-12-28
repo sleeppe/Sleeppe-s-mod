@@ -1,0 +1,40 @@
+﻿namespace = march_of_the_thousand
+
+march_of_the_thousand.1 = {
+	type = country_event
+	placement = c:SIC
+
+	title = march_of_the_thousand.1.t
+	desc = march_of_the_thousand.1.d # probably want a triggered desc here
+	flavor = march_of_the_thousand.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = march_of_the_thousand.1.a
+		c:SAR = { annex = c:SIC }
+		s:STATE_UMBRIA = {
+				random_scope_state = {
+					limit = {
+						exists = c:SAR
+						owner = {
+							OR = {
+								c:PAP = THIS
+							}
+						}
+					}
+					set_state_owner = c:SAR
+				}
+			}
+	}
+}
