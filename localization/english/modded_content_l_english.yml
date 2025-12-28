@@ -7,7 +7,10 @@
  company_heineken: "Heineken Brouwerij"
  company_marzotto: "Lanificio Luigi Marzotto & Figli"
 
-
+##Modded Laws
+ 
+ law_dutch_provinces: "Grondwet: Vierde Hoofdstuk"
+ law_dutch_provinces_desc: "The provincial States shall be constituted of representatives of the nobility, the towns, and the rural districts. The manner of election, the distribution of seats, and the organization of electoral bodies shall be regulated by royal authority, subject to prescribed provincial regulations. The King shall appoint commissioners in every province to preside over the assemblies and to supervise the faithful execution of the laws.
 
 ##Modded Goods
 
