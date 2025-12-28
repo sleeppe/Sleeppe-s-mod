@@ -877,4 +877,28 @@ iberia_esperanto = {
 	}
 }
 
+commune_italy = {
+	color = { 226 53 53 }
+
+	possible = {
+		exists = c:ITA
+		c:ITA ?= THIS
+		has_law_or_variant = law_type:law_council_republic
+		NOT = {
+			has_law_or_variant = law_type:law_anarchy
+		}
+	}
+}
+
+anarchist_italy = {
+	color = { 21 6 6 }
+
+	possible = {
+		exists = c:ITA
+		c:ITA ?= THIS
+		has_law_or_variant = law_type:law_council_republic
+		has_law_or_variant = law_type:law_anarchy
+	}
+}
+
 ## modded
