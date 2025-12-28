@@ -728,7 +728,7 @@ PRA = { #Gao-Para
 }
 
 SAR = {
-	color = { 90 115 133 }
+	color = { 125  171  84 }
 
 	country_type = recognized
 

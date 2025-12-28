@@ -2664,6 +2664,20 @@ TUS = { # Tuscany
 			coa_def_french_ensign_trigger = yes
 		}
 	}
+	dynamic_country_name = {
+		name = dyn_c_central_italy
+		adjective = dyn_c_central_italy_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor ?= {
+				owns_entire_state_region = STATE_EMILIA
+				owns_entire_state_region = STATE_ROMAGNA
+			} 
+		}
+	}
 }
 
 UKR = { # Ukraine
