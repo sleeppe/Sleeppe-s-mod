@@ -1855,6 +1855,12 @@
 				size = 8000
 			}
 		}
+		region_state:HDT = {
+			create_pop = {
+				culture = north_german
+				size = 50000
+			}
+		}
 		region_state:HES = {
 			create_pop = {
 				culture = north_german

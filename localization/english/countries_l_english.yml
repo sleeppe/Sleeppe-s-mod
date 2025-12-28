@@ -1883,3 +1883,7 @@
  dyn_c_great_qing_adj:0 "Qing"
  CHI:0 "China"
  CHI_ADJ:0 "Chinese"
+
+ # Hesse-darmstadt
+ HDT:0 "Darmstadt"
+ HDT_ADJ:0 "Darmstadtler"

@@ -3604,15 +3604,15 @@ STATES = {
 	s:STATE_ELBE = {
 		create_state = {
 			country = c:BRE
-			owned_provinces = { xC08061 x68BE66 }
+			owned_provinces = { x68BE66 }
 		}
 		create_state = {
 			country = c:HAM
-			owned_provinces = { x587297 xF54C13 }
+			owned_provinces = { x587297 }
 		}
 		create_state = {
 			country = c:HAN
-			owned_provinces = { x418061 x392FDA xC080E0 xA5E2E8 x7C8FD3 }
+			owned_provinces = { x418061 x392FDA xC080E0 xA5E2E8 x7C8FD3 xC08061 xF54C13 }
 		}
 
 		add_homeland = cu:north_german
@@ -8189,15 +8189,15 @@ STATES = {
 	s:STATE_BRUNSWICK = {
 		create_state = {
 			country = c:HAN
-			owned_provinces = { x2180E0 }
+			owned_provinces = { x2180E0 xA001E0 }
 		}
 		create_state = {
 			country = c:BRA
-			owned_provinces = { xA61E6E x43D537 }
+			owned_provinces = { xA61E6E  x2180E0 }
 		}
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x4C16EA xA001E0 }
+			owned_provinces = { x4C16EA x43D537 }
 		}
 
 		add_homeland = cu:north_german
@@ -8209,7 +8209,7 @@ STATES = {
 		}
 		create_state = {
 			country = c:HES
-			owned_provinces = { x1141A0 x8B7C67 x90C020 }
+			owned_provinces = { x8B7C67 }
 		}
 		create_state = {
 			country = c:HEK
@@ -8222,6 +8222,10 @@ STATES = {
 		create_state = {
 			country = c:WLD
 			owned_provinces = { x3E794B }
+		}
+		create_state = {
+			country = c:HDT
+			owned_provinces = { x90C020 x1141A0}
 		}
 
 		add_homeland = cu:north_german
