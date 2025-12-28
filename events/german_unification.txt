@@ -80,6 +80,21 @@ german_unification.1 = {
 	option = {
 		name = german_unification.1.a
 		default_option = yes
+
+		c:HDT ?= {
+			remove_diplomatic_pact = {
+				country = c:PRU
+				type = personal_union
+			}
+		}
+
+		c:HDT ?= {
+			join_power_bloc = root
+			set_relations = {
+				country = root
+				value = 100
+			}
+		}
 		every_interest_group = {
 			limit = {
 				is_in_government = yes
@@ -89,12 +104,6 @@ german_unification.1 = {
 					name = german_unification_popularity
 					days = long_modifier_time
 				}
-			}
-		}
-		c:HDT ?= {
-			remove_diplomatic_pact = {
-				country = c:PRU
-				type = personal_union
 			}
 		}
 		if = {
@@ -146,15 +155,24 @@ german_unification.1 = {
 	}
 	option = {
 		name = german_unification.1.b
-		add_modifier = {
-			name = partial_german_unification_influence_prestige
-			days = normal_modifier_time
-		}
+
 		c:HDT ?= {
 			remove_diplomatic_pact = {
 				country = c:PRU
 				type = personal_union
 			}
+		}
+
+		c:HDT ?= {
+			join_power_bloc = root
+			set_relations = {
+				country = root
+				value = 100
+			}
+		}
+		add_modifier = {
+			name = partial_german_unification_influence_prestige
+			days = normal_modifier_time
 		}
 		if = {
 			limit = {
