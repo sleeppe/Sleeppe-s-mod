@@ -725,7 +725,7 @@
 			create_pop = {
 			    culture = slovak
 			    religion = catholic
-			    size = 1090041
+			    size = 800041
 			}
 			create_pop = {
 			    culture = slovak
@@ -735,12 +735,12 @@
 			create_pop = {
 			    culture = hungarian
 			    religion = catholic
-			    size = 186040
+			    size = 306040
 			}
 			create_pop = {
 			    culture = hungarian
 			    religion = protestant
-			    size = 126302
+			    size = 256302
 			}
 			create_pop = {
 			    culture = south_german
