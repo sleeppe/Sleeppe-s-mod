@@ -1867,7 +1867,7 @@
 		}
 		region_state:HDT = {
 			create_pop = {
-				culture = north_german
+				culture = south_german
 				size = 50000
 			}
 		}
