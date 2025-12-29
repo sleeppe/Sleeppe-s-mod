@@ -1,0 +1,19 @@
+CHARACTERS = {
+	c:POL ?= {
+		create_character = {
+			is_general = yes
+			ruler = yes
+			first_name = Ivan
+			last_name = Paskevich
+			historical = yes
+			culture = cu:russian
+			age = 54
+			interest_group = ig_armed_forces
+			ideology = ideology_royalist
+			traits = {
+				brave
+				reckless
+			}
+		}
+	}
+}
