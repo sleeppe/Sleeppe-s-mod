@@ -360,7 +360,7 @@ NEconomy = {
 	ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT = 0.5	# Non-government building economy of scale modifier if multiplied by (1 - the fraction of nationalized levels * this)
 
 	IN_DEFAULT_MINIMUM_PENALTY_SCALE = 0.1				# This amount of the 'in default' throughput penalty is applied right away
-	IN_DEFAULT_DAYS_TO_FULL_PENALTY = 365				# How many days of being in default does it take to get the full throughput penalty
+	IN_DEFAULT_DAYS_TO_FULL_PENALTY = 200				# How many days of being in default does it take to get the full throughput penalty
 	DECLARE_BANKRUPTCY_PENALTY_DURATION_YEARS = 10		# How many years does it take for penalties from declaring bankruptcy to fully decay
 	DECLARE_BANKRUPTCY_RADICALIZATION_BASE_FACTOR = 0.1 # Radicalize this percentage of all pops when declaring bankruptcy
 	DECLARE_BANKRUPTCY_RADICALIZATION_SHARES_FACTOR = 0.05 # For each per-pop shares in their building, radicalize this percentage of a pop on declaring bankruptcy
