@@ -248,14 +248,6 @@
 	}
 	c:TUR ?= {
 		create_diplomatic_pact = {
-			country = c:MOL
-			type = protectorate
-		}
-		create_diplomatic_pact = {
-			country = c:WAL
-			type = protectorate
-		}
-		create_diplomatic_pact = {
 			country = c:SER
 			type = protectorate
 		}
@@ -654,6 +646,14 @@
 		create_diplomatic_pact = {
 			country = c:POL
 			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MOL
+			type = protectorate
+		}
+		create_diplomatic_pact = {
+			country = c:WAL
+			type = protectorate
 		}
 	}
 }
