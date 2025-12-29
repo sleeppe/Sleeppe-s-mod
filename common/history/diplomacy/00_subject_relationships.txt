@@ -650,4 +650,10 @@
 			type = personal_union
 		}
 	}
+	c:RUS ?= {
+		create_diplomatic_pact = {
+			country = c:POL
+			type = puppet
+		}
+	}
 }

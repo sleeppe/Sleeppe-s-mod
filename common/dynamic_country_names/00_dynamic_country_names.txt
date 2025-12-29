@@ -1575,12 +1575,21 @@ POL = { # Poland
 
 		trigger = {
 			exists = c:RUS
-			c:RUS ?= {
+			OR = {
+				c:RUS ?= {
 				has_diplomatic_pact = {
 					who = c:POL
 					type = personal_union
 					is_initiator = yes
 				}
+			}
+			c:RUS ?= {
+				has_diplomatic_pact = {
+					who = c:POL
+					type = puppet
+					is_initiator = yes
+				}
+			}
 			}
 		}
 	}
