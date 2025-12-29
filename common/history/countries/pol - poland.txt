@@ -24,5 +24,9 @@ COUNTRIES = {
 			days = stupidly_long_modifier_time
 			is_decaying = yes
 		}
+
+		c:RUS ?= {
+            save_scope_as = russia_scope
+        }
 	}
 }

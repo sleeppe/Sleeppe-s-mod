@@ -1887,3 +1887,7 @@
  # Hesse-darmstadt
  HDT:0 "Darmstadt"
  HDT_ADJ:0 "Darmstadtler"
+
+ # viceroy government
+ gov_viceroy_poland: "Russian Territory"
+ gov_viceroy_poland_desc: "#yellow Poland#! is currently in a state of union with #yellow Russia#!, with the [Concept('concept_ruler','$RULER_TITLE_VICEROY$')] acting in the stead of the [Concept('concept_ruler','$RULER_TITLE_TSAR$')] of #yellow Russia#!, who nominally rules over #yellow Poland#! as King"
