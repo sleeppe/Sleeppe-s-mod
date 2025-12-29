@@ -353,7 +353,7 @@ NEconomy = {
 	COUNTRY_GDP_CONSTRUCTION_MODIFIER_DIVISOR = 2000000	# Scale the country_gdp_construction static modifier by this GDP divisor
 	COUNTRY_GDP_CONSTRUCTION_MODIFIER_BASE_MULTIPLIER = 0.2	# Always added to the country_gdp_construction multiplier, regardless of GDP
 	COUNTRY_GDP_CONSTRUCTION_MODIFIER_SCALED_MULTIPLIER = 0.8	# The country_gdp_construction modifier multiplier is scaled against this
-	COUNTRY_GDP_CONSTRUCTION_MODIFIER_MAX_MULTIPLIER = 1.0	# The country_gdp_construction modifier multiplier cannot be higher than this
+	COUNTRY_GDP_CONSTRUCTION_MODIFIER_MAX_MULTIPLIER = 2.5	# The country_gdp_construction modifier multiplier cannot be higher than this
 
 	ECONOMY_OF_SCALE_START_LEVEL = 1					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
 	USE_NATIONALIZED_ECONOMY_OF_SCALE_PENALTY = no		# Whether ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT should be applied to economy of scale modifier for buildings with nationalized levels
