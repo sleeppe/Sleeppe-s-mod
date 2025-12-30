@@ -1883,3 +1883,16 @@
  dyn_c_great_qing_adj:0 "Qing"
  CHI:0 "China"
  CHI_ADJ:0 "Chinese"
+
+ # Hesse-darmstadt
+ HDT:0 "Darmstadt"
+ HDT_ADJ:0 "Darmstadtler"
+
+ # viceroy government
+ gov_viceroy_poland: "Russian Territory"
+ gov_viceroy_poland_desc: "#yellow Poland#! is currently in a state of union with #yellow Russia#!, with the [Concept('concept_ruler','$RULER_TITLE_VICEROY$')] acting in the stead of the [Concept('concept_ruler','$RULER_TITLE_TSAR$')] of #yellow Russia#!, who nominally rules over #yellow Poland#! as King"
+
+# moldova and wallachia
+
+ dyn_c_moldova_occupation: "Moldovan Occupation"
+ dyn_c_wallachia_occupation: "Wallachian Occupation"
