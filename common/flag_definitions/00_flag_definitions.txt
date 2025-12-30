@@ -10152,9 +10152,9 @@ TUR = { # Turkey
 		priority = 50
 		trigger = { 
 			coa_def_communist_flag_trigger = yes
-	}
+	   }
+    }
 }
-
 TUS = { # Tuscany
 	flag_definition = {
 		coa = TUS
