@@ -22,6 +22,7 @@ romanian_conference.0 = {
 	}
 	option = {
 		name = romanian_conference.0.a
+		default_option = yes
 		change_global_variable = {
 			name = unite_the_principalities
 			add = 1
@@ -58,6 +59,7 @@ romanian_conference.1 = {
 	}
 	option = {
 		name = romanian_conference.1.a
+		default_option = yes
 		change_global_variable = {
 			name = unite_the_principalities1
 			add = 1
@@ -94,6 +96,7 @@ romanian_conference.2 = {
 	}
 	option = {
 		name = romanian_conference.2.a
+		default_option = yes
 		change_global_variable = {
 			name = unite_the_principalities2
 			add = 1
@@ -130,6 +133,7 @@ romanian_conference.3 = {
 	}
 	option = {
 		name = romanian_conference.3.a
+		default_option = yes
 		change_global_variable = {
 			name = unite_the_principalities3
 			add = 1
@@ -166,6 +170,7 @@ romanian_conference.11 = {
 	}
 	option = {
 		name = romanian_conference.11.a
+		default_option = yes
 		c:RUS ?= {
 			random_scope_state = {
 			limit = {
@@ -211,6 +216,7 @@ romanian_conference.12 = {
 	}
 	option = {
 		name = romanian_conference.12.a
+		default_option = yes
 		c:TUR ?= {
 			random_scope_state = {
 			limit = {
@@ -248,6 +254,7 @@ romanian_conference.13 = {
 	}
 	option = {
 		name = romanian_conference.13.a
+		default_option = yes
 			s:STATE_NORTHERN_TRANSYLVANIA = {
 			every_scope_state = {
 				set_state_owner = c:WAL
