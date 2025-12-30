@@ -3547,7 +3547,7 @@ STATES = {
 	s:STATE_CHAMPAGNE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x4B7684 x5FEA2F x600883 x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
+			owned_provinces = { x282DCC x70BFA0 x7FC1E6 x4B7684 x5FEA2F x600883 x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
 		}
 
 		add_homeland = cu:french
@@ -3563,7 +3563,7 @@ STATES = {
 	s:STATE_LORRAINE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x282DCC x3080E0 x70BFA0 x7FC1E6 xB080E0 xC5F13A }
+			owned_provinces = { x3080E0 xB080E0 xC5F13A }
 		}
 
 		add_homeland = cu:french

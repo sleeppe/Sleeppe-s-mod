@@ -248,7 +248,7 @@
  STATE_BURGUNDY:0 "Burgundy"
  STATE_CHAMPAGNE:0 "Champagne"
  STATE_FRANCHE_COMTE:0 "Franche-Comté"
- STATE_LORRAINE:1 "Lorraine"
+ STATE_LORRAINE:1 "Lorraine Plateu"
  STATE_AQUITAINE:0 "Aquitaine"
  STATE_ORLEANS:1 "Orléanais-Berry"
  STATE_ILE_DE_FRANCE:1 "Île-de-France"
