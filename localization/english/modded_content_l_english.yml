@@ -111,3 +111,6 @@
  romanian_conference.13.f: ""We have succeeded, the conference votes in favour"\nA romanian delegate shouts"
  romanian_conference.13.a: "Give up the land as we agreed"
  romanian_conference.13.b: "Bastards! We will keep our clay"
+
+ #poland
+ POL_FLAVOR_TEXT:0 "Poland was dissolved during and after the Napoleonic wars, and ever since Russia has tightened its grip. After an uprising earlier this decade Polands autonomy was severely curtailed. Will Poland draw closer to russia, or will they take an independent path from their historic enemy?"
