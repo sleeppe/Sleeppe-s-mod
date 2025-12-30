@@ -788,3 +788,6 @@
  STATE_RUTHENIA: "Ruthenia"
  STATE_KOSOVO: "Kosovo"
  STATE_UPPER_SILESIA: "Upper Silesia"
+
+ # MODDED STATES
+ STATE_ERMLAND_MASUREN: "Ermland-Masuren"
