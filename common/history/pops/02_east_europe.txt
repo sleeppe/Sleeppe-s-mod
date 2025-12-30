@@ -858,7 +858,7 @@
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 40687
+				size = 40867
 			}
 			create_pop = {
 				culture = polish
