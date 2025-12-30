@@ -10146,6 +10146,13 @@ TUR = { # Turkey
 			coa_def_spanish_ensign_trigger = yes
 		}
 	}
+		flag_definition = {
+		coa = TUR_commie
+		subject_canton = TUR_commie
+		priority = 50
+		trigger = { 
+			coa_def_communist_flag_trigger = yes
+	}
 }
 
 TUS = { # Tuscany
