@@ -24,6 +24,7 @@
     scripted_button = je_unite_the_principalities_button3
     possible = {
         has_technology_researched = nationalism
+        root = c:WAL
         NOT = {
             any_overlord_or_above ?= { # Can't unite the principalities if you're already the lesser in a pact with another Romanian state
                 country_has_primary_culture = cu:romanian
@@ -74,20 +75,8 @@
         }
     }
     complete = {
-        custom_tooltip = {
-            text = je_unite_the_principalities_united_two_principalities_tt
-            has_variable = ROM_united_principality
-        }
-        custom_tooltip = {
-            text = je_unite_the_principalities_friend_with_all_great_powers_tt
-            NOT = {
-                any_country = {
-                    country_rank >= rank_value:great_power
-                    NOT = { has_war_with = ROOT }
-                    has_interest_marker_in_region = ROOT.capital.region
-                    relations:root < 0
-                }
-            }
+        c:MOL = {
+            is_subject_of = c:WAL
         }
     }
     on_complete = {
@@ -231,7 +220,7 @@ je_romanian_proposal = {
             }
             create_diplomatic_pact = {
                 country = c:MOL
-                type = protectorate
+                type = personal_union
             }
         }
     }

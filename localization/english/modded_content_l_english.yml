@@ -70,7 +70,7 @@
  romanian_conference.3.d: "Romanian delegates press for Transylvania in the Congress of Paris"
  romanian_conference.3.f: ""I know there are doubters! I know people think it to be impossible, perhaps proposterous! but I say they are wrong. With your goodwill we can unite our people, even in the farthest stretches of Transylvania and take back our people from the suffering of Habsburg oppression""
  romanian_conference.3.a: "We must accept this proposal"
- romanian_conference.4.b: "We must Reject this proposal"
+ romanian_conference.3.b: "We must Reject this proposal"
 
  je_romanian_proposal: "The Press for union"
  je_romanian_proposal_reason: "We must secure the will of the Great powers to unite with our Romanian brothers"
@@ -94,20 +94,20 @@
  je_unite_the_principalities_button2_desc: "Dobrogea has a large romanian and bulgarian population, we should seek to integrate and romanianise this land"
  je_unite_the_principalities_button3_desc: "Transylvania has suffered under the yoke of the Hungarians and Habsburg monarchy, we must speak to the great powers to rectify this"
 
- romanian_conference.11t: "Besserabian Cession"
- romanian_conference.11d "The Conference of Paris has concluded Besserabia to be Romanian clay"
- romanian_conference.11f ""We have succeeded, the conference votes in favour"\nA romanian delegate shouts"
- romanian_conference.11a "Give up the land as we agreed"
- romanian_conference.11b "Bastards! We will keep our clay"
+ romanian_conference.11.t: "Besserabian Cession"
+ romanian_conference.11.d: "The Conference of Paris has concluded Besserabia to be Romanian clay"
+ romanian_conference.11.f: ""We have succeeded, the conference votes in favour"\nA romanian delegate shouts"
+ romanian_conference.11.a: "Give up the land as we agreed"
+ romanian_conference.11.b: "Bastards! We will keep our clay"
 
- romanian_conference.11t
- romanian_conference.11d
- romanian_conference.11f
- romanian_conference.11a
- romanian_conference.11b
+ romanian_conference.12.t: "Dobrogean Cession"
+ romanian_conference.12.d: "The Conference of Paris has concluded Dobrogea to be Romanian clay"
+ romanian_conference.12.f: ""We have succeeded, the conference votes in favour"\nA romanian delegate shouts"
+ romanian_conference.12.a: "Give up the land as we agreed"
+ romanian_conference.12.b: "Bastards! We will keep our clay"
 
- romanian_conference.11t
- romanian_conference.11d
- romanian_conference.11f
- romanian_conference.11a
- romanian_conference.11b
+ romanian_conference.13.t: "Transylvanian Cession"
+ romanian_conference.13.d: "The Conference of Paris has concluded Transylvania to be Romanian clay"
+ romanian_conference.13.f: ""We have succeeded, the conference votes in favour"\nA romanian delegate shouts"
+ romanian_conference.13.a: "Give up the land as we agreed"
+ romanian_conference.13.b: "Bastards! We will keep our clay"
