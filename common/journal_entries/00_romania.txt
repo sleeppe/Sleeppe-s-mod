@@ -222,6 +222,10 @@ je_romanian_proposal = {
                 country = c:MOL
                 type = personal_union
             }
+            remove_diplomatic_pact = {
+                country = overlord
+                type = protectorate
+            }
         }
     }
 
