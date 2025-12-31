@@ -3547,7 +3547,7 @@ STATES = {
 	s:STATE_CHAMPAGNE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x4B7684 x5FEA2F x600883 x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
+			owned_provinces = { x282DCC x70BFA0 x7FC1E6 x4B7684 x5FEA2F x600883 x669027 x8AE8D1 xD6A06D xE280FC xEF00DF xEF40A0 xEFBF20 }
 		}
 
 		add_homeland = cu:french
@@ -3563,7 +3563,7 @@ STATES = {
 	s:STATE_LORRAINE = {
 		create_state = {
 			country = c:FRA
-			owned_provinces = { x282DCC x3080E0 x70BFA0 x7FC1E6 xB080E0 xC5F13A }
+			owned_provinces = { x3080E0 xB080E0 xC5F13A }
 		}
 
 		add_homeland = cu:french
@@ -8039,12 +8039,21 @@ STATES = {
 	s:STATE_EAST_PRUSSIA = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x1E73B9 x2399A2 x40A0A0 x4121A0 x47C900 x5428E6 x6E8875 x72FDF3 x7A6061 x7D6DC3 x975566 x981EBE x9FD037 xABC4AE xAEA6D6 xBF9F20 xC020A0 xC04521 xEEF586 }
+			owned_provinces = { x1E73B9 x2399A2 x40A0A0 x4121A0 x5428E6 x72FDF3 x975566 x981EBE xABC4AE xC020A0 xC04521 }
 		}
 
 		add_homeland = cu:north_german
 		add_homeland = cu:polish
 		add_homeland = cu:lithuanian
+	}
+	s:STATE_ERMLAND_MASUREN = {
+		create_state = {
+			country = c:PRU
+			owned_provinces = { xAEA6D6 x7D6DC3 x47C900 xEEF586 xBF9F20 x9FD037 x7A6061 x6E8875 }
+		}
+
+		add_homeland = cu:north_german
+		add_homeland = cu:polish
 	}
 	s:STATE_RHINELAND = {
 		create_state = {

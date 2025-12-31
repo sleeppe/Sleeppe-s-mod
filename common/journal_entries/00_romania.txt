@@ -1,0 +1,389 @@
+﻿je_unite_the_principalities = {
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+
+    is_shown_in_lobby  = {
+        country_has_primary_culture = cu:romanian
+        NOR = {
+            c:AUS ?= this
+            c:KUK ?= this
+        }
+    }
+
+    is_shown_when_inactive = {
+		country_has_primary_culture = cu:romanian
+        NOR = {
+            c:AUS ?= this
+            c:KUK ?= this
+        }
+    }
+    scripted_button = je_unite_the_principalities_button
+    scripted_button = je_unite_the_principalities_button1
+    scripted_button = je_unite_the_principalities_button2
+    scripted_button = je_unite_the_principalities_button3
+    possible = {
+        has_technology_researched = nationalism
+        root = c:WAL
+        NOT = {
+            any_overlord_or_above ?= { # Can't unite the principalities if you're already the lesser in a pact with another Romanian state
+                country_has_primary_culture = cu:romanian
+            }
+        }
+        any_country = {
+            OR = {
+                AND = {
+                    country_rank >= rank_value:great_power
+                    has_war_with = c:RUS
+                }
+                AND = {
+                    THIS = c:TUR
+                    has_war_with = c:RUS
+                }
+            }
+        }
+    }
+    immediate = {
+        add_journal_entry = {
+            type = je_romanian_proposal
+        }
+        add_journal_entry = {
+            type = je_romanian_proposal1
+        }
+        add_journal_entry = {
+            type = je_romanian_proposal2
+        }
+        add_journal_entry = {
+            type = je_romanian_proposal3
+        }
+
+        set_global_variable = {
+            name = unite_the_principalities
+            value = 5
+        }
+        set_global_variable = {
+            name = unite_the_principalities1
+            value = 5
+        }
+        set_global_variable = {
+            name = unite_the_principalities2
+            value = 5
+        }
+        set_global_variable = {
+            name = unite_the_principalities3
+            value = 5
+        }
+    }
+    complete = {
+        c:MOL = {
+            is_subject_of = c:WAL
+        }
+    }
+    on_complete = {
+    }
+    fail = { # the JE fails if there are no other Romanian countries, or if ROOT is Romania
+        OR = {
+            custom_tooltip = {
+                text = je_unite_the_principalities_no_other_romanians_tt
+                NOT = {
+                    any_country = {
+                        NOT = { this = ROOT }
+                        country_has_primary_culture = cu:romanian
+                        NOR = {
+                            c:AUS ?= this
+                            c:KUK ?= this
+                        }
+                    }
+                }
+            }
+            custom_tooltip = {
+                text = je_unite_the_principalities_romania_is_real_tt
+                exists = c:ROM
+            }
+        }
+    }
+
+    # timeout = 0 # no timeout. Romania is eternal.
+
+    weight = 1000
+    should_be_pinned_by_default = yes
+}
+
+je_all_for_one = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+    scripted_button = je_south_bessarabian_retrocession
+    scripted_button = je_marea_unire
+
+    on_monthly_pulse = {
+        effect = {
+            change_variable = {
+                name = romanian_union_var
+                add = 1
+            }
+        }
+    }
+
+    complete = {
+        scope:journal_entry = { is_goal_complete = yes }
+    }
+
+    immediate = {
+        random_neighbouring_state = {
+            limit = {
+                owner = {
+                    has_variable = romania_union_partner
+                }
+            }
+            owner = {
+                save_scope_as = romania_lesser_union_partner
+            }
+        }
+    }
+
+    on_complete = {
+        trigger_event = {
+            id = romania.3
+        }
+    }
+
+    fail = {
+        OR = {
+            hidden_trigger = {
+                exists = c:ROM
+                NOT = { c:ROM ?= THIS }
+            }
+            NOT = { exists = scope:romania_lesser_union_partner }
+            scope:romania_lesser_union_partner = {
+                NOT = { is_subject_of = ROOT }
+            }
+        }
+    }
+
+    on_fail = {
+        hidden_effect = {
+            remove_variable = ROM_united_principality
+        }
+    }
+
+    current_value = {
+        value = root.var:romanian_union_var
+    }
+
+    goal_add_value = {
+        value = 120
+    }
+
+    progressbar = yes
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_romanian_proposal = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+    on_monthly_pulse = {
+    }
+
+    complete = {
+    }
+
+    immediate = {
+    }
+
+    on_complete = {
+    }
+
+    fail = {
+    }
+
+    on_fail = {
+    }
+
+    current_value = {
+        value = global_var:unite_the_principalities
+    }
+
+    goal_add_value = {
+        value = 10
+    }
+
+    on_timeout = {
+        if = {
+            limit = {
+                global_var:unite_the_principalities > 5
+            }
+            create_diplomatic_pact = {
+                country = c:MOL
+                type = personal_union
+            }
+            remove_diplomatic_pact = {
+                country = overlord
+                type = protectorate
+            }
+        }
+    }
+
+    progressbar = yes
+
+    timeout = 365
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_romanian_proposal1 = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+    on_monthly_pulse = {
+    }
+
+    complete = {
+    }
+
+    immediate = {
+    }
+
+    on_complete = {
+    }
+
+    fail = {
+    }
+
+    on_fail = {
+    }
+
+    current_value = {
+        value = global_var:unite_the_principalities1
+    }
+
+    goal_add_value = {
+        value = 10
+    }
+
+    on_timeout = {
+        if = {
+            limit = {
+                global_var:unite_the_principalities1 > 5
+            }
+            c:RUS = {
+                trigger_event = { id = romanian_conference.11}
+            }
+        }
+    }
+
+    progressbar = yes
+
+    timeout = 365
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_romanian_proposal2 = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+    on_monthly_pulse = {
+    }
+
+    complete = {
+    }
+
+    immediate = {
+    }
+
+    on_complete = {
+    }
+
+    fail = {
+    }
+
+    on_fail = {
+    }
+
+    current_value = {
+        value = global_var:unite_the_principalities2
+    }
+
+    goal_add_value = {
+        value = 10
+    }
+
+    on_timeout = {
+        if = {
+            limit = {
+                global_var:unite_the_principalities2 > 5
+            }
+            c:TUR = {
+                trigger_event = { id = romanian_conference.12}
+            }
+        }
+    }
+
+    progressbar = yes
+
+    timeout = 365
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+
+je_romanian_proposal3 = {
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+    on_monthly_pulse = {
+    }
+
+    complete = {
+    }
+
+    immediate = {
+    }
+
+    on_complete = {
+    }
+
+    fail = {
+    }
+
+    on_fail = {
+    }
+
+    current_value = {
+        value = global_var:unite_the_principalities3
+    }
+
+    goal_add_value = {
+        value = 10
+    }
+
+    on_timeout = {
+        if = {
+            limit = {
+                global_var:unite_the_principalities3 > 5
+            }
+            c:AUS = {
+                trigger_event = { id = romanian_conference.13}
+            }
+        }
+    }
+
+    progressbar = yes
+
+    timeout = 365
+
+    weight = 10000
+    should_be_pinned_by_default = yes
+}
+

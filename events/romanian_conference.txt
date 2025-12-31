@@ -1,0 +1,278 @@
+namespace = romanian_conference
+
+romanian_conference.0 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.0.t
+	desc = romanian_conference.0.d # probably want a triggered desc here
+	flavor = romanian_conference.0.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.0.a
+		default_option = yes
+		change_global_variable = {
+			name = unite_the_principalities
+			add = 1
+		}
+	}
+	option = {
+		name = romanian_conference.0.b
+		change_global_variable = {
+			name = unite_the_principalities
+			add = -1
+		}
+	}
+}
+
+romanian_conference.1 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.1.t
+	desc = romanian_conference.1.d # probably want a triggered desc here
+	flavor = romanian_conference.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.1.a
+		default_option = yes
+		change_global_variable = {
+			name = unite_the_principalities1
+			add = 1
+		}
+	}
+	option = {
+		name = romanian_conference.1.b
+		change_global_variable = {
+			name = unite_the_principalities1
+			add = -1
+		}
+	}
+}
+
+romanian_conference.2 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.2.t
+	desc = romanian_conference.2.d # probably want a triggered desc here
+	flavor = romanian_conference.2.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.2.a
+		default_option = yes
+		change_global_variable = {
+			name = unite_the_principalities2
+			add = 1
+		}
+	}
+	option = {
+		name = romanian_conference.2.b
+		change_global_variable = {
+			name = unite_the_principalities2
+			add = -1
+		}
+	}
+}
+
+romanian_conference.3 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.3.t
+	desc = romanian_conference.3.d # probably want a triggered desc here
+	flavor = romanian_conference.3.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.3.a
+		default_option = yes
+		change_global_variable = {
+			name = unite_the_principalities3
+			add = 1
+		}
+	}
+	option = {
+		name = romanian_conference.3.b
+		change_global_variable = {
+			name = unite_the_principalities3
+			add = -1
+		}
+	}
+}
+
+romanian_conference.11 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.11.t
+	desc = romanian_conference.11.d # probably want a triggered desc here
+	flavor = romanian_conference.11.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.11.a
+		default_option = yes
+		c:RUS ?= {
+			random_scope_state = {
+			limit = {
+				state_region = s:STATE_BESSARABIA
+			}
+			set_state_owner = c:WAL
+			}
+		}
+		c:RUS ?= {
+			random_scope_state = {
+			limit = {
+				state_region = s:STATE_DOBRUDJA
+			}
+			set_state_owner = c:WAL
+			}
+		}
+	}
+	option = {
+		name = romanian_conference.11.b
+		change_infamy = 80
+	}
+}
+
+romanian_conference.12 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.12.t
+	desc = romanian_conference.12.d # probably want a triggered desc here
+	flavor = romanian_conference.12.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.12.a
+		default_option = yes
+		c:TUR ?= {
+			random_scope_state = {
+			limit = {
+				state_region = s:STATE_DOBRUDJA
+			}
+			set_state_owner = c:WAL
+			}
+		}
+	}
+	option = {
+		name = romanian_conference.12.b
+		change_infamy = 80
+	}
+}
+
+romanian_conference.13 = {
+	type = country_event
+	placement = root
+
+	title = romanian_conference.13.t
+	desc = romanian_conference.13.d # probably want a triggered desc here
+	flavor = romanian_conference.13.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = romanian_conference.13.a
+		default_option = yes
+			s:STATE_NORTHERN_TRANSYLVANIA = {
+			every_scope_state = {
+				set_state_owner = c:WAL
+			}
+		}
+		s:STATE_SOUTHERN_TRANSYLVANIA = {
+			every_scope_state = {
+				set_state_owner = c:WAL
+			}
+		}
+		s:STATE_BUKOVINA = {
+			every_scope_state = {
+				set_state_owner = c:WAL
+			}
+		}
+	}
+	option = {
+		name = romanian_conference.13.b
+		change_infamy = 15
+	}
+}

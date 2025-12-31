@@ -369,6 +369,40 @@
 			}
 		}
 	}
+	s:STATE_ERMLAND_MASUREN = {
+		region_state:PRU = {
+			create_pop = {
+				culture = north_german
+				pop_type = aristocrats
+				size = 5000
+			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				pop_type = aristocrats
+				size = 2000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 200
+			}
+			create_pop = {
+				culture = lithuanian
+				religion = protestant
+				size = 3676
+			}
+			create_pop = {
+				culture = north_german
+				religion = protestant
+				size = 59869
+			}
+			create_pop = {
+				culture = polish
+				religion = protestant
+				size = 226372
+			}
+		}
+	}
 	s:STATE_POSEN = {
 		region_state:PRU = {
 			create_pop = {
@@ -824,7 +858,7 @@
 			}
 			create_pop = {
 				culture = ashkenazi
-				size = 40687
+				size = 40867
 			}
 			create_pop = {
 				culture = polish
