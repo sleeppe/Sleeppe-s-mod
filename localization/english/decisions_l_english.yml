@@ -57,3 +57,5 @@
 # Sleeppe's mod additions
  auto_priv_decision_enable: "Enable Automatic Privatization"
  auto_priv_decision_disable: "Disable Automatic Privatization"
+ auto_priv_decision_enable_desc: "Press this button to automatically privatise all buildings"
+ auto_priv_decision_disable_desc: "Press this button to stop privatising all buildings"
