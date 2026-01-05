@@ -1,0 +1,79 @@
+je_bulgaria_release = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	group = je_group_historical_content
+	
+	possible = {
+		root = c:BUL
+	}
+
+	immediate = {
+		set_variable = {
+			name = bulgarian_var
+			value = 1
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			change_variable = {
+			name = bulgarian_var
+			add = 1
+		}
+		}
+	}
+
+	is_shown_in_lobby = {
+	}
+
+	is_shown_when_inactive = {
+		root = c:BUL
+	}
+
+	complete = {
+		scope:journal_entry = {
+			is_goal_complete = yes
+		}
+	}
+
+	on_complete = {
+		create_country = {
+			origin = root
+			tag = RML
+			province = p:x95BCE8
+			on_created = {
+				s:STATE_NORTHERN_THRACE = {
+					set_owner_of_provinces = {
+						country = c:RML
+						provinces = { x6E7192 x9D0D6C x15CDCD x455522 xAF56D0 x7121A0 x0DE556 }
+					}
+				}
+			}
+		}
+		c:TUR = {
+			create_diplomatic_pact = {
+			country = c:RML
+			type = puppet
+		}
+		}
+	}
+
+	fail = {
+	}
+
+	goal_add_value = {
+		value = 1
+	}
+
+	current_value = var:bulgarian_var
+
+
+	invalid = {
+	}
+
+	should_be_pinned_by_default = yes
+	progressbar = yes
+
+	weight = 100
+}
+
