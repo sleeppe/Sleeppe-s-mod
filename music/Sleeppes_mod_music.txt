@@ -93,3 +93,83 @@ sleeppe_s_mod_verdun_on_ne_passe_pas = {
     mood = yes
     can_be_interrupted = yes
 }
+
+sleeppe_s_mod_ca_ira = {
+    music = "event:/Ca ira Ca Ira Ca Ira"
+    name = "sleeppe_s_mod_ca_ira_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_austrian_1 = {
+    music = "event:/Radetzky March"
+    name = "sleeppe_s_mod_austrian_1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_austrian_2 = {
+    music = "event:/Under the Double Eagle March"
+    name = "sleeppe_s_mod_austrian_2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_austrian_3 = {
+    music = "event:/Viribus Unitis-Marsch"
+    name = "sleeppe_s_mod_austrian_3_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_hungarian_1 = {
+    music = "event:/Esik az eső, ázik a heveder"
+    name = "sleeppe_s_mod_hungarian_1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_hungarian_2 = {
+    music = "event:/Lesz, Lesz, Lesz!"
+    name = "sleeppe_s_mod_hungarian_2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_1 = {
+    music = "event:/Bu Bayrak"
+    name = "sleeppe_s_mod_ottoman_1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_2 = {
+    music = "event:/Ceddin Deden"
+    name = "sleeppe_s_mod_ottoman_2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_3 = {
+    music = "event:/Kuffar"
+    name = "sleeppe_s_mod_ottoman_3_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_4 = {
+    music = "event:/Plevne Marsi"
+    name = "sleeppe_s_mod_ottoman_4_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}

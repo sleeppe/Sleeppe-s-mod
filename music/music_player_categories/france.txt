@@ -6,5 +6,6 @@ category = {
 		"sleeppe_s_mod_chant_du_depart"
 		"sleeppe_s_mod_chanson_de_oignon"
 		"sleeppe_s_mod_verdun_on_ne_passe_pas"
+		"sleeppe_s_mod_ca_ira"
 	}
 }

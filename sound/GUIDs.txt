@@ -1133,3 +1133,13 @@
 {726f30ea-9ae1-484d-976d-67254fbd5333} event:/Rule Britannia
 {8fe8bde8-a22b-4c25-a615-2b81abcbcad7} event:/Verdun! On ne passe pas
 {2ddd0d24-bcde-4ea2-bdda-840e37012940} event:/Wo alle Straßen enden
+{f8d7bdcf-10af-4f85-93a7-5fb7e7714dfb} event:/Viribus Unitis-Marsch
+{89d5c81c-6410-4876-962b-d906010784e0} event:/Under the Double Eagle March
+{45304738-25c3-43f6-b8c9-6d5ffd7bde23} event:/Radetzky March
+{3f5d79e0-4494-4047-9b9c-3b581a649813} event:/Lesz, Lesz, Lesz!
+{6e382b51-c0e9-4bec-b989-35f509cfe6ce} event:/Esik az eső, ázik a heveder
+{86598fd6-bd1a-45a7-9f67-bfb8986c3677} event:/Ca ira Ca Ira Ca Ira
+{670c941a-c0e0-4688-963a-17fed36b33eb} event:/Bu Bayrak
+{75b001ec-4293-4fad-a024-edf96f24b834} event:/Ceddin Deden
+{141b4097-aaf3-4a79-aa6d-5717a1546bb4} event:/Kuffar
+{fa9b0343-6d47-4f3a-8db4-66ee0d7fe9b2} event:/Plevne Marsi
