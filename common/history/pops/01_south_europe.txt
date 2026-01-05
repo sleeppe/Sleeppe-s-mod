@@ -553,7 +553,7 @@
 			}
 			create_pop = {
 				culture = bulgarian
-				size = 90004
+				size = 50004
 			}
 			create_pop = {
 				culture = greek
@@ -584,6 +584,30 @@
 			create_pop = {
 				culture = romanian
 				size = 8000
+			}
+		}
+	}
+	s:STATE_SOUTH_DOBRUDJA = {
+		region_state:TUR = {
+			create_pop = {
+				culture = turkish
+				size = 5904
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 300
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 9000
+			}
+			create_pop = {
+				culture = greek
+				size = 200
+			}
+			create_pop = {
+				culture = romanian
+				size = 1000
 			}
 		}
 	}

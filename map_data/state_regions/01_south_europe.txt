@@ -743,13 +743,13 @@ STATE_EASTERN_THRACE = {
 STATE_DOBRUDJA = {
     id = 109
     subsistence_building = "building_subsistence_farm"
-    provinces = { "x316021" "x50F5CB" "x7763F3" "x7F25CD" "x940C8D" "xA3D7CE" "xB06121" "xD9E021" }
+    provinces = { "x50F5CB" "x7763F3" "x7F25CD"  "xB06121" "xD9E021" }
     traits = { "state_trait_danube_river" }
     city = "xD9E021"
     port = "xB06121"
     farm = "xB06121"
     mine = "xA3D7CE"
-    wood = "x940C8D"
+    wood = ""
     arable_land = 10
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
@@ -757,6 +757,25 @@ STATE_DOBRUDJA = {
         building_fishing_wharf = 7
     }
     naval_exit_id = 3036
+}
+
+STATE_SOUTH_DOBRUDJA = {
+    id = 998
+    subsistence_building = "building_subsistence_farm"
+    provinces = { "x316021" "xA3D7CE" "x940C8D" }
+    traits = { "state_trait_danube_river" }
+    city = ""
+    port = ""
+    farm = ""
+    mine = ""
+    wood = "x940C8D"
+    arable_land = 10
+    arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
+    capped_resources = {
+        building_logging_camp = 4
+        building_fishing_wharf = 2
+    }
+    naval_exit_id = 4798
 }
 
 STATE_ALBANIA = {

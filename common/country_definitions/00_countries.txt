@@ -983,7 +983,7 @@ BOS = {
 }
 
 BUL = {
-	color = { 116  107  140 }
+	color = { 19 97 1 }
 
 	country_type = recognized
 
@@ -5223,4 +5223,17 @@ SC4 = { # River Plate
 
 	cultures = { spanish }
 	capital = STATE_BUENOS_AIRES
+}
+
+# MODDED
+
+RML = { # rumelia
+	color = { 1 97 19 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { bulgarian turkish }
+	capital = STATE_NORTHERN_THRACE
 }

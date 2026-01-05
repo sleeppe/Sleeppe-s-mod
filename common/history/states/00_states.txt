@@ -134,11 +134,21 @@ STATES = {
 	s:STATE_DOBRUDJA = {
 		create_state = {
 			country = c:TUR
-			owned_provinces = { xD9E021 xB06121 x7f25cd x7763F3 x940C8D xA3D7CE x316021 }
+			owned_provinces = { xD9E021 xB06121 x7f25cd x7763F3 }
 		}
 		create_state = {
 			country = c:RUS
 			owned_provinces = { x50F5CB }
+		}
+
+		add_homeland = cu:bulgarian
+		add_homeland = cu:romanian
+		add_homeland = cu:turkish
+	}
+	s:STATE_SOUTH_DOBRUDJA = {
+		create_state = {
+			country = c:TUR
+			owned_provinces = { x316021 xA3D7CE x940C8D }
 		}
 
 		add_homeland = cu:bulgarian

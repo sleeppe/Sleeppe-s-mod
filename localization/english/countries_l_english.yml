@@ -1896,3 +1896,7 @@
 
  dyn_c_moldova_occupation: "Moldovan Occupation"
  dyn_c_wallachia_occupation: "Wallachian Occupation"
+
+# rumelia
+ RML:0 "Rumelia"
+ RML_ADJ:0 "Rumelian"
