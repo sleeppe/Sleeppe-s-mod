@@ -910,6 +910,39 @@
 			}
 		}
 	}
+	s:STATE_SOUTH_BESSARABIA = {
+		region_state:RUS = {
+			create_pop = {
+				culture = romanian
+				size = 30341
+			}
+			create_pop = {
+				culture = ukrainian
+				size = 81600
+			}
+			create_pop = {
+				culture = russian
+				size = 435
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 544
+			}
+			create_pop = {
+				culture = bulgarian
+				size = 288
+			}
+			create_pop = {
+				culture = east_german
+				size = 168
+			}
+			create_pop = {
+				culture = turkish
+				religion = orthodox
+				size = 157
+			}
+		}
+	}
 	s:STATE_NORTH_CAUCASUS = { #DONE
 		region_state:RUS = {
 			create_pop = {
