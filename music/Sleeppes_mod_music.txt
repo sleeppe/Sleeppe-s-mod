@@ -102,6 +102,8 @@ sleeppe_s_mod_ca_ira = {
     can_be_interrupted = yes
 }
 
+# AUSTRO - HUNGARIAN SONGS 
+
 sleeppe_s_mod_austrian_1 = {
     music = "event:/Radetzky March"
     name = "sleeppe_s_mod_austrian_1_name"
@@ -142,6 +144,9 @@ sleeppe_s_mod_hungarian_2 = {
     can_be_interrupted = yes
 }
 
+
+# OTTOMAN SONGS
+
 sleeppe_s_mod_ottoman_1 = {
     music = "event:/Bu Bayrak"
     name = "sleeppe_s_mod_ottoman_1_name"
@@ -169,6 +174,48 @@ sleeppe_s_mod_ottoman_3 = {
 sleeppe_s_mod_ottoman_4 = {
     music = "event:/Plevne Marsi"
     name = "sleeppe_s_mod_ottoman_4_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+# AMERICAN SONGS
+
+sleeppe_s_mod_yankee_doodle = {
+    music = "event:/Yankee Doodle"
+    name = "sleeppe_s_mod_yankee_doodle_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_over_there = {
+    music = "event:/Over There!"
+    name = "sleeppe_s_mod_over_there_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_dixie = {
+    music = "event:/I wish I was in Dixie"
+    name = "sleeppe_s_mod_dixie_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_dixie_union = {
+    music = "event:/Dixie ( Union )"
+    name = "sleeppe_s_mod_dixie_union_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_battle_cry_of_freedom = {
+    music = "event:/Battle Cry of Freedom"
+    name = "sleeppe_s_mod_battle_cry_of_freedom"
     pause_factor = 50
     mood = yes
     can_be_interrupted = yes

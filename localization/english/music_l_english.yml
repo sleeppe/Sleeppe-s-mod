@@ -46,6 +46,7 @@ german_songs_name:0 "German Songs"
 french_songs_name:0 "French Songs"
 austro_hungarian_songs_name:0 "Austro-Hungarian Songs"
 ottoman_songs_name:0 "Ottoman Songs"
+american_songs_name:0 "American Songs"
 
 # SONG NAMES
 
@@ -71,3 +72,8 @@ sleeppe_s_mod_ottoman_1_name:0 "Bu Bayrak"
 sleeppe_s_mod_ottoman_2_name:0 "Ceddin Deden"
 sleeppe_s_mod_ottoman_3_name:0 "Küffar"
 sleeppe_s_mod_ottoman_4_name:0 "Plevne Marşi"
+sleeppe_s_mod_battle_cry_of_freedom_name:0 "Battle Cry of Freedom"
+sleeppe_s_mod_dixie_union_name:0 "Dixie ( Union )"
+sleeppe_s_mod_dixie:0 "I Wish I Was In Dixie"
+sleeppe_s_mod_over_there:0 "Over There!"
+sleeppe_s_mod_yankee_doodle:0 "Yankee Doodle"

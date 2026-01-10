@@ -1139,7 +1139,16 @@
 {3f5d79e0-4494-4047-9b9c-3b581a649813} event:/Lesz, Lesz, Lesz!
 {6e382b51-c0e9-4bec-b989-35f509cfe6ce} event:/Esik az eső, ázik a heveder
 {86598fd6-bd1a-45a7-9f67-bfb8986c3677} event:/Ca ira Ca Ira Ca Ira
+
+# OTTOMAN EMPIRE
 {670c941a-c0e0-4688-963a-17fed36b33eb} event:/Bu Bayrak
 {75b001ec-4293-4fad-a024-edf96f24b834} event:/Ceddin Deden
 {141b4097-aaf3-4a79-aa6d-5717a1546bb4} event:/Kuffar
 {fa9b0343-6d47-4f3a-8db4-66ee0d7fe9b2} event:/Plevne Marsi
+
+# USA
+{fc9bad0d-3a71-4c7c-97c4-8835dfdd9a5d} event:/Yankee Doodle
+{8cec457b-b1f9-4ab0-bbe4-9eeb9f570ae6} event:/Over There!
+{abf2eb88-9b11-4ce7-81f4-4a1c426d10b9} event:/I wish I was in Dixie
+{629619ee-dffc-444f-a31c-e4ed4dda448c} event:/Dixie ( Union )
+{d6d48621-e7ec-4d02-8e92-405bea93b639} event:/Battle Cry of Freedom
