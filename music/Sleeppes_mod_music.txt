@@ -215,7 +215,7 @@ sleeppe_s_mod_dixie_union = {
 
 sleeppe_s_mod_battle_cry_of_freedom = {
     music = "event:/Battle Cry of Freedom"
-    name = "sleeppe_s_mod_battle_cry_of_freedom"
+    name = "sleeppe_s_mod_battle_cry_of_freedom_name"
     pause_factor = 50
     mood = yes
     can_be_interrupted = yes
