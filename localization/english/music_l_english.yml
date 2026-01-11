@@ -41,39 +41,57 @@
 
 # CATEGORY NAMES
 
-british_songs_name:0 "British Songs"
-german_songs_name:0 "German Songs"
-french_songs_name:0 "French Songs"
-austro_hungarian_songs_name:0 "Austro-Hungarian Songs"
-ottoman_songs_name:0 "Ottoman Songs"
-american_songs_name:0 "American Songs"
+british_songs_name:0 "1. British Songs"
+german_songs_name:0 "2. German Songs"
+french_songs_name:0 "3. French Songs"
+austro_hungarian_songs_name:0 "4. Austro-Hungarian Songs"
+ottoman_songs_name:0 "5. Ottoman Songs"
+american_songs_name:0 "6. American Songs"
+russian_songs_name:0 "7. Russian Songs"
 
 # SONG NAMES
 
+# BRITAIN
 sleeppe_s_mod_rule_britannia_name:0 "Rule Britannia"
 sleeppe_s_mod_british_grenadiers_name:0 "British Grenadiers"
 sleeppe_s_mod_britons_struck_home_name:0 "Britons Struck Home"
 sleeppe_s_mod_tipperary_name:0 "It's a Long Way to Tipperary"
+
+# GERMANY
 sleeppe_s_mod_german1_name:0 "Admiral der Lüfte"
 sleeppe_s_mod_german2_name:0 "Heil dir im Siegerkranz"
 sleeppe_s_mod_german3_name:0 "Preußens Gloria"
 sleeppe_s_mod_german4_name:0 "Wo alle Straßen enden"
+
+# FRANCE
 sleeppe_s_mod_le_reve_passe_name:0 "Le rêve passe"
 sleeppe_s_mod_chant_du_depart_name:0 "Chant du départ"
 sleeppe_s_mod_chanson_de_oignon_name:0 "Chanson de l'Oignon"
 sleeppe_s_mod_verdun_on_ne_passe_pas_name:0 "Verdun! On ne passe pas"
 sleeppe_s_mod_ca_ira_name:0 "Ça Ira"
+
+# AUSTRIA-HUNGARY
 sleeppe_s_mod_austrian_1_name:0 "Radetzky March"
 sleeppe_s_mod_austrian_2_name:0 "Under the Double Eagle March"
 sleeppe_s_mod_austrian_3_name:0 "Viribus Unitis-Marsch"
 sleeppe_s_mod_hungarian_1_name:0 "Esik az eső, ázik a heveder"
 sleeppe_s_mod_hungarian_2_name:0 "Lesz, Lesz, Lesz!"
+
+# OTTOMAN EMPIRE
 sleeppe_s_mod_ottoman_1_name:0 "Bu Bayrak"
 sleeppe_s_mod_ottoman_2_name:0 "Ceddin Deden"
 sleeppe_s_mod_ottoman_3_name:0 "Küffar"
 sleeppe_s_mod_ottoman_4_name:0 "Plevne Marşi"
+
+# USA
 sleeppe_s_mod_battle_cry_of_freedom_name:0 "Battle Cry of Freedom"
 sleeppe_s_mod_dixie_union_name:0 "Dixie ( Union )"
 sleeppe_s_mod_dixie_name:0 "I Wish I Was In Dixie"
 sleeppe_s_mod_over_there_name:0 "Over There!"
 sleeppe_s_mod_yankee_doodle_name:0 "Yankee Doodle"
+
+# RUSSIA
+sleeppe_s_mod_farewell_of_slavianska_name:0 "Farewell of Slavianska"
+sleeppe_s_mod_march_of_the_siberian_riflemen_name:0 "March of the Siberian Riflemen"
+sleeppe_s_mod_preobrazhensky_march_name:0 "Preobrazhensky March"
+sleeppe_s_mod_the_internationale_name:0 "The Internationale"

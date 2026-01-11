@@ -220,3 +220,37 @@ sleeppe_s_mod_battle_cry_of_freedom = {
     mood = yes
     can_be_interrupted = yes
 }
+
+# RUSSIAN SONGS
+
+sleeppe_s_mod_farewell_of_slavianska = {
+    music = "event:/Farewell of Slavianska"
+    name = "sleeppe_s_mod_farewell_of_slavianska_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_march_of_the_siberian_riflemen = {
+    music = "event:/March of The Siberian Riflemen"
+    name = "sleeppe_s_mod_march_of_the_siberian_riflemen_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_preobrazhensky_march = {
+    music = "event:/Preobrazhensky March"
+    name = "sleeppe_s_mod_preobrazhensky_march_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_the_internationale = {
+    music = "event:/The Internationale"
+    name = "sleeppe_s_mod_the_internationale_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}

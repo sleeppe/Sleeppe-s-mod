@@ -1121,24 +1121,19 @@
 {566792e5-5ed0-0f8c-3843-a02219abd333} bank:/VFXFrench Songs.strings
 {96c51cd1-7940-4b7b-9462-11419f9bde9a} bank:/VFXGerman Songs
 {0ed83c05-083b-0739-122b-9bbf6e68d802} bank:/VFXGerman Songs.strings
-{62ed785c-07eb-42b7-be3f-e2ca1ed5bbcb} event:/British Grenadiers
-{fb201237-d784-49f9-a828-1f4066362c7a} event:/Britons Struck Home
+
+# FRANCE
 {4c29c8a2-cd25-4240-9b43-38d14ae46668} event:/Chanson de l'Oignon
 {a63fdfe2-2495-487b-85b1-fc8c7bc136e9} event:/Chant du départ
-{14db0955-8a1c-443d-b494-a26751ef4bff} event:/Deutscher Militärmarsch
-{847b2f5d-5551-4d2b-b669-3628c6cd0cf6} event:/Heil dir im Siegerkranz
-{cd36e503-7066-47d0-9178-17e444508dd0} event:/It's a Long Way to Tipperary
 {50fa60d4-efa7-4922-8298-faed6232c0a6} event:/Le rêve passe
-{6d98395b-e3b5-4190-b2a1-0e3288d4e051} event:/Preußens Gloria
-{726f30ea-9ae1-484d-976d-67254fbd5333} event:/Rule Britannia
 {8fe8bde8-a22b-4c25-a615-2b81abcbcad7} event:/Verdun! On ne passe pas
-{2ddd0d24-bcde-4ea2-bdda-840e37012940} event:/Wo alle Straßen enden
-{f8d7bdcf-10af-4f85-93a7-5fb7e7714dfb} event:/Viribus Unitis-Marsch
-{89d5c81c-6410-4876-962b-d906010784e0} event:/Under the Double Eagle March
-{45304738-25c3-43f6-b8c9-6d5ffd7bde23} event:/Radetzky March
-{3f5d79e0-4494-4047-9b9c-3b581a649813} event:/Lesz, Lesz, Lesz!
-{6e382b51-c0e9-4bec-b989-35f509cfe6ce} event:/Esik az eső, ázik a heveder
 {86598fd6-bd1a-45a7-9f67-bfb8986c3677} event:/Ca ira Ca Ira Ca Ira
+
+# THE BRITISH EMPIRE
+{726f30ea-9ae1-484d-976d-67254fbd5333} event:/Rule Britannia
+{cd36e503-7066-47d0-9178-17e444508dd0} event:/It's a Long Way to Tipperary
+{62ed785c-07eb-42b7-be3f-e2ca1ed5bbcb} event:/British Grenadiers
+{fb201237-d784-49f9-a828-1f4066362c7a} event:/Britons Struck Home
 
 # OTTOMAN EMPIRE
 {670c941a-c0e0-4688-963a-17fed36b33eb} event:/Bu Bayrak
@@ -1152,3 +1147,22 @@
 {abf2eb88-9b11-4ce7-81f4-4a1c426d10b9} event:/I wish I was in Dixie
 {629619ee-dffc-444f-a31c-e4ed4dda448c} event:/Dixie ( Union )
 {d6d48621-e7ec-4d02-8e92-405bea93b639} event:/Battle Cry of Freedom
+
+# RUSSIAN EMPIRE
+{b3efcd6a-1554-4ef6-bc91-af2c6c207555} event:/The Internationale
+{c85c4028-77e0-44f6-88ac-a2849424bc9f} event:/Preobrazhensky March
+{31e213a6-4e06-4d9e-a4b3-26c7ef77d08c} event:/March of The Siberian Riflemen
+{2220821b-7c6f-4b1e-8702-e7c9a9fc4a45} event:/Farewell of Slavianska
+
+# AUSTRIA - HUNGARY
+{3f5d79e0-4494-4047-9b9c-3b581a649813} event:/Lesz, Lesz, Lesz!
+{6e382b51-c0e9-4bec-b989-35f509cfe6ce} event:/Esik az eső, ázik a heveder
+{45304738-25c3-43f6-b8c9-6d5ffd7bde23} event:/Radetzky March
+{f8d7bdcf-10af-4f85-93a7-5fb7e7714dfb} event:/Viribus Unitis-Marsch
+{89d5c81c-6410-4876-962b-d906010784e0} event:/Under the Double Eagle March
+
+# GERMANY
+{2ddd0d24-bcde-4ea2-bdda-840e37012940} event:/Wo alle Straßen enden
+{6d98395b-e3b5-4190-b2a1-0e3288d4e051} event:/Preußens Gloria
+{14db0955-8a1c-443d-b494-a26751ef4bff} event:/Deutscher Militärmarsch
+{847b2f5d-5551-4d2b-b669-3628c6cd0cf6} event:/Heil dir im Siegerkranz

@@ -1,0 +1,10 @@
+category = {
+    id = "Sleeppe_s_mod_category_7russian_songs"
+    name = "russian_songs_name"
+    tracks = {
+		"sleeppe_s_mod_the_internationale"
+		"sleeppe_s_mod_preobrazhensky_march"
+		"sleeppe_s_mod_march_of_the_siberian_riflemen"
+		"sleeppe_s_mod_farewell_of_slavianska"
+	}
+}
