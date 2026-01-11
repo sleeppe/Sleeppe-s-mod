@@ -21,13 +21,13 @@
 
 ##Modded JE's
 
- #net
+ #Dutch/Netherlands
  je_group_low_country_happenings:0 "Societal Changes"
  modifier_gateway_europe: "The Gateway To Europe Opened"
  je_rotterdam_port:0 "The Gateway to Europe?"
  je_rotterdam_port_reason:3 "With the recent surges in growth across the Contient, our beloved old Lady, Europe; and recent expasions of #yellow the Ports of Rotterdam #! we have essentially grown into a contiental trade hub that punches far above its weight.\nWe can use this newly found prominence to our leverage!\n\nBy opening our ports and making extensive use of new identification documents, we can surely convince many from overseas to move to the Netherlands and work here. We are few, so skilled foreignand especially cheap labour is a great for our economy. Let us make use of the two way tool that a Port is!"
 
- #italy
+ #Italy
  je_central_italy: "The United Provinces of Central Italy"
  je_central_italy_reason: "The [GetCulture('north_italian').GetName] and [GetCulture('south_italian').GetName] states are spurred on by the nationalism of post-napoleonic Europe, and look towards a leader in their struggle to unite the peninsula. Perhaps by taking some initiative we can show the petty Kingdoms and Duchies that we are that leader, leading towards a unified peninsula under the banner of #yellow Italy"
 
@@ -47,7 +47,7 @@
  march_of_the_thousand.1.f: ""Is it true? Are you those Piedmontian heroes we hear so much about? may i join you on your quest to unite Italy and restore glory to our lands!?""
  march_of_the_thousand.1.a: "And so the Mezzogiorno joins the fold"
 
-# romanian shit
+# Romanian JE Localization
  romanian_conference.0.t: "Romanians Press for union"
  romanian_conference.0.d: "Romanian delegates from the Congress of Paris put forward a proposal to unite their nations!"
  romanian_conference.0.f: ""To the Great Powers I say, for far too long have the romanian principalities been used as bargaining chips for petty feuds and conflicts, we must be able to assert ourselves as a free, independent people!""
