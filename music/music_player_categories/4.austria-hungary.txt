@@ -1,0 +1,11 @@
+category = {
+    id = "Sleeppe_s_mod_category_4austro_hungarian_songs"
+    name = "austro_hungarian_songs_name"
+    tracks = {
+		"sleeppe_s_mod_austrian_1"
+		"sleeppe_s_mod_austrian_2"
+		"sleeppe_s_mod_austrian_3"
+		"sleeppe_s_mod_hungarian_1"
+		"sleeppe_s_mod_hungarian_2"
+	}
+}

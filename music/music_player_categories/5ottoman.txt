@@ -1,0 +1,10 @@
+category = {
+    id = "Sleeppe_s_mod_category_5ottoman_songs"
+    name = "ottoman_songs_name"
+    tracks = {
+        "sleeppe_s_mod_ottoman_1"
+        "sleeppe_s_mod_ottoman_2"
+        "sleeppe_s_mod_ottoman_3"
+        "sleeppe_s_mod_ottoman_4"
+    }
+}

@@ -1,0 +1,256 @@
+sleeppe_s_mod_rule_britannia = {
+    music = "event:/Rule Britannia"
+    name = "sleeppe_s_mod_rule_britannia_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_british_grenadiers = {
+    music = "event:/British Grenadiers"
+    name = "sleeppe_s_mod_british_grenadiers_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_britons_struck_home = {
+    music = "event:/Britons Struck Home"
+    name = "sleeppe_s_mod_britons_struck_home_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_tipperary = {
+    music = "event:/It's a Long Way to Tipperary"
+    name = "sleeppe_s_mod_tipperary_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_deutscher = {
+    music = "event:/Deutscher Militärmarsch"
+    name = "sleeppe_s_mod_german1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_german2 = {
+    music = "event:/Heil dir im Siegerkranz"
+    name = "sleeppe_s_mod_german2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_german3 = {
+    music = "event:/Preußens Gloria"
+    name = "sleeppe_s_mod_german3_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_german4 = {
+    music = "event:/Wo alle Straßen enden"
+    name = "sleeppe_s_mod_german4_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_le_reve_passe = {
+    music = "event:/Le rêve passe"
+    name = "sleeppe_s_mod_le_reve_passe_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_chant_du_depart = {
+    music = "event:/Chant du départ"
+    name = "sleeppe_s_mod_chant_du_depart_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_chanson_de_oignon = {
+    music = "event:/Chanson de l'Oignon"
+    name = "sleeppe_s_mod_chanson_de_oignon_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_verdun_on_ne_passe_pas = {
+    music = "event:/Verdun! On ne passe pas"
+    name = "sleeppe_s_mod_verdun_on_ne_passe_pas_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ca_ira = {
+    music = "event:/Ca ira Ca Ira Ca Ira"
+    name = "sleeppe_s_mod_ca_ira_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+# AUSTRO - HUNGARIAN SONGS 
+
+sleeppe_s_mod_austrian_1 = {
+    music = "event:/Radetzky March"
+    name = "sleeppe_s_mod_austrian_1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_austrian_2 = {
+    music = "event:/Under the Double Eagle March"
+    name = "sleeppe_s_mod_austrian_2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_austrian_3 = {
+    music = "event:/Viribus Unitis-Marsch"
+    name = "sleeppe_s_mod_austrian_3_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_hungarian_1 = {
+    music = "event:/Esik az eső, ázik a heveder"
+    name = "sleeppe_s_mod_hungarian_1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_hungarian_2 = {
+    music = "event:/Lesz, Lesz, Lesz!"
+    name = "sleeppe_s_mod_hungarian_2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+
+# OTTOMAN SONGS
+
+sleeppe_s_mod_ottoman_1 = {
+    music = "event:/Bu Bayrak"
+    name = "sleeppe_s_mod_ottoman_1_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_2 = {
+    music = "event:/Ceddin Deden"
+    name = "sleeppe_s_mod_ottoman_2_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_3 = {
+    music = "event:/Kuffar"
+    name = "sleeppe_s_mod_ottoman_3_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_ottoman_4 = {
+    music = "event:/Plevne Marsi"
+    name = "sleeppe_s_mod_ottoman_4_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+# AMERICAN SONGS
+
+sleeppe_s_mod_yankee_doodle = {
+    music = "event:/Yankee Doodle"
+    name = "sleeppe_s_mod_yankee_doodle_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_over_there = {
+    music = "event:/Over There!"
+    name = "sleeppe_s_mod_over_there_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_dixie = {
+    music = "event:/I wish I was in Dixie"
+    name = "sleeppe_s_mod_dixie_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_dixie_union = {
+    music = "event:/Dixie ( Union )"
+    name = "sleeppe_s_mod_dixie_union_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_battle_cry_of_freedom = {
+    music = "event:/Battle Cry of Freedom"
+    name = "sleeppe_s_mod_battle_cry_of_freedom_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+# RUSSIAN SONGS
+
+sleeppe_s_mod_farewell_of_slavianska = {
+    music = "event:/Farewell of Slavianska"
+    name = "sleeppe_s_mod_farewell_of_slavianska_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_march_of_the_siberian_riflemen = {
+    music = "event:/March of The Siberian Riflemen"
+    name = "sleeppe_s_mod_march_of_the_siberian_riflemen_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_preobrazhensky_march = {
+    music = "event:/Preobrazhensky March"
+    name = "sleeppe_s_mod_preobrazhensky_march_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
+
+sleeppe_s_mod_the_internationale = {
+    music = "event:/The Internationale"
+    name = "sleeppe_s_mod_the_internationale_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = yes
+}
