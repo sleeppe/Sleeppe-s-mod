@@ -6,6 +6,7 @@
  company_van_houtum_en_palm: "Van Houtum en Palm"
  company_heineken: "Heineken Brouwerij"
  company_marzotto: "Lanificio Luigi Marzotto & Figli"
+ company_american_Milling: "Plain Millers' Monopoly"
 
 ##Modded Laws
  
@@ -64,13 +65,13 @@
  romanian_conference.2.d: "Romanian delegates press for Dobrogea in the Congress of Paris"
  romanian_conference.2.f: ""Dobrogea has suffered under the mismanagement of the Turkish menace, lack of investment and turkification threaten the Romanian countrymen. We must rectify this issue and I hope the Great powers sympathise with our plight!""
  romanian_conference.2.a: "We must accept this proposal"
- romanian_conference.2.b: "We must Reject this proposal"
+ romanian_conference.2.b: "We must reject this proposal"
 
  romanian_conference.3.t: "Romanians press for Transylvania"
  romanian_conference.3.d: "Romanian delegates press for Transylvania in the Congress of Paris"
  romanian_conference.3.f: ""I know there are doubters! I know people think it to be impossible, perhaps proposterous! but I say they are wrong. With your goodwill we can unite our people, even in the farthest stretches of Transylvania and take back our people from the suffering of Habsburg oppression""
  romanian_conference.3.a: "We must accept this proposal"
- romanian_conference.3.b: "We must Reject this proposal"
+ romanian_conference.3.b: "We must reject this proposal"
 
  je_romanian_proposal: "The Press for union"
  je_romanian_proposal_reason: "We must secure the will of the Great powers to unite with our Romanian brothers"
