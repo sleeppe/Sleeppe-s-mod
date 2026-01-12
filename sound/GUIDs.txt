@@ -1134,6 +1134,7 @@
 {cd36e503-7066-47d0-9178-17e444508dd0} event:/It's a Long Way to Tipperary
 {62ed785c-07eb-42b7-be3f-e2ca1ed5bbcb} event:/British Grenadiers
 {fb201237-d784-49f9-a828-1f4066362c7a} event:/Britons Struck Home
+{b75873d7-184b-4870-bf90-6e99a36a32d7} event:/Rule Britannia instrumental
 
 # OTTOMAN EMPIRE
 {670c941a-c0e0-4688-963a-17fed36b33eb} event:/Bu Bayrak
