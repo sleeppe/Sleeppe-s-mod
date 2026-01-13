@@ -1896,3 +1896,7 @@
 
  dyn_c_moldova_occupation: "Moldovan Occupation"
  dyn_c_wallachia_occupation: "Wallachian Occupation"
+
+ # Posen
+ PZN:0 "Grand Duchy of Posen"
+ PZN_ADJ:0 "Posenian"
