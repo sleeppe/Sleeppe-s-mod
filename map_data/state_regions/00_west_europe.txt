@@ -12,6 +12,7 @@
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_iron_mine = 60
+        building_coal_mine = 1
         building_lead_mine = 18
         building_logging_camp = 45
         building_fishing_wharf = 11
@@ -33,6 +34,7 @@ STATE_GOTALAND = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_iron_mine = 15
+        building_coal_mine = 5
         building_logging_camp = 25
         building_fishing_wharf = 15
     }
@@ -151,6 +153,7 @@ STATE_WESTERN_NORWAY = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_sulfur_mine = 20
+        building_coal_mine = 18
         building_logging_camp = 22
         building_fishing_wharf = 15
     }
@@ -194,6 +197,7 @@ STATE_EASTERN_NORWAY = {
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
         building_iron_mine = 18
+        building_coal_mine = 10
         building_logging_camp = 22
         building_fishing_wharf = 5
     }
@@ -891,6 +895,7 @@ STATE_GELRE = {
     arable_land = 40
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
+        building_iron_mine = 17
         building_coal_mine = 40
         building_logging_camp = 9
     }

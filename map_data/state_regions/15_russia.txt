@@ -65,6 +65,7 @@ STATE_COURLAND = {
     arable_land = 22
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
+        building_coal_mine = 4
         building_logging_camp = 7
         building_fishing_wharf = 6
     }
@@ -83,6 +84,7 @@ STATE_KAUNAS = {
     arable_land = 56
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
+        building_coal_mine = 3
         building_logging_camp = 8
         building_fishing_wharf = 2
     }
