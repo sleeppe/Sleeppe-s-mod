@@ -67,7 +67,7 @@ company_porceleyne_fles = {
 	}
 
 	extension_building_types = {
-		building_arts_academy
+		building_art_academy
 	}
 
 	possible_prestige_goods = {
@@ -146,7 +146,7 @@ company_van_houtum_en_palm = {
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_building_paper_mill
+				is_building_type = building_paper_mill
 				level >= 5
 			}
 		}

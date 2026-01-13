@@ -45,5 +45,19 @@
 			set_company_establishment_date = 1602.03.20
 			set_company_state_region = s:STATE_HOLLAND
 		}
+
+		add_journal_entry = {
+			type = je_dutch_fiscal_crisis
+		}
+
+		add_modifier = {
+			name = modifier_financial_crisis
+			months = 600 # 50 Years
+		}
+
+		set_variable = {
+			name = dutch_debt_progress
+			value = 0
+		}
 	}
 }

@@ -123,3 +123,7 @@ je_group_tutorial = {
 je_group_low_country_happenings = {
 	context = country
 }
+
+je_group_dutch_fiscal_crisis = {
+	context = country
+}
