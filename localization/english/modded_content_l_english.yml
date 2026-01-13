@@ -115,3 +115,6 @@
 
  #poland
  POL_FLAVOR_TEXT:0 "Poland was dissolved during and after the Napoleonic wars, and ever since Russia has tightened its grip. After an uprising earlier this decade Polands autonomy was severely curtailed. Will Poland draw closer to russia, or will they take an independent path from their historic enemy?"
+
+ law_sejmik_poland: "Local Sejmiks"
+ law_sejmik_poland_desc: "Local parliaments have varying power over local affairs, increasing democracy and efficacy of governing, but coming at the cost of bureaucratic efficiency"

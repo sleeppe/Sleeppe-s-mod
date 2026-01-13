@@ -2,7 +2,7 @@ COUNTRIES = {
 	c:POL ?= {
 		effect_starting_technology_tier_2_tech = yes
 		
-		set_tax_level = low # pre-Kankrin reform tax system
+		set_tax_level = low 
 
 		# Laws 
 		activate_law = law_type:law_monarchy
