@@ -208,7 +208,7 @@ JAP = {
 }
 
 ITA = {
-	color = { 125  171  84 }
+	color = { 58 87 33 }
 
 	country_type = recognized
 
@@ -343,7 +343,7 @@ NET = {
 }
 
 POR = {
-	color = { 28 82 148 }
+	color = { 26 61 30 }
 
 	country_type = recognized
 
@@ -543,7 +543,7 @@ HAM = {
 }
 
 HAN = {
-	color = { 164  217  127 }
+	color = { 101 133 78 }
 
 	country_type = recognized
 
@@ -740,7 +740,7 @@ PRA = { #Gao-Para
 }
 
 SAR = {
-	color = { 125  171  84 }
+	color = { 72 99 48 }
 
 	country_type = recognized
 
@@ -1792,7 +1792,7 @@ LAN = {
 }
 
 BRU = {
-	color = { 41  89  174 }
+	color = { 23 51 99 }
 
 	country_type = unrecognized
 
@@ -2410,7 +2410,7 @@ PRG = {
 }
 
 URU = {
-	color = { 131  101  85 }
+	color = { 84 57 43 }
 
 	country_type = recognized
 
