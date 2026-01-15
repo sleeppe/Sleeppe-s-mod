@@ -399,7 +399,7 @@ roman_rome = {
 }
 
 republican_france = {
-	color = { 10 52 105 }
+	color = { 0 27 61 }
 
 	possible = {
 		exists = c:FRA
@@ -413,7 +413,7 @@ republican_france = {
 }
 
 commune_france = {
-	color = "communist_france_red"
+	color = { 84 8 8 }
 
 	possible = {
 		exists = c:FRA
@@ -423,7 +423,7 @@ commune_france = {
 }
 
 empire_france = {
-	color = "bonapartist_blue"
+	color = { 17 30 47 }
 
 	possible = {
 		exists = c:FRA
