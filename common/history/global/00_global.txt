@@ -266,7 +266,7 @@ GLOBAL = {
 	c:NET ?= { # Historically 3.2:1 ratio of debt to yearly revenue
 		add_treasury = {
 			value = yearly_gross_income
-			multiply = -1.67
+			multiply = -1.80
 		}
 	}
 	#
