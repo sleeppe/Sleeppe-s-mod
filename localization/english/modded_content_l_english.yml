@@ -127,3 +127,15 @@
  je_polish_constitution_status: "Russia holds a firm grip on Poland"
 
  state_trait_vistula_river: "Vistula River"
+
+ #new modded laws
+ lawgroup_shifts: "Shift Work"
+ law_shifts1: "No formal shifts"
+ law_shifts2: "12 Hour shifts"
+ law_shifts3: "8 Hour shifts"
+ law_shifts4: "Union-Negotiated shifts"
+
+ law_shifts1_desc: "No formal shifts are negotiated, mandated or protected by law, meaning that workers are often exploited and industry is inefficiently managed due to overworking."
+ law_shifts2_desc: "12 Hour shifts are the most common taken on by industries, and the state guarantees this to protect from near slave-like conidtions in the factories. Industrialists benefit from 24/7 work, and workers benefit from less hours."
+ law_shifts3_desc: "8 Hour shifts are protected by the state, protecting workers from the worst conditions of overworking."
+ law_shifts4_desc: "Shifts are negotiated between unions and their factory management, this protects the rights of workers to have a fair days work within manageable conditions. This also increases the influence of unions as they are the primary form of negotiation in working hours."
