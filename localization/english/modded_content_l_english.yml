@@ -118,3 +118,11 @@
 
  law_sejmik_poland: "Local Sejmiks"
  law_sejmik_poland_desc: "Local parliaments have varying power over local affairs, increasing democracy and efficacy of governing, but coming at the cost of bureaucratic efficiency"
+
+ geographic_region_poland: "Poland"
+
+ je_polish_constitution: "The Matter of Poland"
+ je_polish_constitution_lobby: "Poland stands defiant of the oppression imposed upon them by foreign empires. yet, their efforts have been quashed, and liberal reforms destroyed"
+ je_polish_constitution_reason: "[ROOT.GetCountry.GetName] was a compromise invention, created in the Congress of Vienna to have one of the most liberal regimes in Europe in order to check the power of the russian Tsar. After a rebellion in 1830 Poland was stripped of practically all of its autonomy, and Russia continues to encroach on [ROOT.GetCountry.GetAdjectiveNoFlag] sovereignty. Yet the [ROOT.GetCountry.GetAdjectiveNoFlag] people yearn for independence, as well as a return to their liberal constitution. Perhaps we can attempt to undermine the Russians and reassert not only our constitution, but our independence."
+ je_polish_constitution_status: "Russia holds a firm grip on Poland"
+

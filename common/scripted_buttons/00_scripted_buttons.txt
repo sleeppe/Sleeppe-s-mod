@@ -1224,3 +1224,72 @@ je_unite_the_principalities_button3 = {
 		}
 	}
 }
+
+je_polish_constitution_button1 = {
+	name = "je_polish_constitution_button1"
+	desc = "je_polish_constitution_button1_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+	}
+
+	effect = {
+	}
+}
+
+je_polish_constitution_button2 = {
+	name = "je_polish_constitution_button2"
+	desc = "je_polish_constitution_button2_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+	}
+
+	effect = {
+	}
+}
+
+je_polish_constitution_button3 = {
+	name = "je_polish_constitution_button3"
+	desc = "je_polish_constitution_button3_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+	}
+
+	effect = {
+	}
+}
+
+je_polish_constitution_button4 = {
+	name = "je_polish_constitution_button4"
+	desc = "je_polish_constitution_button4_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+	}
+
+	effect = {
+	}
+}
+
