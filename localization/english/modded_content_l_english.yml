@@ -6,6 +6,7 @@
  company_van_houtum_en_palm: "Van Houtum en Palm"
  company_heineken: "Heineken Brouwerij"
  company_marzotto: "Lanificio Luigi Marzotto & Figli"
+ company_american_Milling: "Plain Millers' Monopoly"
 
 ##Modded Laws
  
@@ -21,7 +22,7 @@
 
 ##Modded JE's
 
- #net
+ #Dutch/Netherlands
  je_group_low_country_happenings:0 "Societal Changes"
  modifier_gateway_europe: "The Gateway To Europe Opened"
  je_rotterdam_port:0 "The Gateway to Europe?"
@@ -46,7 +47,7 @@
  dutch_debt_addition.3.a: "We cured the Boils, but at what cost..."
  modifier_naughty_netherlands: "The Stock Exchange Crashed!"
 
- #italy
+ #Italy
  je_central_italy: "The United Provinces of Central Italy"
  je_central_italy_reason: "The [GetCulture('north_italian').GetName] and [GetCulture('south_italian').GetName] states are spurred on by the nationalism of post-napoleonic Europe, and look towards a leader in their struggle to unite the peninsula. Perhaps by taking some initiative we can show the petty Kingdoms and Duchies that we are that leader, leading towards a unified peninsula under the banner of #yellow Italy"
 
@@ -66,7 +67,7 @@
  march_of_the_thousand.1.f: ""Is it true? Are you those Piedmontian heroes we hear so much about? may i join you on your quest to unite Italy and restore glory to our lands!?""
  march_of_the_thousand.1.a: "And so the Mezzogiorno joins the fold"
 
-# romanian shit
+# Romanian JE Localization
  romanian_conference.0.t: "Romanians Press for union"
  romanian_conference.0.d: "Romanian delegates from the Congress of Paris put forward a proposal to unite their nations!"
  romanian_conference.0.f: ""To the Great Powers I say, for far too long have the romanian principalities been used as bargaining chips for petty feuds and conflicts, we must be able to assert ourselves as a free, independent people!""
@@ -83,13 +84,13 @@
  romanian_conference.2.d: "Romanian delegates press for Dobrogea in the Congress of Paris"
  romanian_conference.2.f: ""Dobrogea has suffered under the mismanagement of the Turkish menace, lack of investment and turkification threaten the Romanian countrymen. We must rectify this issue and I hope the Great powers sympathise with our plight!""
  romanian_conference.2.a: "We must accept this proposal"
- romanian_conference.2.b: "We must Reject this proposal"
+ romanian_conference.2.b: "We must reject this proposal"
 
  romanian_conference.3.t: "Romanians press for Transylvania"
  romanian_conference.3.d: "Romanian delegates press for Transylvania in the Congress of Paris"
  romanian_conference.3.f: ""I know there are doubters! I know people think it to be impossible, perhaps proposterous! but I say they are wrong. With your goodwill we can unite our people, even in the farthest stretches of Transylvania and take back our people from the suffering of Habsburg oppression""
  romanian_conference.3.a: "We must accept this proposal"
- romanian_conference.3.b: "We must Reject this proposal"
+ romanian_conference.3.b: "We must reject this proposal"
 
  je_romanian_proposal: "The Press for union"
  je_romanian_proposal_reason: "We must secure the will of the Great powers to unite with our Romanian brothers"

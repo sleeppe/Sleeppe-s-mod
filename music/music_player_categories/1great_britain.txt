@@ -1,0 +1,11 @@
+category = {
+    id = "Sleeppe_s_mod_category_1british_songs"
+    name = "british_songs_name"
+    tracks = {
+        "sleeppe_s_mod_rule_britannia"
+        "sleeppe_s_mod_british_grenadiers"
+        "sleeppe_s_mod_britons_struck_home"
+        "sleeppe_s_mod_tipperary"
+        "sleeppe_s_mod_rule_britannia_instrumental"
+    }
+}

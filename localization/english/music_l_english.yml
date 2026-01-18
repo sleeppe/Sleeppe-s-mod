@@ -1,0 +1,97 @@
+﻿l_english:
+ victoria_3_soundtrack:0 "Victoria 3 Soundtrack"
+ 01_A_Prospering_Country:0 "A Prospering Country"
+ 02_Rule_The_World:0 "Rule The World"
+ 03_Adagio_For_Four_Strings:0 "Adagio For Four Strings"
+ 04_At_The_Country_Manor:0 "At The Country Manor"
+ 05_Benedicte:0 "Benedicte"
+ 06_England_1850:0 "England 1850"
+ 07_Moonlight_Waltz:0 "Moonlight Waltz"
+ 08_Our_New_Residence:0 "Our New Residence"
+ 09_Over_The_Calm_Ocean:0 "Over The Calm Ocean"
+ 10_Quite_Noble_Festivities:0 "Quite Noble Festivities"
+ 11_Remembering_Prince_Albert:0 "Remembering Prince Albert"
+ 12_Sunrise_Over_London:0 "Sunrise Over London"
+ 13_Sunset_Over_Windsor_Castle:0 "Sunset Over Windsor Castle"
+ 14_Tea_Time:0 "Tea Time"
+ 15_The_Queen_Is_Actually_Amused:0 "The Queen Is Actually Amused"
+ 16_To_Build_A_Factory:0 "To Build A Factory"
+ 17_Asset_Gathering:0 "Asset Gathering"
+ 18_British_Soil:0 "British Soil"
+ 19_Death_March:0 "Death March"
+ 20_Glory_To_The_Queen:0 "Glory To The Queen"
+ victoria_3_preorder:1 "Victoria 2 Soundtrack"
+ 01_For_God_and_Queen:0 "For God and Queen"
+ 02_Coronation:0 "Coronation"
+ 03_Buckingham_Palace:0 "Buckingham Palace"
+ 04_Europe_Anno_1850:0 "Europe Anno 1850"
+ 05_Johans_Waltz:0 "Johans Waltz"
+ 06_A_Day_at_the_Court:0 "A Day at the Court"
+ 07_New_World_Anthem:0 "New World Anthem"
+ 08_We_Have_Independence:0 "We Have Independence"
+ 09_Handel_This:0 "Handel This"
+ 10_Inventions:0 "Inventions"
+ 11_Poverty:0 "Poverty"
+ 12_Queens_Scherzo:0 "Queens Scherzo"
+ 13_Royal_March:0 "Royal March"
+ 14_Death_of_Prince_Albert:0 "Death of Prince Albert"
+ 15_Countryside:0 "Countryside"
+ 16_Russia_1917:0 "Russia 1917"
+ 17_Winter:0 "Winter"
+
+# CATEGORY NAMES
+
+british_songs_name:0 "1. British Songs"
+german_songs_name:0 "2. German Songs"
+french_songs_name:0 "3. French Songs"
+austro_hungarian_songs_name:0 "4. Austro-Hungarian Songs"
+ottoman_songs_name:0 "5. Ottoman Songs"
+american_songs_name:0 "6. American Songs"
+russian_songs_name:0 "7. Russian Songs"
+
+# SONG NAMES
+
+# BRITAIN
+sleeppe_s_mod_rule_britannia_name:0 "Rule Britannia"
+sleeppe_s_mod_british_grenadiers_name:0 "British Grenadiers"
+sleeppe_s_mod_britons_struck_home_name:0 "Britons Struck Home"
+sleeppe_s_mod_tipperary_name:0 "It's a Long Way to Tipperary"
+
+# GERMANY
+sleeppe_s_mod_german1_name:0 "Admiral der Lüfte"
+sleeppe_s_mod_german2_name:0 "Heil dir im Siegerkranz"
+sleeppe_s_mod_german3_name:0 "Preußens Gloria"
+sleeppe_s_mod_german4_name:0 "Wo alle Straßen enden"
+
+# FRANCE
+sleeppe_s_mod_le_reve_passe_name:0 "Le rêve passe"
+sleeppe_s_mod_chant_du_depart_name:0 "Chant du départ"
+sleeppe_s_mod_chanson_de_oignon_name:0 "Chanson de l'Oignon"
+sleeppe_s_mod_verdun_on_ne_passe_pas_name:0 "Verdun! On ne passe pas"
+sleeppe_s_mod_ca_ira_name:0 "Ça Ira"
+
+# AUSTRIA-HUNGARY
+sleeppe_s_mod_austrian_1_name:0 "Radetzky March"
+sleeppe_s_mod_austrian_2_name:0 "Under the Double Eagle March"
+sleeppe_s_mod_austrian_3_name:0 "Viribus Unitis-Marsch"
+sleeppe_s_mod_hungarian_1_name:0 "Esik az eső, ázik a heveder"
+sleeppe_s_mod_hungarian_2_name:0 "Lesz, Lesz, Lesz!"
+
+# OTTOMAN EMPIRE
+sleeppe_s_mod_ottoman_1_name:0 "Bu Bayrak"
+sleeppe_s_mod_ottoman_2_name:0 "Ceddin Deden"
+sleeppe_s_mod_ottoman_3_name:0 "Küffar"
+sleeppe_s_mod_ottoman_4_name:0 "Plevne Marşi"
+
+# USA
+sleeppe_s_mod_battle_cry_of_freedom_name:0 "Battle Cry of Freedom"
+sleeppe_s_mod_dixie_union_name:0 "Dixie ( Union )"
+sleeppe_s_mod_dixie_name:0 "I Wish I Was In Dixie"
+sleeppe_s_mod_over_there_name:0 "Over There!"
+sleeppe_s_mod_yankee_doodle_name:0 "Yankee Doodle"
+
+# RUSSIA
+sleeppe_s_mod_farewell_of_slavianska_name:0 "Farewell of Slavianska"
+sleeppe_s_mod_march_of_the_siberian_riflemen_name:0 "March of the Siberian Riflemen"
+sleeppe_s_mod_preobrazhensky_march_name:0 "Preobrazhensky March"
+sleeppe_s_mod_the_internationale_name:0 "The Internationale"

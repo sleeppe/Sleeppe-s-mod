@@ -1,0 +1,11 @@
+category = {
+    id = "Sleeppe_s_mod_category_6american_songs"
+    name = "american_songs_name"
+    tracks = {
+		"sleeppe_s_mod_battle_cry_of_freedom"
+		"sleeppe_s_mod_dixie_union"
+		"sleeppe_s_mod_dixie"
+		"sleeppe_s_mod_over_there"
+		"sleeppe_s_mod_yankee_doodle"
+	}
+}
