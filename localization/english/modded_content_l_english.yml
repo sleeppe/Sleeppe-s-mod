@@ -126,3 +126,4 @@
  je_polish_constitution_reason: "[ROOT.GetCountry.GetName] was a compromise invention, created in the Congress of Vienna to have one of the most liberal regimes in Europe in order to check the power of the russian Tsar. After a rebellion in 1830 Poland was stripped of practically all of its autonomy, and Russia continues to encroach on [ROOT.GetCountry.GetAdjectiveNoFlag] sovereignty. Yet the [ROOT.GetCountry.GetAdjectiveNoFlag] people yearn for independence, as well as a return to their liberal constitution. Perhaps we can attempt to undermine the Russians and reassert not only our constitution, but our independence."
  je_polish_constitution_status: "Russia holds a firm grip on Poland"
 
+ state_trait_vistula_river: "Vistula River"
