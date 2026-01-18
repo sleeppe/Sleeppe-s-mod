@@ -58,7 +58,7 @@ yellow_prussia = {
 }
 
 imperial_korea = {
-	color = "korean_empire_purple"
+	color = { 67 81 99 }
 
 	possible = {
 		exists = c:KOR
@@ -69,7 +69,7 @@ imperial_korea = {
 }
 
 korea_monarchy_blue = {
-	color = "joseon_blue"
+	color = { 31 50 77 }
 	possible = {
 		exists = c:KOR
 		c:KOR ?= THIS
@@ -81,7 +81,7 @@ korea_monarchy_blue = {
 }
 
 japanese_shogunate = {
-	color = "tokugawa_green"
+	color = { 42 66 45 }
 	possible = {
 		exists = c:JAP
 		c:JAP ?= THIS
@@ -186,7 +186,7 @@ communist_austria = {
 }
 
 imperial_japan = {
-	color = "white"
+	color = { 140 140 140 }
 
 	possible = {
 		exists = c:JAP
@@ -399,7 +399,7 @@ roman_rome = {
 }
 
 republican_france = {
-	color = { 10 52 105 }
+	color = { 0 27 61 }
 
 	possible = {
 		exists = c:FRA
@@ -413,7 +413,7 @@ republican_france = {
 }
 
 commune_france = {
-	color = "communist_france_red"
+	color = { 84 8 8 }
 
 	possible = {
 		exists = c:FRA
@@ -423,7 +423,7 @@ commune_france = {
 }
 
 empire_france = {
-	color = "bonapartist_blue"
+	color = { 17 30 47 }
 
 	possible = {
 		exists = c:FRA
