@@ -3744,15 +3744,31 @@ STATES = {
 	}
 	s:STATE_WALLONIA = {
 		create_state = {
-			country = c:LUX
-			owned_provinces = { xD001A0 }
-		}
-		create_state = {
 			country = c:BEL
-			owned_provinces = { xB0A0C0 x916574 x2D32D7 x8080A0 xEF2040 x3A5FB9 x5180A0 }
+			owned_provinces = { x3A5FB9 x916574 xEF2040 }
 		}
 
 		add_homeland = cu:wallonian
+		add_claim = c:NET
+	}
+	s:STATE_WEST_WALLONIA = {
+		create_state = {
+			country = c:BEL
+			owned_provinces = { x2D32D7 xB0A0C0 x8080A0  }
+		}
+
+		add_homeland = cu:wallonian
+		add_claim = c:NET
+	}
+	s:STATE_LUXEMBERG = {
+		create_state = {
+			country = c:LUX
+			owned_provinces = { xD001A0 x5180A0 }
+		}
+
+		add_homeland = cu:wallonian
+		add_homeland = cu:french
+		add_homeland = cu:north_german
 		add_claim = c:NET
 	}
 	s:STATE_FLANDERS = {
@@ -6938,6 +6954,15 @@ STATES = {
 		}
 		add_homeland = cu:han
 	}
+	s:STATE_WESTERN_MANCHURIA = {
+		create_state = {
+			country = c:CHI
+			owned_provinces = {
+				x45139C xF5B726 x601436 x205BDC xAD1C65 x5DEC3D x35B5D1 x24EFE1 xFD0842 x2F0832 x55F9B4 x123862 xCE4FAC x4E8F6B xFF1F93 x6018AE xCAE219 x48CB19 x14B65A x367825 x771A9C x6EA4B4 xCE9058 xF5F399 x6BFF9D xDBA5F1 x666827 x3650A5 x4F7D66 x879FAD xD9107C xCB1B7A x8B4B0F xC2EAB6 xBE06BF x62321E x1A9CDB xA02978 xA008AE x5F795B xB17E6B x49C04A x6A5736 x58AFAC xF1EF03 x762B45 x777A4F x2AD313 x3E9C33 x1E1B11 xD13996 xE60560 xAF5387 xC7BB4D xC905ED x4BECCA xED840A xCC917E x3A340B x4ED08B x2BA1CE x6376AC xFBDEDF x248784 x6AB0FB x3C6EFC xAA031A xBCF72D x2C0AC4 x0DC804 x0F88C8 x132B15 x84B446 x8D47D0 x0E8D56 x3F46FB xBDC299 x88FF71 x61E0DD xCDCDEE xF151F1 xB00D9D xB6039C xD4E0E8 xA0662C x15C9C0 x5D4C2D x0F5604 x6583A6 x89DBF2 x74DF28 xD1BFAF
+			}
+		}
+		add_homeland = cu:manchu
+	}
 	s:STATE_SHENGJING = {
 		create_state = {
 			country = c:CHI
@@ -6945,7 +6970,6 @@ STATES = {
 				x04FCF3 x167EE8 x169772 x20E6F2 x311D9E x474AF5 x5C7F26 x5DC943 x61D001 x6707A1 x68FAEC x709001 x7E008D x7F79DA x8D1556 x955331 x964A4F xA202E9 xB75C7A xC7B981 xCD72A9 xCEB565 xCF4570 xD0B789 xD7F9BA xE01101 xE05101 xE7363A xE9E896 xE9FEDB xEFCA02 xF6155A
 			}
 		}
-		add_homeland = cu:han
 		add_homeland = cu:manchu
 	}
 	s:STATE_OUTER_MANCHURIA = {

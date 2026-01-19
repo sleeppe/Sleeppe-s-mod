@@ -335,21 +335,25 @@
 		region_state:CHI = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 11597600
+				size = 4000000
 			}
 			create_pop = {
 				culture = han # nanfaren
 				size = 3001021
 				religion = mahayana
 			}
+		}
+	}
+	s:STATE_WESTERN_MANCHURIA = {
+		region_state:CHI = {
 			create_pop = {
-				culture = han # nanfaren
-				religion = sunni
-				size = 348400
+				culture = manchu # nanfaren
+				size = 11597600
 			}
 			create_pop = {
-				culture = manchu
-				size = 81994
+				culture = han # nanfaren
+				size = 3001021
+				religion = mahayana
 			}
 		}
 	}
