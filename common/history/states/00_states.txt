@@ -8063,7 +8063,7 @@ STATES = {
 	s:STATE_EAST_PRUSSIA = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x1E73B9 x2399A2 x40A0A0 x4121A0 x5428E6 x72FDF3 x975566 x981EBE xABC4AE xC020A0 xC04521 }
+			owned_provinces = { x1E73B9 x2399A2 x40A0A0 x4121A0 x72FDF3 x975566 x981EBE xC020A0 }
 		}
 
 		add_homeland = cu:north_german
@@ -8073,7 +8073,7 @@ STATES = {
 	s:STATE_ERMLAND_MASUREN = {
 		create_state = {
 			country = c:PRU
-			owned_provinces = { xAEA6D6 x7D6DC3 x47C900 xEEF586 xBF9F20 x9FD037 x7A6061 x6E8875 }
+			owned_provinces = { xAEA6D6 x7D6DC3 x47C900 xEEF586 xBF9F20 x9FD037 x7A6061 x6E8875 x5428E6 xABC4AE xC04521 }
 		}
 
 		add_homeland = cu:north_german
