@@ -128,6 +128,26 @@
 
  state_trait_vistula_river: "Vistula River"
 
+ je_polish_constitution_button1: "Begin Reinstating the Constitution"
+ je_polish_constitution_button1_desc: "The cornerstone of the constitution given to the poles at vienna was its extremely liberal views on suffrage, if we were to bring the vote back to the people, then perhaps we can begin to undermine the Tsar"
+
+ je_polish_constitution_button2: "Bring Power Back to the Sejmiks"
+ je_polish_constitution_button2_desc: "Local Sejmiks have historically been a unique quirk of polish democracy, by reinstating them we can not only bring democracy to the people, but also reinforce out independent governance from the Tsar"
+
+ je_polish_constitution_button3: "Protect the Peasants"
+ je_polish_constitution_button3_desc: "Despite Polands long history of democracy, this has not always served the common people. In order to protect the peasantry, we must place them under protection by the state: much alike the constituion of 1791"
+
+ je_polish_constitution_button4: "Press for Krakow"
+ je_polish_constitution_button4_desc: "Though we are unlikely to be successful, we must make an effort to reclaim our southern capital: if only for the national pride"
+
+ law_state_serfs: "State Oversight"
+ law_state_serfs_desc: "Peasants are nominally owned by their landholders, yet due to the intervention of the state they have the rights to quit work, are guaranteed working conditions and in many cases are allowed to homestead on spare plots of land"
+
+ polish_constitution.1.t: "The Past and, The Future"
+ polish_constitution.1.f: ""
+ polish_constitution.1.a: ""
+ polish_constitution.1.b: ""
+
  #new modded laws
  lawgroup_shifts: "Shift Work"
  law_shifts1: "No formal shifts"

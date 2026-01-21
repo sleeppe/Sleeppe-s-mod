@@ -1,0 +1,32 @@
+namespace = polish_constitution
+
+polish_constitution.1 = {
+	type = country_event
+	placement = root
+
+	title = polish_constitution.1.t
+	desc = polish_constitution.1.d # probably want a triggered desc here
+	flavor = polish_constitution.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = polish_constitution.1.a
+		default_option = yes
+		activate_law = law_type:law_wealth_voting
+	}
+	option = {
+		name = polish_constitution.1.b
+		activate_law = law_type:law_census_voting
+	}
+}

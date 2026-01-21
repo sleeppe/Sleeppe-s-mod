@@ -28,5 +28,9 @@ COUNTRIES = {
 		c:RUS ?= {
             save_scope_as = russia_scope
         }
+
+		add_journal_entry = {
+			type = je_polish_constitution
+		}
 	}
 }

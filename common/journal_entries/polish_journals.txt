@@ -21,6 +21,7 @@ je_polish_constitution = {
 	scripted_button = je_polish_constitution_button4
 
 	complete = {
+		is_subject = no
 	}
 
 	on_complete = {
@@ -30,11 +31,6 @@ je_polish_constitution = {
     }
 
 	fail = {
-		NOT = {
-			is_subject_of = c:RUS
-			is_subject_of = c:AUS
-			is_subject_of = c:PRU
-		}
 	}
 
 
