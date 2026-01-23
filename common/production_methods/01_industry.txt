@@ -2675,3 +2675,39 @@ pm_assembly_lines_building_munition_plant = {
 
 	required_input_goods = electricity
 }
+
+pm_management1 = {
+	texture = "gfx/interface/icons/production_method_icons/unused/appointed_bureaucrats.dds"
+
+	state_modifiers = {
+	}
+
+	unlocking_technologies = {
+	}
+
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_laborers_add = -300
+			building_employment_bureaucrats_add = 50
+		}
+	}
+}
+
+pm_management2 = {
+	texture = "gfx/interface/icons/production_method_icons/unused/elected_bureaucrats.dds"
+
+	state_modifiers = {
+	}
+
+	unlocking_technologies = {
+	}
+
+	building_modifiers = {
+
+		level_scaled = {
+			building_employment_laborers_add = -600
+			building_employment_bureaucrats_add = 100
+		}
+	}
+}
