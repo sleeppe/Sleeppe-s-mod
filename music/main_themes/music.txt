@@ -1,4 +1,4 @@
 sleeppe_s_mod_rule_britannia_instrumental = {
     music = "event:/Rule Britannia instrumental"
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
