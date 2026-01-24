@@ -17,6 +17,8 @@ company_amsterdamse_effectenbeurs = {
 	building_types = {
 		building_trade_center
 		building_port
+		building_shipyard
+		building_military_shipyard
 	}
 
 	extension_building_types = {
@@ -38,6 +40,7 @@ company_amsterdamse_effectenbeurs = {
 	prosperity_modifier = {
 		country_loan_interest_rate_mult = -0.10
 		state_trade_capacity_mult = 0.03
+		building_trade_center_throughput_add = 0.15
 		state_capitalists_investment_pool_efficiency_mult = 0.05
 		country_max_companies_add = 1
 	}
@@ -67,7 +70,7 @@ company_porceleyne_fles = {
 	}
 
 	extension_building_types = {
-		building_arts_academy
+		building_art_academy
 	}
 
 	possible_prestige_goods = {
@@ -146,7 +149,7 @@ company_van_houtum_en_palm = {
 			}
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_building_paper_mill
+				is_building_type = building_paper_mill
 				level >= 5
 			}
 		}
