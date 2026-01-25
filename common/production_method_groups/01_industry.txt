@@ -358,6 +358,7 @@ pmg_automation_management = {
 	ai_selection = most_productive
 
 	production_methods = {
+		pm_management
 		pm_management1
 		pm_management2
 	}

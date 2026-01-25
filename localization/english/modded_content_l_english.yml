@@ -159,3 +159,9 @@
  law_shifts2_desc: "12 Hour shifts are the most common taken on by industries, and the state guarantees this to protect from near slave-like conidtions in the factories. Industrialists benefit from 24/7 work, and workers benefit from less hours."
  law_shifts3_desc: "8 Hour shifts are protected by the state, protecting workers from the worst conditions of overworking."
  law_shifts4_desc: "Shifts are negotiated between unions and their factory management, this protects the rights of workers to have a fair days work within manageable conditions. This also increases the influence of unions as they are the primary form of negotiation in working hours."
+
+# PM's
+ pmg_automation_management: "Management Structure"
+ pm_management: "No Management Structure"
+ pm_management1: "Simple Structures"
+ pm_management2: "Corporate Governance"
