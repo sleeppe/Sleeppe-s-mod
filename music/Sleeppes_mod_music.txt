@@ -3,7 +3,7 @@ sleeppe_s_mod_rule_britannia = {
     name = "sleeppe_s_mod_rule_britannia_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_british_grenadiers = {
@@ -11,7 +11,7 @@ sleeppe_s_mod_british_grenadiers = {
     name = "sleeppe_s_mod_british_grenadiers_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_britons_struck_home = {
@@ -19,7 +19,7 @@ sleeppe_s_mod_britons_struck_home = {
     name = "sleeppe_s_mod_britons_struck_home_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_tipperary = {
@@ -27,7 +27,7 @@ sleeppe_s_mod_tipperary = {
     name = "sleeppe_s_mod_tipperary_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_deutscher = {
@@ -35,7 +35,7 @@ sleeppe_s_mod_deutscher = {
     name = "sleeppe_s_mod_german1_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_german2 = {
@@ -43,7 +43,7 @@ sleeppe_s_mod_german2 = {
     name = "sleeppe_s_mod_german2_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_german3 = {
@@ -51,7 +51,7 @@ sleeppe_s_mod_german3 = {
     name = "sleeppe_s_mod_german3_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_german4 = {
@@ -59,7 +59,7 @@ sleeppe_s_mod_german4 = {
     name = "sleeppe_s_mod_german4_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_le_reve_passe = {
@@ -67,7 +67,7 @@ sleeppe_s_mod_le_reve_passe = {
     name = "sleeppe_s_mod_le_reve_passe_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_chant_du_depart = {
@@ -75,7 +75,7 @@ sleeppe_s_mod_chant_du_depart = {
     name = "sleeppe_s_mod_chant_du_depart_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_chanson_de_oignon = {
@@ -83,7 +83,7 @@ sleeppe_s_mod_chanson_de_oignon = {
     name = "sleeppe_s_mod_chanson_de_oignon_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_verdun_on_ne_passe_pas = {
@@ -91,7 +91,7 @@ sleeppe_s_mod_verdun_on_ne_passe_pas = {
     name = "sleeppe_s_mod_verdun_on_ne_passe_pas_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_ca_ira = {
@@ -99,7 +99,7 @@ sleeppe_s_mod_ca_ira = {
     name = "sleeppe_s_mod_ca_ira_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 # AUSTRO - HUNGARIAN SONGS 
@@ -109,7 +109,7 @@ sleeppe_s_mod_austrian_1 = {
     name = "sleeppe_s_mod_austrian_1_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_austrian_2 = {
@@ -117,7 +117,7 @@ sleeppe_s_mod_austrian_2 = {
     name = "sleeppe_s_mod_austrian_2_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_austrian_3 = {
@@ -125,7 +125,7 @@ sleeppe_s_mod_austrian_3 = {
     name = "sleeppe_s_mod_austrian_3_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_hungarian_1 = {
@@ -133,7 +133,7 @@ sleeppe_s_mod_hungarian_1 = {
     name = "sleeppe_s_mod_hungarian_1_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_hungarian_2 = {
@@ -141,7 +141,7 @@ sleeppe_s_mod_hungarian_2 = {
     name = "sleeppe_s_mod_hungarian_2_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 
@@ -152,7 +152,7 @@ sleeppe_s_mod_ottoman_1 = {
     name = "sleeppe_s_mod_ottoman_1_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_ottoman_2 = {
@@ -160,7 +160,7 @@ sleeppe_s_mod_ottoman_2 = {
     name = "sleeppe_s_mod_ottoman_2_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_ottoman_3 = {
@@ -168,7 +168,7 @@ sleeppe_s_mod_ottoman_3 = {
     name = "sleeppe_s_mod_ottoman_3_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_ottoman_4 = {
@@ -176,7 +176,7 @@ sleeppe_s_mod_ottoman_4 = {
     name = "sleeppe_s_mod_ottoman_4_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 # AMERICAN SONGS
@@ -186,7 +186,7 @@ sleeppe_s_mod_yankee_doodle = {
     name = "sleeppe_s_mod_yankee_doodle_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_over_there = {
@@ -194,7 +194,7 @@ sleeppe_s_mod_over_there = {
     name = "sleeppe_s_mod_over_there_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_dixie = {
@@ -202,7 +202,7 @@ sleeppe_s_mod_dixie = {
     name = "sleeppe_s_mod_dixie_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_dixie_union = {
@@ -210,7 +210,7 @@ sleeppe_s_mod_dixie_union = {
     name = "sleeppe_s_mod_dixie_union_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_battle_cry_of_freedom = {
@@ -218,7 +218,7 @@ sleeppe_s_mod_battle_cry_of_freedom = {
     name = "sleeppe_s_mod_battle_cry_of_freedom_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 # RUSSIAN SONGS
@@ -228,7 +228,7 @@ sleeppe_s_mod_farewell_of_slavianska = {
     name = "sleeppe_s_mod_farewell_of_slavianska_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_march_of_the_siberian_riflemen = {
@@ -236,7 +236,7 @@ sleeppe_s_mod_march_of_the_siberian_riflemen = {
     name = "sleeppe_s_mod_march_of_the_siberian_riflemen_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_preobrazhensky_march = {
@@ -244,7 +244,7 @@ sleeppe_s_mod_preobrazhensky_march = {
     name = "sleeppe_s_mod_preobrazhensky_march_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
 
 sleeppe_s_mod_the_internationale = {
@@ -252,5 +252,5 @@ sleeppe_s_mod_the_internationale = {
     name = "sleeppe_s_mod_the_internationale_name"
     pause_factor = 50
     mood = yes
-    can_be_interrupted = yes
+    can_be_interrupted = no
 }
