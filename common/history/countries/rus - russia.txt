@@ -36,6 +36,10 @@
 			is_decaying = yes
 		}
 
+		scope:ruler_scope = {
+			save_scope_as = russian_ruler_scope
+		}
+
 		add_journal_entry = {
 			type = je_russian_absolutism
 		}

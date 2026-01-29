@@ -3,6 +3,11 @@ je_russian_absolutism = {
 
 	group = je_group_historical_content
 
+	scripted_progress_bar = russian_absolutism_progress_bar
+
+	custom_failure_header = russian_absolutism_failure
+	custom_completion_header = russian_absolutism_completion
+
 	immediate = {
 		set_global_variable = {
             name = absolutism_var
@@ -26,6 +31,26 @@ je_russian_absolutism = {
 	}
 
 	complete = {
+		OR = {
+			AND = {
+				custom_tooltip = {
+				text = nikolai_is_dead
+				ruler = {
+				exists = yes
+				NOT = { has_template = RUS_nicholas_i }
+				}
+				}
+			}
+			NOT = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+			custom_tooltip = {
+			text = je_russian_absolutism_complete_tt
+			scope:journal_entry ?= {
+				"scripted_bar_progress(russian_absolutism_progress_bar)" >= 200
+			}
+		}
+		}
 	}
 
 	on_complete = {
@@ -35,6 +60,10 @@ je_russian_absolutism = {
     }
 
 	fail = {
+		custom_tooltip = {
+			text = je_russian_absolutism_fail_tt
+			year >1848
+		}
 	}
 
 
@@ -42,12 +71,6 @@ je_russian_absolutism = {
 	}
 
 	should_be_pinned_by_default = yes
-
-	progressbar = yes
-
-	goal_add_value = {
-		value = 100
-	}
 
 	current_value = {
 		value = global_var:absolutism_var

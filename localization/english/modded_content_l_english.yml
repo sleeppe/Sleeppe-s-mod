@@ -169,3 +169,42 @@
  pm_management: "No Management Structure"
  pm_management1: "Simple Structures"
  pm_management2: "Corporate Governance"
+
+ # chinese recognition
+ is_china_tt: "Is Chinese"
+
+ # russian absolutism
+
+ je_russian_absolutism: "Russian Absolutism"
+ je_russian_absolutism_reason: "For a long period of time the nobles of the [ROOT.GetCountry.GetNameNoFlag] have weilded immense power over the state. Since the Octobrist revolution and the accession of [ROOT.GetCountry.GetRuler.GetFullName], the Gentry is unlikely to allow for many reforms. \n\nPrevent the Gentry from overthrowing the government, but also make progress towards reform: \n\nThe status of the #bold Progress Bar#! will #tooltippable;tooltip:[Country.GetTooltipTag],je_absolutism_advance advance#! upon these conditions being met. \n\nThe status of the #bold Progress Bar#! will #tooltippable;tooltip:[Country.GetTooltipTag],je_absolutism_retreat retreat#! upon these conditions being met."
+
+ je_absolutism_advance: "Becoming too democratic\nHaving too liberal economy laws\nfreeing the peasants" 
+
+ je_absolutism_retreat: "Owning Constantinople\nIndirectly owning: Kars, Tehran, Tabriz\nBulgaria being free\nSerbia Expanding into Eastern Serbia and/or Macedonia\nGreece owning Thessaly\nMoving the capital to Moscow"
+
+ je_russian_absolutism_complete_tt: "#red #bold The bar has filled, indicating the Gentry have the power to overthrow the governemnt"
+ je_russian_absolutism_status: "The Gentry is keeping a keen eye on things."
+
+ russian_absolutism_progress_bar: "Russian Absolutism"
+ russian_absolutism_progress_bar_desc: "Progress Towards Gentry Coup: #v [JournalEntry.GetCurrentBarProgress(ScriptedProgressBar.Self)|%]#! ([JournalEntry.GetCurrentBarValue(ScriptedProgressBar.Self)|1]/200)"
+
+ je_russian_absolutism_fail_tt: "After 1848"
+
+ russian_absolutism_failure: "The Gentry's power will wain if:\n"
+ russian_absolutism_completion: "The Gentry will succeed if:\n"
+
+ nikolai_is_dead: "Tsar Nikolai has Died"
+
+ je_absolutism_democracy: "Too Democratic"
+ je_absolutism_democracy2: "Widespread Democracy"
+ je_absolutism_economy: "Free-Market Economy"
+ je_absolutism_economy2: "Liberal Economy"
+ je_absolutism_serfs: "Free? Serfs"
+ je_absolutism_serfs2: "Free Serfs!"
+
+ je_absolutism_thrace: "Owns Constantinople"
+ je_absolutism_kars: "Owns Kars"
+ je_absolutism_bulgaria: "Bulgria Exists"
+ je_absolutism_serbia: "Expanded Serbia"
+ je_absolutism_serbia2: "Large Serbia"
+ je_absolutism_greece: "Expanded Greece"
