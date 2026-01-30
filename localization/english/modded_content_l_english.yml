@@ -153,6 +153,12 @@
  polish_constitution.1.a: "Keep the wealthy in charge"
  polish_constitution.1.b: "Power to the people!"
 
+ polish_constitution.2.t: "Poland Requests a constitution"
+ polish_constitution.2.d: "The polish lobby for a constituion, if we are to get too distracted then perhaps we put our own balance of power at risk"
+ polish_constitution.2.f: ""
+ polish_constitution.2.a: "Sure, we ought not to get distracted when we have our own problems"
+ polish_constitution.2.b: "Never\n#red (Nobles will gain strength)"
+
  polish_constitution.3.t: "Poland requests Krakow"
  polish_constitution.3.d: "Poland, attempting to undermine Russian influence demands Krakow"
  polish_constitution.3.f: ""
