@@ -54,6 +54,20 @@ je_russian_absolutism = {
 	}
 
 	on_complete = {
+		add_modifier = {
+			name = modifier_russia_fails
+			years = 18
+			is_decaying = yes
+		}
+		every_scope_character = {
+				limit = {
+					OR = {
+						culture = cu:russian
+					}
+					is_immortal = no
+				}
+				kill_character = yes
+			}
 	}
 
     event_outcome_completed_desc = {
