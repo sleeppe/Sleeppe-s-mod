@@ -206,9 +206,10 @@ law_dutch_provinces = {
 	}
 
 	is_visible = {
-		country_has_primary_culture = cu:dutch
-		NOT = {
-			has_law = law_type:law_tenant_farmers
+		OR = {
+			country_has_primary_culture = cu:dutch
+			country_has_primary_culture = cu:wallonian
+			country_has_primary_culture = cu:flemish
 		}
 	}
 

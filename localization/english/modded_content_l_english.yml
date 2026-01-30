@@ -15,7 +15,7 @@
 ##Modded Laws
  
  law_dutch_provinces: "Grondwet: Vierde Hoofdstuk"
- law_dutch_provinces_desc: "The provincial States shall be constituted of representatives of the nobility, the towns, and the rural districts. The manner of election, the distribution of seats, and the organization of electoral bodies shall be regulated by royal authority, subject to prescribed provincial regulations. The King shall appoint commissioners in every province to preside over the assemblies and to supervise the faithful execution of the laws.
+ law_dutch_provinces_desc: "The provincial States shall be constituted of representatives of the nobility, the towns, and the rural districts. The manner of election, the distribution of seats, and the organization of electoral bodies shall be regulated by royal authority, subject to prescribed provincial regulations. The King shall appoint commissioners in every province to preside over the assemblies and to supervise the faithful execution of the laws."
 
 ##Modded Goods
 
@@ -31,6 +31,25 @@
  modifier_gateway_europe: "The Gateway To Europe Opened"
  je_rotterdam_port:0 "The Gateway to Europe?"
  je_rotterdam_port_reason:3 "With the recent surges in growth across the Contient, our beloved old Lady, Europe; and recent expasions of #yellow the Ports of Rotterdam #! we have essentially grown into a contiental trade hub that punches far above its weight.\nWe can use this newly found prominence to our leverage!\n\nBy opening our ports and making extensive use of new identification documents, we can surely convince many from overseas to move to the Netherlands and work here. We are few, so skilled foreignand especially cheap labour is a great for our economy. Let us make use of the two way tool that a Port is!"
+ je_dutch_fiscal_crisis:0 "The Ailing Economy"
+ je_dutch_fiscal_crisis_reason:3 "The Dutch have ignored the economic situation for too long.\nSince the decline of the spice trade's profitability, our trading empire has been brought to the brink of collapse. If we manage to give incentives to go to the stock market, and circulate our remaining wealth, we might be able to tackle our Issues..."
+ je_group_dutch_fiscal_crisis: "A Looming Threat"
+ je_dutch_fiscal_crisis_goal: "The [SCOPE.sCompany('amsterdam_company').GetName] has been profitable for 4 years."
+ dutch_debt_addition.1.t: "#yellow The Economic Crisis Unfolds #!"
+ dutch_debt_addition.1.d: "The Dutch Economy is ailing."
+ dutch_debt_addition.1.f: ""#yellow This is the second biggest tragedy since the Tulpenwoede!#!" The people of the Netherlands scream for reform! Under the current conditions the Dutch Economy has been ailing for quite some time. If nothing is done now, a state bankruptcy ought to be imminent!"
+ dutch_debt_addition.1.a: "What Should We do!?"
+ modifier_financial_crisis: "Imminent Bankruptcy!"
+ dutch_debt_addition.2.t: "Oranje Boven, Hail The Effectenbeurs!"
+ dutch_debt_addition.2.d: "Thanks to our great and beloved Stockmarket, another National Tragedy, like the "Tulpenwoede", could be prevented!"
+ dutch_debt_addition.2.f: "By refinancing the huge National Debt at a lower interest rate through the Effectenbeurs, the government managed to escape such a fate. Let us take advantage of our Stockmarket and prosper! Onwards, for the House of Orange!"
+ dutch_debt_addition.2.a: "Let us usher in a new Golden Age!"
+ modifier_golden_age_netherlands: "A New Golden Age"
+ dutch_debt_addition.3.t: "The Deathbed of the Amsterdamse Effectenbeurs"
+ dutch_debt_addition.3.d: "The Stock Exchange, which trusted upon the reimbursement of government loans, has now been tricked out of its money!"
+ dutch_debt_addition.3.f: "Through one way or another, the loan repayments had been speculated away through the government, out of the hands of the stock exchange. This slashed a hole into its treasury, causing many private investors to be forced into bankruptcy, or leave the stock market altogether in some sort of maniacal attempt to save their profits. This only worsend the situation. Now the public trust into the institution has decreased. It will take a long time for more investors to enter the Exchange once again."
+ dutch_debt_addition.3.a: "We cured the Boils, but at what cost..."
+ modifier_naughty_netherlands: "The Stock Exchange Crashed!"
 
  #Italy
  je_central_italy: "The United Provinces of Central Italy"

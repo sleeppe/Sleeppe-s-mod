@@ -1,0 +1,84 @@
+namespace = dutch_debt_addition
+
+dutch_debt_addition.1 = {
+	type = country_event
+	placement = ROOT
+
+	title = dutch_debt_addition.1.t
+	desc = dutch_debt_addition.1.d # probably want a triggered desc here
+	flavor = dutch_debt_addition.1.f
+
+	event_image = {
+		video = "europenorthamerica_rich_and_poor"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = dutch_debt_addition.1.a
+	}
+}
+
+dutch_debt_addition.2 = {
+	type = country_event
+	placement = ROOT
+
+	title = dutch_debt_addition.2.t
+	desc = dutch_debt_addition.2.d # probably want a triggered desc here
+	flavor = dutch_debt_addition.2.f
+
+	event_image = {
+		video = "europenorthamerica_art_gallery"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = dutch_debt_addition.2.a
+		activate_law = law_type:law_laissez_faire
+		add_modifier = {name = modifier_golden_age_netherlands
+		years = 5
+		}
+	}
+}
+
+dutch_debt_addition.3 = {
+	type = country_event
+	placement = ROOT
+
+	title = dutch_debt_addition.3.t
+	desc = dutch_debt_addition.3.d # probably want a triggered desc here
+	flavor = dutch_debt_addition.3.f
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = dutch_debt_addition.3.a
+		add_modifier = {name = modifier_naughty_netherlands
+		years = 10
+		is_decaying = yes
+		}
+	}
+}

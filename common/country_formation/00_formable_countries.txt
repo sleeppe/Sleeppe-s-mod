@@ -1114,3 +1114,71 @@ ATL = {
 		has_technology_researched = pan-nationalism
 	}
 }
+
+##Modded
+
+IDC = {
+	states = {
+		STATE_TONKIN
+		STATE_ANNAM
+		STATE_MEKONG
+		STATE_CAMBODIA
+		STATE_NAKHON_RATCHASIMA
+		STATE_LAOS
+	}
+
+	required_states_fraction = 0.9
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+}
+
+RBU = {
+
+	use_culture_states = yes
+
+	required_states_fraction = 0.4
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		has_law = law_type:law_monarchy
+		owns_entire_state_region = STATE_WALLACHIA
+		owns_entire_state_region = STATE_BULGARIA
+	}
+
+ }
+
+ BGD = {
+
+	states = {
+		STATE_HOLLAND
+		STATE_FRIESLAND
+		STATE_GELRE
+		STATE_FRENCH_LOW_COUNTRIES
+		STATE_FLANDERS
+		STATE_WALLONIA
+		STATE_RUHR
+		STATE_NORTH_RHINE
+		STATE_RHINELAND
+		STATE_PICARDY
+		STATE_CHAMPAGNE
+		STATE_ALSACE_LORRAINE
+		STATE_LORRAINE
+		STATE_FRANCHE_COMTE
+	}
+
+	required_states_fraction = 0.8
+
+	ai_will_do = { always = yes }
+
+	possible = {
+		has_technology_researched = pan-nationalism
+		has_law = law_type:law_monarchy
+	}
+
+ }

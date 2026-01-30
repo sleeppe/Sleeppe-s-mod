@@ -1897,6 +1897,18 @@
  dyn_c_moldova_occupation: "Moldovan Occupation"
  dyn_c_wallachia_occupation: "Wallachian Occupation"
 
+#Indochina
+ IDC:0 "Indochina"
+ IDC_ADJ:0 "Indochinese"
+
+#Bulgaro-Romanian Union
+ RBU:0 "The Union of Bulgaria and Romania"
+ RBU_ADJ:0 "Bulgaro-Romanian"
+
+#Regna de Burgondie
+ BGD:0 "Regna de Burgondie"
+ BGD_ADJ:0 "Burgundian"
+
  # Posen
  PZN:0 "Grand Duchy of Posen"
  PZN_ADJ:0 "Posenian"
