@@ -152,6 +152,8 @@
  polish_constitution.1.a: ""
  polish_constitution.1.b: ""
 
+ modifier_posen_assimilation: "Germanisation efforts"
+
  #new modded laws
  lawgroup_shifts: "Shift Work"
  law_shifts1: "No formal shifts"
@@ -209,3 +211,5 @@
  je_absolutism_serbia2: "Large Serbia"
  je_absolutism_greece: "Expanded Greece"
  je_absolutism_moscow: "Moscow Capital"
+
+ 

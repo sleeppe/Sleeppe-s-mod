@@ -836,7 +836,7 @@
 			}
 			subtract = {
 				desc = "is_china_tt"
-				value = 5
+				value = 3
 			}
 		}
 	}
