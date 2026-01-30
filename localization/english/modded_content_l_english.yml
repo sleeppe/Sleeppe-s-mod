@@ -142,15 +142,22 @@
  je_polish_constitution_button3_desc: "Despite Polands long history of democracy, this has not always served the common people. In order to protect the peasantry, we must place them under protection by the state: much alike the constituion of 1791"
 
  je_polish_constitution_button4: "Press for Krakow"
- je_polish_constitution_button4_desc: "Though we are unlikely to be successful, we must make an effort to reclaim our southern capital: if only for the national pride"
+ je_polish_constitution_button4_desc: "Though we are unlikely to be successful, we must make an effort to reclaim our southern capital: if only for the national pride\n#red #bold NOTE THAT THIS MAY LEAD TO YOUR INDEPENDENCE #! #! \n"
 
  law_state_serfs: "State Oversight"
  law_state_serfs_desc: "Peasants are nominally owned by their landholders, yet due to the intervention of the state they have the rights to quit work, are guaranteed working conditions and in many cases are allowed to homestead on spare plots of land"
 
  polish_constitution.1.t: "The Past and, The Future"
+ polish_constitution.1.d: "The people of poland are granted a constitution, but what will this entail?"
  polish_constitution.1.f: ""
- polish_constitution.1.a: ""
- polish_constitution.1.b: ""
+ polish_constitution.1.a: "Keep the wealthy in charge"
+ polish_constitution.1.b: "Power to the people!"
+
+ polish_constitution.3.t: "Poland requests Krakow"
+ polish_constitution.3.d: "Poland, attempting to undermine Russian influence demands Krakow"
+ polish_constitution.3.f: ""
+ polish_constitution.3.a: "Perhaps this will undermine the russian influence?"
+ polish_constitution.3.b: "Never!"
 
  modifier_posen_assimilation: "Germanisation efforts"
 
@@ -203,6 +210,7 @@
  je_absolutism_economy2: "Liberal Economy"
  je_absolutism_serfs: "Free? Serfs"
  je_absolutism_serfs2: "Free Serfs!"
+ je_absolutism_poland: "Distracted by poland"
 
  je_absolutism_thrace: "Owns Constantinople"
  je_absolutism_kars: "Owns Kars"
