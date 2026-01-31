@@ -143,10 +143,8 @@ geographic_region_greater_germany = {
 	state_regions = {
 		STATE_POMERANIA
 		STATE_ELBE
-		STATE_POSEN
 		STATE_WESTPHALIA
 		STATE_ANHALT
-		STATE_WEST_PRUSSIA
 		STATE_EAST_PRUSSIA
 		STATE_RHINELAND
 		STATE_NORTH_RHINE
@@ -266,5 +264,13 @@ geographic_region_aragon = {
 		STATE_ARAGON
 		STATE_VALENCIA
 		STATE_BALEARIC_ISLANDS
+	}
+}
+
+geographic_region_poland = {
+	short_key = "poland"
+
+	strategic_regions = { 
+		sr:region_poland
 	}
 }

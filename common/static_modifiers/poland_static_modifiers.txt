@@ -1,0 +1,19 @@
+##Modifiers for polish flavour
+
+#Gateway to Europe
+modifier_posen_assimilation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_allow_assimilation_in_homeland_bool = yes
+	state_assimilation_mult = 1
+	country_allow_assimilation_cultural_erasure_bool = yes
+	country_allow_assimilation_open_prejudice_bool = yes
+	country_allow_assimilation_second_rate_citizen_bool = yes
+	country_allow_assimilation_violent_hostility_bool = yes
+}
+
+modifier_russia_fails = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	interest_group_ig_landowners_pol_str_mult = 1
+	interest_group_ig_devout_pol_str_mult = 1
+	country_legitimacy_base_add = -10
+}

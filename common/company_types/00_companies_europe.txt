@@ -192,6 +192,7 @@ company_john_cockerill = {
 				OR = {
 					state_region = s:STATE_WALLONIA
 					state_region = s:STATE_FLANDERS
+					state_region = s:STATE_WEST_WALLONIA
 				}
 			}
 		}

@@ -1,0 +1,28 @@
+russian_absolutism.1 = {
+	type = country_event
+	placement = root
+
+	title = russian_absolutism.1.t
+	desc = russian_absolutism.1.d # probably want a triggered desc here
+	flavor = russian_absolutism.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = russian_absolutism.1.a
+		default_option = yes
+		add_journal_entry = {
+			type = je_central_archives
+		}
+	}
+}

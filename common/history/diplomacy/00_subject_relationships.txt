@@ -656,4 +656,10 @@
 			type = protectorate
 		}
 	}
+	c:PRU ?= {
+		create_diplomatic_pact = {
+			country = c:PZN
+			type = crown_land
+		}
+	}
 }

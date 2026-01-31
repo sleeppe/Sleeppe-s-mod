@@ -5225,6 +5225,20 @@ SC4 = { # River Plate
 	capital = STATE_BUENOS_AIRES
 }
 
+# modded
+
+PZN = {
+	color = { 146  108  146 }
+
+	country_type = recognized
+
+	tier = principality
+
+	cultures = { north_german }
+	capital = STATE_POSEN
+	is_named_from_capital = yes
+}
+
 ##Modded
 
 IDC = { # Indochina

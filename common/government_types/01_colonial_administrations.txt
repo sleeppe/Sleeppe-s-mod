@@ -191,6 +191,7 @@ gov_viceroy_poland = {
 
 	possible = {
 		is_subject_of = c:RUS
+		is_subject_type = subject_type_puppet
 		root = c:POL
 	}
 

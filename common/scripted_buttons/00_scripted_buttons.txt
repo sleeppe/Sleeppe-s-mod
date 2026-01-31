@@ -1224,3 +1224,87 @@ je_unite_the_principalities_button3 = {
 		}
 	}
 }
+
+je_polish_constitution_button1 = {
+	name = "je_polish_constitution_button1"
+	desc = "je_polish_constitution_button1_desc"
+
+	visible = { always = yes }
+
+	cooldown = { days = 9999999 }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+	}
+
+	effect = {
+		c:RUS = {
+			trigger_event = {id = polish_constitution.2}
+		}
+	}
+}
+
+je_polish_constitution_button2 = {
+	name = "je_polish_constitution_button2"
+	desc = "je_polish_constitution_button2_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		has_global_variable = russia_not_in_poland
+	}
+
+	effect = {
+		activate_law = law_type:law_sejmik_poland
+	}
+}
+
+je_polish_constitution_button3 = {
+	name = "je_polish_constitution_button3"
+	desc = "je_polish_constitution_button3_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		has_global_variable = russia_not_in_poland
+	}
+
+	effect = {
+		activate_law = law_type:law_state_serfs
+	}
+}
+
+je_polish_constitution_button4 = {
+	name = "je_polish_constitution_button4"
+	desc = "je_polish_constitution_button4_desc"
+
+	visible = { always = yes }
+
+	cooldown = { days = 9999999 }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		has_global_variable = russia_not_in_poland
+	}
+
+	effect = {
+		trigger_event = { id = polish_constitution.3 }
+	}
+}
+
+
+

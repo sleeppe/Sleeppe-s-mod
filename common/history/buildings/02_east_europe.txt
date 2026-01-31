@@ -373,7 +373,7 @@
 		}
 	}
 	s:STATE_POSEN={
-		region_state:PRU={
+		region_state:PZN={
 			create_building={
 				building="building_food_industry"
 				add_ownership={
@@ -381,7 +381,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=5
-						region="STATE_POSEN"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -394,7 +394,7 @@
 						type="building_manor_house"
 						country="c:PRU"
 						levels=2
-						region="STATE_POSEN"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1
@@ -407,7 +407,7 @@
 						type="building_manor_house"
 						country="c:PRU"
 						levels=3
-						region="STATE_POSEN"
+						region="STATE_BRANDENBURG"
 					}
 				}
 				reserves=1

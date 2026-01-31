@@ -1,0 +1,94 @@
+je_russian_absolutism = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_historical_content
+
+	scripted_progress_bar = russian_absolutism_progress_bar
+
+	custom_failure_header = russian_absolutism_failure
+	custom_completion_header = russian_absolutism_completion
+
+	immediate = {
+		set_global_variable = {
+            name = absolutism_var
+            value = 0
+        }
+	}
+	
+	possible = {
+		root = c:RUS
+	}
+
+	is_shown_in_lobby = {
+		root = c:RUS
+	}
+
+	is_shown_when_inactive = {
+		root = c:RUS
+	}
+
+	on_monthly_pulse = {
+	}
+
+	complete = {
+		OR = {
+			AND = {
+				custom_tooltip = {
+				text = nikolai_is_dead
+				ruler = {
+				exists = yes
+				NOT = { has_template = RUS_nicholas_i }
+				}
+				}
+			}
+			NOT = {
+				has_law_or_variant = law_type:law_monarchy
+			}
+			custom_tooltip = {
+			text = je_russian_absolutism_complete_tt
+			scope:journal_entry ?= {
+				"scripted_bar_progress(russian_absolutism_progress_bar)" >= 200
+			}
+		}
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = modifier_russia_fails
+			years = 18
+			is_decaying = yes
+		}
+		every_scope_character = {
+				limit = {
+					OR = {
+						culture = cu:russian
+					}
+					is_immortal = no
+				}
+				kill_character = yes
+			}
+	}
+
+    event_outcome_completed_desc = {
+    }
+
+	fail = {
+		custom_tooltip = {
+			text = je_russian_absolutism_fail_tt
+			year >1848
+		}
+	}
+
+
+	invalid = {
+	}
+
+	should_be_pinned_by_default = yes
+
+	current_value = {
+		value = global_var:absolutism_var
+	}
+
+	weight = 100
+}

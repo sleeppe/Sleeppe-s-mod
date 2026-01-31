@@ -153,7 +153,12 @@ PLC = {
 		STATE_WEST_PRUSSIA
 	}
 
-	required_states_fraction = 1
+	possible = {
+		owns_entire_state_region = STATE_GREATER_POLAND
+		owns_entire_state_region = STATE_VILNIUS
+	}
+
+	required_states_fraction = 0.45
 
 	ai_will_do = { always = yes }
 }
@@ -702,6 +707,8 @@ UNL = {
 		STATE_HOLLAND
 		STATE_FLANDERS
 		STATE_WALLONIA
+		STATE_WEST_WALLONIA
+		STATE_LUXEMBERG
 		STATE_FRIESLAND
 		STATE_GELRE
 	}
@@ -1165,6 +1172,8 @@ RBU = {
 		STATE_ALSACE_LORRAINE
 		STATE_LORRAINE
 		STATE_FRANCHE_COMTE
+		STATE_WEST_WALLONIA
+		STATE_LUXEMBERG
 	}
 
 	required_states_fraction = 0.8

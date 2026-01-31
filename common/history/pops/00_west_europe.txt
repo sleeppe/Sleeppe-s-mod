@@ -1053,35 +1053,16 @@
 		}
 	}
 	s:STATE_WALLONIA = {
-		region_state:LUX = {
-			create_pop = {
-				culture = wallonian
-				size = 103992
-			}
-			create_pop = {
-				culture = north_german
-				religion = catholic
-				size = 71996
-			}
-			create_pop = {
-				culture = north_german
-				size = 572
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 210
-			}
-		}
 		# Hainaut, Liège, Luxembourg, and Namur
 		region_state:BEL = { #
 			create_pop = {
 				culture = wallonian # 'Walloon & French' in census data.
-				size = 1413476
+				size = 1000000
 			}
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 27847
+				size = 20000
 			}
 			create_pop = {
 				culture = flemish # 'Flemish & Dutch' in census data.
@@ -1099,6 +1080,58 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 205
+			}
+		}
+	}
+	s:STATE_WEST_WALLONIA = {
+		# Hainaut, Liège, Luxembourg, and Namur
+		region_state:BEL = { #
+			create_pop = {
+				culture = wallonian # 'Walloon & French' in census data.
+				size = 400000
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 20000
+			}
+			create_pop = {
+				culture = flemish # 'Flemish & Dutch' in census data.
+				size = 40207
+			}
+			create_pop = {
+				culture = flemish
+				religion = protestant
+				size = 1355
+			}
+			create_pop = {
+				culture = british
+				size = 317
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 205
+			}
+		}
+	}
+	s:STATE_LUXEMBERG = {
+		region_state:LUX = {
+			create_pop = {
+				culture = wallonian
+				size = 103992
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 71996
+			}
+			create_pop = {
+				culture = north_german
+				size = 572
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 210
 			}
 		}
 	}

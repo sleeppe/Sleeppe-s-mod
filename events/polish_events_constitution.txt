@@ -1,0 +1,124 @@
+namespace = polish_constitution
+
+polish_constitution.1 = {
+	type = country_event
+	placement = root
+
+	title = polish_constitution.1.t
+	desc = polish_constitution.1.d # probably want a triggered desc here
+	flavor = polish_constitution.1.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = polish_constitution.1.a
+		default_option = yes
+		activate_law = law_type:law_wealth_voting
+	}
+	option = {
+		name = polish_constitution.1.b
+		activate_law = law_type:law_census_voting
+	}
+}
+
+polish_constitution.2 = {
+	type = country_event
+	placement = root
+
+	title = polish_constitution.2.t
+	desc = polish_constitution.2.d # probably want a triggered desc here
+	flavor = polish_constitution.2.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = polish_constitution.2.a
+		default_option = yes
+		set_global_variable = russia_not_in_poland
+		c:POL = {
+			trigger_event = { id = polish_constitution.1 }
+		}
+	}
+	option = {
+		name = polish_constitution.2.b
+		set_global_variable = russia_in_poland
+	}
+}
+
+polish_constitution.3 = {
+	type = country_event
+	placement = root
+
+	title = polish_constitution.3.t
+	desc = polish_constitution.3.d # probably want a triggered desc here
+	flavor = polish_constitution.3.f
+
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	immediate = {
+	}
+	option = {
+		name = polish_constitution.3.a
+		default_option = yes
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_WEST_GALICIA
+			}
+			set_state_owner = c:POL
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_EAST_GALICIA
+			}
+			set_state_owner = c:POL
+		}
+		random_scope_state = {
+			limit = {
+				state_region = s:STATE_BUKOVINA
+			}
+			set_state_owner = c:POL
+		}
+		c:POL = {
+			annex = c:KRA
+		}
+		c:AUS = {
+			add_loyalists = {
+				value = 0.15
+			}
+		}
+		c:POL = {
+			make_independent = yes
+		}
+	}
+	option = {
+		name = polish_constitution.3.b
+	}
+}
