@@ -83,8 +83,6 @@ law_interventionism = {
 		country_government_dividends_reinvestment_add = 0.35
 		country_government_dividends_efficiency_add = 0.35
 		country_free_charters_add = 1
-
-		country_minting_mult = 0.15
 		country_loan_interest_rate_mult = -0.10
 	}
 
