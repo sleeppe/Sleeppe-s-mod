@@ -76,7 +76,7 @@ STATE_TASMANIA = {
         building_coal_mine = 13
         building_iron_mine = 15
         building_lead_mine = 15
-        building_logging_camp = 8
+        building_logging_camp = 31
         building_whaling_station = 2
         building_fishing_wharf = 6
     }
@@ -104,7 +104,7 @@ STATE_QUEENSLAND = {
     capped_resources = {
         building_iron_mine = 45
         building_lead_mine = 45
-        building_coal_mine = 80
+        building_coal_mine = 90
         building_logging_camp = 5
         building_whaling_station = 3
         building_fishing_wharf = 12
