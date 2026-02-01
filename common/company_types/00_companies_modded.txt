@@ -365,12 +365,12 @@ company_american_Milling = { #"Plain Millers' Monopoly"
 #pacific companies
 
 company_australian_agricultural = {
-	icon = "gfx/interface/icons/company_icons/modded_company_icons/marzotto_logo_dds.dds"
+	icon = "gfx/interface/icons/company_icons/modded_company_icons/australian_agricultural.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 
 	flavored_company = yes
 
-	preferred_headquarters = { STATE_VENETIA }
+	preferred_headquarters = { STATE_NEW_SOUTH_WALES }
 
 	building_types = {
 		building_cotton_plantation
@@ -379,42 +379,37 @@ company_australian_agricultural = {
 	}
 
 	extension_building_types = {
-		building_dye_plantation
+		building_railway
 	}
 
 	possible_prestige_goods = {
-		prestige_good_coal
+		prestige_good_prestige_coal_australia
 	}
 
 	potential = {
-		OR = {
-			country_has_primary_culture = cu:north_italian
-			country_has_primary_culture = cu:south_italian
-		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_VENETIA
+			state_region = s:STATE_NEW_SOUTH_WALES
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_textile_mill
+				is_building_type = building_coal_mine
 				level >= 5
 			}
 		}
 	}
 
 	prosperity_modifier = {
-		building_group_bg_plantations_throughput_add = 0.15
-		building_textile_mill_throughput_add = 0.1
+		building_coal_mine_throughput_add = 0.1
 	}
 
 	ai_will_do = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_building = {
-				is_building_type = building_textile_mill
-				level >= 3
+				is_building_type = building_coal_mine
+				level >= 5
 			}
 		}
 	}

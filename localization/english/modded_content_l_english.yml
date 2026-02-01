@@ -11,6 +11,7 @@
  company_heineken: "Heineken Brouwerij"
  company_marzotto: "Lanificio Luigi Marzotto & Figli"
  company_american_Milling: "Plain Millers' Monopoly"
+ company_australian_agricultural: "Australian Agricultural Company"
 
 ##Modded Laws
  
@@ -23,6 +24,7 @@
  prestige_good_cockerill_tools: "Cockerill Tools"
  prestige_good_congo_rubber: "Congolese Rubber"
  prestige_good_heineken_beer: "Heineken Pilsener"
+ prestige_good_prestige_coal_australia: "Australian Coal"
 
 ##Modded JE's
 

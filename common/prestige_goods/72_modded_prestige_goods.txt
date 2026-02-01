@@ -27,5 +27,5 @@ prestige_good_heineken_beer = {
 prestige_good_prestige_coal_australia = {
 	base_good = coal
 	prestige_bonus = 0.2
-	texture = "gfx/interface/icons/goods_icons/prestige_goods/prestige_coal.dds"
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/prestige_coal.dds"
 }
