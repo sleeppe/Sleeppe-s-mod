@@ -7682,17 +7682,10 @@
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					building={
-						type="building_glassworks"
+					company={
+						type=company_konigliche_porzellan_manufaktur_meissen
 						country="c:SAX"
-						levels=2
-						region="STATE_SAXONY"
-					}
-					building={
-						type="building_financial_district"
-						country="c:SAX"
-						levels=3
-						region="STATE_SAXONY"
+						levels=5
 					}
 				}
 				reserves=1
