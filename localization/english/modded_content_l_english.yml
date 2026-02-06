@@ -25,6 +25,7 @@
  prestige_good_congo_rubber: "Congolese Rubber"
  prestige_good_heineken_beer: "Heineken Pilsener"
  prestige_good_prestige_coal_australia: "Australian Coal"
+ prestige_good_moskovskaya_osobaya: "Moskovskaya Osobaya"
 
 ##Modded JE's
 
@@ -247,4 +248,25 @@
 
  modifier_russia_fails: "Landowner authority"
 
+ modifier_distillery_privileges: "Expanded Distillery Privileges"
+ modifier_vodka_monopoly: "Vodka Monopolised"
+ modifier_monastic_distillery: "Expanded the Privilege to the Church"
+ modifier_reduced_prices: "Reduced Vodka Prices"
+
+ je_vodka_monopoly: "The Vodka Monopoly"
+ je_vodka_monopoly_reason: "Since Ivan the third, Vodka has been a state monopoly. Factually outlawing the domestic distillery of drink and making it a state enterprise to produce and sell Alcohol, predominantly Vodka. Selling Vodka at fix prices enables us to control the general populance and generate Russia great income. In 1765, Catherine the Great extended the privilege to Nobles, allowing them to distill drink on their own estates. The Vodka Monopoly is a vital tool for the Tsarist State, it is paramount to use it wisely.."
+
+ revoking_privileges_button: "Revoke Privileges"
+ revoking_privileges_button_desc: "Too long have the Nobles made a dime on the Vodka Monopoly. It is time to fully seize our tool!"
+
+ grant_privilges_button: "Restore Catherinian Privileges"
+ grant_privilges_button_desc: "To appease the Gentry, it has become time for them to regain the privileges promised to them under Catherine the Great in 1765."
+
+ monastic_distillery_button: "Extend the Privilege to the Church"
+ monastic_distillery_button_desc: "In an effort to improve state relations with the Devout, we ought to extend the right to distill drink to them and the monastaries, for they have always been brewing and distilling elsewhere. Let the clergy profit from our arrangement!"
+
+ reducing_prices_button: "Reduce the Price of Drink!"
+ reducing_prices_button_desc: "In an effort to appease the populance, we will lower drink prices."
  
+ normalising_prices_button: "Normalise Pricing"
+ normalising_prices_button_desc: "We shall restore the pricing of Vodka. Times of hardship are over, we don't need the peasantry to fall in line that much anymore. Let's get back to normalising and profiting."

@@ -540,6 +540,18 @@
 				activate_production_methods={ "pm_scholastic_education" "pm_religious_academia" }
 			}
 			create_building={
+				building="building_food_industry"
+				add_ownership={
+					company={
+						type=company_vodka_monopoly
+						country="c:RUS"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing"  }
+			}
+			create_building={
 				building="building_artillery_foundry"
 				add_ownership={
 					country={
@@ -662,6 +674,18 @@
 					}
 				}
 				reserves=1
+			}
+			create_building={
+				building="building_food_industry"
+				add_ownership={
+					company={
+						type=company_vodka_monopoly
+						country="c:RUS"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_bakery" "pm_disabled_canning" "pm_pot_stills" "pm_manual_dough_processing"  }
 			}
 			create_building={
 				building="building_government_administration"

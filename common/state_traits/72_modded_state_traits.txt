@@ -133,3 +133,10 @@ state_trait_trent_river = {
 		building_group_bg_agriculture_throughput_add = 0.5	
 	}
 }
+
+state_trait_monopoly_location = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyard.dds"
+	modifier = {
+		building_food_industry_throughput_add = 0.1
+	}
+}
