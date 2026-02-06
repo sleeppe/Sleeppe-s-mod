@@ -1532,21 +1532,6 @@
 				size = 100000
 			}
 		}
-		region_state:BAV = {
-			create_pop = {
-				culture = south_german
-				size = 251600
-			}
-			create_pop = {
-				culture = ashkenazi
-				size = 1996
-			}
-			create_pop = {
-				culture = south_german
-				religion = protestant
-				size = 303996
-			}
-		}
 	}
 	s:STATE_NORTH_RHINE = {
 		region_state:PRU = {
@@ -1566,6 +1551,21 @@
 			create_pop = {
 				culture = ashkenazi
 				size = 1502
+			}
+		}
+		region_state:BAV = {
+			create_pop = {
+				culture = south_german
+				size = 251600
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 1996
+			}
+			create_pop = {
+				culture = south_german
+				religion = protestant
+				size = 303996
 			}
 		}
 	}
