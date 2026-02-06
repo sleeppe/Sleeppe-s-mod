@@ -3103,26 +3103,3 @@ gov_constitutional_grand_principality = {
 
 # modded
 
-gov_democratic_monarchy = {
-	transfer_of_power = presidential_elective
-	new_leader_on_reform_government = yes
-
-	male_ruler = "RULER_TITLE_PRIME_MINISTER"
-	female_ruler = "RULER_TITLE_PRIME_MINISTER"
-
-	male_heir = "RULER_TITLE_KING" 
-	female_heir = "RULER_TITLE_QUEEN" 
-
-
-	possible = {
-		has_law_or_variant = law_type:law_democratic_monarchy
-		country_has_voting_franchise = yes
-	}
-
-	on_government_type_change = {
-		change_to_hereditary = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_hereditary = yes
-	}
-}

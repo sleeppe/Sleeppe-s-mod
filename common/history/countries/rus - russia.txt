@@ -50,23 +50,5 @@
 			set_company_state_region = s:STATE_INGRIA
 			add_owned_country = c:ALK
 		}
-
-		add_journal_entry = {
-			type = je_vodka_monopoly
-		}
-		
-		add_company = company_type:company_vodka_monopoly
-		company:company_vodka_monopoly = {
-			set_company_establishment_date = 1472.1.1
-			set_company_state_region = s:STATE_MOSCOW
-		}
-
-		add_modifier = {
-			name = modifier_vodka_monopoly
-		}
-
-		add_modifier = {
-			name = modifier_distillery_privileges
-		}
 	}
 }

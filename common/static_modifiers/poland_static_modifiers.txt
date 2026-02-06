@@ -1,5 +1,6 @@
 ##Modifiers for polish flavour
 
+#Gateway to Europe
 modifier_posen_assimilation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	state_allow_assimilation_in_homeland_bool = yes

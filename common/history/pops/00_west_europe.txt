@@ -1521,7 +1521,7 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 424000
+				size = 200000
 			}
 			create_pop = {
 				culture = french
@@ -1529,7 +1529,7 @@
 			}
 			create_pop = {
 				culture = north_german
-				size = 323992
+				size = 100000
 			}
 		}
 		region_state:BAV = {
@@ -1553,11 +1553,11 @@
 			create_pop = {
 				culture = north_german
 				religion = catholic
-				size = 830379
+				size = 1230379
 			}
 			create_pop = {
 				culture = north_german
-				size = 179847
+				size = 379847
 			}
 			create_pop = {
 				culture = wallonian
