@@ -36,3 +36,8 @@ modifier_catherinian_legacy = {
 	unit_morale_loss_mult = -0.05
 	unit_morale_recovery_mult = 0.05
 }
+
+modifier_russia_minting = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	country_minting_mult = 0.15
+}
