@@ -331,6 +331,8 @@ STATE_VOLHYNIA = {
     capped_resources = {
         building_coal_mine = 42
         building_logging_camp = 18
+        building_lead_mine = 27
+        building_sulfur_mine = 12
     }
 }
 
@@ -343,12 +345,13 @@ STATE_KIEV = {
     farm = "x2472F3"
     mine = "xCD2CE5"
     wood = "x54B5C4"
-    arable_land = 175
+    arable_land = 215
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" }
     capped_resources = {
         building_coal_mine = 36
         building_iron_mine = 14
         building_logging_camp = 32
+        building_lead_mine = 16
     }
 }
 

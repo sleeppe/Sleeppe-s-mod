@@ -182,6 +182,8 @@ STATE_WEST_GALICIA = {
         building_coal_mine = 60
         building_iron_mine = 33
         building_logging_camp = 17
+        building_lead_mine = 13
+        building_sulfur_mine = 34
     }
     resource = {
         type = "building_oil_rig"
