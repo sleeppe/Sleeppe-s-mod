@@ -134,6 +134,15 @@ state_trait_trent_river = {
 	}
 }
 
+state_trait_lorraine_mines = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+	modifier = {
+		building_iron_mine_throughput_add = 0.05
+		building_coal_mine_throughput_add = 0.05
+		building_steel_mill_throughput_add = 0.025
+	}
+}
+
 state_trait_monopoly_location = {
 	icon = "gfx/interface/icons/state_trait_icons/vineyard.dds"
 	modifier = {
