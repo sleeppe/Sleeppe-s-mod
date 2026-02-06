@@ -1420,8 +1420,6 @@ claims_tsargorod = {
 	name = "claims_tsargorod"
 	desc = "claims_tsargorod_desc"
 
-	visible =
-
 	ai_chance = {
 		value = 100
 	}
@@ -1433,10 +1431,10 @@ claims_tsargorod = {
 
 	effect = {
 		s:STATE_EASTERN_THRACE = {
-			add_claim = root
+			add_claim = c:RUS
 		}
 		s:STATE_HUDAVENDIGAR = {
-			add_claim = root
+			add_claim = c:RUS
 		}
 		change_infamy = 10
 		set_global_variable = claimed_tsargorod
@@ -1446,8 +1444,6 @@ claims_tsargorod = {
 claims_black_sea_region = {
 	name = "claims_black_sea_region"
 	desc = "claims_black_sea_region_desc"
-
-	visible =
 
 	ai_chance = {
 		value = 100
@@ -1468,7 +1464,7 @@ claims_black_sea_region = {
 		s:STATE_BULGARIA = {
 			add_claim = root
 		}
-		s:STATE_NOTHERN_THRACE = {
+		s:STATE_NORTHERN_THRACE = {
 			add_claim = root
 		}
 		s:STATE_HUDAVENDIGAR = {

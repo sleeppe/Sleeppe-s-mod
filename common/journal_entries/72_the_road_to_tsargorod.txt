@@ -39,7 +39,10 @@ je_road_to_tsargorod = {
 	}
 
 	on_complete = {
-		add_modifier = 
+		add_modifier = { 
+		name = modifier_catherinian_legacy
+		years = 5 
+		}
 	}
 
 	on_fail = {

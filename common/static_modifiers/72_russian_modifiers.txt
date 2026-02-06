@@ -32,8 +32,7 @@ modifier_reduced_prices = {
 
 modifier_catherinian_legacy = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds"
-	building_food_industry_throughput_add = -0.15
-	state_radicals_from_political_movements_mult = -0.4
-	country_radicals_from_legitimacy_mult = -0.15
-	state_radicals_and_loyalists_from_sol_change_mult = -0.05
+	country_prestige_add = 50
+	unit_morale_loss_mult = -0.05
+	unit_morale_recovery_mult = 0.05
 }
