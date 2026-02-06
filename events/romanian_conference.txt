@@ -190,7 +190,7 @@ romanian_conference.11 = {
 	}
 	option = {
 		name = romanian_conference.11.b
-		change_infamy = 80
+		change_infamy = 25
 	}
 }
 
@@ -228,7 +228,7 @@ romanian_conference.12 = {
 	}
 	option = {
 		name = romanian_conference.12.b
-		change_infamy = 80
+		change_infamy = 20
 	}
 }
 
