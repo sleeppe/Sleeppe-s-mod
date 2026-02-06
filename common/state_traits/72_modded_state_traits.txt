@@ -140,3 +140,10 @@ state_trait_lorraine_mines = {
 	building_group_bg_mining_throughput_add = 0.075
 	}
 }
+
+state_trait_monopoly_location = {
+	icon = "gfx/interface/icons/state_trait_icons/vineyard.dds"
+	modifier = {
+		building_food_industry_throughput_add = 0.1
+	}
+}
