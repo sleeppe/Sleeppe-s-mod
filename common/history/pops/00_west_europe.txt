@@ -1851,6 +1851,21 @@
 				size = 840
 			}
 		}
+		region_state:PRU = {
+			create_pop = {
+				culture = north_german
+				size = 230000
+			}
+			create_pop = {
+				culture = north_german
+				religion = catholic
+				size = 3000
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 840
+			}
+		}
 		region_state:COB = {
 			create_pop = {
 				culture = north_german

@@ -8211,11 +8211,15 @@ STATES = {
 		}
 		create_state = {
 			country = c:MEI
-			owned_provinces = { x5141A0 xD0C021 }
+			owned_provinces = { xD0C021 }
 		}
 		create_state = {
 			country = c:WEI
 			owned_provinces = { xC00A37 }
+		}
+		create_state = {
+			country = c:PRU
+			owned_provinces = { x5141A0 }
 		}
 		create_state = {
 			country = c:COB
