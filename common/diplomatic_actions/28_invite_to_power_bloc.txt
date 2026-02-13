@@ -35,7 +35,7 @@
 		power_bloc = {
 			leverage_advantage = {
 				target = scope:target_country
-				value >= leverage_threshold_to_invite
+				value >= 100
 			}
 
 			NOT = {
