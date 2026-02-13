@@ -12,11 +12,18 @@
  company_marzotto: "Lanificio Luigi Marzotto & Figli"
  company_american_Milling: "Plain Millers' Monopoly"
  company_australian_agricultural: "Australian Agricultural Company"
+ company_imperial_companhia_seropédica_fluminense: "Imperial Companhia Seropédica Fluminense"
 
 ##Modded Laws
  
  law_dutch_provinces: "Grondwet: Vierde Hoofdstuk"
  law_dutch_provinces_desc: "The provincial States shall be constituted of representatives of the nobility, the towns, and the rural districts. The manner of election, the distribution of seats, and the organization of electoral bodies shall be regulated by royal authority, subject to prescribed provincial regulations. The King shall appoint commissioners in every province to preside over the assemblies and to supervise the faithful execution of the laws."
+
+ law_mit_a_taxes: "Mit'a Taxes"
+ law_mit_a_taxes_desc: "In Addition to normal taxes, all communities of the realm have to use labour as a taxed resource to build state projects and infrastructure. In return the State integrates those communities into it's fabric and provides food security and support in times of need."
+
+ law_ayllu_kinship: "Ayllu Kinship"
+ law_ayllu_kinship_desc: "Society is organised around the traditional Ayllu Communities. This system derives from the creation legend of the Ican Empire. Loyalty comes through communal bonds, which ensure cohesion. The state does not govern directly but rather interact with the Communities as a whole. That decreases the bureaucratic expenditure, while in turn limiting social mobility."
 
 ##Modded Goods
 
@@ -26,6 +33,15 @@
  prestige_good_heineken_beer: "Heineken Pilsener"
  prestige_good_prestige_coal_australia: "Australian Coal"
  prestige_good_moskovskaya_osobaya: "Moskovskaya Osobaya"
+
+##Modded Decision
+ extend_ayllu_kinship_sa: "Extend the Ayllu Bonds to the South Andeans"
+ extend_ayllu_kinship_sa_desc: "We have expanded and regained territory once held by our ancestors. We shall now begin with the integration process! Trace the Settlers lineage in our ancestoral Pantheon!"
+ extend_ayllu_kinship_na: "Extend the Ayllu Bonds to their Andean Brethern"
+ extend_ayllu_kinship_na_desc: "We once again expanded. Now we encompass the Brethern of those we recently integrated! Trace the divergence of their lineage from it's origins. It has been decreed, they shall be integrated."
+
+ extended_kinship: "Has extended the Kinship bonds!"
+ tradition_extended_kinship: "Ayllu System"
 
 ##Modded JE's
 

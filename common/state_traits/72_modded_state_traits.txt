@@ -147,3 +147,11 @@ state_trait_monopoly_location = {
 		building_food_industry_throughput_add = 0.1
 	}
 }
+
+state_trait_cusco_valley = {
+	icon = "gfx/interface/icons/state_trait_icons/good_soils.dds"
+	modifier = {
+		building_group_bg_agriculture_throughput_add = 0.05
+		building_maize_farm_throughput_add = 0.1
+	}
+}
