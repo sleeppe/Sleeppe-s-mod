@@ -125,3 +125,65 @@ TUR_commie = {
 		color1 = { 247 209 15 }
 	}
 }
+
+WAL = {
+	pattern = "wallachia pattern.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+
+	textured_emblem = {
+		texture = "wallachia_coat_of_arms.dds"
+	}
+}
+WAL_subject = {
+	pattern = "wallachia pattern.dds"
+	color1 = "red"
+	color2 = "yellow"
+	color3 = "white"
+
+	textured_emblem = {
+		texture = "wallachia_coat_of_arms.dds"
+	}
+}
+
+MOL = {
+	pattern = "moldavia pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+
+	textured_emblem = {
+		texture = "moldavia_coat_of_arms.dds"
+	}
+}
+MOL_subject = {
+		pattern = "moldavia pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+
+	textured_emblem = {
+		texture = "moldavia_coat_of_arms.dds"
+	}
+}
+MOL_subject_TUR = {
+		pattern = "moldavia pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+
+	textured_emblem = {
+		texture = "moldavia_coat_of_arms.dds"
+	}
+}
+MOL_communist = {
+		pattern = "moldavia pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+
+	textured_emblem = {
+		texture = "moldavia_coat_of_arms.dds"
+	}
+}
