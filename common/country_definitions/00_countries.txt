@@ -728,7 +728,7 @@ PAR = {
 }
 
 PRA = { #Gao-Para
-	color = { 128  202  129 }
+	color = { 76 122 77 }
 
 	country_type = recognized
 
@@ -2134,7 +2134,7 @@ ALT = {
 }
 
 HAI = {
-	color = { 139  179  207 }
+	color = { 99 128 148 }
 
 	country_type = recognized
 
@@ -2310,7 +2310,7 @@ TEX = {
 }
 
 UCA = {
-	color = { 90 175 255 }
+	color = { 45 86 128 }
 
 	country_type = recognized
 
@@ -2321,7 +2321,7 @@ UCA = {
 }
 
 ARG = {
-	color = { 101  102  163 }
+	color = { 51 51 82 }
 
 	country_type = recognized
 
@@ -2332,7 +2332,7 @@ ARG = {
 }
 
 BOL = {
-	color = { 219  182  182 }
+	color = { 138 114 114 }
 
 	country_type = recognized
 
@@ -2354,7 +2354,7 @@ BRZ = {
 }
 
 CHL = {
-	color = { 236  159  89 }
+	color = { 122 81 44 }
 
 	country_type = recognized
 
@@ -2365,7 +2365,7 @@ CHL = {
 }
 
 CLM = {
-	color = { 255  234  168 }
+	color = { 128 113 68 }
 
 	country_type = recognized
 
@@ -2376,7 +2376,7 @@ CLM = {
 }
 
 ECU = {
-	color = { 43  141  172 }
+	color = { 24 77 94 }
 
 	country_type = recognized
 
@@ -2399,7 +2399,7 @@ PEU = {
 }
 
 PRG = {
-	color = { 177  44  29 }
+	color = { 112 28 18 }
 
 	country_type = recognized
 
@@ -2422,7 +2422,7 @@ URU = {
 }
 
 VNZ = {
-	color = { 255  176  140 }
+	color = { 150 104 83 }
 
 	country_type = recognized
 
@@ -3414,7 +3414,7 @@ RIO = {
 }
 
 PNI = {
-	color = hsv360{ 120  75  61 }
+	color = hsv360{ 120  75  33 }
 
 	country_type = recognized
 
