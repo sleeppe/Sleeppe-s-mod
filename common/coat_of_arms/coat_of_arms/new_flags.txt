@@ -177,13 +177,285 @@ MOL_subject_TUR = {
 		texture = "moldavia_coat_of_arms.dds"
 	}
 }
-MOL_communist = {
-		pattern = "moldavia pattern.dds"
+
+PAP = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "yellow"
+}
+PAP_theocracy = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "yellow"
+	color2 = "white"
+	textured_emblem = {
+		texture = "papal_coat_of_arms.dds"
+	}
+}
+PAP_republic = {
+	# BWR republican is for Rome/Latium
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
+PAP_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.56 0.56 } position = { 0.5 0.5 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.44 0.44 } position = { 0.5 0.5 } }
+	}
+}
+PAP_fascist = {
+	pattern = "pattern_solid.tga"
+	color1 = "black"
+
+	colored_emblem = {
+		texture = "ce_tricolor_vertical.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_chi_rho.dds"
+		color1 = "black"
+		color2 = "black"
+		instance = { scale = { 0.65 0.65 } position = { 0.5 0.5 } }
+	}
+}
+
+CRO = {
+	pattern = "tricolor_pattern.dds"
 	color1 = "red"
 	color2 = "blue"
 	color3 = "white"
-
 	textured_emblem = {
-		texture = "moldavia_coat_of_arms.dds"
+		texture = "croatia_slavonia_coat_of_arms.dds"
+	}
+}
+CRO_republic = {
+	pattern = "tricolor_pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+	textured_emblem = {
+		texture = "croatia_slavonia_coat_of_arms.dds"
+	}
+}
+CRO_dictatorship = {
+	pattern = "tricolor_pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+	textured_emblem = {
+		texture = "croatia_slavonia_coat_of_arms.dds"
+	}
+}
+CRO_triple_monarchy = {
+	pattern = "tricolor_pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+	textured_emblem = {
+		texture = "croatia_slavonia_coat_of_arms.dds"
+	}
+}
+CRO_subject = {
+	pattern = "tricolor_pattern.dds"
+	color1 = "red"
+	color2 = "blue"
+	color3 = "white"
+	textured_emblem = {
+		texture = "croatia_slavonia_coat_of_arms.dds"
+	}
+}
+
+PAR = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "white"
+}
+PAR_absolute_monarchy = {
+	pattern = "pattern_gironny_8.dds"
+	color1 = "blue_light"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.05 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.5 0.95 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.05 0.5 } scale = { 0.1 1.0 } }
+		instance = { position = { 0.95 0.5 } scale = { 0.1 1.0 } }
+	}
+}
+PAR_absolute_monarchy_subject = {
+	pattern = "pattern_gironny_8.dds"
+	color1 = "blue_light"
+	color2 = "yellow"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.05 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.5 0.95 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.05 0.5 } scale = { 0.1 1.0 } }
+		instance = { position = { 0.95 0.5 } scale = { 0.1 1.0 } }
+	}
+}
+
+PAR_republic = {
+	# 1848 Horiz. Bicolour
+
+	pattern = "pattern_solid.tga"
+	color1 = "yellow"
+	colored_emblem = {
+		texture = "ce_bicolor_bottom.dds"
+		color1 = "blue_light"
+		color2 = "blue_light"
+	}
+}
+PAR_dictatorship = {
+	# Gironny flag
+
+	pattern = "pattern_gironny_8.dds"
+	color1 = "yellow"
+	color2 = "blue_light"
+
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { position = { 0.5 0.05 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.5 0.95 } scale = { 1.0 0.1 } }
+		instance = { position = { 0.05 0.5 } scale = { 0.1 1.0 } }
+		instance = { position = { 0.95 0.5 } scale = { 0.1 1.0 } }
+	}
+}
+PAR_communist = {
+	pattern = "pattern_vertical_split_01.tga"
+	color1 = "red"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_hammer_sickle_pcdi.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.45 0.45 } position = { 0.2 0.24 } }
+	}
+}
+
+HOL = {
+	pattern = "holstein_pattern.dds"
+	color1 = "red"
+	color2 = "black"
+
+	textured_emblem  = {
+		texture = "holstein_coat_of_arms.dds"
+	}
+}
+HOL_republic = {
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+}
+HOL_oligarchy = {
+	# Merchant flag
+	pattern = "pattern_solid.tga"
+	color1 = "blue"
+	color2 = "white"
+
+	colored_emblem = {
+		texture = "ce_tricolor_horizontal.dds"
+		color1 = "white"
+		color2 = "red"
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.5 0.34 } position = { 0.25 @[third/2] } }
+	}
+}
+HOL_communist = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+
+	colored_emblem = {
+		texture = "ce_wreath.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.40 0.40 } position = { 0.16 0.25 } }
+	}
+	colored_emblem = {
+		texture = "ce_waves_latvia.dds"
+		color1 = "blue"
+		color2 = "yellow"
+        instance = { scale = { 1.0 1.0 } position = { 0.5 0.6 }  }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "pearl"
+		color2 = "blue"
+		instance = { scale = { 0.2 0.1 } position = { 1.5 0.69 } }
+	}
+	colored_emblem = {
+		texture = "ce_solid.dds"
+		color1 = "blue"
+		color2 = "blue"
+		instance = { scale = { 0.2 0.1 } position = { 1.5 0.696 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.16 0.16 } position = { 0.16 0.12 } }
+	}
+	colored_emblem = {
+		texture = "ce_star_05.dds"
+		color1 = "red"
+		color2 = "red"
+		instance = { scale = { 0.12 0.12 } position = { 0.16 0.12 } }
+	}
+	colored_emblem = {
+		texture = "ce_hammer_ddr.dds"
+		color1 = "yellow"
+		color2 = "yellow"
+		instance = { scale = { 0.25 0.25 } position = { 0.16 0.27 } }
+	}
+}
+HOL_subject_DEN = {
+	pattern = "holstein_pattern.dds"
+	color1 = "red"
+	color2 = "black"
+
+	textured_emblem  = {
+		texture = "holstein_coat_of_arms.dds"
 	}
 }
