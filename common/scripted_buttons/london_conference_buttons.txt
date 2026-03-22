@@ -46,10 +46,6 @@
 				target = root
 			}
 		}
-		custom_tooltip = {
-			text = gay_diplo.1
-			set_global_variable = gay_diplo
-		}
 	}
 
 	ai_chance = {
