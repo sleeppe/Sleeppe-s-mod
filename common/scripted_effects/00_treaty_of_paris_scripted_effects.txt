@@ -5,13 +5,6 @@
 		}
 
 		if = {
-			limit = {
-				c:TUR ?= {
-					any_scope_state = {
-						state_region = s:STATE_DOBRUDJA
-					}
-				}
-			}
 			c:TUR ?= {
 				random_scope_state = {
 					limit = {
@@ -20,8 +13,14 @@
 					set_state_owner = c:RUS
 				}
 			}
+			c:TUR ?= {
+					limit = {
+						state_region = s:STATE_KARS
+					}
+					set_state_owner = c:RUS 
+				}
+			}
 		}
-	}
 	else_if = {
 		limit = {
 			has_global_variable = favour_ottoman_global_var
@@ -38,7 +37,13 @@
 					set_state_owner = c:MOL
 				}
 			}
-		}
+			scope:ottoman_scope = {
+				transfer_subject = c:MOL
+			}
+			scope:ottoman_scope = {
+				transfer_subject = c:WAL
+			}
+	}
 		else_if = {
 			limit = {
 				NOT = {
@@ -79,65 +84,37 @@
 				}
 			}
 		}
-		c:TUR ?= {
-			take_on_scaled_debt = {
-				who = c:RUS
-				value = c:RUS.scaled_debt
-			}
-		}
 	}
 	else_if = {
 		limit = {
-			has_global_variable = partition_compromise_global_var
+			has_global_variable = the_romanian_solution_global_var
 		}
-		s:STATE_WALLONIA = {
+			c:WAL ?= {
+				annex = c:MOL
+				change_tag = ROM
+			}
+			s:STATE_BESSARABIA = {
+				set_owner_of_provinces = {
+					country = c:ROM 
+					provinces = {
+						x712161 x6BF7B8 xB0E0A0
+					}
+				}
+			}
+		}
+		s:STATE_DOBRUDJA = {
 			set_owner_of_provinces = {
-				country = c:LUX
+				country = c:TUR
 				provinces = {
-					x5180a0
-				}
+					x50F5CB
 			}
 		}
-		create_country = {
-			tag = LIM
-			origin = c:TUR
-			state = s:STATE_GELRE.region_state:RUS
-			on_created = {
-				c:TUR ?= {
-					create_diplomatic_pact = {
-						country = prev
-						type = personal_union
-					}
-				}
-			}
+		scope:ottoman_scope = {
+				transfer_subject = c:ROM
 		}
-	}
-	else_if = {
-		limit = {
-			has_global_variable = luxembourg_compromise_global_var
-		}
-		if = {
-			limit = {
-				exists = c:LUX
-			}
-			s:STATE_WALLONIA = {
-				set_owner_of_provinces = {
-					country = c:LUX
-					provinces = {
-						x5180a0 x3a5fb9
-					}
-				}
-			}
-		}
-		else = {
-			s:STATE_WALLONIA = {
-				set_owner_of_provinces = {
-					country = c:TUR
-					provinces = {
-						x5180a0 x3a5fb9
-					}
-				}
-			}
-		}
-	}
+	}	
 }
+		
+	
+
+

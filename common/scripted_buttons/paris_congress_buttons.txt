@@ -15,6 +15,7 @@ favour_russia_button = {
 			NOR = {
 				has_variable = favour_ottoman_button_var
 				has_variable = favour_russia_button_var
+				has_variable = the_romanian_solution_button_var
 			}
 		}
 	}
@@ -87,6 +88,7 @@ favour_ottoman_button = {
 			NOR = {
 				has_variable = favour_ottoman_button_var
 				has_variable = favour_russia_button_var
+				has_variable = the_romanian_solution_button_var
 			}
 		}
 	}
@@ -142,6 +144,56 @@ favour_ottoman_button = {
 	}
 }
 
+the_romanian_solution_button = {
+	name = the_romanian_solution_button
+	desc = the_romanian_solution_button_desc
+
+	visible = {
+		NOR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_made_choice_tt
+			NOR = {
+				has_variable = favour_ottoman_button_var
+				has_variable = favour_russia_button_var
+				has_variable = the_romanian_solution_button_var
+			}
+		}
+	}
+
+	selected = {
+		has_variable = the_romanian_solution_button_var
+	}
+
+	effect = {
+		custom_tooltip = we_chose_this_paris_treaty_tt
+		set_variable = the_romanian_solution_button_var
+		change_global_variable = {
+			name = je_congress_of_paris_proposal_3
+			add = ROOT.prestige
+		}
+		scope:ottoman_scope = {
+			change_relations = { country = root value = -10 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = root
+			}
+		}
+		scope:russia_scope = {
+			change_relations = { country = root value = -15 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = root
+			}
+		}
+	}	
+}
+
 paris_congress_approve_button = {
 	name = paris_congress_approve_button
 	desc = paris_congress_approve_button_desc
@@ -160,6 +212,7 @@ paris_congress_approve_button = {
 			OR = {
 				has_global_variable = favour_russia_global_var
 				has_global_variable = favour_ottoman_global_var
+				has_global_variable = the_romanian_solution_global_var
 			}
 			NOT = {
 				has_variable = decided_on_paris_treaty_var
@@ -216,6 +269,7 @@ paris_congress_disapprove_button = {
 			OR = {
 				has_global_variable = favour_russia_global_var
 				has_global_variable = favour_ottoman_global_var
+				has_global_variable = the_romanian_solution_global_var
 			}
 			NOT = {
 				has_variable = decided_on_paris_treaty_var

@@ -2698,6 +2698,15 @@ red_summer_counter_revolution_progress_bar = {
 				value = 5
 			}
 		}
+		if = {
+			limit = {
+				has_global_variable = favour_russia_global_var
+			}
+			subtract = {
+				desc = "je_absolutism_congress_of_paris_win"
+				value = 2
+			}
+		}
 	}
 	start_value = 0
 	min_value = 0
