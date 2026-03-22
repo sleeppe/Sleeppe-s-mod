@@ -8,7 +8,7 @@ treaty_of_paris_events.1 = {
 	desc = treaty_of_paris_events.1.d
 	flavor = treaty_of_paris_events.1.f
 
-	cooldown = { days = normal_modifier_time }
+	cooldown = { days = short_modifier_time }
 
 	event_image = {
 		video = "southamerica_aristocrats"
@@ -21,13 +21,11 @@ treaty_of_paris_events.1 = {
 	duration = 3
 
 	trigger = {
-		c:TUR ?= this
-		NOT = {
-			has_variable = treaty_of_paris_initiation_var
-	    }
-		AND = {
-			has_war_with = c:RUS 
-		}
+			c:TUR ?= this 
+			NOT = {
+				has_variable = treaty_of_paris_initiation_var 
+			}
+			is_diplomatic_play_enemy_of = c:RUS
 	}
 
 	immediate = {
@@ -57,12 +55,20 @@ treaty_of_paris_events.1 = {
 					type = je_congress_of_paris
 				}
 			}
+			every_diplomatic_play = {
+				limit = {
+					initiator_is = c:RUS
+					target_is = c:TUR 
+				}
+				end_play = yes
+			}
 			every_country_in_europe = {
 				limit = {
 					country_rank >= rank_value:great_power
 					NOR = {
-						root ?= this
+						root ?= this 
 						c:RUS ?= this
+						c:TUR ?= this
 					}
 				}
 				trigger_event = { id = treaty_of_paris_events.3 popup = yes }
@@ -150,10 +156,21 @@ treaty_of_paris_events.2 = {
 			type = je_congress_of_paris
 		}
 		custom_tooltip = treaty_of_paris_explanation_tt
+			every_diplomatic_play = {
+				limit = {
+					initiator_is = c:RUS
+					target_is = c:TUR 
+				}
+				end_play = yes		
+			}
 		every_country_in_europe = {
 			limit = {
 				country_rank >= rank_value:great_power
-				NOT = { this = root }
+				NOR = {
+					root ?= this 
+					c:RUS ?= this
+					c:TUR ?= this
+				}
 			}
 			trigger_event = { id = treaty_of_paris_events.3 popup = yes }
 		}
