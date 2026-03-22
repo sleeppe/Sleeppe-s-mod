@@ -1,0 +1,259 @@
+favour_russia_button = {
+	name = favour_russia_button
+	desc = favour_russia_button_desc
+
+	visible = {
+		NOR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_made_choice_tt
+			NOR = {
+				has_variable = favour_ottoman_button_var
+				has_variable = favour_russia_button_var
+			}
+		}
+	}
+
+	selected = {
+		has_variable = favour_russia_button_var
+	}
+
+	effect = {
+		custom_tooltip = we_chose_this_paris_treaty_tt
+		set_variable = favour_russia_button_var
+		change_global_variable = {
+			name = je_congress_of_paris_proposal_1
+			add = ROOT.prestige
+		}
+		scope:russia_scope = {
+			change_relations = { country = root value = 20 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = root
+			}
+		}
+		scope:ottoman_scope = {
+			change_relations = { country = root value = -20 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = root
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 2
+		# Liberal powers
+		if = {
+			limit = {
+				country_has_voting_franchise = yes
+			}
+			add = 3
+		}
+		add = {
+			value = "c:RUS.relations(ROOT)"
+			divide = 10
+		}
+		if = {
+			limit = {
+				c:RUS ?= {
+					is_player = yes
+				}
+			}
+			add = 3
+		}
+	}
+}
+
+favour_ottoman_button = {
+	name = favour_ottoman_button
+	desc = favour_ottoman_button_desc
+
+	visible = {
+		NOR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_made_choice_tt
+			NOR = {
+				has_variable = favour_ottoman_button_var
+				has_variable = favour_russia_button_var
+			}
+		}
+	}
+
+	selected = {
+		has_variable = favour_ottoman_button_var
+	}
+
+	effect = {
+		custom_tooltip = we_chose_this_paris_treaty_tt
+		set_variable = favour_ottoman_button_var
+		change_global_variable = {
+			name = je_congress_of_paris_proposal_2
+			add = ROOT.prestige
+		}
+		scope:ottoman_scope = {
+			change_relations = { country = root value = 20 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = root
+			}
+		}
+		scope:russia_scope = {
+			change_relations = { country = root value = -20 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_negative
+				target = root
+			}
+		}
+	}
+
+	ai_chance = {
+		value = 2
+		# Conservative powers
+		if = {
+			limit = {
+				country_has_voting_franchise = no
+			}
+			add = 3
+		}
+		add = {
+			value = "c:TUR.relations(ROOT)"
+			divide = 10
+		}
+		if = {
+			limit = {
+				c:TUR ?= {
+					is_player = yes
+				}
+			}
+			add = 3
+		}
+	}
+}
+
+paris_congress_approve_button = {
+	name = paris_congress_approve_button
+	desc = paris_congress_approve_button_desc
+
+	visible = {
+		OR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_has_concluded_loc
+			has_global_variable = paris_treaty_has_concluded_global_var
+			OR = {
+				has_global_variable = favour_russia_global_var
+				has_global_variable = favour_ottoman_global_var
+			}
+			NOT = {
+				has_variable = decided_on_paris_treaty_var
+			}
+		}
+	}
+
+	selected = {
+
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = paris_congress_approve_button_tt
+			if = {
+				limit = {
+					c:TUR = this
+				}
+				set_global_variable = paris_treaty_signed_tur_global_var
+			}
+			if = {
+				limit = {
+					c:RUS = this
+				}
+				set_global_variable = paris_treaty_signed_rus_global_var
+			}
+			set_variable = decided_on_paris_treaty_var
+		}
+	}
+
+	selected = {
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+paris_congress_disapprove_button = {
+	name = paris_congress_disapprove_button
+	desc = paris_congress_disapprove_button_desc
+
+	visible = {
+		OR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_has_concluded_loc
+			has_global_variable = paris_treaty_has_concluded_global_var
+			OR = {
+				has_global_variable = favour_russia_global_var
+				has_global_variable = favour_ottoman_global_var
+			}
+			NOT = {
+				has_variable = decided_on_paris_treaty_var
+			}
+		}
+	}
+
+	selected = {
+
+	}
+
+	effect = {
+		custom_tooltip = {
+			text = paris_congress_disapprove_button_tt
+			if = {
+				limit = {
+					c:TUR = this
+				}
+				set_global_variable = paris_treaty_not_signed_tur_global_var
+			}
+			if = {
+				limit = {
+					c:RUS = this
+				}
+				set_global_variable = paris_treaty_not_signed_rus_global_var
+			}
+			set_variable = decided_on_paris_treaty_var
+		}
+		every_country_in_europe = {
+			limit = {
+				country_rank >= rank_value:great_power
+				NOT = { this = root }
+			}
+			change_relations = { country = root value = -40 }
+		}
+	}
+
+	ai_chance = {
+		value = 0
+	}
+}
