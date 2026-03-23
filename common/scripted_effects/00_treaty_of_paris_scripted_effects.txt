@@ -135,6 +135,14 @@
 				}
 			}
 		}
+		c:TUR ?= {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_KARS
+				}
+				set_state_owner = c:RUS
+			}
+		}
 	}
 }
 		
