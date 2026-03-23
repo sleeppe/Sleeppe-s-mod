@@ -120,6 +120,22 @@
 			}
 		}	
 	}
+	else_if = {
+		limit = {
+			has_global_variable = wallachia_compromise_global_var
+		}
+		scope:ottoman_scope = {
+			transfer_subject = c:WAL
+		}
+		s:STATE_DOBRUDJA = {
+			set_owner_of_provinces = {
+				country = c:TUR 
+				provinces = {
+					X50F5CB
+				}
+			}
+		}
+	}
 }
 		
 	

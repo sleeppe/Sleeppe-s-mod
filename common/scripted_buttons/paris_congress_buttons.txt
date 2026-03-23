@@ -16,6 +16,7 @@ favour_russia_button = {
 				has_variable = favour_ottoman_button_var
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
+				has_variable = wallachia_compromise_button_var
 			}
 		}
 	}
@@ -89,6 +90,7 @@ favour_ottoman_button = {
 				has_variable = favour_ottoman_button_var
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
+				has_variable = wallachia_compromise_button_var
 			}
 		}
 	}
@@ -162,6 +164,7 @@ the_romanian_solution_button = {
 				has_variable = favour_ottoman_button_var
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
+				has_variable = wallachia_compromise_button_var
 			}
 		}
 	}
@@ -188,6 +191,57 @@ the_romanian_solution_button = {
 			change_relations = { country = root value = -15 }
 			create_diplomatic_catalyst = {
 				type = catalyst_event_negative
+				target = root
+			}
+		}
+	}	
+}
+
+wallachia_compromise_button = {
+	name = wallachia_compromise_button
+	desc = wallachia_compromise_button_desc
+
+	visible = {
+		NOR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_made_choice_tt
+			NOR = {
+				has_variable = favour_ottoman_button_var
+				has_variable = favour_russia_button_var
+				has_variable = the_romanian_solution_button_var
+				has_variable = wallachia_compromise_button_var
+			}
+		}
+	}
+
+	selected = {
+		has_variable = wallachia_compromise_button_var
+	}
+
+	effect = {
+		custom_tooltip = we_chose_this_paris_treaty_tt
+		set_variable = wallachia_compromise_button_var
+		change_global_variable = {
+			name = je_congress_of_paris_proposal_4
+			add = ROOT.prestige
+		}
+		scope:ottoman_scope = {
+			change_relations = { country = root value = 10 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = root
+			}
+		}
+		scope:russia_scope = {
+			change_relations = { country = root value = 10 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
 				target = root
 			}
 		}
