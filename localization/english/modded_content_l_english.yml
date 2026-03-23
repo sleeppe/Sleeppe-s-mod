@@ -121,6 +121,15 @@
 
  modifier_posen_assimilation: "Germanisation efforts"
 
+# CONGRESS OF PARIS JE
+ je_congress_of_paris: "The Congress of Paris"
+ je_congress_of_paris_reason: "The Great Powers have sent their delegations to Paris to decide on a solution to the unsolved crisis between Russia and the Ottoman Empire. \n\n#variable [GetGlobalVariable( 'je_congress_of_paris_participants_var' ).GetValue]#! [Concept('concept_great_power', '$concept_great_powers$')] are participating in the Conference.\n#bold #tooltippable #tooltip:favour_russia_button_desc $favour_russia_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_1' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:favour_ottoman_button_desc $favour_ottoman_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_2' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:the_romanian_solution_button_desc $the_romanian_solution_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_3' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:luxembourg_compromise_button_desc $luxembourg_compromise_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_4' ).GetValue]#! total [concept_prestige]\n\nThe conference will conclude in #variable [GetGlobalVariable('je_congress_of_paris_timer').GetValue]#! months. The proposal with the most prestige #tooltippable #tooltip:paris_treaty_voting_rules supporting#!#! it will then be selected as the congress' offical solution.\n\n#Bold Result#!\nThe Congress has [ROOT.GetCountry.GetCustom('treaty_of_paris_coutcome')][ROOT.GetCountry.GetCustom('treaty_of_paris_acceptance_timer')]"
+ je_congress_of_paris_tt_1: "The Conference has decided how to settle the Ottoman question."
+ je_congress_of_paris_tt_2: "#v $RUS$#! has accepted the outcome of the Conference"
+ je_congress_of_paris_tt_4: "#v $TUR$#! has accepted the outcome of the Conference"
+ je_congress_of_paris_tt_3: "Either #v $RUS$#! or #v $TUR$#! have rejected the outcome of the conference."
+ je_congress_of_paris_tt_5: "Hostilities have broken out between #v $RUS$#! and #v $TUR$#!"
+
  #new modded laws
  lawgroup_shifts: "Shift Work"
  law_shifts1: "No formal shifts"
@@ -182,4 +191,23 @@
 
  modifier_russia_fails: "Landowner authority"
 
- 
+
+# EVENTS
+
+ treaty_of_paris_events.1.t: "Peaceful Resolution to the Crisis?"
+ treaty_of_paris_events.1.d: "As a result of the deteriorating diplomatic situation on the Black Sea between us and the Russians, the Great Powers of Europe have requested that both sides seek a peaceful resolution to this developing crisis. Should we refuse to accept this proposal and forward it to our Russian delegates, we risk upsetting the western Great Powers, which could lead to our country getting diplomatically isolated. Our government and people additionally fear the economic consequences of this crisis and our refusal to cooperate with the West."
+ treaty_of_paris_events.1.f: "Our great nation is stuck between a rock and a hard place. Do we fight the Russians and antagonise the West or do we seek to restore peace in the region, potentially antagonising the Russians further?"
+ treaty_of_paris_events.1.a: "Let's see what the Russians have to say about this."
+ treaty_of_paris_events.1.b: "Screw them, we will fight and win this war!"
+
+ treaty_of_paris_events.2.t: "A Diplomatic Solution?"
+ treaty_of_paris_events.2.d: "Our aggressive manoeuvres in the Balkans have been noticed by the Great Powers of Europe. They and the Ottomans seem to be asking for a diplomatic end to this conflict. This goes against our goals of completely dominating the Black Sea, however, fighting this out may force the Great Powers to intervene on behalf of the Turks, which is not good for us. How should we proceed?"
+ treaty_of_paris_events.2.f: "It is now up to the Tsar to make a choice. Peace or war? Which one shall it be?"
+ treaty_of_paris_events.2.a: "Fine. Agree to a diplomatic resolution."
+ treaty_of_paris_events.2.b: "Who do they think they are? War it is!"
+
+ treaty_of_paris_events.3.t: "The Congress of Paris"
+ treaty_of_paris_events.3.d: "The Ottoman Empire and the Russians have agreed to a diplomatic resolution to the crisis on the Black Sea. We are granted with the choice to send a delegate to this Congress, with the scope of voting on a possible solution to this crisis. Do we choose to attend or do we choose to ignore this event?"
+ treaty_of_paris_events.3.f: "This is a great day for Europe! The Great Powers have chosen to negotiate, avoiding potential bloodshed for the sake of peace on the continent."
+ treaty_of_paris_events.3.a: "Send a diplomat to Paris."
+ treaty_of_paris_events.3.b: "This does not interest us."
