@@ -3,24 +3,30 @@
 		limit = {
 			has_global_variable = favour_russia_global_var
 		}
-
-		if = {
-			c:TUR ?= {
-				random_scope_state = {
-					limit = {
-						state_region = s:STATE_DOBRUDJA
-					}
-					set_state_owner = c:RUS
+		c:TUR ?= {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_DOBRUDJA
 				}
+				set_state_owner = c:RUS 
 			}
-			c:TUR ?= {
-					limit = {
-						state_region = s:STATE_KARS
-					}
-					set_state_owner = c:RUS 
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_KARS 
+				}
+				set_state_owner = c:RUS 
+			}
+		}
+		
+		s:STATE_DOBRUDJA = {
+			set_owner_of_provinces = {
+				country = c:rus
+				provinces = {
+					x50F5CB
 				}
 			}
 		}
+	}
 	else_if = {
 		limit = {
 			has_global_variable = favour_ottoman_global_var
@@ -43,6 +49,14 @@
 			scope:ottoman_scope = {
 				transfer_subject = c:WAL
 			}
+			s:STATE_DOBRUDJA = {
+			set_owner_of_provinces = {
+				country = c:TUR
+				provinces = {
+					x50F5CB
+				}
+			}
+		}
 	}
 		else_if = {
 			limit = {
@@ -59,14 +73,7 @@
 				}
 			}
 		}
-		s:STATE_DOBRUDJA = {
-			set_owner_of_provinces = {
-				country = c:TUR
-				provinces = {
-					x50F5CB
-				}
-			}
-		}
+		
 		if = {
 			limit = {
 				c:RUS ?= {
@@ -101,7 +108,6 @@
 					}
 				}
 			}
-		}
 		s:STATE_DOBRUDJA = {
 			set_owner_of_provinces = {
 				country = c:TUR
@@ -111,8 +117,9 @@
 		}
 		scope:ottoman_scope = {
 				transfer_subject = c:ROM
-		}
-	}	
+			}
+		}	
+	}
 }
 		
 	
