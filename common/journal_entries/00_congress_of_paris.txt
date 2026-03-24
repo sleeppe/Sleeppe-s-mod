@@ -14,6 +14,7 @@
     scripted_button = favour_ottoman_button
 	scripted_button = the_romanian_solution_button
 	scripted_button = wallachia_compromise_button
+	scripted_button = favour_romania_button
     scripted_button = paris_congress_approve_button
     scripted_button = paris_congress_disapprove_button
 
@@ -66,6 +67,17 @@
 			}
 			set_global_variable = {
 				name = je_congress_of_paris_proposal_4
+				value = 0
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					exists = global_var:je_congress_of_paris_proposal_5
+				}
+			}
+			set_global_variable = {
+				name = je_congress_of_paris_proposal_5
 				value = 0
 			}
 		}
@@ -165,9 +177,10 @@
 							}
 							NOR = {
 								has_variable = favour_russia_button_var # proposal 1
-								has_variable = favour_ottoman_button_var #proposal 2
+								has_variable = favour_ottoman_button_var # proposal 2
 								has_variable = the_romanian_solution_button_var # proposal 3
 								has_variable = wallachia_compromise_button_var # proposal 4
+								has_variable = favour_romania_button_var # proposal 5
 							}
 						}
 					}
@@ -185,6 +198,7 @@
 								has_variable = favour_ottoman_button_var #proposal 2
 								has_variable = the_romanian_solution_button_var # proposal 3
 								has_variable = wallachia_compromise_button_var # proposal 4
+								has_variable = favour_romania_button_var # proposal 5
 							}
 						}
 						random_list = {
@@ -272,6 +286,27 @@
 									}
 								}
 							}
+							1 = {
+								set_variable = favour_romania_button_var
+								change_global_variable = {
+									name = je_congress_of_paris_proposal_5
+									add = THIS.prestige
+								}
+								scope:ottoman_scope = {
+									change_relations = { country = root value = -25 }
+									create_diplomatic_catalyst = {
+										type = catalyst_event_negative
+										target = root
+									}
+								}
+								scope:russia_scope = {
+									change_relations = { country = root value = -25 }
+									create_diplomatic_catalyst = {
+										type = catalyst_event_negative
+										target = root
+									}
+								}
+							}
 						} 
 					}
 				if = {
@@ -281,6 +316,7 @@
 							has_global_variable = favour_ottoman_global_var
 							has_global_variable = the_romanian_solution_global_var
 							has_global_variable = wallachia_compromise_global_var
+							has_global_variable = favour_romania_global_var
 						}
 					}
 					# Clear winners
@@ -289,6 +325,7 @@
 							global_var:je_congress_of_paris_proposal_1 > global_var:je_congress_of_paris_proposal_2
 							global_var:je_congress_of_paris_proposal_1 > global_var:je_congress_of_paris_proposal_3
 							global_var:je_congress_of_paris_proposal_1 > global_var:je_congress_of_paris_proposal_4
+							global_var:je_congress_of_paris_proposal_1 > global_var:je_congress_of_paris_proposal_5
 						}
 						set_global_variable = favour_russia_global_var
 					}
@@ -297,6 +334,7 @@
 							global_var:je_congress_of_paris_proposal_2 > global_var:je_congress_of_paris_proposal_1
 							global_var:je_congress_of_paris_proposal_2 > global_var:je_congress_of_paris_proposal_3
 							global_var:je_congress_of_paris_proposal_2 > global_var:je_congress_of_paris_proposal_4
+							global_var:je_congress_of_paris_proposal_2 > global_var:je_congress_of_paris_proposal_5
 						}
 						set_global_variable = favour_ottoman_global_var
 					}
@@ -306,6 +344,7 @@
 							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_1
 							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_2
 							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_4
+							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_5
 						}
 						set_global_variable = the_romanian_solution_global_var
 					}
@@ -314,8 +353,18 @@
 							global_var:je_congress_of_paris_proposal_4 > global_var:je_congress_of_paris_proposal_1 
 							global_var:je_congress_of_paris_proposal_4 > global_var:je_congress_of_paris_proposal_2
 							global_var:je_congress_of_paris_proposal_4 > global_var:je_congress_of_paris_proposal_3
+							global_var:je_congress_of_paris_proposal_4 > global_var:je_congress_of_paris_proposal_5
 						}
 						set_global_variable = wallachia_compromise_global_var
+					}
+					else_if = {
+						limit = {
+							global_var:je_congress_of_paris_proposal_5 > global_var:je_congress_of_paris_proposal_1
+							global_var:je_congress_of_paris_proposal_5 > global_var:je_congress_of_paris_proposal_2
+							global_var:je_congress_of_paris_proposal_5 > global_var:je_congress_of_paris_proposal_3
+							global_var:je_congress_of_paris_proposal_5 > global_var:je_congress_of_paris_proposal_4
+						}
+						set_global_variable = favour_romania_global_var
 					}
 
 					else_if = { # Tiebreakers
@@ -323,15 +372,17 @@
 							global_var:je_congress_of_paris_proposal_3 = global_var:je_congress_of_paris_proposal_2
 							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_1
 							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_4
+							global_var:je_congress_of_paris_proposal_3 > global_var:je_congress_of_paris_proposal_5
 						}
 						ordered_country = {
 							limit = {
 							    has_journal_entry = je_congress_of_paris
 							    OR = {
-							    	has_variable = favour_russia_button_var #proposal 1
-							    	has_variable = favour_ottoman_button_var #proposal 2
-									has_variable = the_romanian_solution_button_var #proposal 3
-									has_variable = wallachia_compromise_button_var #proposal 4
+							    	has_variable = favour_russia_button_var # proposal 1
+							    	has_variable = favour_ottoman_button_var # proposal 2
+									has_variable = the_romanian_solution_button_var # proposal 3
+									has_variable = wallachia_compromise_button_var # proposal 4
+									has_variable = favour_romania_button_var # proposal 5
 							    }
 							}
 						    order_by = country_rank
@@ -360,6 +411,12 @@
 									has_variable = wallachia_compromise_button_var
 								}
 								set_global_variable = wallachia_compromise_global_var
+							}
+							else_if = {
+								limit = {
+									has_variable = favour_romania_button_var
+								}
+								set_global_variable = favour_romania_global_var
 							}
 						}
 					}
@@ -394,6 +451,12 @@
 									has_variable = wallachia_compromise_button_var
 								}
 								set_global_variable = wallachia_compromise_global_var
+							}
+							if = {
+								limit = {
+									has_variable = favour_romania_button_var
+								}
+								set_global_variable = favour_romania_global_var
 							}
 						}
 					}

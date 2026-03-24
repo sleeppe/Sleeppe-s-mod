@@ -51,7 +51,7 @@ treaty_of_paris_acceptance_timer = {
 				has_variable = decided_on_paris_treaty_var
 			}
 		}
-		localization_key = je_conference_of_paris_acceptance_timer_tt
+		localization_key = je_congress_of_paris_acceptance_timer_tt
 	}
 }
 

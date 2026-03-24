@@ -144,6 +144,43 @@
 			}
 		}
 	}
+	else_if = {
+		limit = {
+			has_global_variable = favour_romania_global_var
+		}
+		c:WAL ?= {
+			annex = c:MOL
+			change_tag = ROM
+		}
+		c:RUS ?= {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_BESSARABIA 
+				}
+				set_state_owner = c:ROM
+			}
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_DOBRUDJA
+				}
+				set_state_owner = c:ROM
+			}
+		}
+		c:TUR ?= {
+			random_scope_state = {
+				limit = {
+					state_region = s:STATE_DOBRUDJA
+				}
+				set_state_owner = c:ROM
+			}
+		}
+		c:ROM ?= {
+			remove_diplomatic_pact = {
+				country = c:RUS
+				type = protectorate
+			}
+		}	
+	}
 }
 		
 	

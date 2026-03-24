@@ -17,6 +17,7 @@ favour_russia_button = {
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
 				has_variable = wallachia_compromise_button_var
+				has_variable = favour_romania_button_var
 			}
 		}
 	}
@@ -91,6 +92,7 @@ favour_ottoman_button = {
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
 				has_variable = wallachia_compromise_button_var
+				has_variable = favour_romania_button_var
 			}
 		}
 	}
@@ -165,6 +167,7 @@ the_romanian_solution_button = {
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
 				has_variable = wallachia_compromise_button_var
+				has_variable = favour_romania_button_var
 			}
 		}
 	}
@@ -216,6 +219,7 @@ wallachia_compromise_button = {
 				has_variable = favour_russia_button_var
 				has_variable = the_romanian_solution_button_var
 				has_variable = wallachia_compromise_button_var
+				has_variable = favour_romania_button_var
 			}
 		}
 	}
@@ -248,6 +252,58 @@ wallachia_compromise_button = {
 	}	
 }
 
+favour_romania_button = {
+	name = favour_romania_button
+	desc = favour_romania_button_desc
+
+	visible = {
+		NOR = {
+			c:TUR ?= this
+			c:RUS ?= this
+		}
+	}
+
+	possible = {
+		custom_tooltip = {
+			text = paris_congress_made_choice_tt
+			NOR = {
+				has_variable = favour_ottoman_button_var
+				has_variable = favour_russia_button_var
+				has_variable = the_romanian_solution_button_var
+				has_variable = wallachia_compromise_button_var
+				has_variable = favour_romania_button_var
+			}
+		}
+	}
+
+	selected = {
+		has_variable = favour_romania_button_var
+	}
+
+	effect = {
+		custom_tooltip = we_chose_this_paris_treaty_tt
+		set_variable = favour_romania_button_var
+		change_global_variable = {
+			name = je_congress_of_paris_proposal_5
+			add = ROOT.prestige
+		}
+		scope:ottoman_scope = {
+			change_relations = { country = root value = -25 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = root
+			}
+		}
+		scope:russia_scope = {
+			change_relations = { country = root value = -25 }
+			create_diplomatic_catalyst = {
+				type = catalyst_event_positive
+				target = root
+			}
+		}
+	}	
+}
+
 paris_congress_approve_button = {
 	name = paris_congress_approve_button
 	desc = paris_congress_approve_button_desc
@@ -267,6 +323,8 @@ paris_congress_approve_button = {
 				has_global_variable = favour_russia_global_var
 				has_global_variable = favour_ottoman_global_var
 				has_global_variable = the_romanian_solution_global_var
+				has_global_variable = wallachia_compromise_global_var
+				has_global_variable = favour_romania_global_var
 			}
 			NOT = {
 				has_variable = decided_on_paris_treaty_var
@@ -324,6 +382,8 @@ paris_congress_disapprove_button = {
 				has_global_variable = favour_russia_global_var
 				has_global_variable = favour_ottoman_global_var
 				has_global_variable = the_romanian_solution_global_var
+				has_global_variable = wallachia_compromise_global_var
+				has_global_variable = favour_romania_global_var
 			}
 			NOT = {
 				has_variable = decided_on_paris_treaty_var
