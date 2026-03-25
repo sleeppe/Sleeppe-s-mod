@@ -24,6 +24,12 @@ treaty_of_paris_coutcome = {
 		}
 		localization_key = wallachia_compromise_loc
 	}
+	text = {
+		trigger = {
+			has_global_variable = favour_romania_global_var
+		}
+		localization_key = favour_romania_loc
+	}
 
 	text = {
 		trigger = {
@@ -32,6 +38,7 @@ treaty_of_paris_coutcome = {
 				has_global_variable = favour_ottoman_global_var
 				has_global_variable = the_romanian_solution_global_var
 				has_global_variable = wallachia_compromise_global_var
+				has_global_variable = favour_romania_global_var
 			}
 
 		}

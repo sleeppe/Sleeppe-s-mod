@@ -152,6 +152,16 @@
  paris_congress_has_concluded_loc: "The Paris Congress has concluded."
  je_congress_of_paris_acceptance_timer_tt: "\n\nWe will automatically accept the outcome of the conference in #variable [GetGlobalVariable('je_conference_of_london_acceptance_timer').GetValue]#! months."
 
+ favour_russia_loc: "Decided to grant Russia some of their territorial claims"
+ favour_ottoman_loc: "Decided to grant the Ottomans some of their territorial claims"
+ the_romanian_solution_loc: "Decided to let the Principalities unite and restored their status as an Ottoman vassal"
+ wallachia_compromise_loc: "Decided to split the Principalities between the two Great Powers"
+ favour_romania_loc: "Decided to let the Principalities unite, grant them all of their claims from the two Great Powers, and gave them independence"
+
+ we_chose_this_paris_treaty_tt: "[ROOT.GetCountry.GetName] will officially favour this proposal."
+ paris_congress_made_choice_tt: "We have #bold not#! backed a proposal"
+ paris_treaty_voting_rules: "In the case where two leading proposals receive the same amount of [concept_prestige] supporting them, the proposal backed by the [concept_great_power] with the highest [concept_rank] will be chosen.\n\nIf you have not officially favored a solution by the time the conference concludes, your delegates will act independently and select one for you."
+ 
  #new modded laws
  lawgroup_shifts: "Shift Work"
  law_shifts1: "No formal shifts"
@@ -233,3 +243,13 @@
  treaty_of_paris_events.3.f: "This is a great day for Europe! The Great Powers have chosen to negotiate, avoiding potential bloodshed for the sake of peace on the continent."
  treaty_of_paris_events.3.a: "Send a diplomat to Paris."
  treaty_of_paris_events.3.b: "This does not interest us."
+
+ treaty_of_paris_events.4.t: "Paris Congress Concludes"
+ treaty_of_paris_events.4.d: "The Great Powers of Europe have finally come to an agreement! As a result of their close cooperation and desire for regionla peace, an agreement was reached regarding the crisis on the Black Sea. This moment marks the end of a long period of negotiations which brings about a peaceful resolution to this crisis."
+ treaty_of_paris_events.4.f: "This is a huge moment for Europe. Everyone worked together to achieve a lasting peace and to maintain a reasonable Balance of Power in the region."
+ treaty_of_paris_events.4.a: "Peace in our times!"
+
+ treaty_of_paris_events.5.t: "The Congress of Paris Fails!"
+ treaty_of_paris_events.5.d: "The Great Powers of Europe have failed to reach a peaceful settlement to this crisis. This leaves the region prone to future conflict and crises. The failure of this Congress is a massive setback for peace in Europe and paints the Great Powers in a negative light. How will things develop from here?"
+ treaty_of_paris_events.5.f: "This is a disaster for Europe! How did we fail like this!?"
+ treaty_of_paris_events.5.a: "We must prepare for the future!"
