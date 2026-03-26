@@ -43,3 +43,7 @@ tradition_lusitanian = {
 tradition_dutch_colonial = {
 	type = tradition
 }
+
+tradition_extended_kinship = {
+	type = tradition
+}

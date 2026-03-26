@@ -9,4 +9,16 @@
  state_trait_aegean_sea: "Ege Denizi"
  state_trait_galveston_bay: "Galveston Bay"
  state_trait_saxon_switzerland: "Sächsische Schweiz"
+<<<<<<< HEAD
  state_trait_mosel_river: "Musel River"
+=======
+ state_trait_mosel_river: "Musel River"
+ state_trait_vistula_river: "Vistula River"
+ state_trait_bowen_basin_coalfield: "Bowen Basin Coalfields"
+ state_trait_hunter_valley: "Hunter Valley"
+ state_trait_latrobe_valley: "Latrobe Valley"
+ state_trait_trent_river: "River Trent"
+ state_trait_lorraine_mines: "Fensch Valley Mining"
+ state_trait_monopoly_location: "State Distillery Location"
+ state_trait_cusco_valley: "Sacred Valley"
+>>>>>>> Beware-The-Bear_Majour_Updates

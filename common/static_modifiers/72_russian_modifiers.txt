@@ -1,0 +1,43 @@
+## Modifiers for Russia
+
+#Vodka Monopoly
+modifier_vodka_monopoly = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_max_companies_add = 1
+}
+
+modifier_distillery_privileges = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	building_food_industry_throughput_add = -0.05
+	country_aristocrats_pol_str_mult = 0.2
+	state_aristocrats_investment_pool_efficiency_mult = 0.1
+}
+
+modifier_monastic_distillery = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	building_food_industry_throughput_add = -0.05
+	country_aristocrats_pol_str_mult = 0.2
+	state_aristocrats_investment_pool_efficiency_mult = 0.15
+	country_clergymen_pol_str_mult = 0.1
+	state_clergymen_investment_pool_efficiency_mult = 0.1	
+}
+
+modifier_reduced_prices = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	building_food_industry_throughput_add = -0.15
+	state_radicals_from_political_movements_mult = -0.4
+	country_radicals_from_legitimacy_mult = -0.15
+	state_radicals_and_loyalists_from_sol_change_mult = -0.05
+}
+
+modifier_catherinian_legacy = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds"
+	country_prestige_add = 50
+	unit_morale_loss_mult = -0.05
+	unit_morale_recovery_mult = 0.05
+}
+
+modifier_russia_minting = {
+	icon = "gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds"
+	country_minting_mult = 0.15
+}

@@ -11,11 +11,19 @@
  company_heineken: "Heineken Brouwerij"
  company_marzotto: "Lanificio Luigi Marzotto & Figli"
  company_american_Milling: "Plain Millers' Monopoly"
+ company_australian_agricultural: "Australian Agricultural Company"
+ company_imperial_companhia_seropédica_fluminense: "Imperial Companhia Seropédica Fluminense"
 
 ##Modded Laws
  
  law_dutch_provinces: "Grondwet: Vierde Hoofdstuk"
  law_dutch_provinces_desc: "The provincial States shall be constituted of representatives of the nobility, the towns, and the rural districts. The manner of election, the distribution of seats, and the organization of electoral bodies shall be regulated by royal authority, subject to prescribed provincial regulations. The King shall appoint commissioners in every province to preside over the assemblies and to supervise the faithful execution of the laws."
+
+ law_mit_a_taxes: "Mit'a Taxes"
+ law_mit_a_taxes_desc: "In Addition to normal taxes, all communities of the realm have to use labour as a taxed resource to build state projects and infrastructure. In return the State integrates those communities into it's fabric and provides food security and support in times of need."
+
+ law_ayllu_kinship: "Ayllu Kinship"
+ law_ayllu_kinship_desc: "Society is organised around the traditional Ayllu Communities. This system derives from the creation legend of the Ican Empire. Loyalty comes through communal bonds, which ensure cohesion. The state does not govern directly but rather interact with the Communities as a whole. That decreases the bureaucratic expenditure, while in turn limiting social mobility."
 
 ##Modded Goods
 
@@ -23,6 +31,17 @@
  prestige_good_cockerill_tools: "Cockerill Tools"
  prestige_good_congo_rubber: "Congolese Rubber"
  prestige_good_heineken_beer: "Heineken Pilsener"
+ prestige_good_prestige_coal_australia: "Australian Coal"
+ prestige_good_moskovskaya_osobaya: "Moskovskaya Osobaya"
+
+##Modded Decision
+ extend_ayllu_kinship_sa: "Extend the Ayllu Bonds to the South Andeans"
+ extend_ayllu_kinship_sa_desc: "We have expanded and regained territory once held by our ancestors. We shall now begin with the integration process! Trace the Settlers lineage in our ancestoral Pantheon!"
+ extend_ayllu_kinship_na: "Extend the Ayllu Bonds to their Andean Brethern"
+ extend_ayllu_kinship_na_desc: "We once again expanded. Now we encompass the Brethern of those we recently integrated! Trace the divergence of their lineage from it's origins. It has been decreed, they shall be integrated."
+
+ extended_kinship: "Has extended the Kinship bonds!"
+ tradition_extended_kinship: "Ayllu System"
 
 ##Modded JE's
 
@@ -85,8 +104,6 @@
  je_polish_constitution_lobby: "Poland stands defiant of the oppression imposed upon them by foreign empires. yet, their efforts have been quashed, and liberal reforms destroyed"
  je_polish_constitution_reason: "[ROOT.GetCountry.GetName] was a compromise invention, created in the Congress of Vienna to have one of the most liberal regimes in Europe in order to check the power of the russian Tsar. After a rebellion in 1830 Poland was stripped of practically all of its autonomy, and Russia continues to encroach on [ROOT.GetCountry.GetAdjectiveNoFlag] sovereignty. Yet the [ROOT.GetCountry.GetAdjectiveNoFlag] people yearn for independence, as well as a return to their liberal constitution. Perhaps we can attempt to undermine the Russians and reassert not only our constitution, but our independence."
  je_polish_constitution_status: "Russia holds a firm grip on Poland"
-
- state_trait_vistula_river: "Vistula River"
 
  je_polish_constitution_button1: "Begin Reinstating the Constitution"
  je_polish_constitution_button1_desc: "The cornerstone of the constitution given to the poles at vienna was its extremely liberal views on suffrage, if we were to bring the vote back to the people, then perhaps we can begin to undermine the Tsar"
@@ -223,6 +240,7 @@
 
  modifier_russia_fails: "Landowner authority"
 
+<<<<<<< HEAD
 
 # EVENTS
 
@@ -253,3 +271,41 @@
  treaty_of_paris_events.5.d: "The Great Powers of Europe have failed to reach a peaceful settlement to this crisis. This leaves the region prone to future conflict and crises. The failure of this Congress is a massive setback for peace in Europe and paints the Great Powers in a negative light. How will things develop from here?"
  treaty_of_paris_events.5.f: "This is a disaster for Europe! How did we fail like this!?"
  treaty_of_paris_events.5.a: "We must prepare for the future!"
+=======
+ modifier_distillery_privileges: "Expanded Distillery Privileges"
+ modifier_vodka_monopoly: "Vodka Monopolised"
+ modifier_monastic_distillery: "Expanded the Privilege to the Church"
+ modifier_reduced_prices: "Reduced Vodka Prices"
+ modifier_russia_minting: "Monopoly Profits"
+
+ je_vodka_monopoly: "The Vodka Monopoly"
+ je_vodka_monopoly_reason: "Since Ivan the third, Vodka has been a state monopoly. Factually outlawing the domestic distillery of drink and making it a state enterprise to produce and sell Alcohol, predominantly Vodka. Selling Vodka at fix prices enables us to control the general populance and generate Russia great income. In 1765, Catherine the Great extended the privilege to Nobles, allowing them to distill drink on their own estates. The Vodka Monopoly is a vital tool for the Tsarist State, it is paramount to use it wisely.."
+
+ revoking_privileges_button: "Revoke Privileges"
+ revoking_privileges_button_desc: "Too long have the Nobles made a dime on the Vodka Monopoly. It is time to fully seize our tool!"
+
+ grant_privilges_button: "Restore Catherinian Privileges"
+ grant_privilges_button_desc: "To appease the Gentry, it has become time for them to regain the privileges promised to them under Catherine the Great in 1765."
+
+ monastic_distillery_button: "Extend the Privilege to the Church"
+ monastic_distillery_button_desc: "In an effort to improve state relations with the Devout, we ought to extend the right to distill drink to them and the monastaries, for they have always been brewing and distilling elsewhere. Let the clergy profit from our arrangement!"
+
+ reducing_prices_button: "Reduce the Price of Drink!"
+ reducing_prices_button_desc: "In an effort to appease the populance, we will lower drink prices."
+ 
+ normalising_prices_button: "Normalise Pricing"
+ normalising_prices_button_desc: "We shall restore the pricing of Vodka. Times of hardship are over, we don't need the peasantry to fall in line that much anymore. Let's get back to normalising and profiting."
+
+
+ je_road_to_tsargorod: "Doroga v Tsargorod"
+ je_road_to_tsargorod_reason: "The Ottoman Menace is to the South!\n\nLet the drums of war sound! Too long have the Muslims oppressed the virtuous Christians on the Balkan Peninsula. Our beloved Empress, long past, has decreed for all her sucessors to reconquer Constantinople for Christendom. It is in our interest to seize control of the City and it's periphery. We must decide if the current geopolitical situation allows us to acquire only Tsargorod, or if the road leading to the second Rome is ripe for the taking too."
+
+ claims_tsargorod: "Claim Tsargorod"
+ claims_tsargorod_desc: "We must remember the muslim Threat down yonder. Catherine the great proposed the Greek Project in the 1780s. It is now time we shall realise the plan. Let Moscow and Tsargorod rejoice, lets bring peace and freedom to the Orthodox people of the Balkan!"
+
+ modifier_catherinian_legacy: "In the Footsteps of Giants"
+
+ claims_black_sea_region: "Claim the Entirety of the Black Sea Coast"
+ claims_black_sea_region_desc: "Catherine the great proposed a Greek Plan, to secure the safety and prosperity of Slavs and Orthodox Christians alike in the Balkans. We most expand on this Plan. In this day and age creating and independent State down south is futile. We instead must control the entirety of the Black Sea, to secure our own interests and crush the muslim meance!"
+ 
+>>>>>>> Beware-The-Bear_Majour_Updates

@@ -23,3 +23,15 @@ prestige_good_heineken_beer = {
 	prestige_bonus = 0.5
 	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/heineken_beer_dds.dds"
 }
+
+prestige_good_prestige_coal_australia = {
+	base_good = coal
+	prestige_bonus = 0.2
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/modded_prestige_goods/prestige_coal.dds"
+}
+
+prestige_good_moskovskaya_osobaya = {
+	base_good = liquor
+	prestige_bonus = 0.1
+	texture = "gfx/interface/icons/goods_icons/prestige_goods/smirnoff_vodka_prestige.dds"
+}
