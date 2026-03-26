@@ -7365,10 +7365,3 @@ on_monthly_pulse_country = {
 		statistics_on_actions
 	}
 }
-
-
-statistics_on_actions = {
-    effect = {
-        total_statistics_effect = yes
-    }
-}

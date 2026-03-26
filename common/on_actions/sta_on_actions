@@ -1,0 +1,5 @@
+statistics_on_actions = {
+    effect = {
+        total_statistics_effect = yes
+    }
+}
