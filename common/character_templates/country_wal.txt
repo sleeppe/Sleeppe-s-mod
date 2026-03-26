@@ -1,4 +1,4 @@
-WAL_Alexander_John_Cuza = { 
+﻿WAL_Alexander_John_Cuza = { 
 	first_name = alexander_ioan_cuza_first_name
     last_name = alexander_ioan_cuza_last_name
     historical = yes

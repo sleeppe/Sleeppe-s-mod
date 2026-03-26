@@ -1,4 +1,4 @@
-state_trait_sillon_industriel = {
+﻿state_trait_sillon_industriel = {
     icon = "gfx/interface/icons/state_trait_icons/turquoise.dds"
 	modifier = {
 		state_construction_mult = 0.1

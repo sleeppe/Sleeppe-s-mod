@@ -1,4 +1,4 @@
-namespace = polish_constitution
+﻿namespace = polish_constitution
 
 polish_constitution.1 = {
 	type = country_event

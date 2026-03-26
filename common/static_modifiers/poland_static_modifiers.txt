@@ -1,4 +1,4 @@
-##Modifiers for polish flavour
+﻿##Modifiers for polish flavour
 
 #Gateway to Europe
 modifier_posen_assimilation = {

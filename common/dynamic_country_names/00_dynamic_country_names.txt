@@ -2102,6 +2102,19 @@ MOL = { # Moldavia
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = dyn_c_moldova_occupation
+		adjective = dyn_c_moldova_adj
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor = {
+				is_subject_of = c:RUS
+			}
+		}
+	}
 }
 
 NAL = { # Natalia
@@ -3577,6 +3590,20 @@ WAL = { # Wallachia
 			}
 			c:MOL ?= {
 				is_subject_of = scope:actor
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_wallachia_occupation
+		adjective = WAL_ADJ
+
+		is_main_tag_only = yes
+		priority = 1
+
+		trigger = {
+			scope:actor = {
+				is_subject_of = c:RUS
 			}
 		}
 	}
@@ -6088,40 +6115,6 @@ SAR = { # Sardinia
 			exists = scope:actor
 			scope:actor ?= {
 				has_variable = central_italy 
-			}
-		}
-	}
-}
-
-# modded
-
-MOL = { # Moldovan occupation
-	dynamic_country_name = {
-		name = dyn_c_moldova_occupation
-		adjective = dyn_c_moldova_adj
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			scope:actor = {
-				is_subject_of = c:RUS
-			}
-		}
-	}
-}
-
-WAL = { # Wallachian occupation
-	dynamic_country_name = {
-		name = dyn_c_wallachia_occupation
-		adjective = WAL_ADJ
-
-		is_main_tag_only = yes
-		priority = 1
-
-		trigger = {
-			scope:actor = {
-				is_subject_of = c:RUS
 			}
 		}
 	}

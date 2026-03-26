@@ -1,3 +1,5 @@
+﻿namespace = russian_absolutism
+
 russian_absolutism.1 = {
 	type = country_event
 	placement = root

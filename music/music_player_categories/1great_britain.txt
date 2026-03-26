@@ -1,4 +1,4 @@
-category = {
+﻿category = {
     id = "Sleeppe_s_mod_category_1british_songs"
     name = "british_songs_name"
     tracks = {
