@@ -1,0 +1,70 @@
+##JE for the Vodka Monopoly in Russia 
+
+je_vodka_monopoly = {
+	icon = "gfx/interface/icons/event_icons/event_fire.dds"
+
+	group = je_group_historical_content
+
+	modifiers_while_active = {
+		modifier_russia_minting
+	}
+
+	is_shown_in_lobby = {
+		c:RUS = THIS
+	}
+
+	is_shown_when_inactive = {
+		exists = c:RUS
+		c:RUS = ROOT
+	}
+
+	possible = {
+		c:RUS = THIS
+	}
+
+	scripted_button = revoking_privileges_button
+	scripted_button = grant_privilges_button
+	scripted_button = monastic_distillery_button
+	scripted_button = reducing_prices_button
+	scripted_button = normalising_prices_button
+
+	immediate = {
+		company:company_vodka_monopoly = {
+			save_scope_as = vodka_company
+		}
+	}
+
+	on_monthly_pulse = {
+	}
+
+	complete = {
+	}
+
+	on_complete = {
+	}
+
+	on_fail = {
+		remove_modifier = modifier_vodka_monopoly
+		if = {
+			limit = { has_modifier = modifier_distillery_privileges }
+			remove_modifier = modifier_distillery_privileges
+		}
+		if = {
+			limit = { has_modifier = modifier_monastic_distillery }
+			remove_modifier = modifier_monastic_distillery
+		}
+		if = {
+			limit = { has_modifier = modifier_reduced_prices }
+			remove_modifier = modifier_reduced_prices
+		}
+	}
+
+	fail = {
+		NOT = { has_company = company_type:company_vodka_monopoly }
+			NOT = { has_law = law_type:law_tenant_farmers }
+			NOT = { has_law = law_type:law_serfdom }
+	}
+
+	weight = 10000
+	should_be_pinned_by_default = yes
+}

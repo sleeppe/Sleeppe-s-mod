@@ -178,7 +178,6 @@ company_konigliche_porzellan_manufaktur_meissen = {
 	}
 
 	possible = {
-		has_technology_researched = chemical_bleaching
 		any_scope_state = {
 			state_region = s:STATE_SAXONY
 			is_incorporated = yes

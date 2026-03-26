@@ -1,0 +1,72 @@
+##Modded Decisions for the Journal Tab
+
+extend_ayllu_kinship_sa = {
+	is_shown = {
+		c:IQU = ROOT
+		NOT = { has_global_variable = extended_ayllu_kinship }
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		owns_entire_state_region = STATE_ICA
+		owns_entire_state_region = STATE_AREQUIPA
+		owns_entire_state_region = STATE_LIMA
+		owns_entire_state_region = STATE_CAJAMARCA
+	}
+
+	when_taken = {
+		custom_tooltip = {
+			text = extended_kinship
+			set_global_variable = extended_ayllu_kinship
+			cu:south_andean  = {
+            add_tradition_trait = tradition_extended_kinship
+       	 	}
+			cu:quechua = {
+            add_tradition_trait = tradition_extended_kinship
+       	 	}
+		}
+		s:STATE_SANTA_CRUZ = {
+			add_claim = c:IQU
+		}
+		s:STATE_LA_PAZ = {
+			add_claim = c:IQU
+		}
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}
+
+extend_ayllu_kinship_na = {
+	is_shown = {
+		c:IQU = ROOT
+		NOT = { has_global_variable = kinship_na_extended }
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		custom_tooltip = {
+			text = extended_kinship
+			has_global_variable = extended_ayllu_kinship
+		}
+		owns_entire_state_region = STATE_ECUADOR
+	}
+
+	when_taken = {
+		cu:north_andean = {
+			add_tradition_trait = tradition_extended_kinship
+		}
+		s:STATE_CUNDINAMARCA = {
+			add_claim = c:IQU
+		}
+		s:STATE_CAUCA = {
+			add_claim = c:IQU
+		}
+		set_global_variable = kinship_na_extended
+	}
+
+	ai_chance = {
+		value = 10
+	}
+}

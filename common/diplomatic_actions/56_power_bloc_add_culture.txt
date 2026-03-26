@@ -1,0 +1,69 @@
+﻿add_power_bloc_culture = {
+	groups= {
+		power_bloc_leader
+	}
+	show_in_lens = no
+
+	texture = "gfx/interface/icons/diplomatic_action_icons/force_culture.dds"
+
+	selectable = {
+		is_power_bloc_leader = yes
+		power_bloc ?= {
+			modifier:power_bloc_leader_can_spread_culture_to_pb_bool = yes
+		}
+	}
+
+	potential = {
+		power_bloc ?= {
+			scope:target_country.power_bloc ?= this
+		}
+	}
+
+	possible = {
+		power_bloc = {
+			current_cohesion_percentage >= 0.5
+		}
+		scope:target_country = {
+			tenure_in_current_power_bloc_years >= 5
+		}
+	}
+
+	accept_effect = {
+		ordered_primary_culture = {
+			order_by = "root.culture_percent_country(this)"
+			save_scope_as = main_culture_scope
+		}
+		scope:target_country = {
+			add_primary_culture = scope:main_culture_scope
+			capital = {
+				custom_tooltip = {
+					text = change_portion_of_pop_culture_pb_tt
+					every_scope_pop = {
+						change_pop_culture = {
+							target = scope:main_culture_scope
+							value = 0.05
+						}
+					}
+				}
+			}
+		}
+
+		power_bloc = {
+			add_cohesion_percent = scaled_cohesion_cost
+		}
+	}
+
+	ai = {
+		evaluation_chance = {
+			value = 0.025 # AI shouldn't use this very often
+		}
+
+		will_propose = {
+			power_bloc = { current_cohesion_percentage >= 0.75 }
+		}
+
+		propose_score = {
+			value = 10
+		}
+	}
+}
