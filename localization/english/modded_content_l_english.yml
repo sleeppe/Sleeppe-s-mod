@@ -305,3 +305,4 @@
  treaty_of_paris_events.5.d: "The Great Powers of Europe have failed to reach a peaceful settlement to this crisis. This leaves the region prone to future conflict and crises. The failure of this Congress is a massive setback for peace in Europe and paints the Great Powers in a negative light. How will things develop from here?"
  treaty_of_paris_events.5.f: "This is a disaster for Europe! How did we fail like this!?"
  treaty_of_paris_events.5.a: "We must prepare for the future!"
+ treaty_of_paris_explanation_tt: "#bold $RUS$#! agrees to negotiate with #bold $dyn_c_ottoman_empire$#! over the Black Sea crisis. The Great Powers of Europe may now agree to a peaceful settlement to the crisis"
