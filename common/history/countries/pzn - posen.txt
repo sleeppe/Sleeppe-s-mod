@@ -1,4 +1,4 @@
-COUNTRIES = {
+﻿COUNTRIES = {
 	c:PZN ?= {
 		effect_starting_technology_tier_2_tech = yes
 		

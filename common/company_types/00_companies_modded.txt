@@ -131,7 +131,7 @@ company_van_houtum_en_palm = {
 	}
 
 	extension_building_types = {
-		building_chemical_plants
+		building_chemical_plant
 		building_sulfur_mine
 	}
 

@@ -124,7 +124,6 @@ TUR_commie = {
 
 	textured_emblem = {
 		texture = "turkish_socialist_emblems.dds"
-		color1 = "yellow"
 	}
 }
 

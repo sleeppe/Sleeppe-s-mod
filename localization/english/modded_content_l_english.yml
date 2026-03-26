@@ -159,8 +159,6 @@
  favour_romania_loc: "Decided to let the Principalities unite, grant them all of their claims from the two Great Powers, and gave them independence"
 
  we_chose_this_paris_treaty_tt: "[ROOT.GetCountry.GetName] will officially favour this proposal."
- paris_congress_made_choice_tt: "We have #bold not#! backed a proposal"
- paris_treaty_voting_rules: "In the case where two leading proposals receive the same amount of [concept_prestige] supporting them, the proposal backed by the [concept_great_power] with the highest [concept_rank] will be chosen.\n\nIf you have not officially favored a solution by the time the conference concludes, your delegates will act independently and select one for you."
  
  #new modded laws
  lawgroup_shifts: "Shift Work"
