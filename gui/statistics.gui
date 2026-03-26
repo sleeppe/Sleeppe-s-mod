@@ -1,0 +1,527 @@
+﻿
+default_popup = {
+	name = "statistics"
+	visible = "[GetVariableSystem.Exists('statistics_open')]"
+	parentanchor = center
+	movable = yes
+	layer = popups
+	allow_outside = yes
+	max_update_rate = 10
+
+	blockoverride "header" {
+		widget = {
+			size = { 100% 82 }
+			visible = "[GetVariableSystem.Exists('stat_id')]"
+			popup_top_header = {}
+
+			textbox = {
+				position = { 0 24 }
+				size = { 75% 40 }
+				text = "[JoinText(' ', Localize(Concatenate('stat_', GetVariableSystem.Get('stat_id'))), Localize('statistics_header'))]"
+				elide = right
+
+				parentanchor = hcenter
+				align = hcenter|nobaseline
+				using = header_font
+				using = header_font_size
+				default_format = "#header"
+			}
+
+			block "second_line" {}
+		}
+	}
+
+	blockoverride "header_back_button_visibility" {
+		visible = yes
+	}
+
+	blockoverride "header_close_button_visibility" {
+		visible = yes
+	}
+
+	blockoverride "header_close_button" {
+		onclick = "[GetVariableSystem.Clear('statistics_open')]"
+	}
+	blockoverride "header_back_button" {
+		onclick = "[GetVariableSystem.Clear('statistics_open')]"
+	}
+	blockoverride "entire_scrollarea"
+	{
+		flowcontainer = {
+			direction = horizontal
+			widget = {
+				size = { 140 800 }
+				flowcontainer = {
+					direction = vertical
+					margin_top = 13
+					spacing = 13
+					button = {
+						fontsize = 13
+						using = default_button_action
+						size = { 135 37 }
+						text = "stat_reverse"
+						onclick = "[GetScriptedGui('statistics_sgui_reverse').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_01"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '01')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '01'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '01')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_03"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '03')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '03'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '03')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_05"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '05')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '05'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '05')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_07"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '07')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '07'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '07')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_09"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '09')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '09'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '09')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_11"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '11')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '11'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '11')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_13"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '13')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '13'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '13')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_15"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '15')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '15'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '15')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_17"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '17')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '17'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '17')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_19"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '19')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '19'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '19')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_21"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '21')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '21'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '21')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_23"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '23')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '23'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '23')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_25"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '25')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '25'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '25')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_27"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '27')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '27'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '27')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_29"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '29')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '29'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '29')]"
+					}
+				}
+			}
+			widget = {
+				size = { 160 800 }
+				flowcontainer = {
+					direction = vertical
+					margin_top = 13
+					spacing = 13
+					button = {
+						fontsize = 13
+						using = default_button_action
+						size = { 135 37 }
+						text = "flag_mode"
+						onclick = "[GetScriptedGui('statistics_sgui_refresh').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						tooltip = "flag_mode_tooltip"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_02"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '02')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '02'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '02')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_04"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '04')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '04'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '04')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_06"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '06')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '06'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '06')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_08"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '08')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '08'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '08')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_10"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '10')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '10'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '10')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_12"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '12')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '12'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '12')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_14"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '14')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '14'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '14')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_16"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '16')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '16'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '16')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_18"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '18')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '18'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '18')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_20"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '20')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '20'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '20')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_22"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '22')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '22'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '22')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_24"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '24')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '24'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '24')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_26"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '26')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '26'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '26')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_28"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '28')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '28'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '28')]"
+					}
+					button = {
+						fontsize = 13
+						using = default_button
+						size = { 135 37 }
+						text = "stat_30"
+						icon = {
+							visible = "[GetVariableSystem.HasValue('stat_id', '30')]"
+							using = highlighted_square_selection
+						}
+						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '30'))]"
+						onclick = "[GetVariableSystem.Set('stat_id', '30')]"
+					}
+				}
+			}
+			widget = {
+				size = { 1000 800 }
+				background = {
+					texture = "gfx/interface/backgrounds/white.dds"
+					alpha = 0.73
+				}
+				vbox = {
+					visible = "[GetVariableSystem.Exists('stat_id')]"
+					layoutpolicy_horizontal = expanding
+					layoutpolicy_vertical = expanding
+					margin = { 5 0 }
+					background = {
+						texture = "gfx/interface/illustrations/top_illus/top_illu_cultures.dds"
+
+						modify_texture = {
+							texture = "gfx/interface/backgrounds/default_bg_shading.dds"
+							spriteType = Corneredstretched
+							spriteborder = { 0 0 }
+							blend_mode = overlay
+						}
+						modify_texture = {
+							using = texture_velvet
+						}
+					}
+
+					dynamicgridbox = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = preferred
+						datamodel = "[GetGlobalList(Concatenate('stat_list_', GetVariableSystem.Get('stat_id')))]"
+						ignoreinvisible = yes
+						# spacing = 15
+						item = {
+							flowcontainer = {
+								spacing = 10
+								margin_top = 12
+								# vertical = yes
+								datacontext = "[Scope.GetCountry]"
+								widget = {
+									textbox = {
+										position = { 50 15 }
+										size = { 2000 28 }
+										fontsize = 17
+										parentanchor = vcenter
+										align = nobaseline|right
+										max_width = "[FixedPointToFloat(Country.MakeScope.Var(Concatenate('stat_var_', GetVariableSystem.Get('stat_id'))).GetValue)]"
+										min_width = "[FixedPointToFloat(Country.MakeScope.Var(Concatenate('stat_var_', GetVariableSystem.Get('stat_id'))).GetValue)]"
+
+										raw_text = "[Localize(Concatenate('stat_tt_', GetVariableSystem.Get('stat_id')))]  "
+										background = {
+											texture = "gfx/interface/backgrounds/fancy_pattern_2.dds"
+											color = "[Country.GetMapColor]"
+											mirror = horizontal
+											using = frame_small_mask
+											alpha = 1.0
+
+											modify_texture = {
+												blend_mode = add
+											}
+										}
+									}
+								}
+								flowcontainer = {
+									textbox = {
+										raw_text = "[Country.GetFlagTextIcon]"
+										autoresize = yes
+										parentanchor = vcenter
+										align = nobaseline
+										fontsize = 20
+										margin_left = 0
+										tooltip = "[Country.GetNameNoFlag]"
+									}
+								}
+							}
+						}
+					}
+
+					widget = {
+						layoutpolicy_horizontal = expanding
+						layoutpolicy_vertical = expanding
+					}
+				}
+			}
+		}
+	}
+}

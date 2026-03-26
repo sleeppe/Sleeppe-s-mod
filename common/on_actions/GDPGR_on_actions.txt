@@ -1,0 +1,60 @@
+﻿# Fires every Jan. 1
+GDPGR_on_yearly = {
+	effect = {
+		set_global_variable = {
+			name  = GDPGR_year
+			value = year
+		}
+		every_country = {
+			trigger_event = {
+				id = gdp.1
+			}
+		}
+	}
+}
+
+on_yearly_pulse = {
+	on_actions = {
+		GDPGR_on_yearly
+	}
+}
+
+GDPGR_on_monthly = {
+	effect = {
+		if = {
+			limit = {
+				NAND = {
+					has_global_variable = GDPGR_year
+					has_global_variable = GDPGR_month
+				}
+			}
+			GDPGR_initialize_all = yes
+		}
+		else = {
+			set_global_variable = {
+				name  = GDPGR_month
+				value = month
+			}
+			every_country = {
+				if = {
+					limit = {
+						NAND = {
+							has_variable = before_gdp # Check if it doesn't exist
+							has_variable = GDPGR_rolling_difference
+						}
+					}
+					GDPGR_initialize_country = yes
+				}
+				else = {
+					trigger_event = gdp.3
+				}
+			}
+		}
+	}
+}
+
+on_monthly_pulse = {
+	on_actions = {
+		GDPGR_on_monthly
+	}
+}
