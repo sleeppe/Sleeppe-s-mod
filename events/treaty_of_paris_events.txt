@@ -96,17 +96,8 @@ treaty_of_paris_events.1 = {
 			}
 			change_relations = { country = root value = -40 }
 		}
-		hidden_effect = {
-			set_secret_goal = {
-				country = c:RUS
-				secret_goal = conquer
-			}
-			c:RUS ?= {
-				set_secret_goal = {
-					country = c:LUX
-					secret_goal = conquer
-				}
-			}
+		add_radicals = {
+			value = 0.05
 		}
 	}
 }
@@ -196,17 +187,11 @@ treaty_of_paris_events.2 = {
 			}
 			change_relations = { country = root value = -40 }
 		}
-		hidden_effect = {
-			set_secret_goal = {
-				country = c:LUX
-				secret_goal = conquer
-			}
-			c:TUR ?= {
-				set_secret_goal = {
-					country = c:RUS
-					secret_goal = conquer
-				}
-			}
+		add_radicals = {
+			value = 0.10
+		}
+		c:RUS ?= {
+			change_infamy = 15
 		}
 	}
 }
@@ -360,7 +345,7 @@ treaty_of_paris_events.4 = {
 			}
 			create_treaty = {
 				first_country = root
-				second_country = c:RUS
+				second_country = c:TUR
 
 				is_draft = no
 				binding_period = { years = 5 }
@@ -369,7 +354,7 @@ treaty_of_paris_events.4 = {
 					{
 						article = guarantee_independence
 						source_country = root
-						target_country = c:RUS
+						target_country = c:TUR
 					}
 				}
 			}
@@ -386,32 +371,7 @@ treaty_of_paris_events.4 = {
 				days = normal_modifier_time
 			}
 		}
-		show_as_tooltip = {
-			if = {
-				limit = {
-					has_global_variable = favour_russia_global_var
-				}
-				c:RUS ?= {
-					take_on_scaled_debt = {
-						who = c:TUR
-						value = c:TUR.scaled_debt
-					}
-				}
-			}
-			else_if = {
-				limit = {
-					has_global_variable = favour_ottoman_global_var
-				}
-				c:TUR ?= {
-					take_on_scaled_debt = {
-						who = c:RUS
-						value = c:RUS.scaled_debt
-					}
-				}
-			}
-		}
-	}
-}
+}   }
 
 treaty_of_paris_events.5 = {
 	type = country_event
