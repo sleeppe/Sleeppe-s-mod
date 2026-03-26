@@ -1,0 +1,23 @@
+gdp_per_capita_sv = {
+    value = 0
+    add = this.gdp
+    divide = this.total_population
+}
+
+gdp_share = {
+    value = 0 
+    add = this.gdp
+    divide = global_gdp
+}
+
+debt = {
+    value = 0
+    add = this.credit
+    multiply = this.scaled_debt
+}
+
+total_subject_population = {
+    value = 0
+    add = total_population
+    add = cached_ai_subject_population
+}

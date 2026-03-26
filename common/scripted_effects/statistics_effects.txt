@@ -1,0 +1,2162 @@
+gdp_global_list_effect = {
+	clear_global_variable_list = gdp_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = gdp
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_gdp_country_gvar
+			value = this.gdp
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = gdp_local_var
+			value = 0
+		}
+		order_by = gdp
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = gdp_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = gdp_local_var
+			add = this.gdp
+		}
+		set_variable = { 
+			name = gdp_value_tt
+			value = this.gdp
+		}
+		change_local_variable = { 
+			name = gdp_local_var
+			divide = global_var:top_gdp_country_gvar
+		}
+		change_local_variable = { 
+			name = gdp_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = gdp_var
+			value = local_var:gdp_local_var
+		}
+	}
+}
+
+gdp_per_capita_global_list_effect = {
+	clear_global_variable_list = gdp_per_capita_ranking_global_list
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = gdp_per_capita_sv
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_gdp_per_capita_country_gvar
+			value = gdp_per_capita_sv
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = gdp_per_capita_local_var
+			value = 0
+		}
+		order_by = gdp_per_capita_sv
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = gdp_per_capita_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = gdp_per_capita_local_var
+			add = gdp_per_capita_sv
+		}
+		set_variable = { 
+			name = gdp_per_capita_value_tt
+			value = gdp_per_capita_sv
+		}
+		change_local_variable = { 
+			name = gdp_per_capita_local_var
+			divide = global_var:top_gdp_per_capita_country_gvar
+		}
+		change_local_variable = { 
+			name = gdp_per_capita_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = gdp_per_capita_var
+			value = local_var:gdp_per_capita_local_var
+		}
+	}
+}
+
+population_global_list_effect = {
+	clear_global_variable_list = population_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = total_population
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_population_country_gvar
+			value = total_population
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = population_local_var
+			value = 0
+		}
+		order_by = total_population
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = population_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = population_local_var
+			add = total_population
+		}
+		set_variable = { 
+			name = population_value_tt
+			value = total_population
+		}
+		change_local_variable = { 
+			name = population_local_var
+			divide = global_var:top_population_country_gvar
+		}
+		change_local_variable = { 
+			name = population_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = population_var
+			value = local_var:population_local_var
+		}
+	}
+}
+
+incorporated_population_global_list_effect = {
+	clear_global_variable_list = incorporated_population_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = cached_ai_incorporated_population
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_incorporated_population_country_gvar
+			value = cached_ai_incorporated_population
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = incorporated_population_local_var
+			value = 0
+		}
+		order_by = cached_ai_incorporated_population
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = incorporated_population_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = incorporated_population_local_var
+			add = cached_ai_incorporated_population
+		}
+		set_variable = { 
+			name = incorporated_population_value_tt
+			value = cached_ai_incorporated_population
+		}
+		change_local_variable = { 
+			name = incorporated_population_local_var
+			divide = global_var:top_incorporated_population_country_gvar
+		}
+		change_local_variable = { 
+			name = incorporated_population_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = incorporated_population_var
+			value = local_var:incorporated_population_local_var
+		}
+	}
+}
+
+total_subject_population_global_list_effect = {
+	clear_global_variable_list = total_subject_population_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = total_subject_population
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_total_subject_population_country_gvar
+			value = total_subject_population
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = total_subject_population_local_var
+			value = 0
+		}
+		order_by = total_subject_population
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = total_subject_population_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = total_subject_population_local_var
+			add = total_subject_population
+		}
+		set_variable = { 
+			name = total_subject_population_value_tt
+			value = total_subject_population
+		}
+		change_local_variable = { 
+			name = total_subject_population_local_var
+			divide = global_var:top_total_subject_population_country_gvar
+		}
+		change_local_variable = { 
+			name = total_subject_population_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = total_subject_population_var
+			value = local_var:total_subject_population_local_var
+		}
+	}
+}
+
+state_num_global_list_effect = {
+	clear_global_variable_list = state_num_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = num_states
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_state_num_country_gvar
+			value = num_states
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = state_num_local_var
+			value = 0
+		}
+		order_by = num_states
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = state_num_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = state_num_local_var
+			add = num_states
+		}
+		set_variable = { 
+			name = state_num_value_tt
+			value = num_states
+		}
+		change_local_variable = { 
+			name = state_num_local_var
+			divide = global_var:top_state_num_country_gvar
+		}
+		change_local_variable = { 
+			name = state_num_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = state_num_var
+			value = local_var:state_num_local_var
+		}
+	}
+}
+
+gdp_share_global_list_effect = {
+	clear_global_variable_list = gdp_share_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = gdp_share
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_gdp_share_country_gvar
+			value = gdp_share
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = gdp_share_local_var
+			value = 0
+		}
+		order_by = gdp_share
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = gdp_share_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = gdp_share_local_var
+			add = gdp_share
+		}
+		set_variable = { 
+			name = gdp_share_value_tt
+			value = gdp_share
+		}
+		change_local_variable = { 
+			name = gdp_share_local_var
+			divide = global_var:top_gdp_share_country_gvar
+		}
+		change_local_variable = { 
+			name = gdp_share_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = gdp_share_var
+			value = local_var:gdp_share_local_var
+		}
+	}
+}
+
+population_share_global_list_effect = {
+	clear_global_variable_list = population_share_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = total_population_share
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_population_share_country_gvar
+			value = total_population_share
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = population_share_local_var
+			value = 0
+		}
+		order_by = total_population_share
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = population_share_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = population_share_local_var
+			add = total_population_share
+		}
+		set_variable = { 
+			name = population_share_value_tt
+			value = total_population_share
+		}
+		change_local_variable = { 
+			name = population_share_local_var
+			divide = global_var:top_population_share_country_gvar
+		}
+		change_local_variable = { 
+			name = population_share_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = population_share_var
+			value = local_var:population_share_local_var
+		}
+	}
+}
+
+literacy_rate_global_list_effect = {
+	clear_global_variable_list = literacy_rate_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = literacy_rate
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_literacy_rate_country_gvar
+			value = literacy_rate
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = literacy_rate_local_var
+			value = 0
+		}
+		order_by = literacy_rate
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = literacy_rate_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = literacy_rate_local_var
+			add = literacy_rate
+		}
+		set_variable = { 
+			name = literacy_rate_value_tt
+			value = literacy_rate
+		}
+		change_local_variable = { 
+			name = literacy_rate_local_var
+			divide = global_var:top_literacy_rate_country_gvar
+		}
+		change_local_variable = { 
+			name = literacy_rate_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = literacy_rate_var
+			value = local_var:literacy_rate_local_var
+		}
+	}
+}
+
+sol_global_list_effect = {
+	clear_global_variable_list = sol_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = average_sol
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_sol_country_gvar
+			value = average_sol
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = sol_local_var
+			value = 0
+		}
+		order_by = average_sol
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = sol_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = sol_local_var
+			add = average_sol
+		}
+		set_variable = { 
+			name = sol_value_tt
+			value = average_sol
+		}
+		change_local_variable = { 
+			name = sol_local_var
+			divide = global_var:top_sol_country_gvar
+		}
+		change_local_variable = { 
+			name = sol_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = sol_var
+			value = local_var:sol_local_var
+		}
+	}
+}
+
+prestige_global_list_effect = {
+	clear_global_variable_list = prestige_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = prestige
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_prestige_country_gvar
+			value = prestige
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = prestige_local_var
+			value = 0
+		}
+		order_by = prestige
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = prestige_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = prestige_local_var
+			add = prestige
+		}
+		set_variable = { 
+			name = prestige_value_tt
+			value = prestige
+		}
+		change_local_variable = { 
+			name = prestige_local_var
+			divide = global_var:top_prestige_country_gvar
+		}
+		change_local_variable = { 
+			name = prestige_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = prestige_var
+			value = local_var:prestige_local_var
+		}
+	}
+}
+
+infamy_global_list_effect = {
+	clear_global_variable_list = infamy_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = infamy
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_infamy_country_gvar
+			value = infamy
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = infamy_local_var
+			value = 0
+		}
+		order_by = infamy
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = infamy_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = infamy_local_var
+			add = infamy
+		}
+		set_variable = { 
+			name = infamy_value_tt
+			value = infamy
+		}
+		change_local_variable = { 
+			name = infamy_local_var
+			divide = global_var:top_infamy_country_gvar
+		}
+		change_local_variable = { 
+			name = infamy_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = infamy_var
+			value = local_var:infamy_local_var
+		}
+	}
+}
+
+army_size_global_list_effect = {
+	clear_global_variable_list = army_size_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = army_size
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_army_size_country_gvar
+			value = army_size
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = army_size_local_var
+			value = 0
+		}
+		order_by = army_size
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = army_size_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = army_size_local_var
+			add = army_size
+		}
+		set_variable = { 
+			name = army_size_value_tt
+			value = army_size
+		}
+		change_local_variable = { 
+			name = army_size_local_var
+			divide = global_var:top_army_size_country_gvar
+		}
+		change_local_variable = { 
+			name = army_size_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = army_size_var
+			value = local_var:army_size_local_var
+		}
+	}
+}
+
+navy_size_global_list_effect = {
+	clear_global_variable_list = navy_size_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = navy_size
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_navy_size_country_gvar
+			value = navy_size
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = navy_size_local_var
+			value = 0
+		}
+		order_by = navy_size
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = navy_size_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = navy_size_local_var
+			add = navy_size
+		}
+		set_variable = { 
+			name = navy_size_value_tt
+			value = navy_size
+		}
+		change_local_variable = { 
+			name = navy_size_local_var
+			divide = global_var:top_navy_size_country_gvar
+		}
+		change_local_variable = { 
+			name = navy_size_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = navy_size_var
+			value = local_var:navy_size_local_var
+		}
+	}
+}
+
+army_power_projection_global_list_effect = {
+	clear_global_variable_list = army_power_projection_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = army_power_projection
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_army_power_projection_country_gvar
+			value = army_power_projection
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = army_power_projection_local_var
+			value = 0
+		}
+		order_by = army_power_projection
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = army_power_projection_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = army_power_projection_local_var
+			add = army_power_projection
+		}
+		set_variable = { 
+			name = army_power_projection_value_tt
+			value = army_power_projection
+		}
+		change_local_variable = { 
+			name = army_power_projection_local_var
+			divide = global_var:top_army_power_projection_country_gvar
+		}
+		change_local_variable = { 
+			name = army_power_projection_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = army_power_projection_var
+			value = local_var:army_power_projection_local_var
+		}
+	}
+}
+
+navy_power_projection_global_list_effect = {
+	clear_global_variable_list = navy_power_projection_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = naval_power_projection
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_navy_power_projection_country_gvar
+			value = naval_power_projection
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = navy_power_projection_local_var
+			value = 0
+		}
+		order_by = naval_power_projection
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = navy_power_projection_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = navy_power_projection_local_var
+			add = naval_power_projection
+		}
+		set_variable = { 
+			name = navy_power_projection_value_tt
+			value = naval_power_projection
+		}
+		change_local_variable = { 
+			name = navy_power_projection_local_var
+			divide = global_var:top_navy_power_projection_country_gvar
+		}
+		change_local_variable = { 
+			name = navy_power_projection_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = navy_power_projection_var
+			value = local_var:navy_power_projection_local_var
+		}
+	}
+}
+
+military_expenses_global_list_effect = {
+	clear_global_variable_list = military_expenses_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = military_expenses
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_military_expenses_country_gvar
+			value = military_expenses
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = military_expenses_local_var
+			value = 0
+		}
+		order_by = military_expenses
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = military_expenses_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = military_expenses_local_var
+			add = military_expenses
+		}
+		set_variable = { 
+			name = military_expenses_value_tt
+			value = military_expenses
+		}
+		change_local_variable = { 
+			name = military_expenses_local_var
+			divide = global_var:top_military_expenses_country_gvar
+		}
+		change_local_variable = { 
+			name = military_expenses_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = military_expenses_var
+			value = local_var:military_expenses_local_var
+		}
+	}
+}
+
+military_expenses_share_global_list_effect = {
+	clear_global_variable_list = military_expenses_share_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+			global_country_ranking < 30
+		}
+		order_by = military_expenses_share
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_military_expenses_share_country_gvar
+			value = military_expenses_share
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+			global_country_ranking < 30
+		}
+
+		set_local_variable = {
+			name = military_expenses_share_local_var
+			value = 0
+		}
+		order_by = military_expenses_share
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = military_expenses_share_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = military_expenses_share_local_var
+			add = military_expenses_share
+		}
+		set_variable = { 
+			name = military_expenses_share_value_tt
+			value = military_expenses_share
+		}
+		change_local_variable = { 
+			name = military_expenses_share_local_var
+			divide = global_var:top_military_expenses_share_country_gvar
+		}
+		change_local_variable = { 
+			name = military_expenses_share_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = military_expenses_share_var
+			value = local_var:military_expenses_share_local_var
+		}
+	}
+}
+
+techs_researched_global_list_effect = {
+	clear_global_variable_list = techs_researched_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = techs_researched
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_techs_researched_country_gvar
+			value = techs_researched
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = techs_researched_local_var
+			value = 0
+		}
+		order_by = techs_researched
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = techs_researched_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = techs_researched_local_var
+			add = techs_researched
+		}
+		set_variable = { 
+			name = techs_researched_value_tt
+			value = techs_researched
+		}
+		change_local_variable = { 
+			name = techs_researched_local_var
+			divide = global_var:top_techs_researched_country_gvar
+		}
+		change_local_variable = { 
+			name = techs_researched_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = techs_researched_var
+			value = local_var:techs_researched_local_var
+		}
+	}
+}
+
+num_active_interests_global_list_effect = {
+	clear_global_variable_list = num_active_interests_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = num_active_interests
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_num_active_interests_country_gvar
+			value = num_active_interests
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = num_active_interests_local_var
+			value = 0
+		}
+		order_by = num_active_interests
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = num_active_interests_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = num_active_interests_local_var
+			add = num_active_interests
+		}
+		set_variable = { 
+			name = num_active_interests_value_tt
+			value = num_active_interests
+		}
+		change_local_variable = { 
+			name = num_active_interests_local_var
+			divide = global_var:top_num_active_interests_country_gvar
+		}
+		change_local_variable = { 
+			name = num_active_interests_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = num_active_interests_var
+			value = local_var:num_active_interests_local_var
+		}
+	}
+}
+
+expenses_global_list_effect = {
+	clear_global_variable_list = expenses_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = expenses
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_expenses_country_gvar
+			value = expenses
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = expenses_local_var
+			value = 0
+		}
+		order_by = expenses
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = expenses_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = expenses_local_var
+			add = expenses
+		}
+		set_variable = { 
+			name = expenses_value_tt
+			value = expenses
+		}
+		change_local_variable = { 
+			name = expenses_local_var
+			divide = global_var:top_expenses_country_gvar
+		}
+		change_local_variable = { 
+			name = expenses_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = expenses_var
+			value = local_var:expenses_local_var
+		}
+	}
+}
+
+income_global_list_effect = {
+	clear_global_variable_list = income_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = income
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_income_country_gvar
+			value = income
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = income_local_var
+			value = 0
+		}
+		order_by = income
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = income_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = income_local_var
+			add = income
+		}
+		set_variable = { 
+			name = income_value_tt
+			value = income
+		}
+		change_local_variable = { 
+			name = income_local_var
+			divide = global_var:top_income_country_gvar
+		}
+		change_local_variable = { 
+			name = income_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = income_var
+			value = local_var:income_local_var
+		}
+	}
+}
+
+investment_pool_global_list_effect = {
+	clear_global_variable_list = investment_pool_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = investment_pool
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_investment_pool_country_gvar
+			value = investment_pool
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = investment_pool_local_var
+			value = 0
+		}
+		order_by = investment_pool
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = investment_pool_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = investment_pool_local_var
+			add = investment_pool
+		}
+		set_variable = { 
+			name = investment_pool_value_tt
+			value = investment_pool
+		}
+		change_local_variable = { 
+			name = investment_pool_local_var
+			divide = global_var:top_investment_pool_country_gvar
+		}
+		change_local_variable = { 
+			name = investment_pool_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = investment_pool_var
+			value = local_var:investment_pool_local_var
+		}
+	}
+}
+investment_pool_income_global_list_effect = {
+	clear_global_variable_list = investment_pool_income_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = investment_pool_income
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_investment_pool_income_country_gvar
+			value = investment_pool_income
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = investment_pool_income_local_var
+			value = 0
+		}
+		order_by = investment_pool_income
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = investment_pool_income_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = investment_pool_income_local_var
+			add = investment_pool_income
+		}
+		set_variable = { 
+			name = investment_pool_income_value_tt
+			value = investment_pool_income
+		}
+		change_local_variable = { 
+			name = investment_pool_income_local_var
+			divide = global_var:top_investment_pool_income_country_gvar
+		}
+		change_local_variable = { 
+			name = investment_pool_income_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = investment_pool_income_var
+			value = local_var:investment_pool_income_local_var
+		}
+	}
+}
+
+gold_reserves_global_list_effect = {
+	clear_global_variable_list = gold_reserves_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = gold_reserves
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_gold_reserves_country_gvar
+			value = gold_reserves
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = gold_reserves_local_var
+			value = 0
+		}
+		order_by = gold_reserves
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = gold_reserves_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = gold_reserves_local_var
+			add = gold_reserves
+		}
+		set_variable = { 
+			name = gold_reserves_value_tt
+			value = gold_reserves
+		}
+		change_local_variable = { 
+			name = gold_reserves_local_var
+			divide = global_var:top_gold_reserves_country_gvar
+		}
+		change_local_variable = { 
+			name = gold_reserves_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = gold_reserves_var
+			value = local_var:gold_reserves_local_var
+		}
+	}
+}
+
+gold_reserves_limit_global_list_effect = {
+	clear_global_variable_list = gold_reserves_limit_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = gold_reserves_limit
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_gold_reserves_limit_country_gvar
+			value = gold_reserves_limit
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = gold_reserves_limit_local_var
+			value = 0
+		}
+		order_by = gold_reserves_limit
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = gold_reserves_limit_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = gold_reserves_limit_local_var
+			add = gold_reserves_limit
+		}
+		set_variable = { 
+			name = gold_reserves_limit_value_tt
+			value = gold_reserves_limit
+		}
+		change_local_variable = { 
+			name = gold_reserves_limit_local_var
+			divide = global_var:top_gold_reserves_limit_country_gvar
+		}
+		change_local_variable = { 
+			name = gold_reserves_limit_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = gold_reserves_limit_var
+			value = local_var:gold_reserves_limit_local_var
+		}
+	}
+}
+
+credit_global_list_effect = {
+	clear_global_variable_list = credit_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = credit
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_credit_country_gvar
+			value = credit
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = credit_local_var
+			value = 0
+		}
+		order_by = credit
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = credit_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = credit_local_var
+			add = credit
+		}
+		set_variable = { 
+			name = credit_value_tt
+			value = credit
+		}
+		change_local_variable = { 
+			name = credit_local_var
+			divide = global_var:top_credit_country_gvar
+		}
+		change_local_variable = { 
+			name = credit_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = credit_var
+			value = local_var:credit_local_var
+		}
+	}
+}
+
+debt_global_list_effect = {
+	clear_global_variable_list = debt_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = debt
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_debt_country_gvar
+			value = debt
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = debt_local_var
+			value = 0
+		}
+		order_by = debt
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = debt_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = debt_local_var
+			add = debt
+		}
+		set_variable = { 
+			name = debt_value_tt
+			value = debt
+		}
+		change_local_variable = { 
+			name = debt_local_var
+			divide = global_var:top_debt_country_gvar
+		}
+		change_local_variable = { 
+			name = debt_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = debt_var
+			value = local_var:debt_local_var
+		}
+	}
+}
+
+building_levels_global_list_effect = {
+	clear_global_variable_list = building_levels_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = building_levels
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_building_levels_country_gvar
+			value = building_levels
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = building_levels_local_var
+			value = 0
+		}
+		order_by = building_levels
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = building_levels_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = building_levels_local_var
+			add = building_levels
+		}
+		set_variable = { 
+			name = building_levels_value_tt
+			value = building_levels
+		}
+		change_local_variable = { 
+			name = building_levels_local_var
+			divide = global_var:top_building_levels_country_gvar
+		}
+		change_local_variable = { 
+			name = building_levels_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = building_levels_var
+			value = local_var:building_levels_local_var
+		}
+	}
+}
+
+num_convoys_available_global_list_effect = {
+	clear_global_variable_list = num_convoys_available_ranking_global_list
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		order_by = num_convoys_available
+		position = 0
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = top_num_convoys_available_country_gvar
+			value = num_convoys_available
+		}
+	}
+
+	ordered_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+
+		set_local_variable = {
+			name = num_convoys_available_local_var
+			value = 0
+		}
+		order_by = num_convoys_available
+		max = 15
+		check_range_bounds = no
+		
+		add_to_global_variable_list = {
+			name = num_convoys_available_ranking_global_list
+			target = this
+		}
+
+		change_local_variable = {
+			name = num_convoys_available_local_var
+			add = num_convoys_available
+		}
+		set_variable = { 
+			name = num_convoys_available_value_tt
+			value = num_convoys_available
+		}
+		change_local_variable = { 
+			name = num_convoys_available_local_var
+			divide = global_var:top_num_convoys_available_country_gvar
+		}
+		change_local_variable = { 
+			name = num_convoys_available_local_var
+			multiply = 880
+		}
+		set_variable = {
+			name = num_convoys_available_var
+			value = local_var:num_convoys_available_local_var
+		}
+	}
+}
+
+total_statistics_effect = {
+	gdp_global_list_effect = yes
+	gdp_per_capita_global_list_effect = yes
+	population_global_list_effect = yes
+	incorporated_population_global_list_effect = yes
+	total_subject_population_global_list_effect = yes
+	state_num_global_list_effect = yes
+	gdp_share_global_list_effect = yes
+	population_share_global_list_effect = yes
+	literacy_rate_global_list_effect = yes
+	sol_global_list_effect = yes
+	prestige_global_list_effect = yes
+	infamy_global_list_effect = yes
+	army_size_global_list_effect = yes
+	navy_size_global_list_effect = yes
+	army_power_projection_global_list_effect = yes
+	navy_power_projection_global_list_effect = yes
+	military_expenses_global_list_effect = yes
+	military_expenses_share_global_list_effect = yes
+	techs_researched_global_list_effect = yes
+	num_active_interests_global_list_effect = yes
+	expenses_global_list_effect = yes
+	income_global_list_effect = yes
+	investment_pool_global_list_effect = yes
+	investment_pool_income_global_list_effect = yes
+	gold_reserves_global_list_effect = yes
+	gold_reserves_limit_global_list_effect = yes
+	credit_global_list_effect = yes
+	debt_global_list_effect = yes
+	building_levels_global_list_effect = yes
+	num_convoys_available_global_list_effect = yes
+
+	set_global_variable = {
+		name = month_gvar
+		value = month
+	}
+	change_global_variable = {
+		name = month_gvar
+		add = 1
+	}
+	set_global_variable = {
+		name = year_gvar
+		value = year
+	}
+}
+
+change_var_effect = {
+	every_country = {
+		limit = {
+			is_revolutionary = no
+			NOR = {
+				c:PRC ?= this
+				is_country_type = decentralized
+			}
+		}
+		add_to_global_variable_list = {
+			name = gdp_ranking_global_list
+			target = this
+		}
+		add_to_global_variable_list = {
+					name = gdp_per_capita_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = population_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = incorporated_population_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = total_subject_population_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = state_num_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = gdp_share_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = population_share_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = literacy_rate_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = sol_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = prestige_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = infamy_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = army_size_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = navy_size_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = army_power_projection_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = navy_power_projection_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = military_expenses_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = military_expenses_share_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = techs_researched_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = num_active_interests_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = expenses_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = income_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = investment_pool_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = investment_pool_income_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = gold_reserves_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = gold_reserves_limit_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = credit_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = debt_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = building_levels_ranking_global_list
+					target = this
+				}
+		add_to_global_variable_list = {
+					name = num_convoys_available_ranking_global_list
+					target = this
+				}
+
+		set_variable = { name = gdp_var value = 1000 }
+		set_variable = { name = gdp_per_capita_var value = 1000 }
+		set_variable = { name = population_var value = 1000 }
+		set_variable = { name = incorporated_population_var value = 1000 }
+		set_variable = { name = total_subject_population_var value = 1000 }
+		set_variable = { name = state_num_var value = 1000 }
+		set_variable = { name = gdp_share_var value = 1000 }
+		set_variable = { name = population_share_var value = 1000 }
+		set_variable = { name = literacy_rate_var value = 1000 }
+		set_variable = { name = sol_var value = 1000 }
+		set_variable = { name = prestige_var value = 1000 }
+		set_variable = { name = infamy_var value = 1000 }
+		set_variable = { name = army_size_var value = 1000 }
+		set_variable = { name = navy_size_var value = 1000 }
+		set_variable = { name = army_power_projection_var value = 1000 }
+		set_variable = { name = navy_power_projection_var value = 1000 }
+		set_variable = { name = military_expenses_var value = 1000 }
+		set_variable = { name = military_expenses_share_var value = 1000 }
+		set_variable = { name = techs_researched_var value = 1000 }
+		set_variable = { name = num_active_interests_var value = 1000 }
+		set_variable = { name = expenses_var value = 1000 }
+		set_variable = { name = income_var value = 1000 }
+		set_variable = { name = investment_pool_var value = 1000 }
+		set_variable = { name = investment_pool_income_var value = 1000 }
+		set_variable = { name = gold_reserves_var value = 1000 }
+		set_variable = { name = gold_reserves_limit_var value = 1000 }
+		set_variable = { name = credit_var value = 1000 }
+		set_variable = { name = debt_var value = 1000 }
+		set_variable = { name = building_levels_var value = 1000 }
+		set_variable = { name = num_convoys_available_var value = 1000 }
+
+		
+	}
+}

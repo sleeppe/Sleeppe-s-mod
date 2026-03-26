@@ -1,0 +1,6 @@
+statistics_sgui = {
+	scope = country
+    effect = {
+	    change_var_effect = yes
+    }
+} 
