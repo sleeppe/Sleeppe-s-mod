@@ -1,4 +1,4 @@
-##Altered Companies
+﻿##Altered Companies
 
 
 ##Modded Companies
@@ -34,6 +34,8 @@ company_amsterdamse_effectenbeurs = {
 		any_scope_state = {
 			state_region = s:STATE_HOLLAND
 			is_incorporated = yes
+			is_building_type = building_trade_center
+				level >= 15
 		}
 	}
 

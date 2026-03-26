@@ -1,4 +1,4 @@
-dna_alexander_ioan_cuza = { 
+﻿dna_alexander_ioan_cuza = { 
 	portrait_info = {
 	genes={ 		hair_color={ 103 234 103 234 }
  		skin_color={ 16 28 16 28 }

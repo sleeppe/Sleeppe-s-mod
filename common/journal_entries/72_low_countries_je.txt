@@ -1,4 +1,4 @@
-## New Journal Entries for the Netherlands, Belgium, Luxembourg and the United Netherlands
+﻿## New Journal Entries for the Netherlands, Belgium, Luxembourg and the United Netherlands
 
 #Gateway to Europe
 je_rotterdam_port = {
