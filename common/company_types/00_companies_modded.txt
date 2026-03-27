@@ -417,7 +417,7 @@ company_australian_agricultural = {
 	}
 }
 
-company_imperial_companhia_seropédica_fluminense = {
+company_imperial_companhia_seropedica_fluminense = {
 	icon = "gfx/interface/icons/company_icons/basic_agriculture_2.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 

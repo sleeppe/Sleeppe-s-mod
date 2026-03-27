@@ -120,17 +120,6 @@ total_statistics_effect = {
 	stat_global_list_effect = { name = 19 value = techs_researched }
 	stat_global_list_effect = { name = 20 value = country_innovation }
 	stat_global_list_effect = { name = 21 value = income }
-<<<<<<< HEAD
-	#stat_global_list_effect = { name = 22 value = expenses }
-	stat_global_list_effect = { name = 23 value = investment_pool_income }
-	stat_global_list_effect = { name = 24 value = investment_pool }
-	stat_global_list_effect = { name = 25 value = gold_reserves }
-	stat_global_list_effect = { name = 26 value = gold_reserves_limit }
-	stat_global_list_effect = { name = 27 value = debt }
-	stat_global_list_effect = { name = 28 value = credit }
-	stat_global_list_effect = { name = 29 value = num_active_interests }
-	stat_global_list_effect = { name = 30 value = num_convoys_available }
-=======
 	stat_global_list_effect = { name = 22 value = investment_pool_income }
 	stat_global_list_effect = { name = 23 value = investment_pool }
 	stat_global_list_effect = { name = 24 value = gold_reserves }
@@ -139,7 +128,6 @@ total_statistics_effect = {
 	stat_global_list_effect = { name = 27 value = credit }
 	stat_global_list_effect = { name = 28 value = num_active_interests }
 	stat_global_list_effect = { name = 29 value = num_convoys_available }
->>>>>>> full-update
 
 	set_global_variable = {
 		name = month_gvar
