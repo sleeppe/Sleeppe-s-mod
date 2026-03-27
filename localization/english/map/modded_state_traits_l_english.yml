@@ -8,7 +8,6 @@
  state_trait_zuiderzee: "Zuiderzee"
  state_trait_aegean_sea: "Ege Denizi"
  state_trait_galveston_bay: "Galveston Bay"
- state_trait_saxon_switzerland: "Sächsische Schweiz"
  state_trait_mosel_river: "Musel River"
  state_trait_vistula_river: "Vistula River"
  state_trait_bowen_basin_coalfield: "Bowen Basin Coalfields"
@@ -19,4 +18,3 @@
  state_trait_monopoly_location: "State Distillery Location"
  state_trait_cusco_valley: "Sacred Valley"
  state_trait_saxon_switzerland: "Sächsische Schweiz"
- state_trait_mosel_river: "Musel River"

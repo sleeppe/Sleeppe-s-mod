@@ -164,7 +164,7 @@
  paris_congress_approve_button_desc: "The terms of this agreement are decent. Order our men to sign the treaty in Paris!"
  paris_congress_approve_button_tt: "[ROOT.GetCountry.GetName] ratifies the treaty. Should both $dyn_c_ottoman_empire$ and $RUS$ agree, the treaty will then enter into effect."
  paris_congress_disapprove_button: "Refuse to Sign"
- paris_congress_disapprove_desc: "This outcome does not serve [ROOT.GetCountry.GetAdjectiveNoFormatting] interests. We shall refuse to sign this piece of paper."
+ paris_congress_disapprove_button_desc: "This outcome does not serve [ROOT.GetCountry.GetAdjectiveNoFormatting] interests. We shall refuse to sign this piece of paper."
  paris_congress_disapprove_button_tt: "Negotiations between $dyn_c_ottoman_empire$ and $RUS$ break down."
  paris_congress_has_concluded_loc: "The Paris Congress has concluded."
  je_congress_of_paris_acceptance_timer_tt: "\n\nWe will automatically accept the outcome of the conference in #variable [GetGlobalVariable('je_conference_of_london_acceptance_timer').GetValue]#! months."
@@ -238,7 +238,7 @@
 
  modifier_russia_fails: "Landowner authority"
 
-  modifier_distillery_privileges: "Expanded Distillery Privileges"
+ modifier_distillery_privileges: "Expanded Distillery Privileges"
  modifier_vodka_monopoly: "Vodka Monopolised"
  modifier_monastic_distillery: "Expanded the Privilege to the Church"
  modifier_reduced_prices: "Reduced Vodka Prices"
@@ -304,3 +304,9 @@
  treaty_of_paris_events.5.f: "This is a disaster for Europe! How did we fail like this!?"
  treaty_of_paris_events.5.a: "We must prepare for the future!"
  treaty_of_paris_explanation_tt: "#bold $RUS$#! agrees to negotiate with #bold $dyn_c_ottoman_empire$#! over the Black Sea crisis. The Great Powers of Europe may now agree to a peaceful settlement to the crisis"
+
+ # BLANK EVENTS ( FOR AI ONLY )
+ tuscan_italy.1.t: ""
+ tuscan_italy.1.d: ""
+ tuscan_italy.1.f: ""
+ tuscan_italy.1.a: ""

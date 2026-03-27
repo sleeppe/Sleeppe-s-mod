@@ -96,7 +96,7 @@ company_porceleyne_fles = {
 
 	prosperity_modifier = {
 		state_trade_capacity_mult = 0.05
-		building_arts_academy_throughput_add = 0.05
+		building_art_academy_throughput_add = 0.05
 		country_prestige_mult = 0.1
 	}
 

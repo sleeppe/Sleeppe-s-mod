@@ -1,4 +1,4 @@
-##Modded Decisions for the Journal Tab
+﻿##Modded Decisions for the Journal Tab
 
 extend_ayllu_kinship_sa = {
 	is_shown = {

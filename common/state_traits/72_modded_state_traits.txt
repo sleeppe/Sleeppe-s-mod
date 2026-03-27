@@ -90,9 +90,13 @@ state_trait_saxon_switzerland = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	modifier = {
 		state_construction_mult = -0.1
+<<<<<<< HEAD
 
 		building_group_bg_mining_throughput_add = 0.15
 
+=======
+		building_group_bg_mining_throughput_add = 0.15
+>>>>>>> full-update
 	}
 }
 
@@ -156,4 +160,8 @@ state_trait_cusco_valley = {
 		building_group_bg_agriculture_throughput_add = 0.05
 		building_maize_farm_throughput_add = 0.1
 	}
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> full-update
