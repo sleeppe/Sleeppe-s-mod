@@ -7359,3 +7359,9 @@ on_national_awakening_started = {
 on_amendment_repealed = {
 	effect = {}
 }
+
+on_monthly_pulse_country = { 
+	on_actions = {
+		statistics_on_actions
+	}
+}

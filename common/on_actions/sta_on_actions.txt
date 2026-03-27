@@ -1,0 +1,17 @@
+﻿on_monthly_pulse = {
+	on_actions = {
+		statistics_on_actions
+	}
+}
+
+on_game_started = {
+	on_actions = {
+		statistics_on_actions
+	}
+}
+
+statistics_on_actions = {
+	effect = {
+		total_statistics_effect = yes
+	}
+}

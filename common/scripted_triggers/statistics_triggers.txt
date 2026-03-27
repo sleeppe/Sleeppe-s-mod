@@ -1,0 +1,4 @@
+﻿statistics_is_valid = {
+	NOT = { is_country_type = decentralized }
+	is_revolutionary = no
+}

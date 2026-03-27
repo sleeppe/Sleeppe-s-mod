@@ -1175,5 +1175,191 @@ je_polish_constitution_button4 = {
 	}
 }
 
+##Vodka Monopoly Buttons
 
+revoking_privileges_button = {
+	name = "revoking_privileges_button"
+	desc = "revoking_privileges_button_desc"
 
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		OR = {
+			has_modifier = modifier_distillery_privileges
+			has_modifier = modifier_monastic_distillery
+		}
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = modifier_distillery_privileges }
+			remove_modifier = modifier_distillery_privileges
+		}
+		if = {
+			limit = { has_modifier = modifier_monastic_distillery }
+			remove_modifier = modifier_monastic_distillery
+		}
+		interest_group_landowners_approval_add = -5
+	}
+}
+ 
+grant_privilges_button = {
+	name = "grant_privilges_button"
+	desc = "grant_privilges_button_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		NOR = {
+			has_modifier = modifier_distillery_privileges
+			has_modifier = modifier_monastic_distillery
+		}
+	}
+
+	effect = {
+		add_modifier = modifier_distillery_privileges
+		interest_group_landowners_approval_add = 5
+	}
+}
+
+monastic_distillery_button = {
+	name = "monastic_distillery_button"
+	desc = "monastic_distillery_button_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		has_modifier = modifier_distillery_privileges
+	}
+
+	effect = {
+		if = {
+			limit = { has_modifier = modifier_distillery_privileges }
+			remove_modifier = modifier_distillery_privileges
+		}
+		add_modifier = modifier_monastic_distillery
+		interest_group_devout_approval_add = 3
+	}
+}
+
+reducing_prices_button = {
+	name = "reducing_prices_button"
+	desc = "reducing_prices_button_desc"
+
+	visible = { NOT = { has_modifier = modifier_reduced_prices } }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		NOT = { 
+			has_modifier = modifier_reduced_prices
+		}
+	}
+
+	effect = {
+		add_modifier = modifier_reduced_prices
+	}
+}
+
+normalising_prices_button = {
+	name = "normalising_prices_button"
+	desc = "normalising_prices_button_desc"
+
+	visible = { has_modifier = modifier_reduced_prices }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		has_modifier = modifier_reduced_prices
+	}
+
+	effect = {
+		remove_modifier = modifier_reduced_prices
+	}
+}
+
+##Russian Ambitions for Constantinople
+
+claims_tsargorod = {
+	name = "claims_tsargorod"
+	desc = "claims_tsargorod_desc"
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		NOT = { has_global_variable = claimed_black_sea_region }
+		NOT = { has_global_variable = claimed_tsargorod }
+	}
+
+	effect = {
+		s:STATE_EASTERN_THRACE = {
+			add_claim = c:RUS
+		}
+		s:STATE_HUDAVENDIGAR = {
+			add_claim = c:RUS
+		}
+		change_infamy = 10
+		set_global_variable = claimed_tsargorod
+	}
+}
+
+claims_black_sea_region = {
+	name = "claims_black_sea_region"
+	desc = "claims_black_sea_region_desc"
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+		NOT = { has_global_variable = claimed_tsargorod }
+		NOT = { has_global_variable = claimed_black_sea_region }
+	}
+
+	effect = {
+		s:STATE_EASTERN_THRACE = {
+			add_claim = root
+		}
+		s:STATE_DOBRUDJA = {
+			add_claim = root
+		}
+		s:STATE_BULGARIA = {
+			add_claim = root
+		}
+		s:STATE_NORTHERN_THRACE = {
+			add_claim = root
+		}
+		s:STATE_HUDAVENDIGAR = {
+			add_claim = root
+		}
+		s:STATE_KASTAMONU = {
+			add_claim = root
+		}
+		s:STATE_TRABZON = {
+			add_claim = root
+		}
+		s:STATE_KARS = {
+			add_claim = root
+		}
+		change_infamy = 80
+		set_global_variable = claimed_black_sea_region
+	}
+}

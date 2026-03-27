@@ -4903,34 +4903,6 @@
 		}
 	}
 	s:STATE_WALLONIA={
-		region_state:LUX={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:LUX"
-						levels=1
-						region="STATE_WALLONIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:LUX"
-						levels=1
-						region="STATE_WALLONIA"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-		}
 		region_state:BEL={
 			create_building={
 				building="building_government_administration"
@@ -6554,13 +6526,13 @@
 					building={
 						type="building_tooling_workshop"
 						country="c:PRU"
-						levels=3
+						levels=1
 						region="STATE_RHINELAND"
 					}
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=3
+						levels=1
 						region="STATE_RHINELAND"
 					}
 				}
@@ -6594,47 +6566,6 @@
 				activate_production_methods={ "pm_blister_steel_process" "pm_automation_disabled"  }
 			}
 		}
-		region_state:BAV={
-			create_building={
-				building="building_wheat_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BAV"
-						levels=1
-						region="STATE_RHINELAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={  "pm_no_secondary" "pm_tools_disabled" "pm_soil_enriching_farming" }
-			}
-			create_building={
-				building="building_vineyard"
-				add_ownership={
-					building={
-						type="building_vineyard"
-						country="c:BAV"
-						levels=1
-						region="STATE_RHINELAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "default_building_vineyard" "pm_road_carts"  }
-			}
-			create_building={
-				building="building_livestock_ranch"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:BAV"
-						levels=1
-						region="STATE_RHINELAND"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
-			}
-		}
 	}
 	s:STATE_NORTH_RHINE={
 		region_state:PRU={
@@ -6656,6 +6587,25 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_dye_workshops" "pm_no_luxury_clothes" "pm_traditional_looms"  }
+			}
+			create_building={
+				building="building_tooling_workshop"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=3
+						region="STATE_NORTH_RHINE"
+					}
+					building={
+						type="building_tooling_workshop"
+						country="c:PRU"
+						levels=3
+						region="STATE_NORTH_RHINE"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 			create_building={
 				building="building_coal_mine"
@@ -7682,17 +7632,10 @@
 			create_building={
 				building="building_glassworks"
 				add_ownership={
-					building={
-						type="building_glassworks"
+					company={
+						type=company_konigliche_porzellan_manufaktur_meissen
 						country="c:SAX"
-						levels=2
-						region="STATE_SAXONY"
-					}
-					building={
-						type="building_financial_district"
-						country="c:SAX"
-						levels=3
-						region="STATE_SAXONY"
+						levels=5
 					}
 				}
 				reserves=1
@@ -7840,6 +7783,21 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_no_organization" }
+			}
+		}
+		region_state:PRU={	
+			create_building={
+				building="building_tooling_workshop"
+				add_ownership={
+					building={
+						type="building_tooling_workshop"
+						country="c:PRU"
+						levels=1
+						region="STATE_SAXONY"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_steel" "pm_automation_disabled"  }
 			}
 		}
 		region_state:COB={

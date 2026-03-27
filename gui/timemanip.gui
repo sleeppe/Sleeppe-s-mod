@@ -1,4 +1,4 @@
-template paused_effect_duration_show
+﻿template paused_effect_duration_show
 {
 	duration = 0.2
 }
@@ -23,7 +23,6 @@ template speedometer_set_speed_properties
 }
 template speed_button_1
 {
-	visible = "[JominiIsHostOrLocal]"
 	texture = "gfx/interface/main_hud/speedometer_set_speed_1.dds"
 	framesize = { 48 62 }
 	size = { 24 31 }
@@ -34,7 +33,6 @@ template speed_button_1
 }
 template speed_button_2
 {
-	visible = "[JominiIsHostOrLocal]"
 	texture = "gfx/interface/main_hud/speedometer_set_speed_2.dds"
 	framesize = { 64 68 }
 	size = { 32 34 }
@@ -45,7 +43,6 @@ template speed_button_2
 }
 template speed_button_3
 {
-	visible = "[JominiIsHostOrLocal]"
 	texture = "gfx/interface/main_hud/speedometer_set_speed_3.dds"
 	framesize = { 74 46 }
 	size = { 37 23 }
@@ -56,7 +53,6 @@ template speed_button_3
 }
 template speed_button_4
 {
-	visible = "[JominiIsHostOrLocal]"
 	texture = "gfx/interface/main_hud/speedometer_set_speed_4.dds"
 	framesize = { 64 68 }
 	size = { 32 34 }
@@ -67,7 +63,6 @@ template speed_button_4
 }
 template speed_button_5
 {
-	visible = "[JominiIsHostOrLocal]"
 	texture = "gfx/interface/main_hud/speedometer_set_speed_5.dds"
 	framesize = { 48 62 }
 	size = { 24 31 }
@@ -78,11 +73,40 @@ template speed_button_5
 }
 
 types timekeeper
-{			
+{
+	type tick_of_day_icon = widget {
+		size = { 13 13 }
+		parentanchor = vcenter|right
+		icon = {
+			size = { 13 13 }
+			visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)0')]"
+			tooltip = "HOUR_NIGHT"
+			texture = "gfx/interface/icons/generic_icons/timekeeper_night.dds"
+		}
+		icon = {
+			size = { 13 13 } 
+			visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)1')]"
+			tooltip = "HOUR_MORNING"
+			texture = "gfx/interface/icons/generic_icons/timekeeper_morning.dds"
+		}
+		icon = {
+			size = { 13 13 }
+			visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)2')]"
+			tooltip = "HOUR_AFTERNOON"
+			texture = "gfx/interface/icons/generic_icons/timekeeper_afternoon.dds" 
+		}
+		icon = {
+			size = { 13 13 }
+			visible = "[EqualTo_int32(TimeKeeper.GetTickOfDay,'(int32)3')]"
+			tooltip = "HOUR_EVENING"
+			texture = "gfx/interface/icons/generic_icons/timekeeper_evening.dds"
+		}
+	}
+
 	type time_animation = icon {
 		texture = "gfx/interface/main_hud/speedometer_cogwheel_texture.dds"
 		size = { 30 30 }
-		
+
 		modify_texture = {
 			name = cogwheel
 			texture = "gfx/interface/main_hud/speedometer_cogwheel_mask.dds"
@@ -90,7 +114,7 @@ types timekeeper
 			spriteborder = { 0 0 }
 			blend_mode = alphamultiply
 		}
-		
+
 		state = {
 			trigger_on_create = yes
 			name = 1
@@ -119,7 +143,7 @@ types timekeeper
 		alwaystransparent = yes
 		visible = "[IsInGame]"
 		ignore_in_debug_draw = yes
-		
+
 		widget = {
 			size = { 100% 100% }
 			using = fullscreen_hide
@@ -149,7 +173,6 @@ types timekeeper
 
 					### PAUSED MIDDLE BUTTON
 					button = {
-						visible = "[JominiIsHostOrLocal]"
 						enabled = "[TimeKeeper.CanTogglePause]"
 						onclick = "[TimeKeeper.TogglePause]"
 						tooltip = "[TimeKeeper.GetTogglePauseTooltip]"
@@ -157,11 +180,11 @@ types timekeeper
 						parentanchor = hcenter
 						onmousehierarchyenter = "[PdxGuiWidget.FindChild('glow').InterruptThenTriggerAnimation('hover_hide','hover_show')]"
 						onmousehierarchyleave = "[PdxGuiWidget.FindChild('glow').InterruptThenTriggerAnimation('hover_show','hover_hide')]"
-						
+
 						container = {
 							resizeparent = yes
 
-							widget = { 
+							widget = {
 								size = { 50 50 }
 								parentanchor = hcenter
 
@@ -174,7 +197,7 @@ types timekeeper
 									position = { 0 2 }
 
 									alpha = 0
-									
+
 									state = {
 										name = hover_show
 										alpha = 0.7
@@ -188,7 +211,7 @@ types timekeeper
 										using = Animation_Curve_Default
 									}
 								}
-								
+
 								icon = {
 									size = { 100% 100% }
 									alwaystransparent = yes
@@ -198,9 +221,9 @@ types timekeeper
 
 							textbox = {
 								autoresize = yes
-								position = {  0 46 } 
+								position = {  0 46 }
 								alwaystransparent = yes
-								
+
 								text = "PAUSED"
 								align = nobaseline
 								parentanchor = hcenter
@@ -208,7 +231,7 @@ types timekeeper
 								background = {
 									texture = "gfx/interface/main_hud/paused_bg_text.dds"
 									texture_density = 2
-									margin = { 18 10 }  
+									margin = { 18 10 }
 									spriteType = Corneredstretched
 									spriteborder = { 50 40 }
 								}
@@ -276,13 +299,13 @@ types timekeeper
 					spriteborder = { 600 400 }
 					texture_density = 2
 					texture = "gfx/interface/main_hud/ui_paus_frame.dds"
-					
+
 					using = hud_shiny_effect
 				}
 			}
 		}
 	}
-	
+
 
 	type timemanip = container {
 		name = "timemanip"
@@ -1174,8 +1197,9 @@ types timekeeper
 
 					button_icon_vickypedia = {
 						size = { 24 24 }
-						onclick = "[ToggleEncyclopedia]"
-						tooltip = "HEADING_ENCYCLOPEDIA"
+						onclick = "[GetVariableSystem.Toggle('statistics_open')]"
+						onclick = "[GetVariableSystem.Set('stat_id', '01')]"
+						tooltip = "HEADING_STATISTICS"
 					}
 					button_icon_music_player = {
 						size = { 24 24 }

@@ -1,0 +1,14 @@
+﻿statistics_sgui_refresh = {
+	scope = country
+	effect = {
+		total_statistics_effect = yes
+	}
+}
+
+statistics_sgui_reverse = {
+	scope = country
+	effect = {
+		reverse_stat_direction = yes
+		total_statistics_effect = yes
+	}
+}

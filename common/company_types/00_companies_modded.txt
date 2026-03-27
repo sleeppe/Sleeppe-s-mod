@@ -363,3 +363,107 @@ company_american_Milling = { #"Plain Millers' Monopoly"
 		}
 	}
 }
+
+#pacific companies
+
+company_australian_agricultural = {
+	icon = "gfx/interface/icons/company_icons/modded_company_icons/australian_agricultural.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_NEW_SOUTH_WALES }
+
+	building_types = {
+		building_cotton_plantation
+		building_coal_mine
+		building_livestock_ranch
+	}
+
+	extension_building_types = {
+		building_railway
+	}
+
+	possible_prestige_goods = {
+		prestige_good_prestige_coal_australia
+	}
+
+	potential = {
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_NEW_SOUTH_WALES
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 5
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_coal_mine_throughput_add = 0.1
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 5
+			}
+		}
+	}
+}
+
+company_imperial_companhia_seropédica_fluminense = {
+	icon = "gfx/interface/icons/company_icons/basic_agriculture_2.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+
+	flavored_company = yes
+
+	preferred_headquarters = { STATE_RIO_DE_JANEIRO }
+
+	building_types = {
+		building_cotton_plantation
+		building_silk_plantation
+	}
+
+	extension_building_types = {
+		building_textile_mill
+	}
+
+	possible_prestige_goods = {
+	}
+
+	potential = {
+	}
+
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_RIO_DE_JANEIRO
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_silk_plantation
+				level >= 3
+			}
+		}
+	}
+
+	prosperity_modifier = {
+		building_silk_plantation_throughput_add = 0.15
+		building_group_bg_plantations_throughput_add = 0.05
+		building_group_bg_agriculture_throughput_add = 0.05
+	}
+
+	ai_will_do = {
+		any_scope_state = {
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_silk_plantation
+				level >= 5
+			}
+		}
+	}
+}

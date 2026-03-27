@@ -1,0 +1,45 @@
+﻿gdp_per_capita_sv = {
+	value = gdp
+	divide = total_population
+}
+
+gdp_share = {
+	value = gdp
+	divide = global_gdp
+}
+
+imperial_gdp = {
+	value = gdp
+	every_subject_or_below = {
+		add = gdp
+	}
+}
+
+imperial_gdp_share = {
+	value = imperial_gdp
+	divide = global_gdp
+}
+
+debt = {
+	value = credit
+	multiply = scaled_debt
+}
+
+total_subject_population = {
+	value = total_population
+	add = cached_ai_subject_population
+}
+
+loyalist_fraction_sv = {
+	value = loyalist_fraction
+}
+radical_fraction_sv = {
+	value = radical_fraction
+}
+
+non_subsistence_building_levels = {
+	value = building_levels
+	every_scope_state = {
+		subtract = free_arable_land
+	}
+}

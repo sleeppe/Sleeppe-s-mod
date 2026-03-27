@@ -1,0 +1,167 @@
+﻿#Require input: $name$, $value
+stat_global_list_effect = {
+	clear_global_variable_list = stat_list_$name$
+
+	set_global_variable = {
+		name = stat_list_count_$name$
+		value = 0
+	}
+	ordered_country = {
+		limit = {
+			is_player = yes
+			statistics_is_valid = yes
+			$value$ > 0
+		}
+		order_by = {
+			value = $value$
+			multiply = global_var:stat_direction
+		}
+		max = 20 # TODO: Make configurable
+		check_range_bounds = no
+
+		add_to_global_variable_list = {
+			name = stat_list_$name$
+			target = this
+		}
+		set_variable = {
+			name = stat_value_$name$
+			value = $value$
+		}
+		change_global_variable = {
+			name = stat_list_count_$name$
+			add = 1
+		}
+	}
+	ordered_country = {
+		limit = {
+			is_player = no
+			statistics_is_valid = yes
+			$value$ > 0
+		}
+		order_by = {
+			value = $value$
+			multiply = global_var:stat_direction
+		}
+		max = {
+			value = 20 # TODO: Make configurable
+			subtract = global_var:stat_list_count_$name$
+		}
+		check_range_bounds = no
+
+		add_to_global_variable_list = {
+			name = stat_list_$name$
+			target = this
+		}
+		set_variable = {
+			name = stat_value_$name$
+			value = $value$
+		}
+	}
+	ordered_in_global_list = {
+		variable = stat_list_$name$
+		order_by = $value$
+		max = 1
+		check_range_bounds = no
+		set_global_variable = {
+			name = stat_top_$name$
+			value = $value$
+		}
+	}
+	every_in_global_list = {
+		variable = stat_list_$name$
+		set_variable = {
+			name = stat_var_$name$
+			value = {
+				value = $value$
+				divide = global_var:stat_top_$name$
+				multiply = 950 # TODO: Make configurable
+				min = 50 # So that the text is always visible
+			}
+		}
+	}
+
+	# Suppress error
+	if = {
+		limit = {
+			always = no
+			any_country = {
+				has_variable = stat_value_$name$
+				has_variable = stat_var_$name$
+			}
+		}
+	}
+}
+
+total_statistics_effect = {
+	if = {
+		limit = {
+			NOT = { has_global_variable = stat_direction }
+		}
+		set_global_variable = { name = stat_direction value = 1 }
+	}
+	stat_global_list_effect = { name = 01 value = modifier:country_construction_add }
+	stat_global_list_effect = { name = 02 value = num_queued_constructions }
+	stat_global_list_effect = { name = 03 value = imperial_gdp }
+	stat_global_list_effect = { name = 04 value = imperial_gdp_share }
+	stat_global_list_effect = { name = 05 value = gdp_share }
+	stat_global_list_effect = { name = 06 value = literacy_rate }
+	stat_global_list_effect = { name = 07 value = num_states }
+	stat_global_list_effect = { name = 08 value = non_subsistence_building_levels }
+	stat_global_list_effect = { name = 09 value = cached_ai_incorporated_population }
+	stat_global_list_effect = { name = 10 value = total_population_share }
+	stat_global_list_effect = { name = 11 value = total_subject_population }
+	stat_global_list_effect = { name = 12 value = infamy }
+	stat_global_list_effect = { name = 13 value = loyalist_fraction_sv }
+	stat_global_list_effect = { name = 14 value = radical_fraction_sv }
+	stat_global_list_effect = { name = 15 value = army_power_projection }
+	stat_global_list_effect = { name = 16 value = naval_power_projection }
+	stat_global_list_effect = { name = 17 value = military_expenses }
+	stat_global_list_effect = { name = 18 value = military_expenses_share }
+	stat_global_list_effect = { name = 19 value = techs_researched }
+	stat_global_list_effect = { name = 20 value = country_innovation }
+	stat_global_list_effect = { name = 21 value = income }
+	stat_global_list_effect = { name = 22 value = expenses }
+	stat_global_list_effect = { name = 23 value = investment_pool_income }
+	stat_global_list_effect = { name = 24 value = investment_pool }
+	stat_global_list_effect = { name = 25 value = gold_reserves }
+	stat_global_list_effect = { name = 26 value = gold_reserves_limit }
+	stat_global_list_effect = { name = 27 value = debt }
+	stat_global_list_effect = { name = 28 value = credit }
+	stat_global_list_effect = { name = 29 value = num_active_interests }
+	stat_global_list_effect = { name = 30 value = num_convoys_available }
+
+	set_global_variable = {
+		name = month_gvar
+		value = month
+	}
+	change_global_variable = {
+		name = month_gvar
+		add = 1
+	}
+	set_global_variable = {
+		name = year_gvar
+		value = year
+	}
+
+	if = { # Suppress error
+		limit = {
+			always = no
+			has_global_variable = month_gvar
+			has_global_variable = year_gvar
+		}
+	}
+}
+
+reverse_stat_direction = {
+	if = {
+		limit = {
+			has_global_variable = stat_direction
+		}
+		change_global_variable = {
+			name = stat_direction
+			multiply = -1
+		}
+	} else = {
+		set_global_variable = { name = stat_direction value = -1 }
+	}
+}

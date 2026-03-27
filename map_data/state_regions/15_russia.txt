@@ -268,7 +268,7 @@ STATE_INGRIA = {
     id = 131
     subsistence_building = "building_subsistence_farm"
     provinces = { "x01A0E0" "x042A4F" "x065E68" "x0FEA4B" "x246095" "x3F6DEC" "x441576" "x57DF51" "x607A9E" "x6122C5" "x743B9C" "x80A0E0" "x8F79E9" "x93FBC9" "xA79D26" "xAD3522" "xAEBDCB" "xB64167" "xB6C9C3" "xBB73A3" "xCD164E" "xD14E99" "xD1CBDD" "xD6A28B" "xD7689F" "xDA2E04" "xDED975" "xE97616" "xE9C671" "xF4E44C" }
-    traits = { "state_trait_russian_forest" "state_trait_kronstadt_island" }
+    traits = { "state_trait_russian_forest" "state_trait_kronstadt_island" "state_trait_monopoly_location" }
     city = "xCD164E"
     port = "xCD164E"
     farm = "xDED975"
@@ -287,7 +287,7 @@ STATE_MOSCOW = {
     id = 132
     subsistence_building = "building_subsistence_farm"
     provinces = { "x13D91C" "x43F336" "x4DBAEC" "x54C962" "x632D29" "x8B324E" "xC05614" "xE0A021" "xE19E7E" "xE32FD0" "xEC68C6" "xF75BCA" }
-    traits = { "state_trait_volga_river" "state_trait_russian_forest" }
+    traits = { "state_trait_volga_river" "state_trait_russian_forest" "state_trait_monopoly_location" }
     city = "x13D91C"
     farm = "x54C962"
     mine = "x8B324E"
@@ -331,6 +331,8 @@ STATE_VOLHYNIA = {
     capped_resources = {
         building_coal_mine = 42
         building_logging_camp = 18
+        building_lead_mine = 27
+        building_sulfur_mine = 12
     }
 }
 
@@ -343,12 +345,13 @@ STATE_KIEV = {
     farm = "x2472F3"
     mine = "xCD2CE5"
     wood = "x54B5C4"
-    arable_land = 175
+    arable_land = 215
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" }
     capped_resources = {
         building_coal_mine = 36
         building_iron_mine = 14
         building_logging_camp = 32
+        building_lead_mine = 16
     }
 }
 
