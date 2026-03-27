@@ -1,4 +1,4 @@
-##Modifiers for the low countries (Netherlands, Belgium, Luxembourg and the United Netherlands)
+﻿##Modifiers for the low countries (Netherlands, Belgium, Luxembourg and the United Netherlands)
 
 #Gateway to Europe
 modifier_gateway_europe = {

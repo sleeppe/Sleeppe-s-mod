@@ -1,4 +1,4 @@
-namespace = dutch_debt_addition
+﻿namespace = dutch_debt_addition
 
 dutch_debt_addition.1 = {
 	type = country_event

@@ -426,18 +426,6 @@ default_popup = {
 						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '28'))]"
 						onclick = "[GetVariableSystem.Set('stat_id', '28')]"
 					}
-					button = {
-						fontsize = 13
-						using = default_button
-						size = { 135 37 }
-						text = "stat_30"
-						icon = {
-							visible = "[GetVariableSystem.HasValue('stat_id', '30')]"
-							using = highlighted_square_selection
-						}
-						enabled = "[Not(GetVariableSystem.HasValue('stat_id', '30'))]"
-						onclick = "[GetVariableSystem.Set('stat_id', '30')]"
-					}
 				}
 			}
 			widget = {

@@ -2056,54 +2056,6 @@ MGL = {
 	}
 }
 
-
-MOL = { # Moldavia
-	dynamic_country_name = {
-		name = dyn_c_moldova
-		adjective = dyn_c_moldova_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_monarchy_flag_trigger = no
-		}
-	}
-
-	dynamic_country_name = {
-		name = dyn_c_united_principalities
-		adjective = dyn_c_united_principalities_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			scope:actor ?= {
-				has_variable = ROM_united_principality
-			}
-		}
-	}
-
-	dynamic_country_name = {
-		name = dyn_c_moldavia_and_wallachia
-		adjective = dyn_c_moldavia_and_wallachia_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_monarchy_flag_trigger = no
-			scope:actor ?= {
-				has_variable = ROM_united_principality
-			}
-			c:WAL ?= {
-				is_subject_of = scope:actor
-			}
-		}
-	}
-}
-
 NAL = { # Natalia
 	dynamic_country_name = {
 		name = dyn_c_colony_of_natal
@@ -3542,41 +3494,6 @@ FND = { # Federation
 					}
 					count > 1
 				}
-			}
-		}
-	}
-}
-
-WAL = { # Wallachia
-	dynamic_country_name = {
-		name = dyn_c_united_principalities
-		adjective = dyn_c_united_principalities_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_monarchy_flag_trigger = yes
-			scope:actor ?= {
-				has_variable = ROM_united_principality
-			}
-		}
-	}
-
-	dynamic_country_name = {
-		name = dyn_c_wallachia_and_moldavia
-		adjective = dyn_c_wallachia_and_moldavia_adj
-
-		is_main_tag_only = yes
-		priority = 0
-
-		trigger = {
-			coa_def_monarchy_flag_trigger = no
-			scope:actor ?= {
-				has_variable = ROM_united_principality
-			}
-			c:MOL ?= {
-				is_subject_of = scope:actor
 			}
 		}
 	}
@@ -6109,6 +6026,50 @@ MOL = { # Moldovan occupation
 			}
 		}
 	}
+	dynamic_country_name = {
+		name = dyn_c_moldova
+		adjective = dyn_c_moldova_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_united_principalities
+		adjective = dyn_c_united_principalities_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor ?= {
+				has_variable = ROM_united_principality
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_moldavia_and_wallachia
+		adjective = dyn_c_moldavia_and_wallachia_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+			scope:actor ?= {
+				has_variable = ROM_united_principality
+			}
+			c:WAL ?= {
+				is_subject_of = scope:actor
+			}
+		}
+	}
 }
 
 WAL = { # Wallachian occupation
@@ -6122,6 +6083,38 @@ WAL = { # Wallachian occupation
 		trigger = {
 			scope:actor = {
 				is_subject_of = c:RUS
+			}
+		}
+	}
+	dynamic_country_name = {
+		name = dyn_c_united_principalities
+		adjective = dyn_c_united_principalities_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = yes
+			scope:actor ?= {
+				has_variable = ROM_united_principality
+			}
+		}
+	}
+
+	dynamic_country_name = {
+		name = dyn_c_wallachia_and_moldavia
+		adjective = dyn_c_wallachia_and_moldavia_adj
+
+		is_main_tag_only = yes
+		priority = 0
+
+		trigger = {
+			coa_def_monarchy_flag_trigger = no
+			scope:actor ?= {
+				has_variable = ROM_united_principality
+			}
+			c:MOL ?= {
+				is_subject_of = scope:actor
 			}
 		}
 	}

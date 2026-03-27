@@ -1,4 +1,4 @@
-## Modifiers for Russia
+﻿## Modifiers for Russia
 
 #Vodka Monopoly
 modifier_vodka_monopoly = {

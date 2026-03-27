@@ -1,4 +1,4 @@
-##New Prestige Goods
+﻿##New Prestige Goods
 
 prestige_good_delftware = {
 	base_good = porcelain

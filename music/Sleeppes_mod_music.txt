@@ -1,4 +1,4 @@
-sleeppe_s_mod_rule_britannia = {
+﻿sleeppe_s_mod_rule_britannia = {
     music = "event:/Rule Britannia"
     name = "sleeppe_s_mod_rule_britannia_name"
     pause_factor = 50
