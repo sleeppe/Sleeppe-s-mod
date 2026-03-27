@@ -120,7 +120,7 @@ total_statistics_effect = {
 	stat_global_list_effect = { name = 19 value = techs_researched }
 	stat_global_list_effect = { name = 20 value = country_innovation }
 	stat_global_list_effect = { name = 21 value = income }
-	stat_global_list_effect = { name = 22 value = expenses }
+	#stat_global_list_effect = { name = 22 value = expenses }
 	stat_global_list_effect = { name = 23 value = investment_pool_income }
 	stat_global_list_effect = { name = 24 value = investment_pool }
 	stat_global_list_effect = { name = 25 value = gold_reserves }

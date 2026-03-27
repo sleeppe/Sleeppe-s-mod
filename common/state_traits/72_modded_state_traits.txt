@@ -90,11 +90,9 @@ state_trait_saxon_switzerland = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 	modifier = {
 		state_construction_mult = -0.1
-<<<<<<< HEAD
-		building_group_bg_mining_throughput_add = 0.1
-=======
+
 		building_group_bg_mining_throughput_add = 0.15
->>>>>>> 672688fa6480cc38cb483b1a2653aa55e9a04bc3
+
 	}
 }
 
@@ -106,8 +104,6 @@ state_trait_mosel_river = {
 	}
 }
 
-<<<<<<< HEAD
-=======
 state_trait_bowen_basin_coalfield = {
     icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
 	modifier = {
@@ -161,4 +157,3 @@ state_trait_cusco_valley = {
 		building_maize_farm_throughput_add = 0.1
 	}
 }
->>>>>>> 672688fa6480cc38cb483b1a2653aa55e9a04bc3
