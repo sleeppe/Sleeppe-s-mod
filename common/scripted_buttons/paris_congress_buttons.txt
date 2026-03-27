@@ -1,4 +1,4 @@
-favour_russia_button = {
+﻿favour_russia_button = {
 	name = favour_russia_button
 	desc = favour_russia_button_desc
 

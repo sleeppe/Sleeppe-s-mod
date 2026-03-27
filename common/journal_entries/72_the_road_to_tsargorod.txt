@@ -1,4 +1,4 @@
-## Journal for Russian Ambitions to acquire Constantinople
+﻿## Journal for Russian Ambitions to acquire Constantinople
 
 je_road_to_tsargorod = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"

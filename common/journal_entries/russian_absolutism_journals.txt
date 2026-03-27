@@ -1,4 +1,4 @@
-je_russian_absolutism = {
+﻿je_russian_absolutism = {
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
 
 	group = je_group_historical_content

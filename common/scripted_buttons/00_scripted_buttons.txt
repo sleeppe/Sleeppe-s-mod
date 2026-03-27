@@ -1203,7 +1203,6 @@ revoking_privileges_button = {
 			limit = { has_modifier = modifier_monastic_distillery }
 			remove_modifier = modifier_monastic_distillery
 		}
-		interest_group_landowners_approval_add = -5
 	}
 }
  
@@ -1226,7 +1225,6 @@ grant_privilges_button = {
 
 	effect = {
 		add_modifier = modifier_distillery_privileges
-		interest_group_landowners_approval_add = 5
 	}
 }
 
@@ -1250,7 +1248,6 @@ monastic_distillery_button = {
 			remove_modifier = modifier_distillery_privileges
 		}
 		add_modifier = modifier_monastic_distillery
-		interest_group_devout_approval_add = 3
 	}
 }
 

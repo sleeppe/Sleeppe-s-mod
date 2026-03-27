@@ -1,4 +1,4 @@
-##JE for the Vodka Monopoly in Russia 
+﻿##JE for the Vodka Monopoly in Russia 
 
 je_vodka_monopoly = {
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
