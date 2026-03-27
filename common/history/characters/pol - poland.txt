@@ -1,4 +1,4 @@
-CHARACTERS = {
+﻿CHARACTERS = {
 	c:POL ?= {
 		create_character = {
 			is_general = yes
