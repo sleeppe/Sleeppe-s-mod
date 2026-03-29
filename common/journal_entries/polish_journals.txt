@@ -3,9 +3,7 @@
 
 	group = je_group_historical_content
 	
-	possible = {
-		root = c:POL
-	}
+	progressbar = yes
 
 	is_shown_in_lobby = {
 		root = c:POL
@@ -15,10 +13,21 @@
 		root = c:POL
 	}
 
+	current_value = {
+		value = global_var:polish_constitution_global
+	}
+
+	goal_add_value = {
+		value = 4
+	}
+
 	scripted_button = je_polish_constitution_button1
 	scripted_button = je_polish_constitution_button2
 	scripted_button = je_polish_constitution_button3
 	scripted_button = je_polish_constitution_button4
+
+	immediate = {
+	}
 
 	complete = {
 		is_subject = no
@@ -40,5 +49,38 @@
 	should_be_pinned_by_default = yes
 
 	weight = 100
+	
+	triggered_desc = {
+		desc = status_russia_firm_grip
+		trigger = {
+			scope:journal_entry = {
+				"bar_progress" = 1
+			}
+		}
+	}
+	triggered_desc = {
+		desc = status_russia_weakening_grip
+		trigger = {
+			scope:journal_entry = {
+				"bar_progress" = 2
+			}
+		}
+	}
+	triggered_desc = {
+		desc = status_russia_weak_grip
+		trigger = {
+			scope:journal_entry = {
+				"bar_progress" = 3
+			}
+		}
+	}
+	triggered_desc = {
+		desc = status_russia_no_grip
+		trigger = {
+			scope:journal_entry = {
+				"bar_progress" = 4
+			}
+		}
+	}
 }
 

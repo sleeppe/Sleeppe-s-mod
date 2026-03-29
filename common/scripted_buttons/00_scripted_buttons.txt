@@ -1113,6 +1113,10 @@ je_polish_constitution_button1 = {
 		c:RUS = {
 			trigger_event = {id = polish_constitution.2}
 		}
+		set_global_variable = {
+			name = polish_constitution_global
+			value = 0
+		}
 	}
 }
 
@@ -1128,10 +1132,22 @@ je_polish_constitution_button2 = {
 
 	possible = {
 		has_global_variable = russia_not_in_poland
+		NOT = {
+			has_law_or_variant = law_type:law_appointed_bureaucrats
+		}
 	}
 
 	effect = {
 		activate_law = law_type:law_sejmik_poland
+		if = {
+			limit = {
+				has_global_variable = polish_constitution_global
+			}
+			change_global_variable = {
+				name = polish_constitution_global
+				add = 1
+			}
+		}
 	}
 }
 
@@ -1147,10 +1163,22 @@ je_polish_constitution_button3 = {
 
 	possible = {
 		has_global_variable = russia_not_in_poland
+		NOT = {
+			has_law_or_variant = law_type:law_homesteading
+		}
 	}
 
 	effect = {
 		activate_law = law_type:law_state_serfs
+		if = {
+			limit = {
+				has_global_variable = polish_constitution_global
+			}
+			change_global_variable = {
+				name = polish_constitution_global
+				add = 1
+			}
+		}
 	}
 }
 
@@ -1168,6 +1196,10 @@ je_polish_constitution_button4 = {
 
 	possible = {
 		has_global_variable = russia_not_in_poland
+		NOT = {
+			has_law_or_variant = law_type:law_serfdom
+			has_law_or_variant = law_type:law_hereditary_bureaucrats
+		}
 	}
 
 	effect = {

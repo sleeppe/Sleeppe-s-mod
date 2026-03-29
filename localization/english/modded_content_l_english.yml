@@ -103,7 +103,6 @@
  je_polish_constitution: "The Matter of Poland"
  je_polish_constitution_lobby: "Poland stands defiant of the oppression imposed upon them by foreign empires. yet, their efforts have been quashed, and liberal reforms destroyed"
  je_polish_constitution_reason: "[ROOT.GetCountry.GetName] was a compromise invention, created in the Congress of Vienna to have one of the most liberal regimes in Europe in order to check the power of the russian Tsar. After a rebellion in 1830 Poland was stripped of practically all of its autonomy, and Russia continues to encroach on [ROOT.GetCountry.GetAdjectiveNoFlag] sovereignty. Yet the [ROOT.GetCountry.GetAdjectiveNoFlag] people yearn for independence, as well as a return to their liberal constitution. Perhaps we can attempt to undermine the Russians and reassert not only our constitution, but our independence."
- je_polish_constitution_status: "Russia holds a firm grip on Poland"
 
  je_polish_constitution_button1: "Begin Reinstating the Constitution"
  je_polish_constitution_button1_desc: "The cornerstone of the constitution given to the poles at vienna was its extremely liberal views on suffrage, if we were to bring the vote back to the people, then perhaps we can begin to undermine the Tsar"
@@ -120,23 +119,33 @@
  law_state_serfs: "State Oversight"
  law_state_serfs_desc: "Peasants are nominally owned by their landholders, yet due to the intervention of the state they have the rights to quit work, are guaranteed working conditions and in many cases are allowed to homestead on spare plots of land"
 
- polish_constitution.1.t: "The Past and, The Future"
+ polish_constitution.1.t: "The Past and The Future"
  polish_constitution.1.d: "The people of poland are granted a constitution, but what will this entail?"
  polish_constitution.1.f: ""
  polish_constitution.1.a: "Keep the wealthy in charge"
  polish_constitution.1.b: "Power to the people!"
 
- polish_constitution.2.t: "Poland Requests a constitution"
+ polish_constitution.2.t: "Poland Requests a Constitution"
  polish_constitution.2.d: "The polish lobby for a constituion, if we are to get too distracted then perhaps we put our own balance of power at risk"
  polish_constitution.2.f: ""
  polish_constitution.2.a: "Sure, we ought not to get distracted when we have our own problems"
  polish_constitution.2.b: "Never\n#red (Nobles will gain strength)"
 
- polish_constitution.3.t: "Poland requests Krakow"
- polish_constitution.3.d: "Poland, attempting to undermine Russian influence demands Krakow"
- polish_constitution.3.f: ""
- polish_constitution.3.a: "Perhaps this will undermine the russian influence?"
- polish_constitution.3.b: "Never!"
+ polish_constitution.3.t: "Requesting Krakow"
+ polish_constitution.3.d: "In an attempt to undermine Russian influence within our country we need to prove ourselves worthy of expanding our own nation. Annexing Krakow will greatly benefit us in this goal."
+ polish_constitution.3.f: "Russian influence has grown far too strong in our nation"
+ polish_constitution.3.a: "Let's hope Austria accepts"
+
+ polish_constitution.4.t: "Poland Requests Krakow"
+ polish_constitution.4.d: "Poland has seemingly approached us out of the blue with hopes of claiming our Polish subject. They say this is a move to undermine Russian influence in their country, but we're still skeptical of that. How should we reply?"
+ polish_constitution.4.f: "This could benefit us in the future"
+ polish_constitution.4.a: "Go ahead! We see no value in this land anyways."
+ polish_constitution.4.b: "Hell no! #bold Krakow#! is ours to keep!"
+
+ polish_constitution.5.t: "Austria Rejects our Porposal"
+ polish_constitution.5.d: "Unfortunately for us, Austria has rejected our offer. We need to re-evaluate our foreign relations with them and attempt to find new allies to help us in the future."
+ polish_constitution.5.f: "How dare they!? Do they wish for a war!?"
+ polish_constitution.5.a: "Play the waiting game, one day Krakow will be ours!"
 
  modifier_posen_assimilation: "Germanisation efforts"
 
