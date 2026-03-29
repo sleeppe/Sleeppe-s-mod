@@ -910,10 +910,6 @@ TREATIES = {
 		binding_period = { years = 30 } # The Organic Regulation ended in 1856
 
 		articles_to_create = {
-			{   article = host_power_bloc_embassy 
-				source_country = c:RUS
-				target_country = c:WAL
-			}
 			{ # Russian occupation
 				article = military_access
 				source_country = c:WAL
@@ -938,10 +934,6 @@ TREATIES = {
 		binding_period = { years = 30 } # The Organic Regulation ended in 1856
 
 		articles_to_create = {
-			{   article = host_power_bloc_embassy 
-				source_country = c:RUS
-				target_country = c:MOL
-			}
 			{ # Russian occupation
 				article = military_access
 				source_country = c:MOL
