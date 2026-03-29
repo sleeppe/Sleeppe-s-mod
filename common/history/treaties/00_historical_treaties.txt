@@ -949,8 +949,8 @@ TREATIES = {
 			}
 			{ # To support the occupation
 				article = military_assistance
-				source_country = c:MOL
-				target_country = c:WAL
+				source_country = c:RUS
+				target_country = c:MOL
 			}
 		}
 	}
