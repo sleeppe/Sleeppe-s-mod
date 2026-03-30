@@ -70,3 +70,39 @@ extend_ayllu_kinship_na = {
 		value = 10
 	}
 }
+
+polish_constitution = {
+	is_shown = {
+		owns_entire_state_region = STATE_WARSZAWA
+		OR = {
+			NOT = { exists = global_var:polish_constitution_global }
+			AND = {
+				exists = global_var:polish_constitution_global
+				global_var:polish_constitution_global =  >= 4
+			}
+		}
+		NOT = { has_variable = polish_independence }
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+	}
+
+	when_taken = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = polish_constitution_global }
+			}
+			set_global_variable = {
+				name = polish_constitution_global
+				value = 0
+			}
+		}
+		add_modifier = {
+			name = modifier_signing_constitution
+			days = -1 # permanent until removed
+		}
+		add_journal_entry = { type = je_polish_constitution }
+		set_variable = polish_constitution_global
+	}
+}

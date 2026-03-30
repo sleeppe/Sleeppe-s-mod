@@ -132,7 +132,7 @@ STATE_EAST_PRUSSIA = {
     naval_exit_id = 3000
 }
 
-STATE_ERMLAND_MASUREN = { 
+STATE_ERMLAND_MASUREN = {
     id = 999
     subsistence_building = "building_subsistence_farm"
     provinces = { "xAEA6D6" "x7D6DC3" "x47C900" "xEEF586" "xBF9F20" "x9FD037" "x7A6061" "x6E8875" "x5428E6" "xABC4AE" "xC04521" }
