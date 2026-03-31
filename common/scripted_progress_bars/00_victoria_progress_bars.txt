@@ -2599,7 +2599,7 @@ red_summer_counter_revolution_progress_bar = {
 			}
 			add = {
 				desc = "je_absolutism_poland"
-				value = 10
+				value = 5
 			}
 		}
 		
@@ -2638,7 +2638,7 @@ red_summer_counter_revolution_progress_bar = {
 			}
 			subtract = {
 				desc = "je_absolutism_persia2"
-				value = 1
+				value = 2
 			}
 		}
 		if = {
@@ -2647,7 +2647,7 @@ red_summer_counter_revolution_progress_bar = {
 			}
 			subtract = {
 				desc = "je_absolutism_bulgaria"
-				value = 1
+				value = 5
 			}
 		}
 		if = {
@@ -2661,7 +2661,7 @@ red_summer_counter_revolution_progress_bar = {
 			}
 			subtract = {
 				desc = "je_absolutism_serbia"
-				value = 1
+				value = 2
 			}
 		}
 		if = {

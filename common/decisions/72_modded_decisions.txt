@@ -73,13 +73,9 @@ extend_ayllu_kinship_na = {
 
 polish_constitution = {
 	is_shown = {
-		owns_entire_state_region = STATE_WARSZAWA
+		c:POL = ROOT
 		OR = {
 			NOT = { exists = global_var:polish_constitution_global }
-			AND = {
-				exists = global_var:polish_constitution_global
-				global_var:polish_constitution_global =  >= 4
-			}
 		}
 		NOT = { has_variable = polish_independence }
 	}
@@ -103,6 +99,8 @@ polish_constitution = {
 			days = -1 # permanent until removed
 		}
 		add_journal_entry = { type = je_polish_constitution }
-		set_variable = polish_constitution_global
+	}
+	ai_chance = {
+		value = 10
 	}
 }
