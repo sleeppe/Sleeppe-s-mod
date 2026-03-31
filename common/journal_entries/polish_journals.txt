@@ -32,17 +32,11 @@
 	}
 
 	on_complete = {
+		remove_modifier = modifier_signing_constitution
 	}
 
     event_outcome_completed_desc = {
     }
-
-	fail = {
-		NOT = {
-			
-		}
-	}
-
 
 	invalid = {
 	}

@@ -1117,6 +1117,10 @@ je_polish_constitution_button1 = {
 			name = polish_constitution_global
 			value = 0
 		}
+		set_variable = {
+			name = polish_constitution_button_cooldown
+			days = 360
+		}
 	}
 }
 
@@ -1135,6 +1139,12 @@ je_polish_constitution_button2 = {
 		NOT = {
 			has_law_or_variant = law_type:law_appointed_bureaucrats
 		}
+		custom_tooltip = {
+			text = polish_constitution_button_cooldown_tt
+			NOT = {
+				has_variable = polish_constitution_button_cooldown
+			}
+		}
 	}
 
 	effect = {
@@ -1146,6 +1156,10 @@ je_polish_constitution_button2 = {
 			change_global_variable = {
 				name = polish_constitution_global
 				add = 1
+			}
+			set_variable = {
+			name = polish_constitution_button_cooldown
+			days = 360
 			}
 		}
 	}
@@ -1166,6 +1180,12 @@ je_polish_constitution_button3 = {
 		NOT = {
 			has_law_or_variant = law_type:law_homesteading
 		}
+		custom_tooltip = {
+			text = polish_constitution_button_cooldown_tt
+			NOT = {
+				has_variable = polish_constitution_button_cooldown
+			}
+		}
 	}
 
 	effect = {
@@ -1177,6 +1197,10 @@ je_polish_constitution_button3 = {
 			change_global_variable = {
 				name = polish_constitution_global
 				add = 1
+			}
+			set_variable = {
+			name = polish_constitution_button_cooldown
+			days = 360
 			}
 		}
 	}
@@ -1200,10 +1224,20 @@ je_polish_constitution_button4 = {
 			has_law_or_variant = law_type:law_serfdom
 			has_law_or_variant = law_type:law_hereditary_bureaucrats
 		}
+		custom_tooltip = {
+			text = polish_constitution_button_cooldown_tt
+			NOT = {
+				has_variable = polish_constitution_button_cooldown
+			}
+		}
 	}
 
 	effect = {
 		trigger_event = { id = polish_constitution.3 }
+		set_variable = {
+			name = polish_constitution_button_cooldown
+			days = 360
+		}
 	}
 }
 

@@ -16,3 +16,10 @@ modifier_russia_fails = {
 	interest_group_ig_devout_pol_str_mult = 1
 	country_legitimacy_base_add = -10
 }
+
+modifier_signing_constitution = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_cannot_start_law_enactment_bool = yes
+	country_legitimacy_base_add = 15
+	country_bureaucracy_add = -45
+}

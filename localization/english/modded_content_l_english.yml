@@ -149,6 +149,12 @@
 
  modifier_posen_assimilation: "Germanisation efforts"
 
+ polish_constitution: Reinstating the Polish Constitution
+ polish_constitution_desc: After the loss of our autonomy in 1830, it is finally time for us to put our nation before the Russian interests and slowly begin reinstating what was once ours. We must do this carefully, though, for the Russians may attempt to stop us.
+
+ modifier_signing_constitution: Signing the Constitution
+ polish_constitution_button_cooldown_tt: "Has #b not#! passed a law in the past #v 360 days#!"
+
 # CONGRESS OF PARIS JE
  je_congress_of_paris: "The Congress of Paris"
  je_congress_of_paris_reason: "The Great Powers have sent their delegations to Paris to decide on a solution to the unsolved crisis between Russia and the Ottoman Empire. \n\n#variable [GetGlobalVariable( 'je_congress_of_paris_participants_var' ).GetValue]#! [Concept('concept_great_power', '$concept_great_powers$')] are participating in the Congress.\n#bold #tooltippable #tooltip:favour_russia_button_desc $favour_russia_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_1' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:favour_ottoman_button_desc $favour_ottoman_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_2' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:the_romanian_solution_button_desc $the_romanian_solution_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_3' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:wallachia_compromise_button_desc $wallachia_compromise_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_4' ).GetValue]#! total [concept_prestige]\n#bold #tooltippable #tooltip:favour_romania_button_desc $favour_romania_button$#!#!#! is backed by #variable [GetGlobalVariable( 'je_congress_of_paris_proposal_5' ).GetValue]#! total [concept_prestige]\n\nThe Congress will conclude in #variable [GetGlobalVariable('je_congress_of_paris_timer').GetValue]#! months. The proposal with the most prestige #tooltippable #tooltip:paris_treaty_voting_rules supporting#!#! it will then be selected as the Congress' offical solution.\n\n#Bold Result#!\nThe Congress has [ROOT.GetCountry.GetCustom('treaty_of_paris_coutcome')][ROOT.GetCountry.GetCustom('treaty_of_paris_acceptance_timer')]"
