@@ -2360,6 +2360,17 @@
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms"  }
 			}
+			create_building={
+				building="building_barrack"
+				add_ownership={
+					country={
+						country="c:POL"
+						levels=2
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
+			}
 		}
 	}
 	s:STATE_GREATER_POLAND = {
@@ -2389,6 +2400,41 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled"  }
+			}
+			create_building = {
+				building = "building_government_administration"
+				add_ownership = {
+					building = {
+						type = "building_government_administration"
+						country = "c:POL"
+						levels = 2
+						region = "STATE_GREATER_POLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_horizontal_drawer_cabinets" "pm_professional_bureaucrats" "pm_religious_bureaucrats" }
+			}	
+			create_building = {
+				building = "building_construction_sector"
+				add_ownership = {
+					country = {
+						country = "c:POL"
+						levels = 1
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_wooden_buildings" }
+			}
+			create_building={
+				building="building_barrack"
+				add_ownership={
+					country={
+						country="c:POL"
+						levels=3
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_no_organization" }
 			}
 		}
 	}

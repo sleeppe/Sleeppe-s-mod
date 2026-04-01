@@ -1,0 +1,298 @@
+types politics_panel_types
+{
+
+	type parliament_item = vbox {
+		size = { 100% 270 }
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+		spacing = 6
+
+		hbox = {
+			spacing = 8
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = preferred
+
+			widget = {
+				size = { 0 1 }
+				layoutpolicy_horizontal = expanding
+			}
+
+			widget = {
+				size = { 200 30 }
+
+				button = {
+					size = { 200 30 }
+					using = default_button_primary
+					enabled = no
+					visible = "[Or(Not(GetVariableSystem.Exists('bpm_parliament_view')), GetVariableSystem.HasValue('bpm_parliament_view', 'power'))]"
+					text = "bpmparl_view_power_structure"
+					using = fontsize_medium
+				}
+
+				button = {
+					size = { 200 30 }
+					using = default_button
+					visible = "[And(GetVariableSystem.Exists('bpm_parliament_view'), Not(GetVariableSystem.HasValue('bpm_parliament_view', 'power')))]"
+					onclick = "[GetVariableSystem.Set('bpm_parliament_view', 'power')]"
+					text = "bpmparl_view_power_structure"
+					using = fontsize_medium
+				}
+			}
+
+			widget = {
+				size = { 200 30 }
+
+				button = {
+					size = { 200 30 }
+					using = default_button_primary
+					enabled = no
+					visible = "[GetVariableSystem.HasValue('bpm_parliament_view', 'alignment')]"
+					text = "bpmparl_view_political_alignment"
+					using = fontsize_medium
+				}
+
+				button = {
+					size = { 200 30 }
+					using = default_button
+					visible = "[Not(GetVariableSystem.HasValue('bpm_parliament_view', 'alignment'))]"
+					onclick = "[GetVariableSystem.Set('bpm_parliament_view', 'alignment')]"
+					text = "bpmparl_view_political_alignment"
+					using = fontsize_medium
+				}
+			}
+
+			widget = {
+				size = { 200 30 }
+
+				button = {
+					size = { 200 30 }
+					using = default_button_primary
+					enabled = no
+					visible = "[GetVariableSystem.HasValue('bpm_parliament_view', 'electoral')]"
+					text = "bpmparl_view_electoral_parliament"
+					using = fontsize_medium
+				}
+
+				button = {
+					size = { 200 30 }
+					using = default_button
+					visible = "[Not(GetVariableSystem.HasValue('bpm_parliament_view', 'electoral'))]"
+					onclick = "[GetVariableSystem.Set('bpm_parliament_view', 'electoral')]"
+					text = "bpmparl_view_electoral_parliament"
+					using = fontsize_medium
+				}
+			}
+
+			widget = {
+				size = { 0 1 }
+				layoutpolicy_horizontal = expanding
+			}
+		}
+
+		bpm_power_structure_item = {
+			visible = "[Or(Not(GetVariableSystem.Exists('bpm_parliament_view')), GetVariableSystem.HasValue('bpm_parliament_view', 'power'))]"
+		}
+
+		bpm_political_alignment_item = {
+			visible = "[GetVariableSystem.HasValue('bpm_parliament_view', 'alignment')]"
+		}
+
+		bpm_electoral_parliament_item = {
+			visible = "[GetVariableSystem.HasValue('bpm_parliament_view', 'electoral')]"
+		}
+	}
+
+	type bpm_power_structure_item = widget {
+		size = { 100% 230 }
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+		using = tooltip_below
+		using = entry_bg_fancy
+		tooltip = "bpmparl_tooltip_power"
+
+		textbox = {
+			autoresize = yes
+			text = "bpmparl_view_power_structure"
+			using = fontsize_large
+			align = left|nobaseline
+			position = { 18 12 }
+		}
+
+		textbox = {
+			autoresize = yes
+			text = "bpmparl_power_structure_desc"
+			using = fontsize_small
+			align = left|nobaseline
+			position = { 18 40 }
+			alpha = 0.8
+		}
+
+		hbox = {
+			size = { 100% 230 }
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = preferred
+
+			widget = {
+				size = { 0 1 }
+				layoutpolicy_horizontal = expanding
+			}
+
+			widget = {
+				size = { 600 230 }
+
+				bpm_power_visual_red = {}
+				bpm_power_visual_green = {}
+				bpm_power_visual_yellow = {}
+				bpm_power_visual_blue = {}
+				bpm_power_visual_grey = {}
+				bpm_power_visual_purple = {}
+				bpm_power_visual_orange = {}
+				bpm_power_visual_pink = {}
+				bpm_power_visual_black = {}
+				bpm_power_visual_brown = {}
+				bpm_power_visual_violet = {}
+				bpm_power_visual_teal = {}
+			}
+
+			widget = {
+				size = { 0 1 }
+				layoutpolicy_horizontal = expanding
+			}
+		}
+	}
+
+	type bpm_political_alignment_item = widget {
+		size = { 100% 230 }
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+		using = tooltip_below
+		using = entry_bg_fancy
+		tooltip = "bpmparl_tooltip_alignment"
+
+		textbox = {
+			autoresize = yes
+			text = "bpmparl_view_political_alignment"
+			using = fontsize_large
+			align = left|nobaseline
+			position = { 18 12 }
+		}
+
+		textbox = {
+			autoresize = yes
+			text = "bpmparl_political_alignment_desc"
+			using = fontsize_small
+			align = left|nobaseline
+			position = { 18 40 }
+			alpha = 0.8
+		}
+
+		hbox = {
+			size = { 100% 230 }
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = preferred
+
+			widget = {
+				size = { 0 1 }
+				layoutpolicy_horizontal = expanding
+			}
+
+			widget = {
+				size = { 600 230 }
+
+				bpm_alignment_visual_red = {}
+				bpm_alignment_visual_green = {}
+				bpm_alignment_visual_yellow = {}
+				bpm_alignment_visual_blue = {}
+				bpm_alignment_visual_grey = {}
+				bpm_alignment_visual_purple = {}
+				bpm_alignment_visual_orange = {}
+				bpm_alignment_visual_pink = {}
+				bpm_alignment_visual_black = {}
+				bpm_alignment_visual_brown = {}
+				bpm_alignment_visual_violet = {}
+				bpm_alignment_visual_teal = {}
+			}
+
+			widget = {
+				size = { 0 1 }
+				layoutpolicy_horizontal = expanding
+			}
+		}
+	}
+
+	type bpm_electoral_parliament_item = widget {
+		size = { 100% 230 }
+		layoutpolicy_horizontal = expanding
+		layoutpolicy_vertical = preferred
+		using = tooltip_below
+		using = entry_bg_fancy
+
+		textbox = {
+			autoresize = yes
+			text = "bpmparl_view_electoral_parliament"
+			using = fontsize_large
+			align = left|nobaseline
+			position = { 18 12 }
+		}
+
+		textbox = {
+			autoresize = yes
+			text = "bpmparl_electoral_parliament_desc"
+			using = fontsize_small
+			align = left|nobaseline
+			position = { 18 40 }
+			alpha = 0.8
+		}
+
+		widget = {
+			size = { 100% 230 }
+			layoutpolicy_horizontal = expanding
+			layoutpolicy_vertical = preferred
+			visible = "[And(Country.MakeScope.Var('bpm_electoral_enabled').IsSet, GreaterThanOrEqualTo_CFixedPoint(Country.MakeScope.Var('bpm_electoral_enabled').GetValue, '(CFixedPoint)1'))]"
+			using = tooltip_below
+			tooltip = "bpmparl_tooltip_electoral"
+
+			hbox = {
+				size = { 100% 230 }
+				layoutpolicy_horizontal = expanding
+				layoutpolicy_vertical = preferred
+
+				widget = {
+					size = { 0 1 }
+					layoutpolicy_horizontal = expanding
+				}
+
+				widget = {
+					size = { 600 230 }
+
+					bpm_parliament_visual_red = {}
+					bpm_parliament_visual_green = {}
+					bpm_parliament_visual_yellow = {}
+					bpm_parliament_visual_blue = {}
+					bpm_parliament_visual_grey = {}
+					bpm_parliament_visual_purple = {}
+					bpm_parliament_visual_orange = {}
+					bpm_parliament_visual_pink = {}
+					bpm_parliament_visual_black = {}
+					bpm_parliament_visual_brown = {}
+					bpm_parliament_visual_violet = {}
+					bpm_parliament_visual_teal = {}
+				}
+
+				widget = {
+					size = { 0 1 }
+					layoutpolicy_horizontal = expanding
+				}
+			}
+		}
+
+		textbox = {
+			size = { 580 120 }
+			visible = "[Or(Not(Country.MakeScope.Var('bpm_electoral_enabled').IsSet), LessThan_CFixedPoint(Country.MakeScope.Var('bpm_electoral_enabled').GetValue, '(CFixedPoint)1'))]"
+			text = "bpmparl_electoral_disabled"
+			using = fontsize_xxl
+			align = center|nobaseline
+			parentanchor = center
+		}
+	}
+}

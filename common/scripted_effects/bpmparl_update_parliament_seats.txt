@@ -1,0 +1,572 @@
+﻿bpmparl_update_parliament_seats = {
+	bpmparl_update_electoral_parliament = yes
+	bpmparl_update_power_structure = yes
+	bpmparl_update_political_alignment = yes
+}
+
+bpmparl_update_electoral_parliament = {
+	set_variable = { name = bpm_electoral_enabled value = 0 }
+	set_variable = { name = bpm_allocated_seats value = 0 }
+	set_variable = { name = bpmparl_total_counted_seats value = 0 }
+	set_variable = { name = bpmparl_winning_vote_count value = 0 }
+	if = {
+		limit = { has_variable = bpmparl_winning_party }
+		remove_variable = bpmparl_winning_party
+	}
+	if = {
+		limit = { has_variable = bpmparl_leftover_seats }
+		remove_variable = bpmparl_leftover_seats
+	}
+
+	bpmparl_clear_party_cache = { KEY = fascist COLOR = brown }
+	bpmparl_clear_party_cache = { KEY = religious COLOR = purple }
+	bpmparl_clear_party_cache = { KEY = military COLOR = violet }
+	bpmparl_clear_party_cache = { KEY = conservative COLOR = blue }
+	bpmparl_clear_party_cache = { KEY = liberal COLOR = yellow }
+	bpmparl_clear_party_cache = { KEY = free_trade COLOR = teal }
+	bpmparl_clear_party_cache = { KEY = agrarian COLOR = green }
+	bpmparl_clear_party_cache = { KEY = radical COLOR = orange }
+	bpmparl_clear_party_cache = { KEY = social_democrat COLOR = pink }
+	bpmparl_clear_party_cache = { KEY = communist COLOR = red }
+	bpmparl_clear_party_cache = { KEY = anarchist COLOR = black }
+	bpmparl_clear_party_cache = { KEY = revolutionary COLOR = grey }
+
+	if = {
+		limit = {
+			country_has_voting_franchise = yes
+		}
+		set_variable = { name = bpm_electoral_enabled value = 1 }
+
+		if = {
+			limit = {
+				bpmparl_total_active_party_clout > 0
+			}
+
+			bpmparl_cache_party_seats = { KEY = fascist PARTY_TYPE = fascist_party }
+			bpmparl_cache_party_seats = { KEY = religious PARTY_TYPE = religious_party }
+			bpmparl_cache_party_seats = { KEY = military PARTY_TYPE = military_party }
+			bpmparl_cache_party_seats = { KEY = conservative PARTY_TYPE = conservative_party }
+			bpmparl_cache_party_seats = { KEY = liberal PARTY_TYPE = liberal_party }
+			bpmparl_cache_party_seats = { KEY = free_trade PARTY_TYPE = free_trade_party }
+			bpmparl_cache_party_seats = { KEY = agrarian PARTY_TYPE = agrarian_party }
+			bpmparl_cache_party_seats = { KEY = radical PARTY_TYPE = radical_party }
+			bpmparl_cache_party_seats = { KEY = social_democrat PARTY_TYPE = social_democrat_party }
+			bpmparl_cache_party_seats = { KEY = communist PARTY_TYPE = communist_party }
+			bpmparl_cache_party_seats = { KEY = anarchist PARTY_TYPE = anarchist_party }
+			bpmparl_cache_party_seats = { KEY = revolutionary PARTY_TYPE = revolutionary_party }
+
+			set_variable = {
+				name = bpmparl_leftover_seats
+				value = {
+					value = bpmparl_number_of_seats
+					subtract = var:bpmparl_total_counted_seats
+					min = 0
+				}
+			}
+
+			bpmparl_allocate_remaining_seats = { KEY = fascist }
+			bpmparl_allocate_remaining_seats = { KEY = religious }
+			bpmparl_allocate_remaining_seats = { KEY = military }
+			bpmparl_allocate_remaining_seats = { KEY = conservative }
+			bpmparl_allocate_remaining_seats = { KEY = liberal }
+			bpmparl_allocate_remaining_seats = { KEY = free_trade }
+			bpmparl_allocate_remaining_seats = { KEY = agrarian }
+			bpmparl_allocate_remaining_seats = { KEY = radical }
+			bpmparl_allocate_remaining_seats = { KEY = social_democrat }
+			bpmparl_allocate_remaining_seats = { KEY = communist }
+			bpmparl_allocate_remaining_seats = { KEY = anarchist }
+			bpmparl_allocate_remaining_seats = { KEY = revolutionary }
+
+			set_variable = { name = bpm_allocated_seats value = 0 }
+
+			bpmparl_apply_party_range = { KEY = fascist COLOR = brown }
+			bpmparl_apply_party_range = { KEY = religious COLOR = purple }
+			bpmparl_apply_party_range = { KEY = military COLOR = violet }
+			bpmparl_apply_party_range = { KEY = conservative COLOR = blue }
+			bpmparl_apply_party_range = { KEY = liberal COLOR = yellow }
+			bpmparl_apply_party_range = { KEY = free_trade COLOR = teal }
+			bpmparl_apply_party_range = { KEY = agrarian COLOR = green }
+			bpmparl_apply_party_range = { KEY = radical COLOR = orange }
+			bpmparl_apply_party_range = { KEY = social_democrat COLOR = pink }
+			bpmparl_apply_party_range = { KEY = communist COLOR = red }
+			bpmparl_apply_party_range = { KEY = anarchist COLOR = black }
+			bpmparl_apply_party_range = { KEY = revolutionary COLOR = grey }
+		}
+	}
+}
+
+bpmparl_update_power_structure = {
+	set_variable = { name = bpm_power_allocated_seats value = 0 }
+	set_variable = { name = bpm_power_total_counted_seats value = 0 }
+	set_variable = { name = bpm_power_counted_share value = 0 }
+	set_variable = { name = bpm_power_leading_seat_count value = 0 }
+	if = {
+		limit = { has_variable = bpm_power_winning_slot }
+		remove_variable = bpm_power_winning_slot
+	}
+	if = {
+		limit = { has_variable = bpm_power_leftover_seats }
+		remove_variable = bpm_power_leftover_seats
+	}
+
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = brown }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = purple }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = violet }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = blue }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = yellow }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = teal }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = green }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = orange }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = pink }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = red }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = black }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = power COLOR = grey }
+
+	if = {
+		limit = {
+			bpmparl_total_active_ig_clout > 0
+		}
+
+		bpmparl_cache_power_slot = { COLOR = brown POSITION = 0 REQUIRED = 1 }
+		bpmparl_cache_power_slot = { COLOR = purple POSITION = 1 REQUIRED = 2 }
+		bpmparl_cache_power_slot = { COLOR = violet POSITION = 2 REQUIRED = 3 }
+		bpmparl_cache_power_slot = { COLOR = blue POSITION = 3 REQUIRED = 4 }
+		bpmparl_cache_power_slot = { COLOR = yellow POSITION = 4 REQUIRED = 5 }
+		bpmparl_cache_power_slot = { COLOR = teal POSITION = 5 REQUIRED = 6 }
+		bpmparl_cache_power_slot = { COLOR = green POSITION = 6 REQUIRED = 7 }
+		bpmparl_cache_power_slot = { COLOR = orange POSITION = 7 REQUIRED = 8 }
+		bpmparl_cache_power_slot = { COLOR = pink POSITION = 8 REQUIRED = 9 }
+		bpmparl_cache_power_slot = { COLOR = red POSITION = 9 REQUIRED = 10 }
+		bpmparl_cache_power_slot = { COLOR = black POSITION = 10 REQUIRED = 11 }
+
+		set_variable = {
+			name = bpm_power_share_grey
+			value = {
+				value = bpmparl_total_active_ig_clout
+				subtract = var:bpm_power_counted_share
+				min = 0
+			}
+		}
+		set_variable = {
+			name = bpm_power_seat_count_grey
+			value = {
+				value = var:bpm_power_share_grey
+				divide = bpmparl_total_active_ig_clout
+				multiply = bpmparl_number_of_seats
+				floor = yes
+			}
+		}
+		change_variable = {
+			name = bpm_power_total_counted_seats
+			add = var:bpm_power_seat_count_grey
+		}
+		if = {
+			limit = {
+				var:bpm_power_seat_count_grey > var:bpm_power_leading_seat_count
+			}
+			set_variable = { name = bpm_power_leading_seat_count value = var:bpm_power_seat_count_grey }
+			set_variable = { name = bpm_power_winning_slot value = flag:grey }
+		}
+
+		set_variable = {
+			name = bpm_power_leftover_seats
+			value = {
+				value = bpmparl_number_of_seats
+				subtract = var:bpm_power_total_counted_seats
+				min = 0
+			}
+		}
+
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = brown }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = purple }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = violet }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = blue }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = yellow }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = teal }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = green }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = orange }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = pink }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = red }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = black }
+		bpmparl_allocate_remaining_ranked_seats = { PREFIX = power COLOR = grey }
+
+		set_variable = { name = bpm_power_allocated_seats value = 0 }
+
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = brown }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = purple }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = violet }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = blue }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = yellow }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = teal }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = green }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = orange }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = pink }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = red }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = black }
+		bpmparl_apply_ranked_ig_range = { PREFIX = power COLOR = grey }
+	}
+}
+
+bpmparl_update_political_alignment = {
+	set_variable = { name = bpm_alignment_allocated_seats value = 0 }
+	set_variable = { name = bpm_alignment_total_counted_seats value = 0 }
+	set_variable = { name = bpm_alignment_counted_share value = 0 }
+	set_variable = { name = bpm_alignment_leading_seat_count value = 0 }
+	if = {
+		limit = { has_variable = bpm_alignment_winning_slot }
+		remove_variable = bpm_alignment_winning_slot
+	}
+	if = {
+		limit = { has_variable = bpm_alignment_leftover_seats }
+		remove_variable = bpm_alignment_leftover_seats
+	}
+
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = brown }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = purple }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = violet }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = blue }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = yellow }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = teal }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = green }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = orange }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = pink }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = red }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = black }
+	bpmparl_clear_ranked_ig_slot = { PREFIX = alignment COLOR = grey }
+
+	bpmparl_cache_alignment_slot = { COLOR = brown POSITION = 0 REQUIRED = 1 }
+	bpmparl_cache_alignment_slot = { COLOR = purple POSITION = 1 REQUIRED = 2 }
+	bpmparl_cache_alignment_slot = { COLOR = violet POSITION = 2 REQUIRED = 3 }
+	bpmparl_cache_alignment_slot = { COLOR = blue POSITION = 3 REQUIRED = 4 }
+	bpmparl_cache_alignment_slot = { COLOR = yellow POSITION = 4 REQUIRED = 5 }
+	bpmparl_cache_alignment_slot = { COLOR = teal POSITION = 5 REQUIRED = 6 }
+	bpmparl_cache_alignment_slot = { COLOR = green POSITION = 6 REQUIRED = 7 }
+	bpmparl_cache_alignment_slot = { COLOR = orange POSITION = 7 REQUIRED = 8 }
+	bpmparl_cache_alignment_slot = { COLOR = pink POSITION = 8 REQUIRED = 9 }
+	bpmparl_cache_alignment_slot = { COLOR = red POSITION = 9 REQUIRED = 10 }
+
+	set_variable = {
+		name = bpm_alignment_share_black
+		value = {
+			value = bpmparl_total_aligned_population_share
+			subtract = var:bpm_alignment_counted_share
+			min = 0
+			max = 1
+		}
+	}
+	set_variable = {
+		name = bpm_alignment_seat_count_black
+		value = {
+			value = var:bpm_alignment_share_black
+			multiply = bpmparl_number_of_seats
+			floor = yes
+		}
+	}
+	change_variable = {
+		name = bpm_alignment_total_counted_seats
+		add = var:bpm_alignment_seat_count_black
+	}
+	if = {
+		limit = {
+			var:bpm_alignment_seat_count_black > var:bpm_alignment_leading_seat_count
+		}
+		set_variable = { name = bpm_alignment_leading_seat_count value = var:bpm_alignment_seat_count_black }
+		set_variable = { name = bpm_alignment_winning_slot value = flag:black }
+	}
+
+	set_variable = {
+		name = bpm_alignment_share_grey
+		value = bpmparl_total_unaligned_population_share
+	}
+	set_variable = {
+		name = bpm_alignment_seat_count_grey
+		value = {
+			value = var:bpm_alignment_share_grey
+			multiply = bpmparl_number_of_seats
+			floor = yes
+		}
+	}
+	change_variable = {
+		name = bpm_alignment_total_counted_seats
+		add = var:bpm_alignment_seat_count_grey
+	}
+	if = {
+		limit = {
+			var:bpm_alignment_seat_count_grey > var:bpm_alignment_leading_seat_count
+		}
+		set_variable = { name = bpm_alignment_leading_seat_count value = var:bpm_alignment_seat_count_grey }
+		set_variable = { name = bpm_alignment_winning_slot value = flag:grey }
+	}
+
+	set_variable = {
+		name = bpm_alignment_leftover_seats
+		value = {
+			value = bpmparl_number_of_seats
+			subtract = var:bpm_alignment_total_counted_seats
+			min = 0
+		}
+	}
+
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = brown }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = purple }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = violet }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = blue }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = yellow }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = teal }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = green }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = orange }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = pink }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = red }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = black }
+	bpmparl_allocate_remaining_ranked_seats = { PREFIX = alignment COLOR = grey }
+
+	set_variable = { name = bpm_alignment_allocated_seats value = 0 }
+
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = brown }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = purple }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = violet }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = blue }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = yellow }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = teal }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = green }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = orange }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = pink }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = red }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = black }
+	bpmparl_apply_ranked_ig_range = { PREFIX = alignment COLOR = grey }
+}
+
+bpmparl_clear_party_cache = {
+	set_variable = { name = bpm_seat_count_$KEY$ value = 0 }
+	set_variable = { name = bpm_$COLOR$_parl_min value = 0 }
+	set_variable = { name = bpm_$COLOR$_parl_max value = -1 }
+	if = {
+		limit = { has_variable = bpm_pointer_$KEY$_party }
+		remove_variable = bpm_pointer_$KEY$_party
+	}
+}
+
+bpmparl_cache_party_seats = {
+	if = {
+		limit = {
+			any_active_party = {
+				party_has_members = yes
+				is_party_type = $PARTY_TYPE$
+			}
+		}
+		random_active_party = {
+			limit = {
+				party_has_members = yes
+				is_party_type = $PARTY_TYPE$
+			}
+			save_scope_as = bpmparl_target_party
+		}
+		set_variable = { name = bpm_pointer_$KEY$_party value = scope:bpmparl_target_party }
+		set_variable = {
+			name = bpm_seat_count_$KEY$
+			value = {
+				value = scope:bpmparl_target_party.bpmparl_party_total_clout
+				divide = bpmparl_total_active_party_clout
+				multiply = bpmparl_number_of_seats
+				floor = yes
+			}
+		}
+		change_variable = {
+			name = bpmparl_total_counted_seats
+			add = var:bpm_seat_count_$KEY$
+		}
+		if = {
+			limit = {
+				var:bpm_seat_count_$KEY$ > var:bpmparl_winning_vote_count
+			}
+			set_variable = {
+				name = bpmparl_winning_vote_count
+				value = var:bpm_seat_count_$KEY$
+			}
+			set_variable = {
+				name = bpmparl_winning_party
+				value = flag:$KEY$
+			}
+		}
+	}
+}
+
+bpmparl_allocate_remaining_seats = {
+	if = {
+		limit = {
+			has_variable = bpmparl_winning_party
+			var:bpmparl_leftover_seats > 0
+			var:bpmparl_winning_party = flag:$KEY$
+		}
+		change_variable = {
+			name = bpm_seat_count_$KEY$
+			add = var:bpmparl_leftover_seats
+		}
+	}
+}
+
+bpmparl_apply_party_range = {
+	if = {
+		limit = {
+			var:bpm_seat_count_$KEY$ > 0
+		}
+		set_variable = {
+			name = bpm_$COLOR$_parl_min
+			value = var:bpm_allocated_seats
+		}
+		set_variable = {
+			name = bpm_$COLOR$_parl_max
+			value = {
+				value = var:bpm_allocated_seats
+				add = var:bpm_seat_count_$KEY$
+				subtract = 1
+			}
+		}
+		change_variable = {
+			name = bpm_allocated_seats
+			add = var:bpm_seat_count_$KEY$
+		}
+	}
+}
+
+bpmparl_clear_ranked_ig_slot = {
+	set_variable = { name = bpm_$PREFIX$_share_$COLOR$ value = 0 }
+	set_variable = { name = bpm_$PREFIX$_seat_count_$COLOR$ value = 0 }
+	set_variable = { name = bpm_$PREFIX$_$COLOR$_parl_min value = 0 }
+	set_variable = { name = bpm_$PREFIX$_$COLOR$_parl_max value = -1 }
+	if = {
+		limit = { has_variable = bpm_$PREFIX$_pointer_$COLOR$_ig }
+		remove_variable = bpm_$PREFIX$_pointer_$COLOR$_ig
+	}
+}
+
+bpmparl_cache_power_slot = {
+	if = {
+		limit = {
+			any_interest_group = {
+				ig_clout > 0
+				count >= $REQUIRED$
+			}
+		}
+		ordered_interest_group = {
+			limit = {
+				ig_clout > 0
+			}
+			order_by = ig_clout
+			position = $POSITION$
+			check_range_bounds = no
+			owner = {
+				set_variable = { name = bpm_power_pointer_$COLOR$_ig value = prev }
+				set_variable = { name = bpm_power_share_$COLOR$ value = prev.ig_clout }
+				set_variable = {
+					name = bpm_power_seat_count_$COLOR$
+					value = {
+						value = prev.ig_clout
+						divide = bpmparl_total_active_ig_clout
+						multiply = bpmparl_number_of_seats
+						floor = yes
+					}
+				}
+				change_variable = {
+					name = bpm_power_counted_share
+					add = prev.ig_clout
+				}
+				change_variable = {
+					name = bpm_power_total_counted_seats
+					add = var:bpm_power_seat_count_$COLOR$
+				}
+				if = {
+					limit = {
+						var:bpm_power_seat_count_$COLOR$ > var:bpm_power_leading_seat_count
+					}
+					set_variable = { name = bpm_power_leading_seat_count value = var:bpm_power_seat_count_$COLOR$ }
+					set_variable = { name = bpm_power_winning_slot value = flag:$COLOR$ }
+				}
+			}
+		}
+	}
+}
+
+bpmparl_cache_alignment_slot = {
+	if = {
+		limit = {
+			any_interest_group = {
+				interest_group_population_percentage > 0
+				count >= $REQUIRED$
+			}
+		}
+		ordered_interest_group = {
+			limit = {
+				interest_group_population_percentage > 0
+			}
+			order_by = interest_group_population_percentage
+			position = $POSITION$
+			check_range_bounds = no
+			owner = {
+				set_variable = { name = bpm_alignment_pointer_$COLOR$_ig value = prev }
+				set_variable = { name = bpm_alignment_share_$COLOR$ value = prev.interest_group_population_percentage }
+				set_variable = {
+					name = bpm_alignment_seat_count_$COLOR$
+					value = {
+						value = prev.interest_group_population_percentage
+						multiply = bpmparl_number_of_seats
+						floor = yes
+					}
+				}
+				change_variable = {
+					name = bpm_alignment_counted_share
+					add = prev.interest_group_population_percentage
+				}
+				change_variable = {
+					name = bpm_alignment_total_counted_seats
+					add = var:bpm_alignment_seat_count_$COLOR$
+				}
+				if = {
+					limit = {
+						var:bpm_alignment_seat_count_$COLOR$ > var:bpm_alignment_leading_seat_count
+					}
+					set_variable = { name = bpm_alignment_leading_seat_count value = var:bpm_alignment_seat_count_$COLOR$ }
+					set_variable = { name = bpm_alignment_winning_slot value = flag:$COLOR$ }
+				}
+			}
+		}
+	}
+}
+
+bpmparl_allocate_remaining_ranked_seats = {
+	if = {
+		limit = {
+			has_variable = bpm_$PREFIX$_winning_slot
+			var:bpm_$PREFIX$_leftover_seats > 0
+			var:bpm_$PREFIX$_winning_slot = flag:$COLOR$
+		}
+		change_variable = {
+			name = bpm_$PREFIX$_seat_count_$COLOR$
+			add = var:bpm_$PREFIX$_leftover_seats
+		}
+	}
+}
+
+bpmparl_apply_ranked_ig_range = {
+	if = {
+		limit = {
+			var:bpm_$PREFIX$_seat_count_$COLOR$ > 0
+		}
+		set_variable = {
+			name = bpm_$PREFIX$_$COLOR$_parl_min
+			value = var:bpm_$PREFIX$_allocated_seats
+		}
+		set_variable = {
+			name = bpm_$PREFIX$_$COLOR$_parl_max
+			value = {
+				value = var:bpm_$PREFIX$_allocated_seats
+				add = var:bpm_$PREFIX$_seat_count_$COLOR$
+				subtract = 1
+			}
+		}
+		change_variable = {
+			name = bpm_$PREFIX$_allocated_seats
+			add = var:bpm_$PREFIX$_seat_count_$COLOR$
+		}
+	}
+}

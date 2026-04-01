@@ -1,0 +1,16 @@
+﻿namespace = bpmparl_utils
+
+bpmparl_utils.1 = {
+	type = country_event
+	hidden = yes
+
+	trigger = { }
+
+	immediate = {
+		bpmparl_update_parliament_seats = yes
+	}
+
+	option = {
+		name = OK
+	}
+}
