@@ -102,7 +102,7 @@
 
  je_polish_constitution: "The Matter of Poland"
  je_polish_constitution_lobby: "Poland stands defiant of the oppression imposed upon them by foreign empires. yet, their efforts have been quashed, and liberal reforms destroyed"
- je_polish_constitution_reason: "[ROOT.GetCountry.GetName] was a compromise invention, created in the Congress of Vienna to have one of the most liberal regimes in Europe in order to check the power of the russian Tsar. After a rebellion in 1830 Poland was stripped of practically all of its autonomy, and Russia continues to encroach on [ROOT.GetCountry.GetAdjectiveNoFlag] sovereignty. Yet the [ROOT.GetCountry.GetAdjectiveNoFlag] people yearn for independence, as well as a return to their liberal constitution. Perhaps we can attempt to undermine the Russians and reassert not only our constitution, but our independence."
+ je_polish_constitution_reason: "[ROOT.GetCountry.GetName] was a compromise invention, created in the Congress of Vienna to have one of the most liberal regimes in Europe in order to check the power of the russian Tsar. After a rebellion in 1830 Poland was stripped of practically all of its autonomy, and Russia continues to encroach on [ROOT.GetCountry.GetAdjectiveNoFlag] sovereignty. Yet the [ROOT.GetCountry.GetAdjectiveNoFlag] people yearn for independence, as well as a return to their liberal constitution. Perhaps we can attempt to undermine the Russians and reassert not only our constitution, but also a higher degree of autonomy."
 
  je_polish_constitution_button1: "Begin Reinstating the Constitution"
  je_polish_constitution_button1_desc: "The cornerstone of the constitution given to the poles at vienna was its extremely liberal views on suffrage, if we were to bring the vote back to the people, then perhaps we can begin to undermine the Tsar"
@@ -114,7 +114,7 @@
  je_polish_constitution_button3_desc: "Despite Polands long history of democracy, this has not always served the common people. In order to protect the peasantry, we must place them under protection by the state: much alike the constituion of 1791"
 
  je_polish_constitution_button4: "Press for Krakow"
- je_polish_constitution_button4_desc: "Though we are unlikely to be successful, we must make an effort to reclaim our southern capital: if only for the national pride\n#red #bold NOTE THAT THIS MAY LEAD TO YOUR INDEPENDENCE #! #! \n"
+ je_polish_constitution_button4_desc: "Though we are unlikely to be successful, we must make an effort to reclaim our southern capital: if only for the national pride\n#red #bold NOTE THAT THIS MAY LEAD TO HIGHER AUTONOMY#! #! \n"
 
  law_state_serfs: "State Oversight"
  law_state_serfs_desc: "Peasants are nominally owned by their landholders, yet due to the intervention of the state they have the rights to quit work, are guaranteed working conditions and in many cases are allowed to homestead on spare plots of land"
@@ -147,13 +147,21 @@
  polish_constitution.5.f: "How dare they!? Do they wish for a war!?"
  polish_constitution.5.a: "Play the waiting game, one day Krakow will be ours!"
 
+ polish_constitution.6.t: "Russia Intervenes in our Internal Affairs"
+ polish_constitution.6.d: "Russia, afraid that our Constitution would lessen its influence, has decided to intervene in the signing of this Constitution, putting everything to a stop. Our hopes of higher autonomy are, for now, out of reach."
+ polish_constitution.6.f: ""#italic Poland is not yet lost....#!""
+ polish_constitution.6.a: "We shall play the waiting game, then"
+
  modifier_posen_assimilation: "Germanisation efforts"
 
- polish_constitution: Reinstating the Polish Constitution
- polish_constitution_desc: After the loss of our autonomy in 1830, it is finally time for us to put our nation before the Russian interests and slowly begin reinstating what was once ours. We must do this carefully, though, for the Russians may attempt to stop us.
+ polish_constitution: "Reinstating the Polish Constitution"
+ polish_constitution_desc: "After the loss of our autonomy in 1830, it is finally time for us to put our nation before the Russian interests and slowly begin reinstating what was once ours. We must do this carefully, though, for the Russians may attempt to stop us."
 
- modifier_signing_constitution: Signing the Constitution
+ modifier_signing_constitution: "Signing the Constitution"
  polish_constitution_button_cooldown_tt: "Has #b not#! passed a law in the past #v 360 days#!"
+ je_polish_constitution_goal: "Has achieved all of the goals of the Constitution"
+ russia_in_poland_tt: "#bold $RUS$ #! has prevented the signing of the Constitution"
+ modifier_pol_failed_constitution: "Failed Constitution"
 
 # CONGRESS OF PARIS JE
  je_congress_of_paris: "The Congress of Paris"

@@ -26,8 +26,14 @@
 	}
 
 	complete = {
-		scope:journal_entry = {
+		OR = {
+			scope:journal_entry = {
 			is_goal_complete = yes
+			}
+			NOT = {
+			is_subject_of = c:RUS 
+			}
+			is_subject_type = subject_type_protectorate
 		}
 	}
 
@@ -37,6 +43,21 @@
 
     event_outcome_completed_desc = {
     }
+
+	fail = {
+		custom_tooltip = {
+			text = russia_in_poland_tt
+			has_global_variable = russia_in_poland
+		}
+	}
+
+	on_fail = {
+		remove_modifier = modifier_signing_constitution
+		add_modifier = {
+			name = modifier_pol_failed_constitution
+			days = 1825
+		}
+	}
 
 	invalid = {
 	}

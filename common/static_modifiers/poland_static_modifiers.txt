@@ -23,3 +23,10 @@ modifier_signing_constitution = {
 	country_legitimacy_base_add = 15
 	country_bureaucracy_add = -45
 }
+
+modifier_pol_failed_constitution = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds 
+	country_legitimacy_base_add = -15
+	country_radicals_from_legitimacy_mult = 0.15
+	interest_group_ig_armed_forces_approval_add = -5
+}

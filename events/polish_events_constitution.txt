@@ -71,6 +71,9 @@ polish_constitution.2 = {
 	option = {
 		name = polish_constitution.2.b
 		set_global_variable = russia_in_poland
+		c:POL = {
+			trigger_event = { id = polish_constitution.6 }
+		}
 	}
 }
 
@@ -191,6 +194,31 @@ polish_constitution.5 = {
 		add_radicals = {
 			value = 0.10
 		}
+	}
+}
+polish_constitution.6 = {
+	type = country_event 
+	placement = root 
+
+	title = polish_constitution.6.t 
+	desc = polish_constitution.6.d 
+	flavor = polish_constitution.6.f 
+	event_image = {
+		video = "unspecific_ruler_speaking_to_people"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	duration = 3
+
+	option = {
+		name = polish_constitution.6.a
+		add_radicals = {
+			value = 0.15
+		}
+		add_liberty_desire = 50
 	}
 }
 
