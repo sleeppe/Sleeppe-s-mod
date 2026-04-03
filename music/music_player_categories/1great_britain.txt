@@ -6,6 +6,5 @@
         "sleeppe_s_mod_british_grenadiers"
         "sleeppe_s_mod_britons_struck_home"
         "sleeppe_s_mod_tipperary"
-        "sleeppe_s_mod_rule_britannia_instrumental"
     }
 }

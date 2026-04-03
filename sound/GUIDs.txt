@@ -1154,6 +1154,7 @@
 {c85c4028-77e0-44f6-88ac-a2849424bc9f} event:/Preobrazhensky March
 {31e213a6-4e06-4d9e-a4b3-26c7ef77d08c} event:/March of The Siberian Riflemen
 {2220821b-7c6f-4b1e-8702-e7c9a9fc4a45} event:/Farewell of Slavianska
+{b311492c-8c12-4950-8ec3-3dfd9385f5ae} event:/Goodbye Forever
 
 # AUSTRIA - HUNGARY
 {3f5d79e0-4494-4047-9b9c-3b581a649813} event:/Lesz, Lesz, Lesz!
