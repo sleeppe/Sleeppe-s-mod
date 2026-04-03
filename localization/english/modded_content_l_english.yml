@@ -333,3 +333,11 @@
  tuscan_italy.1.d: ""
  tuscan_italy.1.f: ""
  tuscan_italy.1.a: ""
+
+ # TANZIMAT MODIFIERS
+ modifier_ottoman_reclaimed_syria: "Successfully Reclaimed Syria"
+ modifier_ottoman_urbanization: "Succesfully Urbanized Our Country"
+ modifier_ottoman_education: "Succesfully Modernized Our Education System"
+ modifier_ottoman_separatism: "Succesfully Dealt With Separatism"
+ modifier_ottoman_army_modernization: "Succesfully Modernized Our Army"
+ modifier_ottoman_bureaucratic_reform: "Succesfully Reformed Our Bureaucratic System"
