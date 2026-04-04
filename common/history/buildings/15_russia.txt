@@ -2404,11 +2404,9 @@
 			create_building = {
 				building = "building_government_administration"
 				add_ownership = {
-					building = {
-						type = "building_government_administration"
-						country = "c:POL"
-						levels = 2
-						region = "STATE_GREATER_POLAND"
+					country={
+						country="c:POL"
+						levels=2
 					}
 				}
 				reserves=1

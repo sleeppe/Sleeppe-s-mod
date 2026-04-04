@@ -17,15 +17,6 @@
 				set_state_owner = c:RUS 
 			}
 		}
-		
-		s:STATE_DOBRUDJA = {
-			set_owner_of_provinces = {
-				country = c:rus
-				provinces = {
-					x50F5CB
-				}
-			}
-		}
 	}
 	else_if = {
 		limit = {
@@ -129,10 +120,10 @@
 		}
 		s:STATE_DOBRUDJA = {
 			set_owner_of_provinces = {
-				country = c:TUR 
 				provinces = {
-					X50F5CB
+					x50F5CB
 				}
+				country = c:TUR 
 			}
 		}
 		c:TUR ?= {

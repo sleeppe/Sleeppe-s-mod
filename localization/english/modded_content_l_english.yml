@@ -191,6 +191,7 @@
  paris_congress_disapprove_button_tt: "Negotiations between $dyn_c_ottoman_empire$ and $RUS$ break down."
  paris_congress_has_concluded_loc: "The Paris Congress has concluded."
  je_congress_of_paris_acceptance_timer_tt: "\n\nWe will automatically accept the outcome of the conference in #variable [GetGlobalVariable('je_conference_of_london_acceptance_timer').GetValue]#! months."
+ treaty_of_paris_outcome_tt: "Territory will be exchanged between $RUS$ and $dyn_c_ottoman_empire$ in accordance with their treaty obligations."
 
  favour_russia_loc: "Decided to grant Russia some of their territorial claims"
  favour_ottoman_loc: "Decided to grant the Ottomans some of their territorial claims"
