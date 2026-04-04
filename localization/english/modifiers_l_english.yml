@@ -538,6 +538,8 @@
  insurrectionary_ig:0 "Insurrectionary Interest Group"
  insurrectionary_ig_desc:1 "Effects while plotting a [concept_revolution]"
 
+ INSURRECTIONARY_CARLISTS: "Ongoing Carlist War"
+
  secession_lost_state:0 "Failed secession"
  secession_lost_state_desc:0 "This [concept_state] participated in a secession that was put to rest"
 
@@ -4193,7 +4195,6 @@
  country_financial_districts_buy_farms_likelihood_desc: "An increase or decrease to the chance for [GetBuildingType('building_financial_district').GetName] to invest into $bg_plantations$, $bg_ranching$, and $bg_agriculture$ [Concept('concept_building','$concept_buildings$')]"
 
 state_free_state_pop_support_movement_anti_slavery_mult: "$movement_anti_slavery$ $concept_pop$ Attraction in non-Slave States"
-
 
 # Sleeppe's mod additions
 

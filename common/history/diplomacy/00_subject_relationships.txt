@@ -580,14 +580,6 @@
 		add_liberty_desire = 20
 	}
 
-	c:MOL ?= {
-		add_liberty_desire = 20
-	}
-
-	c:WAL ?= {
-		add_liberty_desire = 20
-	}
-
 	c:EGY ?= {
 		add_liberty_desire = 45
 	}
@@ -661,5 +653,12 @@
 			country = c:PZN
 			type = crown_land
 		}
+	}
+	c:MOL ?= {
+		add_liberty_desire = 20
+	}
+
+	c:WAL ?= {
+		add_liberty_desire = 20
 	}
 }
