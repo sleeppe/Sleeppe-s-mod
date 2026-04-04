@@ -896,7 +896,7 @@ types timekeeper
 
 				button = {
 					position = { 23 40 }
-					visible = "[TimeKeeper.IsPaused]"
+					visible = "[And(JominiIsHostOrLocal,TimeKeeper.IsPaused)]"
 					name = "play_button"
 					texture = "gfx/interface/main_hud/play_button.dds"
 					framesize = { 70 54 }
@@ -906,7 +906,6 @@ types timekeeper
 					overframe = 2
 					downframe = 3
 					effectname = "NoHighlight"
-
 					enabled = "[TimeKeeper.CanTogglePause]"
 					onclick = "[TimeKeeper.TogglePause]"
 					tooltip = "[TimeKeeper.GetTogglePauseTooltip]"
@@ -915,7 +914,7 @@ types timekeeper
 				}
 				button = {
 					position = { 25 14 }
-					visible = "[Not(TimeKeeper.IsPaused)]"
+					visible = "[And(JominiIsHostOrLocal, Not(TimeKeeper.IsPaused))]"
 					name = "pause_button"
 					texture = "gfx/interface/main_hud/pause_button.dds"
 					framesize = { 74 66 }
