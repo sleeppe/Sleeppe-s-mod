@@ -1,7 +1,7 @@
 {
     "name" : "Sleeppe's MP",
     "id" : "",
-    "version" : "2.0",
+    "version" : "2.3.1",
     "game_id" : "victoria3",
     "supported_game_version" : "1.12.5",
     "short_description" : "MP mod",
