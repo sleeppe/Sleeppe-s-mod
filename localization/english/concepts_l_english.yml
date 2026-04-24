@@ -1902,7 +1902,7 @@
 
 ### ITEMS BELOW THIS LINE UPDATED OR VERIFIED APRIL 25, 2022
 
- concept_budget_government_wages:0 "Research and Education funding"
+ concept_budget_government_wages:0 "Government Wages"
  concept_budget_government_wages_desc:1 "[Concept('concept_building_wage','$concept_building_wages$')] paid to [Concept('concept_pop','$concept_pops$')] by [Concept('concept_government_building','$concept_government_buildings$')]. The rate is based on the [Concept('concept_country','$concept_country_possessive$')] [concept_normal_wage]. You can adjust it up and down in the $BUDGET_PANEL_TITLE$ panel."
 
  concept_budget_wages:0 "Wages"

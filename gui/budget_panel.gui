@@ -92,55 +92,82 @@ types budget
 
 				blockoverride "second_button"
 				{
-					text = "STATES"
+					text = "BUDGET_TAB_ALLOCATION"
 				}
 				blockoverride "second_button_tooltip" {
-					tooltip = "STATES"
+					tooltip = "BUDGET_TAB_ALLOCATION"
 				}
 				blockoverride "second_button_click"
 				{
-					onclick = "[InformationPanel.SelectTab('states')]"
+					onclick = "[InformationPanel.SelectTab('allocation')]"
 				}
 				blockoverride "second_button_visibility"
 				{
-					visible = "[InformationPanel.IsTabSelected('states')]"
+					visible = "[InformationPanel.IsTabSelected('allocation')]"
 				}
 				blockoverride "second_button_visibility_checked"
 				{
-					visible = "[Not( InformationPanel.IsTabSelected('states') )]"
+					visible = "[Not( InformationPanel.IsTabSelected('allocation') )]"
 				}
 				blockoverride "second_button_selected"
 				{
-					text = "STATES"
+					text = "BUDGET_TAB_ALLOCATION"
 				}
 				blockoverride "second_button_name" {
-					name = "tutorial_highlight_states"
+					name = "tutorial_highlight_allocation"
 				}
 
 				blockoverride "third_button"
 				{
-					text = "BUDGET_TAB_ASSETS"
+					text = "STATES"
 				}
 				blockoverride "third_button_tooltip" {
-					tooltip = "BUDGET_TAB_ASSETS"
+					tooltip = "STATES"
 				}
 				blockoverride "third_button_click"
 				{
-					onclick = "[InformationPanel.SelectTab('assets')]"
+					onclick = "[InformationPanel.SelectTab('states')]"
 				}
 				blockoverride "third_button_visibility"
 				{
-					visible = "[InformationPanel.IsTabSelected('assets')]"
+					visible = "[InformationPanel.IsTabSelected('states')]"
 				}
 				blockoverride "third_button_visibility_checked"
 				{
-					visible = "[Not( InformationPanel.IsTabSelected('assets') )]"
+					visible = "[Not( InformationPanel.IsTabSelected('states') )]"
 				}
 				blockoverride "third_button_selected"
 				{
-					text = "BUDGET_TAB_ASSETS"
+					text = "STATES"
 				}
 				blockoverride "third_button_name" {
+					name = "tutorial_highlight_states"
+				}
+
+				blockoverride "fourth_button"
+				{
+					text = "BUDGET_TAB_ASSETS"
+				}
+				blockoverride "fourth_button_tooltip" {
+					tooltip = "BUDGET_TAB_ASSETS"
+				}
+				blockoverride "fourth_button_click"
+				{
+					onclick = "[InformationPanel.SelectTab('assets')]"
+				}
+				blockoverride "fourth_button_visibility"
+				{
+					visible = "[InformationPanel.IsTabSelected('assets')]"
+				}
+				blockoverride "fourth_button_visibility_checked"
+				{
+					visible = "[Not( InformationPanel.IsTabSelected('assets') )]"
+				}
+				blockoverride "fourth_button_selected"
+				{
+					text = "BUDGET_TAB_ASSETS"
+				}
+				blockoverride "fourth_button_name" {
 					name = "tutorial_highlight_assets"
 				}
 			}
