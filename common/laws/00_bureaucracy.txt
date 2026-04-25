@@ -117,8 +117,7 @@ law_appointed_bureaucrats = {
 			has_law = law_type:law_usa_spoilsystem
 		}
 		has_law = law_technocracy
-		has_law = law_elected_bureaucrats
-	}
+		}
 
 	modifier = {
 		country_bureaucrats_pol_str_mult = 0.25
@@ -174,6 +173,10 @@ law_usa_spoilsystem = {
 
 	is_visible = { 
 		has_law = law_type:law_usa_spoilsystem
+		AND = {
+			c:USA ?= this
+			has_law = law_elected_bureaucrats
+		}
 	}
 	modifier = {
 		country_bureaucracy_investment_cost_factor_mult = 0.40
