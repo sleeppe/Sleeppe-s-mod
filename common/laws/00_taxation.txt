@@ -2,380 +2,105 @@
 # icon = graphical icon shown in-game
 # modifier = {} modifier on country for having adopted this law
 
-law_consumption_based_taxation = {
-	group = lawgroup_taxation
-
-	progressiveness = -100
-
-	icon = "gfx/interface/icons/law_icons/consumption_based_taxation.dds"
-
-	modifier = {
-		state_bureaucracy_population_base_cost_factor_mult = -0.25
-		country_consumption_tax_cost_mult = -0.50
-	}
-
-	tax_modifier_very_low = {
-		tax_consumption_add = 0.15
-	}
-
-	tax_modifier_low = {
-		tax_consumption_add = 0.20
-	}
-
-	tax_modifier_medium = {
-		tax_consumption_add = 0.25
-	}
-
-	tax_modifier_high = {
-		tax_consumption_add = 0.30
-	}
-
-	tax_modifier_very_high = {
-		tax_consumption_add = 0.35
-	}
-
-	# AI shouldn't change to consumption-based-taxation as it's likely to wreck their economy
+law_no_poll_taxes = {
+	group = lawgroup_poll_tax
+	
+	icon = "gfx/interface/icons/law_icons/no_poll_tax.dds"
+	
+	progressiveness = 0
+	
+	# AI shouldn't change to land based taxation from more advanced taxation forms
 	ai_will_do = {
-		always = no
-	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 0
-
-		if = {
-			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
-			add = 750
+		OR = {
+			AND = {
+				has_law_or_variant = law_type:law_low_corporation_tax
+				has_law_or_variant = law_type:law_moderate_income_tax
+			}
+			AND = {
+				has_law_or_variant = law_type:law_moderate_corporation_tax
+				has_law_or_variant = law_type:law_low_income_tax
+			}
 		}
 	}
 }
 
 law_land_based_taxation = {
-	group = lawgroup_taxation
-
+	group = lawgroup_poll_tax
+	
 	icon = "gfx/interface/icons/law_icons/land_based_taxation.dds"
-
-	progressiveness = -50
-
-	tax_modifier_very_low = {
-		tax_consumption_add = 0.15
-		tax_land_add = 0.40
+	
+	progressiveness = 0
+	
+	modifier = {
 	}
-
+	
+	tax_modifier_very_low = {
+		tax_land_add = 0.40
+	}	
+	
 	tax_modifier_low = {
-		tax_consumption_add = 0.20
 		tax_land_add = 0.55
 	}
-
+	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.25
 		tax_land_add = 0.7
-	}
-
+	}	
+	
 	tax_modifier_high = {
-		tax_consumption_add = 0.30
 		tax_land_add = 0.85
 	}
-
+	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.35
 		tax_land_add = 1.00
-	}
-
+	}	
+	
 	# AI shouldn't change to land based taxation from more advanced taxation forms
 	ai_will_do = {
-		has_law_or_variant = law_type:law_consumption_based_taxation
-	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 0
-
-		if = {
-			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
-			add = 750
-		}
+		has_law_or_variant = law_type:law_no_poll_taxes
+		has_law_or_variant = law_type:law_no_corporation_taxes
 	}
 }
 
 law_per_capita_based_taxation = {
-	group = lawgroup_taxation
-
+	group = lawgroup_poll_tax
+	
 	progressiveness = 0
-
+	
 	icon = "gfx/interface/icons/law_icons/per_capita_based_taxation.dds"
-
+	
 	disallowing_laws = {
 		law_traditionalism
 	}
-
+	
 	unlocking_technologies = {
 		currency_standards
 	}
-
-	tax_modifier_very_low = {
-		tax_consumption_add = 0.15
-		tax_per_capita_add = 0.40
-		tax_land_add = 0.20
-		tax_income_add = 0.05
-	}
-
-	tax_modifier_low = {
-		tax_consumption_add = 0.20
-		tax_per_capita_add = 0.55
-		tax_land_add = 0.275
-		tax_income_add = 0.075
-	}
-
-	tax_modifier_medium = {
-		tax_consumption_add = 0.25
-		tax_per_capita_add = 0.70
-		tax_land_add = 0.35
-		tax_income_add = 0.10
-	}
-
-	tax_modifier_high = {
-		tax_consumption_add = 0.30
-		tax_per_capita_add = 0.85
-		tax_land_add = 0.425
-		tax_income_add = 0.125
-	}
-
-	tax_modifier_very_high = {
-		tax_consumption_add = 0.35
-		tax_per_capita_add = 1.0
-		tax_land_add = 0.50
-		tax_income_add = 0.15
-	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 0
-
-		if = {
-			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
-			add = 750
-		}
-
-		# Once the AI gets to a certain society tech level they should try to ditch Land Taxation for Per-Capital Taxtion
-		if = {
-			limit = {
-				OR = {
-					has_technology_researched = civilizing_mission
-					has_technology_researched = human_rights
-					has_technology_researched = pan-nationalism
-				}
-				has_law_or_variant = law_type:law_land_based_taxation
-			}
-
-			add = 1000
-		}
-
-		if = {
-			limit = {
-				OR = {
-					has_journal_entry = je_sick_man_bureaucracy
-					has_modifier = shogun_ig_forced_to_open_market
-					has_journal_entry = je_meiji_main
-					has_journal_entry = je_great_reforms_bureaucratic
-					has_journal_entry = je_hawaii
-					has_journal_entry = je_portugal_regeneration
-				}
-				has_law_or_variant = law_type:law_land_based_taxation
-			}
-			add = 5000
-		}
-	}
-}
-
-law_proportional_taxation = {
-	group = lawgroup_taxation
-
-	progressiveness = 50
-
-	icon = "gfx/interface/icons/law_icons/proportional_taxation.dds"
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	unlocking_technologies = {
-		egalitarianism
-	}
-
-	tax_modifier_very_low = {
-		tax_consumption_add = 0.15
-		tax_income_add = 0.10
-		tax_dividends_add = 0.025
-	}
-
-	tax_modifier_low = {
-		tax_consumption_add = 0.20
-		tax_income_add = 0.15
-		tax_dividends_add = 0.05
-	}
-
-	tax_modifier_medium = {
-		tax_consumption_add = 0.25
-		tax_income_add = 0.20
-		tax_dividends_add = 0.1
-	}
-
-	tax_modifier_high = {
-		tax_consumption_add = 0.30
-		tax_income_add = 0.25
-		tax_dividends_add = 0.15
-	}
-
-	tax_modifier_very_high = {
-		tax_consumption_add = 0.35
-		tax_income_add = 0.30
-		tax_dividends_add = 0.20
-	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 0
-
-		if = {
-			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
-			add = 750
-		}
-
-		if = {
-			limit = {
-				OR = {
-					has_journal_entry = je_sick_man_bureaucracy
-					has_modifier = shogun_ig_forced_to_open_market
-					has_journal_entry = je_meiji_main
-					has_journal_entry = je_great_reforms_bureaucratic
-					has_journal_entry = je_hawaii
-					has_journal_entry = je_portugal_regeneration
-				}
-				has_law_or_variant = law_type:law_land_based_taxation
-			}
-			add = 5000
-		}
-	}
-}
-
-law_graduated_taxation = {
-	group = lawgroup_taxation
-
-	progressiveness = 100
-
-	icon = "gfx/interface/icons/law_icons/graduated_taxation.dds"
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	unlocking_technologies = {
-		socialism
-	}
-
-	tax_modifier_very_low = {
-		tax_consumption_add = 0.15
-		tax_income_add = 0.10
-		tax_dividends_add = 0.1
-	}
-
-	tax_modifier_low = {
-		tax_consumption_add = 0.20
-		tax_income_add = 0.125
-		tax_dividends_add = 0.15
-	}
-
-	tax_modifier_medium = {
-		tax_consumption_add = 0.25
-		tax_income_add = 0.15
-		tax_dividends_add = 0.2
-	}
-
-	tax_modifier_high = {
-		tax_consumption_add = 0.30
-		tax_income_add = 0.175
-		tax_dividends_add = 0.25
-	}
-
-	tax_modifier_very_high = {
-		tax_consumption_add = 0.35
-		tax_income_add = 0.20
-		tax_dividends_add = 0.3
-	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 0
-
-		if = {
-			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
-			add = 750
-		}
-	}
-}
-
-##Modded
-
-law_mit_a_taxes = {
-	group = lawgroup_taxation
-	parent = law_per_capita_based_taxation
-
-	icon = "gfx/interface/icons/law_icons/per_capita_based_taxation.dds"
-
-	disallowing_laws = {
-		law_traditionalism
-	}
-
-	is_visible = {
-		country_has_primary_culture = cu:quechua
-	}
-
-	unlocking_technologies = {
-	}
-
-	tax_modifier_very_low = {
-		tax_consumption_add = 0.15
-		tax_per_capita_add = 0.40
-		tax_land_add = 0.20
-		tax_income_add = 0.05
-	}
-
-	tax_modifier_low = {
-		tax_consumption_add = 0.20
-		tax_per_capita_add = 0.55
-		tax_land_add = 0.275
-		tax_income_add = 0.075
-	}
-
-	tax_modifier_medium = {
-		tax_consumption_add = 0.25
-		tax_per_capita_add = 0.70
-		tax_land_add = 0.35
-		tax_income_add = 0.10
-	}
-
-	tax_modifier_high = {
-		tax_consumption_add = 0.30
-		tax_per_capita_add = 0.85
-		tax_land_add = 0.425
-		tax_income_add = 0.125
-	}
-
-	tax_modifier_very_high = {
-		tax_consumption_add = 0.35
-		tax_per_capita_add = 1.0
-		tax_land_add = 0.50
-		tax_income_add = 0.15
-	}
-
+	
 	modifier = {
-		state_construction_mult	= 0.05
-		state_infrastructure_from_population_add = 3
-		state_assimilation_mult = 0.05
-		state_conscription_rate_mult = 0.05
-		state_food_security_add = 0.03
 	}
-
-	disallowing_laws = {
+	
+	tax_modifier_very_low = {
+		tax_per_capita_add = 0.40
+		tax_land_add = 0.20
+	}	
+	
+	tax_modifier_low = {
+		tax_per_capita_add = 0.55
+		tax_land_add = 0.275
 	}
-
-	ai_enact_weight_modifier = { #Petitions
-		value = 1
+	
+	tax_modifier_medium = {
+		tax_per_capita_add = 0.70
+		tax_land_add = 0.35
+	}	
+	
+	tax_modifier_high = {
+		tax_per_capita_add = 0.85
+		tax_land_add = 0.425
 	}
+	
+	tax_modifier_very_high = {
+		tax_per_capita_add = 1.0
+		tax_land_add = 0.50
+	}	
 }
