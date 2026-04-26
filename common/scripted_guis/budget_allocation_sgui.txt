@@ -1,0 +1,152 @@
+budget_mil_increase_effect = {
+	scope = country
+	effect = {
+		change_variable = {
+			name = budget_mil
+			add = 1
+		}
+		change_variable = {
+			name = budget_total
+			add = 1
+		}
+	}
+}
+
+budget_ind_increase_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_ind
+            add = 1
+        }
+        change_variable = {
+            name = budget_total
+            add = 1
+        }
+    }
+}
+
+budget_edu_increase_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_edu
+            add = 1
+        }
+        change_variable = {
+            name = budget_total
+            add = 1
+        }
+    }
+}
+
+budget_fin_increase_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_fin
+            add = 1
+        }
+        change_variable = {
+            name = budget_total
+            add = 1
+        }
+    }
+}
+
+budget_soc_increase_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_soc
+            add = 1
+        }
+        change_variable = {
+            name = budget_total
+            add = 1
+        }
+    }
+}
+
+budget_mil_decrease_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_mil
+            add = -1
+        }
+        change_variable = {
+            name = budget_total
+            add = -1
+        }
+    }
+}
+
+budget_ind_decrease_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_ind
+            add = -1
+        }
+        change_variable = {
+            name = budget_total
+            add = -1
+        }
+    }
+}
+
+budget_edu_decrease_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_edu
+            add = -1
+        }
+        change_variable = {
+            name = budget_total
+            add = -1
+        }
+    }
+}
+
+budget_fin_decrease_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_fin
+            add = -1
+        }
+        change_variable = {
+            name = budget_total
+            add = -1
+        }
+    }
+}
+
+budget_soc_decrease_effect = {
+    scope = country
+    effect = {
+        change_variable = {
+            name = budget_soc
+            add = -1
+        }
+        change_variable = {
+            name = budget_total
+            add = -1
+        }
+    }
+}
+
+budget_apply_modifiers_effect = {
+    name = budget_confirm
+    enabled = {
+        var:budget_total <= 10
+    }
+    effect = {
+        budget_apply_modifiers_effect = yes
+        trigger_event = {
+            id = budget_allocation.002 # "Budget allocated"
+            }
+        }
+    }

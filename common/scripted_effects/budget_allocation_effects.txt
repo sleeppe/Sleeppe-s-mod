@@ -1,0 +1,255 @@
+budget_allocation_init_effect = {
+	set_variable = {
+		name = budget_mil
+		value = 2
+	}
+	set_variable = {
+		name = budget_ind
+		value = 2
+	}
+	set_variable = {
+		name = budget_edu
+		value = 2
+	}
+	set_variable = {
+		name = budget_fin
+		value = 2
+	}
+	set_variable = {
+		name = budget_soc
+		value = 2
+	}
+}
+
+budget_remove_all_modifiers_effect = {
+	remove_modifier = no_military_budget
+	remove_modifier = low_military_budget
+	remove_modifier = basic_military_budget
+	remove_modifier = high_military_budget
+	remove_modifier = very_high_military_budget
+	
+	remove_modifier = no_industry_budget
+	remove_modifier = low_industry_budget
+	remove_modifier = basic_industry_budget
+	remove_modifier = high_industry_budget
+	remove_modifier = very_high_industry_budget
+	
+	remove_modifier = no_education_budget
+	remove_modifier = low_education_budget
+	remove_modifier = basic_education_budget
+	remove_modifier = high_education_budget
+	remove_modifier = very_high_education_budget
+	
+	remove_modifier = no_finance_budget
+	remove_modifier = low_finance_budget
+	remove_modifier = basic_finance_budget
+	remove_modifier = high_finance_budget
+	remove_modifier = very_high_finance_budget
+	
+	remove_modifier = no_welfare_budget
+	remove_modifier = low_welfare_budget
+	remove_modifier = basic_welfare_budget
+	remove_modifier = high_welfare_budget
+	remove_modifier = very_high_welfare_budget	
+}
+
+budget_apply_modifiers_effect = {
+	budget_remove_all_modifiers_effect = yes
+
+	# Military
+	if = {
+		limit = {
+			var:budget_mil = 1
+		}
+		add_modifier = no_military_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_mil = 2
+		}
+		add_modifier = low_military_budget 
+	}
+	else_if = {
+		limit = {
+			var:budget_mil = 3
+		}
+		add_modifier = basic_military_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_mil = 4
+		}
+		add_modifier = high_military_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_mil = 5
+		}
+		add_modifier = very_high_military_budget 
+	}
+
+	# Industry
+	if = {
+		limit = {
+			var:budget_ind = 1
+		}
+		add_modifier = no_industry_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_ind = 2
+		}
+		add_modifier = low_industry_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_ind = 3
+		}
+		add_modifier = basic_industry_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_ind = 4
+		}
+		add_modifier = high_industry_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_ind = 5
+		}
+		add_modifier = very_high_industry_budget
+	}
+
+	# Education
+	if = {
+		limit = {
+			var:budget_edu = 1
+		}
+		add_modifier = no_education_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_edu = 2
+		}
+		add_modifier = low_education_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_edu = 3
+		}
+		add_modifier = basic_education_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_edu = 4
+		}
+		add_modifier = high_education_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_edu = 5
+		}
+		add_modifier = very_high_education_budget
+	}
+
+	# Finance
+	if = {
+		limit = {
+			var:budget_fin = 1
+		}
+		add_modifier = no_finance_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_fin = 2
+		}
+		add_modifier = low_finance_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_fin = 3
+		}
+		add_modifier = basic_finance_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_fin = 4
+		}
+		add_modifier = high_finance_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_fin = 5
+		}
+		add_modifier = very_high_finance_budget
+	}
+
+	# Welfare
+	if = {
+		limit = {
+			var:budget_soc = 1
+		}
+		add_modifier = no_welfare_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_soc = 2
+		}
+		add_modifier = low_welfare_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_soc = 3
+		}
+		add_modifier = basic_welfare_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_soc = 4
+		}
+		add_modifier = high_welfare_budget
+	}
+	else_if = {
+		limit = {
+			var:budget_soc = 5
+		}
+		add_modifier = very_high_welfare_budget
+	}
+
+	set_variable = { 
+		name = budget_total 
+		value = 0 
+	}
+	set_variable = {
+		name = budget_total
+		value = var:budget_mil
+	}
+	set_variable = {
+		name = budget_total
+		value = var:budget_ind
+	}
+	set_variable = {
+		name = budget_total
+		value = var:budget_edu
+	}
+	set_variable = {
+		name = budget_total
+		value = var:budget_fin
+	}
+	set_variable = {
+		name = budget_total
+		value = var:budget_soc
+	}
+
+	if = {
+		limit = {
+			var:budget_total <= 10
+		}
+		budget_apply_modifiers_effect = yes
+	}
+	else = {
+		trigger_event = {
+			id = budget_allocation.001   # "Over budget!" warning
+		}
+	}
+}

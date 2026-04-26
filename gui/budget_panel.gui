@@ -978,6 +978,409 @@ types budget
 				}
 			}
 
+			### ALLOCATION
+			flowcontainer = {
+				visible = "[InformationPanel.IsTabSelected('allocation')]"
+				using = default_content_fade
+				direction = vertical
+				using = default_list_position
+				spacing = 10
+
+				default_header = {
+					blockoverride "text" {
+						text = "BUDGET_ALLOCATION"
+					}
+				}
+
+				flowcontainer = {
+					direction = vertical
+					spacing = 10
+					margin = 10
+
+					### Military Budget
+					flowcontainer = {
+						direction = vertical
+						spacing = 3
+						margin_bottom = 10
+
+						flowcontainer = {
+							spacing = 5
+
+							textbox = {
+								text = "Military"
+								autoresize = yes
+								align = vcenter|nobaseline
+								using = fontsize_large
+							}
+
+							textbox = {
+								layoutstretchfactor_horizontal = 1
+								autoresize = yes
+								raw_text = "[GetPlayer.GetVariable('budget_mil')] / 5"
+								align = right|nobaseline
+							}
+						}
+
+						widget = {
+							size = { @panel_width_minus_10 25 }
+							parentanchor = hcenter
+
+							background = {
+								using = entry_bg_simple
+							}
+
+							progressbar_horizontal = {
+								parentanchor = vcenter
+								size = { 100% 100% }
+								value = "[FixedPointToFloat(GetPlayer.GetVariable('budget_mil'))]"
+								min = 0
+								max = 5
+							}
+
+							textbox = {
+								text = "[GetPlayer.GetVariable('budget_mil')]"
+								autoresize = yes
+								align = center|vcenter|nobaseline
+								parentanchor = center
+								using = fontsize_medium
+							}
+						}
+
+						flowcontainer = {
+							spacing = 5
+
+							button_icon_minus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.SubtractVariable('budget_mil', 1)][GetPlayer.SubtractVariable('budget_total', 1)]"
+								tooltip = "Decrease Military Budget"
+							}
+
+							button_icon_plus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.AddVariable('budget_mil', 1)][GetPlayer.AddVariable('budget_total', 1)]"
+								tooltip = "Increase Military Budget"
+							}
+						}
+					}
+
+					### Industrial Budget
+					flowcontainer = {
+						direction = vertical
+						spacing = 3
+						margin_bottom = 10
+
+						flowcontainer = {
+							spacing = 5
+
+							textbox = {
+								text = "Industrial"
+								autoresize = yes
+								align = vcenter|nobaseline
+								using = fontsize_large
+							}
+
+							textbox = {
+								layoutstretchfactor_horizontal = 1
+								autoresize = yes
+								raw_text = "[GetPlayer.GetVariable('budget_ind')] / 5"
+								align = right|nobaseline
+							}
+						}
+
+						widget = {
+							size = { @panel_width_minus_10 25 }
+							parentanchor = hcenter
+
+							background = {
+								using = entry_bg_simple
+							}
+
+							progressbar_horizontal = {
+								parentanchor = vcenter
+								size = { 100% 100% }
+								value = "[FixedPointToFloat(GetPlayer.GetVariable('budget_ind'))]"
+								min = 0
+								max = 5
+							}
+
+							textbox = {
+								text = "[GetPlayer.GetVariable('budget_ind')]"
+								autoresize = yes
+								align = center|vcenter|nobaseline
+								parentanchor = center
+								using = fontsize_medium
+							}
+						}
+
+						flowcontainer = {
+							spacing = 5
+
+							button_icon_minus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.SubtractVariable('budget_ind', 1)][GetPlayer.SubtractVariable('budget_total', 1)]"
+								tooltip = "Decrease Industrial Budget"
+							}
+
+							button_icon_plus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.AddVariable('budget_ind', 1)][GetPlayer.AddVariable('budget_total', 1)]"
+								tooltip = "Increase Industrial Budget"
+							}
+						}
+					}
+
+					### Education Budget
+					flowcontainer = {
+						direction = vertical
+						spacing = 3
+						margin_bottom = 10
+
+						flowcontainer = {
+							spacing = 5
+
+							textbox = {
+								text = "Education"
+								autoresize = yes
+								align = vcenter|nobaseline
+								using = fontsize_large
+							}
+
+							textbox = {
+								layoutstretchfactor_horizontal = 1
+								autoresize = yes
+								raw_text = "[GetPlayer.GetVariable('budget_edu')] / 5"
+								align = right|nobaseline
+							}
+						}
+
+						widget = {
+							size = { @panel_width_minus_10 25 }
+							parentanchor = hcenter
+
+							background = {
+								using = entry_bg_simple
+							}
+
+							progressbar_horizontal = {
+								parentanchor = vcenter
+								size = { 100% 100% }
+								value = "[FixedPointToFloat(GetPlayer.GetVariable('budget_edu'))]"
+								min = 0
+								max = 5
+							}
+
+							textbox = {
+								text = "[GetPlayer.GetVariable('budget_edu')]"
+								autoresize = yes
+								align = center|vcenter|nobaseline
+								parentanchor = center
+								using = fontsize_medium
+							}
+						}
+
+						flowcontainer = {
+							spacing = 5
+
+							button_icon_minus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.SubtractVariable('budget_edu', 1)][GetPlayer.SubtractVariable('budget_total', 1)]"
+								tooltip = "Decrease Education Budget"
+							}
+
+							button_icon_plus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.AddVariable('budget_edu', 1)][GetPlayer.AddVariable('budget_total', 1)]"
+								tooltip = "Increase Education Budget"
+							}
+						}
+					}
+
+					### Finance Budget
+					flowcontainer = {
+						direction = vertical
+						spacing = 3
+						margin_bottom = 10
+
+						flowcontainer = {
+							spacing = 5
+
+							textbox = {
+								text = "Finance"
+								autoresize = yes
+								align = vcenter|nobaseline
+								using = fontsize_large
+							}
+
+							textbox = {
+								layoutstretchfactor_horizontal = 1
+								autoresize = yes
+								raw_text = "[GetPlayer.GetVariable('budget_fin')] / 5"
+								align = right|nobaseline
+							}
+						}
+
+						widget = {
+							size = { @panel_width_minus_10 25 }
+							parentanchor = hcenter
+
+							background = {
+								using = entry_bg_simple
+							}
+
+							progressbar_horizontal = {
+								parentanchor = vcenter
+								size = { 100% 100% }
+								value = "[FixedPointToFloat(GetPlayer.GetVariable('budget_fin'))]"
+								min = 0
+								max = 5
+							}
+
+							textbox = {
+								text = "[GetPlayer.GetVariable('budget_fin')]"
+								autoresize = yes
+								align = center|vcenter|nobaseline
+								parentanchor = center
+								using = fontsize_medium
+							}
+						}
+
+						flowcontainer = {
+							spacing = 5
+
+							button_icon_minus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.SubtractVariable('budget_fin', 1)][GetPlayer.SubtractVariable('budget_total', 1)]"
+								tooltip = "Decrease Finance Budget"
+							}
+
+							button_icon_plus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.AddVariable('budget_fin', 1)][GetPlayer.AddVariable('budget_total', 1)]"
+								tooltip = "Increase Finance Budget"
+							}
+						}
+					}
+
+					### Social Budget
+					flowcontainer = {
+						direction = vertical
+						spacing = 3
+						margin_bottom = 10
+
+						flowcontainer = {
+							spacing = 5
+
+							textbox = {
+								text = "Social"
+								autoresize = yes
+								align = vcenter|nobaseline
+								using = fontsize_large
+							}
+
+							textbox = {
+								layoutstretchfactor_horizontal = 1
+								autoresize = yes
+								raw_text = "[GetPlayer.GetVariable('budget_soc')] / 5"
+								align = right|nobaseline
+							}
+						}
+
+						widget = {
+							size = { @panel_width_minus_10 25 }
+							parentanchor = hcenter
+
+							background = {
+								using = entry_bg_simple
+							}
+
+							progressbar_horizontal = {
+								parentanchor = vcenter
+								size = { 100% 100% }
+								value = "[FixedPointToFloat(GetPlayer.GetVariable('budget_soc'))]"
+								min = 0
+								max = 5
+							}
+
+							textbox = {
+								text = "[GetPlayer.GetVariable('budget_soc')]"
+								autoresize = yes
+								align = center|vcenter|nobaseline
+								parentanchor = center
+								using = fontsize_medium
+							}
+						}
+
+						flowcontainer = {
+							spacing = 5
+
+							button_icon_minus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.SubtractVariable('budget_soc', 1)][GetPlayer.SubtractVariable('budget_total', 1)]"
+								tooltip = "Decrease Social Budget"
+							}
+
+							button_icon_plus = {
+								size = { 30 30 }
+								onclick = "[GetPlayer.AddVariable('budget_soc', 1)][GetPlayer.AddVariable('budget_total', 1)]"
+								tooltip = "Increase Social Budget"
+							}
+						}
+					}
+
+					### Total Budget
+					divider_horizontal = {}
+
+					flowcontainer = {
+						direction = vertical
+						spacing = 3
+
+						flowcontainer = {
+							spacing = 5
+
+							textbox = {
+								text = "Total Allocated"
+								autoresize = yes
+								align = vcenter|nobaseline
+								using = fontsize_large
+							}
+
+							textbox = {
+								layoutstretchfactor_horizontal = 1
+								autoresize = yes
+								raw_text = "[GetPlayer.GetVariable('budget_total')] / 10"
+								align = right|nobaseline
+								using = fontsize_large
+							}
+						}
+
+						widget = {
+							size = { @panel_width_minus_10 30 }
+							parentanchor = hcenter
+
+							background = {
+								using = entry_bg_simple
+							}
+
+							progressbar_horizontal = {
+								parentanchor = vcenter
+								size = { 100% 100% }
+								value = "[FixedPointToFloat(GetPlayer.GetVariable('budget_total'))]"
+								min = 0
+								max = 10
+							}
+
+							textbox = {
+								text = "[GetPlayer.GetVariable('budget_total')]"
+								autoresize = yes
+								align = center|vcenter|nobaseline
+								parentanchor = center
+								using = fontsize_large
+							}
+						}
+					}
+				}
+			}
+
 			#STATES
 			container = {
 				using = default_list_position
