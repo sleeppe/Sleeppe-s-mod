@@ -1082,6 +1082,32 @@ very_high_finance_budget = {
 
 no_welfare_budget = {
 	state_welfare_payments_mult = -1
-	
-	interest_group_ig_lower_strata_approval_add = -5
+	state_expected_sol_mult = 3
+	country_institution_health_system_max_investment_add = -2
+	interest_group_ig_trade_unions_approval_add = -5
+}
+
+low_welfare_budget = {
+	state_welfare_payments_mult = -0.5
+	state_expected_sol_mult = 1.5
+	country_institution_health_system_max_investment_add = -1
+	interest_group_ig_trade_unions_approval_add = -3
+}
+
+basic_welfare_budget = {
+
+}
+
+high_welfare_budget = {
+	state_welfare_payments_mult = 0.5
+	state_standard_of_living_add = 0.5
+	country_institution_health_system_max_investment_add = 1
+	interest_group_ig_trade_unions_approval_add = 1
+}
+
+very_high_welfare_budget = {
+	state_welfare_payments_mult = 1
+	state_standard_of_living_add = 1.5
+	country_institution_health_system_max_investment_add = 2
+	interest_group_ig_trade_unions_approval_add = 2
 }
