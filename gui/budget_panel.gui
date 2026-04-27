@@ -977,6 +977,21 @@ types budget
 				}
 			}
 
+				flowcontainer = {
+				visible = "[InformationPanel.IsTabSelected('allocation')]"			
+				using = default_content_fade
+				direction = vertical
+				using = default_list_position
+				spacing = 10
+
+				default_header = {
+					blockoverride "text" {
+						text = "[concept_budget_allocation]"
+					}
+				}
+			}
+
+
 			#STATES
 			container = {
 				using = default_list_position
@@ -1906,3 +1921,5 @@ template set_level_bar_background {
 	margin_left = 5
 	margin_right = 5
 }
+
+
