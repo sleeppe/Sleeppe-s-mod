@@ -67,6 +67,12 @@ stat_global_list_effect = {
 			value = $value$
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_global_variable = stat_top_$name$ }
+		}
+		set_global_variable = { name = stat_top_$name$ value = 1 }
+	}
 	every_in_global_list = {
 		variable = stat_list_$name$
 		set_variable = {
