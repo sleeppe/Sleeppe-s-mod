@@ -3,7 +3,7 @@
     "id" : "",
     "version" : "2.3.1",
     "game_id" : "victoria3",
-    "supported_game_version" : "1.12.5",
+    "supported_game_version" : "1.13.3",
     "short_description" : "MP mod",
     "tags" : [ "Balance", "Historical" ],
     "relationships" : [ ],
