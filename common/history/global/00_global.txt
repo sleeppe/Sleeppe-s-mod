@@ -270,13 +270,13 @@ GLOBAL = {
 		}
 	}
 	#
-	#c:GBR ?= { # Historically 12:1 ratio of debt to yearly revenue
-	#	add_treasury = {
-	#		value = yearly_gross_income
-	#		multiply = -2 # The AI can't handle anything more
-	#	}
-	#}
-	#
+	c:GBR ?= { # Historically 12:1 ratio of debt to yearly revenue
+		add_treasury = {
+			value = yearly_gross_income
+			multiply = -2 # The AI can't handle anything more
+		}
+	}
+	
 	#c:FRA ?= { # Historically 5:1 ratio of debt to yearly revenue
 	#	add_treasury = {
 	#		value = yearly_gross_income
