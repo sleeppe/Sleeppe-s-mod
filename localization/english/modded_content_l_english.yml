@@ -25,6 +25,52 @@
  law_ayllu_kinship: "Ayllu Kinship"
  law_ayllu_kinship_desc: "Society is organised around the traditional Ayllu Communities. This system derives from the creation legend of the Ican Empire. Loyalty comes through communal bonds, which ensure cohesion. The state does not govern directly but rather interact with the Communities as a whole. That decreases the bureaucratic expenditure, while in turn limiting social mobility."
 
+# Poll Taxation
+ lawgroup_poll_tax:0 "Poll Taxation"
+ lawgroup_poll_tax_desc:0 "A tax levied as a fixed sum on every liable individual without reference to income or resources."
+ 
+ law_no_poll_taxes:0 "No Poll Taxes"
+ law_no_poll_taxes_desc:0 "No tax is applied on a pure per-head basis."
+ 
+ # Income Tax
+ lawgroup_income_tax:0 "Flat Income Tax"
+ lawgroup_income_tax_desc:0 "A tax levied on the profits on enterprise."
+ 
+ law_no_income_taxes:0 "No Income Tax"
+ law_no_income_taxes_desc:0 "No tax is levied on personal income."
+ law_low_income_tax:0 "Low Income Tax"
+ law_low_income_tax_desc:0 "A low tax is levied on personal income."
+ law_moderate_income_tax:0 "Moderate Income Tax"
+ law_moderate_income_tax_desc:0 "A moderate tax is levied on personal income."
+ law_high_income_tax:0 "High Income Tax"
+ law_high_income_tax_desc:0 "A high tax is levied on personal income."
+ 
+ # Dividends Tax
+ lawgroup_corporation_tax:0 "Dividends Tax"
+ lawgroup_corporation_tax_desc:0 "A tax levied on the profits of enterprise."
+ 
+ law_no_corporation_taxes:0 "No Dividends Tax"
+ law_no_corporation_taxes_desc:0 "No tax on enterprise profits."
+ law_low_corporation_tax:0 "Low Dividends Tax"
+ law_low_corporation_tax_desc:0 "Low tax on enterprise profits."
+ law_moderate_corporation_tax:0 "Moderate Dividends Tax"
+ law_moderate_corporation_tax_desc:0 "Moderate tax on enterprise profits."
+ law_high_corporation_tax:0 "High Dividends Tax"
+ law_high_corporation_tax_desc:0 "High tax on enterprise profits."
+ 
+ # Consumption Taxes
+ lawgroup_consumption_tax:0 "Consumption Tax"
+ lawgroup_consumption_tax_desc:0 "Taxes applied proportional to the value of goods traded."
+ 
+ law_no_consumption_taxes:0 "No Consumption Tax"
+ law_no_consumption_taxes_desc:0 "No tax is applied on purchasing goods or services."
+ law_low_consumption_tax:0 "Low Consumption Tax"
+ law_low_consumption_tax_desc:0 "A low tax is applied on applicable goods and services."
+ law_moderate_consumption_tax:0 "Moderate Consumption Tax"
+ law_moderate_consumption_tax_desc:0 "A moderate tax is applied on applicable goods and services."
+ law_high_consumption_tax:0 "High Consumption Tax"
+ law_high_consumption_tax_desc:0 "A high tax is applied on applicable goods and services."
+
 ##Modded Goods
 
  prestige_good_delftware: "Delftware"
@@ -342,3 +388,4 @@
  modifier_ottoman_separatism: "Succesfully Dealt With Separatism"
  modifier_ottoman_army_modernization: "Succesfully Modernized Our Army"
  modifier_ottoman_bureaucratic_reform: "Succesfully Reformed Our Bureaucratic System"
+
