@@ -1796,8 +1796,8 @@ on_monthly_pulse_character = {
 		if = { # Updates biannual unit share cache
 			limit = {
 				OR = {
-					has_role = admiral
-					has_role = general
+					has_role_of_type_of_type = admiral
+					has_role_of_type_of_type = general
 				}
 			}
 			set_variable = { name = monthly_cached_units_share value = this.num_units_share }
@@ -2254,8 +2254,8 @@ on_character_creation = {
 		if = { # Updates biannual unit share cache - just in case a commander spawns another way
 			limit = {
 				OR = {
-					has_role = admiral
-					has_role = general
+					has_role_of_type = admiral
+					has_role_of_type = general
 				}
 			}
 			set_variable = { name = monthly_cached_units_share value = this.num_units_share }
@@ -2269,7 +2269,7 @@ on_character_death = {
 	effect = {
 		if = { # Possibly generates replacement woman or minority IG leader
 			limit = {
-				has_role = politician
+				has_role_of_type = politician
 				is_heir = no # cultural trends do not impact the monarchy's line of succession
 				NAND = {
 					is_ruler = yes
@@ -2461,7 +2461,7 @@ on_character_death = {
 		if = {
 			limit = {
 				NOT = { has_variable = caudillo_kingmaker }
-				has_role = politician
+				has_role_of_type = politician
 				interest_group = {
 					is_interest_group_type = ig_armed_forces
 					ig_counts_as_marginal = no
@@ -4536,7 +4536,7 @@ on_law_enactment_pass = {
 						value > neutral
 					}
 					any_supporting_character = {
-						has_role = agitator
+						has_role_of_type = agitator
 					}
 				}
 			}
@@ -7068,8 +7068,8 @@ on_character_recruitment = {
 		if = {
 			limit = {
 				OR = {
-					has_role = admiral
-					has_role = general
+					has_role_of_type = admiral
+					has_role_of_type = general
 				}
 			}
 			set_variable = { name = monthly_cached_units_share value = this.num_units_share }
