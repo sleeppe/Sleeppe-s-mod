@@ -90,32 +90,32 @@ types budget
 					name = "tutorial_highlight_overview"
 				}
 
-				blockoverride "second_button"
-				{
-					text = "BUDGET_TAB_ALLOCATION"
-				}
-				blockoverride "second_button_tooltip" {
-					tooltip = "BUDGET_TAB_ALLOCATION"
-				}
-				blockoverride "second_button_click"
-				{
-					onclick = "[InformationPanel.SelectTab('allocation')]"
-				}
-				blockoverride "second_button_visibility"
-				{
-					visible = "[InformationPanel.IsTabSelected('allocation')]"
-				}
-				blockoverride "second_button_visibility_checked"
-				{
-					visible = "[Not( InformationPanel.IsTabSelected('allocation') )]"
-				}
-				blockoverride "second_button_selected"
-				{
-					text = "BUDGET_TAB_ALLOCATION"
-				}
-				blockoverride "second_button_name" {
-					name = "tutorial_highlight_allocation"
-				}
+			#	blockoverride "second_button"
+			#	{
+			#		text = "BUDGET_TAB_ALLOCATION"
+			#	}
+			#	blockoverride "second_button_tooltip" {
+			#		tooltip = "BUDGET_TAB_ALLOCATION"
+			#	}
+			#	blockoverride "second_button_click"
+			#	{
+			#		onclick = "[InformationPanel.SelectTab('allocation')]"
+			#	}
+			#	blockoverride "second_button_visibility"
+			#	{
+			#		visible = "[InformationPanel.IsTabSelected('allocation')]"
+			#	}
+			#	blockoverride "second_button_visibility_checked"
+			#	{
+			#		visible = "[Not( InformationPanel.IsTabSelected('allocation') )]"
+			#	}
+			#	blockoverride "second_button_selected"
+			#	{
+			#		text = "BUDGET_TAB_ALLOCATION"
+			#	}
+			#	blockoverride "second_button_name" {
+			#		name = "tutorial_highlight_allocation"
+			#	}
 
 				blockoverride "third_button"
 				{
@@ -977,19 +977,19 @@ types budget
 				}
 			}
 
-				flowcontainer = {
-				visible = "[InformationPanel.IsTabSelected('allocation')]"			
-				using = default_content_fade
-				direction = vertical
-				using = default_list_position
-				spacing = 10
-
-				default_header = {
-					blockoverride "text" {
-						text = "[concept_budget_allocation]"
-					}
-				}
-			}
+		#		flowcontainer = {
+		#		visible = "[InformationPanel.IsTabSelected('allocation')]"			
+		#		using = default_content_fade
+		#		direction = vertical
+		#		using = default_list_position
+		#		spacing = 10
+#
+#				default_header = {
+#					blockoverride "text" {
+#						text = "[concept_budget_allocation]"
+#					}
+#				}
+#			}
 
 
 			#STATES
