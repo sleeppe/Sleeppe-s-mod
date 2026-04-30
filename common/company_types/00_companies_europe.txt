@@ -406,11 +406,11 @@ company_basileiades = {
 	}
 
 	extension_building_types = {
-		building_military_shipyard
+		building_tooling_workshop
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_balkans
+		has_interest_marker_in_region = sr:region_balkans
 	}
 
 	attainable = {
@@ -721,16 +721,18 @@ company_gotaverken = {
 
 	building_types = {
 		building_shipyard
-		building_military_shipyard
 		building_motor_industry
+		building_tooling_workshop
 	}
 
 	extension_building_types = {
 		building_logging_camp
+		building_steel_mill
+		building_automotive_industry
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = sr:region_northern_europe
 	}
 
 	attainable = {
@@ -749,7 +751,8 @@ company_gotaverken = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_shipyard
-					is_building_type = building_military_shipyard
+					is_building_type = building_motor_industry
+					is_building_type = building_tooling_workshop
 				}
 				level >= 5
 			}
@@ -776,7 +779,7 @@ company_gotaverken = {
 				state_region = s:STATE_GOTALAND
 			}
 		}
-		building_military_shipyard = {
+		building_tooling_workshop = {
 			level = 5
 			state_trigger = {
 				state_region = s:STATE_GOTALAND
@@ -804,7 +807,7 @@ company_aker_mek = {
 	}
 
 	extension_building_types = {
-		building_military_shipyard
+		building_tooling_workshop
 	}
 
 	potential = {
