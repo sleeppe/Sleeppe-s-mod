@@ -109,7 +109,7 @@ company_porceleyne_fles = {
 		building_glassworks = {
 			level = 5
 			state_trigger = {
-				region = sr:region_rhine
+				region = sr:region_western_europe
 				is_incorporated = yes
 			}
 		}
@@ -172,7 +172,7 @@ company_van_houtum_en_palm = {
 		building_building_paper_mill = {
 			level = 5
 			state_trigger = {
-				region = sr:region_rhine
+				region = sr:region_western_europe
 				is_incorporated = yes
 			}
 		}

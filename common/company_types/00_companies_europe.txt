@@ -98,7 +98,7 @@ company_franco_belge = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_rhine
+		has_interest_marker_in_region = region_western_europe
 	}
 
 	attainable = {
@@ -183,7 +183,7 @@ company_john_cockerill = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_rhine
+		has_interest_marker_in_region = region_western_europe
 	}
 
 	attainable = {
@@ -328,7 +328,7 @@ company_philips = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_rhine
+		has_interest_marker_in_region = region_western_europe
 	}
 
 	attainable = {

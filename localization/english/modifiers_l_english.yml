@@ -3757,31 +3757,6 @@
  state_pop_support_law_legacy_slavery_mult:0 "[GetLawType('law_legacy_slavery').GetName] [concept_pop] Support"
  state_pop_support_law_legacy_slavery_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_legacy_slavery').GetName] [concept_law]."
 
- state_pop_support_law_consumption_based_taxation_add:0 "[GetLawType('law_consumption_based_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_consumption_based_taxation_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_consumption_based_taxation').GetName] [concept_law]."
- state_pop_support_law_consumption_based_taxation_mult:0 "[GetLawType('law_consumption_based_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_consumption_based_taxation_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_consumption_based_taxation').GetName] [concept_law]."
-
- state_pop_support_law_land_based_taxation_add:0 "[GetLawType('law_land_based_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_land_based_taxation_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_land_based_taxation').GetName] [concept_law]."
- state_pop_support_law_land_based_taxation_mult:0 "[GetLawType('law_land_based_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_land_based_taxation_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_land_based_taxation').GetName] [concept_law]."
-
- state_pop_support_law_per_capita_based_taxation_add:0 "[GetLawType('law_per_capita_based_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_per_capita_based_taxation_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_per_capita_based_taxation').GetName] [concept_law]."
- state_pop_support_law_per_capita_based_taxation_mult:0 "[GetLawType('law_per_capita_based_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_per_capita_based_taxation_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_per_capita_based_taxation').GetName] [concept_law]."
-
- state_pop_support_law_proportional_taxation_add:0 "[GetLawType('law_proportional_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_proportional_taxation_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_proportional_taxation').GetName] [concept_law]."
- state_pop_support_law_proportional_taxation_mult:0 "[GetLawType('law_proportional_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_proportional_taxation_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_proportional_taxation').GetName] [concept_law]."
-
- state_pop_support_law_graduated_taxation_add:0 "[GetLawType('law_graduated_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_graduated_taxation_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_graduated_taxation').GetName] [concept_law]."
- state_pop_support_law_graduated_taxation_mult:0 "[GetLawType('law_graduated_taxation').GetName] [concept_pop] Support"
- state_pop_support_law_graduated_taxation_mult_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_graduated_taxation').GetName] [concept_law]."
-
  state_pop_support_law_mercantilism_add:0 "[GetLawType('law_mercantilism').GetName] [concept_pop] Support"
  state_pop_support_law_mercantilism_add_desc:0 "Impacts the rate at which [Concept('concept_pop', '$concept_pops$')] support the [GetLawType('law_mercantilism').GetName] [concept_law]."
  state_pop_support_law_mercantilism_mult:0 "[GetLawType('law_mercantilism').GetName] [concept_pop] Support"
