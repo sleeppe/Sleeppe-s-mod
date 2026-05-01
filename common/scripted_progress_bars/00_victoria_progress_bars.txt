@@ -2486,7 +2486,7 @@ red_summer_counter_revolution_progress_bar = {
 		if = {
 			limit = {
 				any_scope_character = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 					has_ideology = ideology:ideology_authoritarian
 				}
 			}

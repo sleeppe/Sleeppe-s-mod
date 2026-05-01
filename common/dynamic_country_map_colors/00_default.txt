@@ -360,7 +360,7 @@ ddr_germany = {
 					has_law_or_variant = law_type:law_oligarchy
 				}
 				any_scope_character = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 					OR = {
 						has_ideology = ideology:ideology_communist
 						has_ideology = ideology:ideology_vanguardist

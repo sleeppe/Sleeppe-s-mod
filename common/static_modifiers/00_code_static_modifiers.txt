@@ -748,7 +748,6 @@ country_army_power_projection = {
 # Scales with total navy power projection of a country
 country_navy_power_projection = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
-	country_max_declared_interests_add = 0.01
 }
 
 
