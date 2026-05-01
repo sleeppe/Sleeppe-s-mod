@@ -136,8 +136,8 @@ company_ansaldo = {
 	}
 
 	prosperity_modifier = {
-		unit_navy_offense_mult = 0.05
-		unit_army_offense_mult = 0.05
+		ship_armor_mult = 0.025
+		ship_hull_damage_mult = 0.025
 	}
 
 	ai_will_do = {
@@ -292,7 +292,7 @@ company_fiat = {
 	}
 
 	prosperity_modifier = {
-		military_formation_movement_speed_mult = 0.1
+		military_formation_army_movement_speed_mult = 0.1
 		unit_army_offense_mult = 0.05
 	}
 
@@ -371,7 +371,7 @@ company_stt = {
 	}
 
 	prosperity_modifier = {
-		unit_navy_defense_mult = 0.05
+		ship_armor_mult = 0.025
 		country_ship_group_supply_ships_construction_efficiency_add = 0.05
 	}
 
