@@ -4367,7 +4367,6 @@ on_law_checkpoint_debate = {
 		10 = ig_petitions.1 #Landowners want to reverse Suffrage
 		10 = ig_petitions.10 #Rural folk want no conscription
 		10 = ig_petitions.13 #Trade Unions want compulsory primary school
-		20 = ig_petitions.16 #Industrialists want no graduated taxes
 		1 = law_notification.2
 		10 = single_party_state.2
 		10 = land_ownership_law_events.1
