@@ -288,7 +288,7 @@
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }
 
 je_danubian_federation_observer = {
@@ -685,5 +685,5 @@ je_danubian_federation_observer = {
 
 	weight = 100
 
-	should_be_pinned_by_default = yes
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

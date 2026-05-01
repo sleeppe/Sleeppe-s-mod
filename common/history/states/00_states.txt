@@ -6957,6 +6957,7 @@ STATES = {
 		add_claim = c:JAP
 		add_claim = c:CHI
 	}
+
 	s:STATE_HOKKAIDO = {
 		create_state = {
 			country = c:EZO
