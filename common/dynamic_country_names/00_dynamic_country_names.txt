@@ -3542,7 +3542,7 @@ ARG = { # Argentina
 
 			scope:actor ?= {
 				any_scope_character = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 					has_template = ARG_Juan_Manuel_de_Rosas
 				}
 			}
