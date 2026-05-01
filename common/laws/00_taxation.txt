@@ -3,7 +3,7 @@
 # modifier = {} modifier on country for having adopted this law
 
 law_no_poll_taxes = {
-	group = lawgroup_poll_tax
+	group = lawgroup_taxation
 	
 	icon = "gfx/interface/icons/law_icons/no_tax.dds"
 	
@@ -25,7 +25,7 @@ law_no_poll_taxes = {
 }
 
 law_land_based_taxation = {
-	group = lawgroup_poll_tax
+	group = lawgroup_taxation
 	
 	icon = "gfx/interface/icons/law_icons/land_based_taxation.dds"
 	
@@ -63,7 +63,7 @@ law_land_based_taxation = {
 }
 
 law_per_capita_based_taxation = {
-	group = lawgroup_poll_tax
+	group = lawgroup_taxation
 	
 	progressiveness = 0
 	

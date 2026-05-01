@@ -4539,11 +4539,11 @@ on_law_enactment_started = {
 			if = {
 				limit = {
 					OR = {
-						is_enacting_law = law_type:law_consumption_based_taxation
+						is_enacting_law = law_type:law_low_consumption_tax
 						is_enacting_law = law_type:law_land_based_taxation
 						is_enacting_law = law_type:law_per_capita_based_taxation
-						is_enacting_law = law_type:law_proportional_taxation
-						is_enacting_law = law_type:law_graduated_taxation
+						is_enacting_law = law_type:law_low_income_tax
+						is_enacting_law = law_type:law_low_corporation_tax
 					}
 				}
 				trigger_event = {
