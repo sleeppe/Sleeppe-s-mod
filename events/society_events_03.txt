@@ -1,4 +1,4 @@
-namespace = society_tech_events
+﻿namespace = society_tech_events
 
 society_tech_events.301 = { #airships
 	type = country_event
