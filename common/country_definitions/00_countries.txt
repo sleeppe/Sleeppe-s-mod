@@ -201,10 +201,12 @@ JAP = {
 	color = { 161 0 0 }
 	country_type = unrecognized
 
+	social_hierarchy = edo_system
+
 	tier = empire
 
 	cultures = { japanese }
-	capital = STATE_KANSAI
+	capital = STATE_KYOTO
 }
 
 ITA = {
