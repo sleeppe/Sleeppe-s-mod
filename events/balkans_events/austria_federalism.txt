@@ -658,7 +658,7 @@ austria_federation.1 = { # Popovici Proposal
 						region = sr:region_danubia
 						region = sr:region_poland
 						region = sr:region_balkans
-						region = sr:region_south_germany
+						region = sr:region_central_europe
 					}
 				}
 			}

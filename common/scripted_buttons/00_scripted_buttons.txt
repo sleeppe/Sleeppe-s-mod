@@ -447,7 +447,7 @@ je_risorgimento_austrian_radicals_button = {
 
 	possible = {
 		country_rank >= rank_value:minor_power
-		sr:region_italy = {
+		sr:region_southern_europe = {
 			any_scope_country = {
 				NOR = {
 					country_has_primary_culture = cu:south_italian
@@ -717,9 +717,9 @@ je_confederation_of_the_rhine_confederate_button = {
 		}
 		any_state = {
 			OR = {
-				region = sr:region_rhine
-				region = sr:region_north_germany
-				region = sr:region_south_germany
+				region = sr:region_western_europe
+				region = sr:region_central_europe
+				region = sr:region_central_europe
 			}
 			state_region = {
 				OR = {
@@ -739,9 +739,9 @@ je_confederation_of_the_rhine_confederate_button = {
 					}
 					capital = {
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							region = sr:region_western_europe
+							region = sr:region_central_europe
+							region = sr:region_central_europe
 						}
 					}
 					OR = {
@@ -788,9 +788,9 @@ je_confederation_of_the_rhine_expand_button = {
 					}
 					capital = {
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							region = sr:region_western_europe
+							region = sr:region_central_europe
+							region = sr:region_central_europe
 						}
 					}
 					OR = {
@@ -809,9 +809,9 @@ je_confederation_of_the_rhine_expand_button = {
 						}
 					}
 					OR = {
-						region = sr:region_rhine
-						region = sr:region_north_germany
-						region = sr:region_south_germany
+						region = sr:region_western_europe
+						region = sr:region_central_europe
+						region = sr:region_central_europe
 					}
 					is_incorporated = no
 					trigger_if = {
@@ -846,9 +846,9 @@ je_confederation_of_the_rhine_expand_button = {
 					is_subject_of = ROOT
 					capital = {
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							region = sr:region_western_europe
+							region = sr:region_central_europe
+							region = sr:region_central_europe
 						}
 					}
 					OR = {
@@ -868,9 +868,9 @@ je_confederation_of_the_rhine_expand_button = {
 						is_subject_of = ROOT
 						capital = {
 							OR = {
-								region = sr:region_rhine
-								region = sr:region_north_germany
-								region = sr:region_south_germany
+								region = sr:region_western_europe
+								region = sr:region_central_europe
+								region = sr:region_central_europe
 							}
 						}
 						OR = {
@@ -895,9 +895,9 @@ je_confederation_of_the_rhine_expand_button = {
 						}
 					}
 					OR = {
-						region = sr:region_rhine
-						region = sr:region_north_germany
-						region = sr:region_south_germany
+						region = sr:region_western_europe
+						region = sr:region_central_europe
+						region = sr:region_central_europe
 					}
 					is_incorporated = no
 					trigger_if = {
@@ -926,9 +926,9 @@ je_confederation_of_the_rhine_expand_button = {
 							}
 						}
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							region = sr:region_western_europe
+							region = sr:region_central_europe
+							region = sr:region_central_europe
 						}
 						is_incorporated = no
 						trigger_if = {

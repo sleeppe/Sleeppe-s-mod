@@ -346,7 +346,7 @@ AFS = {
         priority = 100
         trigger = {
             exists= c:AFS
-            scope:actor ?= { capital ?= { region = sr:region_zanj } }
+            scope:actor ?= { capital ?= { region = sr:region_east_africa } }
         }
     }
     flag_definition = {
@@ -369,8 +369,8 @@ AFS = {
             scope:actor ?= {
             	capital ?= {
             		OR = {
-            			region = sr:region_senegal
-            			region = sr:region_niger
+            			region = sr:region_west_africa
+            			region = sr:region_west_africa
             		}
             	}
             }

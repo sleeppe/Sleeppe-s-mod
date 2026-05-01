@@ -50,7 +50,7 @@
 }
 
 ITA = {
-	geographic_region = geographic_region_italy
+	geographic_region = geographic_region_southern_europe
 
 	is_major_formation = yes
 

@@ -87,7 +87,7 @@
 							region = sr:region_danubia
 							region = sr:region_poland
 							region = sr:region_balkans
-							region = sr:region_south_germany
+							region = sr:region_central_europe
 							state_region = s:STATE_ISTRIA
 							state_region = s:STATE_SOUTH_TYROL
 						}
@@ -106,7 +106,7 @@
 							region = sr:region_danubia
 							region = sr:region_poland
 							region = sr:region_balkans
-							region = sr:region_south_germany
+							region = sr:region_central_europe
 							state_region = s:STATE_ISTRIA
 							state_region = s:STATE_SOUTH_TYROL
 						}
@@ -152,7 +152,7 @@
 						region = sr:region_danubia
 						region = sr:region_poland
 						region = sr:region_balkans
-						region = sr:region_south_germany
+						region = sr:region_central_europe
 						state_region = s:STATE_ISTRIA
 						state_region = s:STATE_SOUTH_TYROL
 					}
@@ -174,7 +174,7 @@
 								region = sr:region_danubia
 								region = sr:region_poland
 								region = sr:region_balkans
-								region = sr:region_south_germany
+								region = sr:region_central_europe
 								state_region = s:STATE_ISTRIA
 								state_region = s:STATE_SOUTH_TYROL
 							}
@@ -367,7 +367,7 @@ je_danubian_federation_observer = {
 										region = sr:region_danubia
 										region = sr:region_poland
 										region = sr:region_balkans
-										region = sr:region_south_germany
+										region = sr:region_central_europe
 										state_region = s:STATE_ISTRIA
 										state_region = s:STATE_SOUTH_TYROL
 									}
@@ -386,7 +386,7 @@ je_danubian_federation_observer = {
 										region = sr:region_danubia
 										region = sr:region_poland
 										region = sr:region_balkans
-										region = sr:region_south_germany
+										region = sr:region_central_europe
 										state_region = s:STATE_ISTRIA
 										state_region = s:STATE_SOUTH_TYROL
 									}
@@ -554,7 +554,7 @@ je_danubian_federation_observer = {
 											region = sr:region_danubia
 											region = sr:region_poland
 											region = sr:region_balkans
-											region = sr:region_south_germany
+											region = sr:region_central_europe
 											state_region = s:STATE_ISTRIA
 											state_region = s:STATE_SOUTH_TYROL
 										}
@@ -573,7 +573,7 @@ je_danubian_federation_observer = {
 											region = sr:region_danubia
 											region = sr:region_poland
 											region = sr:region_balkans
-											region = sr:region_south_germany
+											region = sr:region_central_europe
 											state_region = s:STATE_ISTRIA
 											state_region = s:STATE_SOUTH_TYROL
 										}
@@ -674,7 +674,7 @@ je_danubian_federation_observer = {
 				NOR = {
 					region = sr:region_danubia
 					region = sr:region_balkans
-					region = sr:region_south_germany
+					region = sr:region_central_europe
 					region = sr:region_poland
 					state_region = s:STATE_ISTRIA
 					state_region = s:STATE_SOUTH_TYROL

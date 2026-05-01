@@ -17,7 +17,7 @@ company_ludwig_moser_and_sons = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_north_germany
+		has_interest_marker_in_region = region_central_europe
 	}
 
 	possible_prestige_goods = {
@@ -171,7 +171,7 @@ company_konigliche_porzellan_manufaktur_meissen = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_north_germany
+		has_interest_marker_in_region = region_central_europe
 	}
 
 	attainable = {
@@ -670,7 +670,7 @@ company_gebruder_thonet = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_south_germany
+		has_interest_marker_in_region = region_central_europe
 	}
 
 	attainable = {
@@ -946,7 +946,7 @@ company_anglo_sicilian_sulphur_company = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_italy
+		has_interest_marker_in_region = region_southern_europe
 	}
 
 	attainable = {
@@ -1019,7 +1019,7 @@ company_mantero_seta = {
 
 	potential = {
 		has_dlc_feature = mp1_content
-		has_interest_marker_in_region = region_italy
+		has_interest_marker_in_region = region_southern_europe
 	}
 
 	attainable = {
@@ -1298,7 +1298,7 @@ company_john_holt = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_niger
+		has_interest_marker_in_region = region_west_africa
 	}
 
 	attainable = {
@@ -1307,7 +1307,7 @@ company_john_holt = {
 	possible = {
 		has_technology_researched = rubber_mastication
 		any_scope_state = {
-			region = sr:region_niger
+			region = sr:region_west_africa
 			any_scope_building = {
 				is_building_type = building_rubber_plantation
 				level >= 5
@@ -1323,7 +1323,7 @@ company_john_holt = {
 	ai_will_do = {
 		has_technology_researched = rubber_mastication
 		any_scope_state = {
-			region = sr:region_niger
+			region = sr:region_west_africa
 		}
 	}
 
@@ -1331,7 +1331,7 @@ company_john_holt = {
 		building_rubber_plantation = {
 			level = 5
 			state_trigger = {
-				region = sr:region_niger
+				region = sr:region_west_africa
 			}
 		}
 	}
