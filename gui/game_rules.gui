@@ -160,7 +160,7 @@ window = {
 				spacing = 20
 
 				button_standard = {
-					visible = "[IsHost]"
+					visible = "[And( IsHost, Not( IsInGame ) )]"
 					text = "GAME_RULES_RESET_TO_DEFAULTS_TEXT"
 					onclick = "[JominiGameRules.ResetAllToDefaults]"
 					using = select_button_sound
@@ -184,7 +184,7 @@ window = {
 					size = { 170 33 }
 				#button_primary = {
 					text = "GAME_RULES_APPLY_TEXT"
-					visible = "[IsHost]"
+					visible = "[And( IsHost, Not( IsInGame ) )]"
 					onclick = "[JominiGameRules.ApplySettings]"
 					onclick = "[JominiGameRules.Hide]"
 					using = confirm_button_sound
@@ -212,7 +212,7 @@ types GameRuleTypes
 		}
 
 		button_select_arrow = {
-			visible = "[IsHost]"
+			visible = "[And( IsHost, Not( IsInGame ) )]"
 			size = { 25 25 }
 			parentanchor = left|vcenter
 			mirror = horizontal
@@ -240,9 +240,9 @@ types GameRuleTypes
 			size = { 22 22 }
 			tooltip = "GAME_RULE_BLOCKS_ACHIEVEMENTS"
 		}
-		
+
 		button_select_arrow = {
-			visible = "[IsHost]"
+			visible = "[And( IsHost, Not( IsInGame ) )]"
 			size = { 25 25 }
 			parentanchor = right|vcenter
 			using = increase_button_sound
@@ -437,7 +437,7 @@ types GameRuleTypes
 		expand = {}
 
 		hbox = {
-			visible = "[IsHost]"
+			visible = "[And( IsHost, Not( IsInGame ) )]"
 
 			spacing = 10
 			dropdown_menu_standard = {

@@ -1908,6 +1908,12 @@ pm_assembly_lines_building_automotive_industry = {
 pm_basic_shipbuilding = {
 	texture = "gfx/interface/icons/production_method_icons/wooden_ships.dds"
 
+	country_modifiers = {
+		workforce_scaled = {
+			country_ship_construction_add = 5
+		}
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -1915,7 +1921,7 @@ pm_basic_shipbuilding = {
 			goods_input_fabric_add = 20
 
 			# output goods
-			goods_output_clippers_add = 35
+			goods_output_clippers_add = 40
 		}
 
 		level_scaled = {
@@ -1932,6 +1938,12 @@ pm_complex_shipbuilding = {
 	texture = "gfx/interface/icons/production_method_icons/reinforced_wooden_ships.dds"
 	unlocking_technologies = {
 		screw_frigate
+	}
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_ship_construction_add = 10
+		}
 	}
 
 	building_modifiers = {
@@ -1958,6 +1970,12 @@ pm_complex_shipbuilding = {
 
 pm_metal_shipbuilding = {
 	texture = "gfx/interface/icons/production_method_icons/reinforced_steam_ships.dds"
+
+	country_modifiers = {
+		workforce_scaled = {
+			country_ship_construction_add = 15
+		}
+	}
 
 	state_modifiers = {
 		workforce_scaled = {
@@ -1997,6 +2015,12 @@ pm_arc_welding_shipbuilding = {
 		arc_welding
 	}
 
+	country_modifiers = {
+		workforce_scaled = {
+			country_ship_construction_add = 20
+		}
+	}
+
 	state_modifiers = {
 		workforce_scaled = {
 			state_pollution_generation_add = 20
@@ -2033,16 +2057,13 @@ pm_no_military_shipbuilding = {
 pm_military_shipbuilding_wooden = {
 	texture = "gfx/interface/icons/production_method_icons/military_shipbuilding_wooden.dds"
 
-	building_modifiers = {
+	country_modifiers = {
 		workforce_scaled = {
-			#input goods
-			goods_input_hardwood_add = 20
-			goods_input_fabric_add = 20
-			goods_input_iron_add = 10
-			# output goods
-			goods_output_manowars_add = 35
+			country_ship_construction_add = 2
 		}
+	}
 
+	building_modifiers = {
 		level_scaled = {
 			# employment
 			building_employment_shopkeepers_add = 500
@@ -2060,16 +2081,13 @@ pm_military_shipbuilding_wooden_2 = {
 		screw_frigate
 	}
 
-	building_modifiers = {
+	country_modifiers = {
 		workforce_scaled = {
-			#input goods
-			goods_input_hardwood_add = 30
-			goods_input_fabric_add = 10
-			goods_input_engines_add = 5
-			goods_input_iron_add = 10
-			# output goods
-			goods_output_manowars_add = 45
+			country_ship_construction_add = 5
 		}
+	}
+
+	building_modifiers = {
 		level_scaled = {
 			# employment
 			building_employment_shopkeepers_add = 500
@@ -2087,15 +2105,13 @@ pm_military_shipbuilding_steam = {
 		ironclad_tech
 	}
 
-	building_modifiers = {
+	country_modifiers = {
 		workforce_scaled = {
-			#input goods
-			goods_input_steel_add = 40
-			goods_input_coal_add = 20
-			goods_input_engines_add = 10
-			# output goods
-			goods_output_ironclads_add = 55
+			country_ship_construction_add = 10
 		}
+	}
+
+	building_modifiers = {
 		level_scaled = {
 			# employment
 			building_employment_shopkeepers_add = 500
@@ -2113,16 +2129,13 @@ pm_military_shipbuilding_steam_2 = {
 		arc_welding
 	}
 
-	building_modifiers = {
+	country_modifiers = {
 		workforce_scaled = {
-			#input
-			goods_input_steel_add = 40
-			goods_input_electricity_add = 30
-			goods_input_engines_add = 20
-
-			# output goods
-			goods_output_ironclads_add = 70
+			country_ship_construction_add = 15
 		}
+	}
+
+	building_modifiers = {
 		level_scaled = {
 			# employment
 			building_employment_shopkeepers_add = 500
@@ -2131,8 +2144,6 @@ pm_military_shipbuilding_steam_2 = {
 			building_employment_engineers_add = 1000
 		}
 	}
-
-	required_input_goods = electricity
 }
 
 pm_automobile_production = {
@@ -2674,55 +2685,4 @@ pm_assembly_lines_building_munition_plant = {
 	}
 
 	required_input_goods = electricity
-}
-
-pm_management = {
-	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
-
-	state_modifiers = {
-	}
-
-	unlocking_technologies = {
-	}
-
-	building_modifiers = {
-	}
-}
-
-pm_management1 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/appointed_bureaucrats.dds"
-
-	state_modifiers = {
-	}
-
-	unlocking_technologies = {
-		mutual_funds
-	}
-
-	building_modifiers = {
-
-		level_scaled = {
-			building_employment_laborers_add = -260
-			building_employment_bureaucrats_add = 10
-		}
-	}
-}
-
-pm_management2 = {
-	texture = "gfx/interface/icons/production_method_icons/unused/elected_bureaucrats.dds"
-
-	state_modifiers = {
-	}
-
-	unlocking_technologies = {
-		corporate_management
-	}
-
-	building_modifiers = {
-
-		level_scaled = {
-			building_employment_laborers_add = -515
-			building_employment_bureaucrats_add = 15
-		}
-	}
 }
