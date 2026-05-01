@@ -760,8 +760,8 @@ company_gotaverken = {
 	}
 
 	prosperity_modifier = {
-		unit_navy_defense_mult = 0.05
-		unit_navy_offense_mult = 0.05
+		ship_armor_mult = 0.025
+		ship_hull_damage_mult = 0.025
 	}
 
 	ai_will_do = {

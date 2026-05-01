@@ -1653,11 +1653,23 @@ ideology_japan_hierarchic_2 = {
 	}
 
 	lawgroup_taxation = {
-		law_consumption_based_taxation = approve
+		law_no_poll_taxes = disapprove
 		law_land_based_taxation = approve
-		law_per_capita_based_taxation = neutral
-		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+		law_per_capita_based_taxation = disapprove
+	}
+
+	lawgroup_corporation_tax = {
+		law_no_corporation_taxes = strongly_approve
+		law_low_corporation_tax = disapprove
+		law_moderate_corporation_tax = disapprove
+		law_high_corporation_tax = disapprove
+	}
+
+	lawgroup_consumption_tax = {
+		law_no_consumption_taxes = disapprove
+		law_low_consumption_tax = approve
+		law_moderate_consumption_tax = strongly_approve
+		law_high_consumption_tax = neutral
 	}
 
 	lawgroup_welfare = {
