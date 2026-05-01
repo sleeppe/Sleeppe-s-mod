@@ -55,7 +55,10 @@ law_low_income_tax = {
 	}		
 	
 	ai_will_do = {
-		has_law = law_type:law_no_income_taxes
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_meritocratic
+		}
 	}
 }
 
@@ -97,6 +100,13 @@ law_moderate_income_tax = {
 	tax_modifier_very_high = {
 		tax_income_add = 0.26
 	}	
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_proletarian
+		}
+	}
 }
 
 law_high_income_tax = {
@@ -138,4 +148,11 @@ law_high_income_tax = {
 	tax_modifier_very_high = {
 		tax_income_add = 0.325
 	}		
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_proletarian
+		}
+	}
 }

@@ -90,7 +90,10 @@ law_low_corporation_tax = {
 	}
 	
 	ai_will_do = {
-		has_law_or_variant = law_type:law_no_corporation_taxes
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+		}
 	}
 }
 
@@ -167,6 +170,13 @@ law_moderate_corporation_tax = {
 		
 		tax_dividends_add = 0.20
 	}
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_proletarian
+		}
+	}
 }
 
 law_high_corporation_tax = {
@@ -241,5 +251,12 @@ law_high_corporation_tax = {
 		state_clergymen_investment_pool_efficiency_mult = -0.58
 	
 		tax_dividends_add = 0.325
+	}
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_proletarian
+		}
 	}
 }

@@ -65,7 +65,7 @@ NPolitics = {
 	GOVERNANCE_PRINCIPLES_GROUP = "lawgroup_governance_principles"	# Law from this group is used for the power_bloc_worst_progressiveness_difference_government_type trigger to represent the Governance Principle
 	DISTRIBUTION_OF_POWER_GROUP = "lawgroup_distribution_of_power"	# Law from this group is used for the power_bloc_worst_progressiveness_difference_government_type trigger to represent the Distribution of Power
 	TARIFF_LAW_GROUP = "lawgroup_trade_policy"	# Law from this group is shown to player as their tariff law
-	TAX_LAW_GROUP = "lawgroup_taxation"	# Law from this group is shown to player as their tax law
+	TAX_LAW_GROUP = "lawgroup_poll_tax"	# Law from this group is shown to player as their tax law
 
 	NUM_TIMES_TO_LOOP_THROUGH_LAWS = 3	# When creating a law set, how many times do we loop through all law groups? This is done more than once in order to allow laws that are unlocked by other laws to be changed
 

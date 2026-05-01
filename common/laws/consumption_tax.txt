@@ -58,7 +58,11 @@ law_low_consumption_tax = {
 	}
 	
 	ai_will_do = {
-		has_law_or_variant = law_type:law_no_consumption_taxes
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_plutocratic
+		}
 	}
 }
 
@@ -97,6 +101,13 @@ law_moderate_consumption_tax = {
 	tax_modifier_very_high = {
 		tax_consumption_add = 0.375
 	}	
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_proletarian
+		}
+	}
 }
 
 law_high_consumption_tax = {
@@ -134,4 +145,11 @@ law_high_consumption_tax = {
 	tax_modifier_very_high = {
 		tax_consumption_add = 0.525
 	}	
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_loyalist
+			has_ideology = ideology:ideology_proletarian
+		}
+	}
 }

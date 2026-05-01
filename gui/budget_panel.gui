@@ -220,7 +220,7 @@ types budget
 							}
 
 							blockoverride "text_lower" {
-								datacontext = "[AccessPlayer.AccessActiveLawFromGroup('lawgroup_taxation')]"
+								datacontext = "[AccessPlayer.AccessActiveLawFromGroup('lawgroup_poll_tax')]"
 								text = "[Law.GetNameNoFormatting]"
 								tooltipwidget = {
 									FancyTooltip_Law = {

@@ -54,10 +54,11 @@ law_land_based_taxation = {
 		tax_land_add = 1.00
 	}	
 	
-	# AI shouldn't change to land based taxation from more advanced taxation forms
 	ai_will_do = {
-		has_law_or_variant = law_type:law_no_poll_taxes
-		has_law_or_variant = law_type:law_no_corporation_taxes
+		exists = ruler
+		ruler = {
+			has_ideology = ideology:ideology_hierarchic
+		}
 	}
 }
 
@@ -103,4 +104,11 @@ law_per_capita_based_taxation = {
 		tax_per_capita_add = 1.0
 		tax_land_add = 0.50
 	}	
+	ai_will_do = {
+		exists = ruler
+		ruler ?= {
+			has_ideology = ideology:ideology_plutocratic
+			has_ideology = ideology:ideology_meritocratic
+		}
+	}
 }
