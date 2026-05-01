@@ -850,7 +850,7 @@ AFS = { #African Free State
 
 		trigger = {
 			scope:actor ?= {
-				capital = { region = sr:region_congo }
+				capital = { region = sr:region_equitorial_africa }
 			}
 		}
 	}
@@ -875,7 +875,7 @@ AFS = { #African Free State
 
 		trigger = {
 			scope:actor ?= {
-				capital = { region = sr:region_zanj }
+				capital = { region = sr:region_east_africa }
 			}
 		}
 	}
@@ -900,8 +900,7 @@ AFS = { #African Free State
 		trigger = {
 			scope:actor ?= {
 				OR = {
-					capital = { region = sr:region_niger }
-					capital = { region = sr:region_senegal }
+					capital = { region = sr:region_west_africa }
 				}
 			}
 		}
@@ -1050,14 +1049,11 @@ BIC = { # East India Company
 			scope:actor ?= {
 				is_subject = yes
 				capital ?= {
-					region = sr:region_madras
+					region = sr:region_south_india
 				}
-				NOR = {
+				NOT = {
 					any_scope_state = {
-						region = sr:region_bengal
-					}
-					any_scope_state = {
-						region = sr:region_bombay
+						region = sr:region_north_india
 					}
 				}
 			}
@@ -1075,14 +1071,11 @@ BIC = { # East India Company
 			scope:actor ?= {
 				is_subject = yes
 				capital ?= {
-					region = sr:region_bombay
+					region = sr:region_south_india
 				}
-				NOR = {
+				NOT = {
 					any_scope_state = {
-						region = sr:region_bengal
-					}
-					any_scope_state = {
-						region = sr:region_madras
+						region = sr:region_north_india
 					}
 				}
 			}
@@ -1100,14 +1093,11 @@ BIC = { # East India Company
 			scope:actor ?= {
 				is_subject = yes
 				capital ?= {
-					region = sr:region_bengal
+					region = sr:region_north_india
 				}
-				NOR = {
+				NOT = {
 					any_scope_state = {
-						region = sr:region_bombay
-					}
-					any_scope_state = {
-						region = sr:region_madras
+						region = sr:region_south_india
 					}
 				}
 			}
@@ -1125,7 +1115,7 @@ BIC = { # East India Company
 			scope:actor ?= {
 				has_variable = bengal_free_state
 				capital ?= {
-					region = sr:region_bengal
+					region = sr:region_north_india
 				}
 				any_primary_culture = {
 					cu:british = this

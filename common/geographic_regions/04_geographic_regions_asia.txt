@@ -1,4 +1,4 @@
-geographic_region_asia = {
+﻿geographic_region_asia = {
 	short_key = "asia"
 
 	strategic_regions = {

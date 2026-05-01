@@ -61,5 +61,5 @@
  stat_tt_27: "@money![Country.MakeScope.Var('stat_value_27').GetValue|vD]"
  stat_28: "[concept_interest]"
  stat_tt_28: "[Country.MakeScope.Var('stat_value_28').GetValue|v0]"
- stat_29: "[concept_convoys]"
+ stat_29: "[concept_supply_ship]"
  stat_tt_29: "[Country.MakeScope.Var('stat_value_29').GetValue|vD]"

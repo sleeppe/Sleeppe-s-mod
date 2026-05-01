@@ -1,4 +1,4 @@
-geographic_region_wet_process_coffee_region = {
+﻿geographic_region_wet_process_coffee_region = {
 	short_key = "wet_process_region"
 
 	strategic_regions = {

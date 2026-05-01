@@ -1,4 +1,4 @@
-geographic_region_ring_of_fire = { # approximation of the Ring of Fire
+﻿geographic_region_ring_of_fire = { # approximation of the Ring of Fire
 	short_key = "ring_of_fire"
 
 	strategic_regions = {

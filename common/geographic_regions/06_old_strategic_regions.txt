@@ -1,4 +1,4 @@
-## EUROPE
+﻿## EUROPE
 
 # Former England SR
 geographic_region_england_old = {

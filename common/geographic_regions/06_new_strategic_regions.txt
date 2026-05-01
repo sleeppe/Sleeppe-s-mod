@@ -1,4 +1,4 @@
-## EUROPE
+﻿## EUROPE
 geographic_region_western_europe = {
 	short_key = "western_europe"
 

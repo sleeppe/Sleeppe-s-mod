@@ -1,4 +1,4 @@
-geographic_region_north_america = {
+﻿geographic_region_north_america = {
 	short_key = "north_america"
 
 	strategic_regions = {
