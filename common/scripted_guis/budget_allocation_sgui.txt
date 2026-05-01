@@ -1,4 +1,4 @@
-budget_mil_increase_effect = {
+﻿budget_mil_increase_effect = {
 	scope = country
 	effect = {
 		change_variable = {

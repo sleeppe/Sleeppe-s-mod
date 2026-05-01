@@ -229,7 +229,7 @@ company_john_cockerill = {
 	}
 
 	ai_construction_targets = {
-		building_steel_mills = {
+		building_steel_mill = {
 			level = 5
 			state_trigger = {
 				OR = {
