@@ -1235,7 +1235,7 @@ company_altos_hornos_de_vizcaya = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {
@@ -1315,7 +1315,7 @@ company_duro_y_compania = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {
@@ -1395,7 +1395,7 @@ company_espana_industrial = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {
@@ -1475,7 +1475,7 @@ company_trubia = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_iberia
+		has_interest_marker_in_region = sr:region_southern_europe
 	}
 
 	attainable = {

@@ -29,7 +29,7 @@ company_skoda = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_south_germany
+		has_interest_marker_in_region = sr:region_south_germany
 	}
 
 	attainable = {
