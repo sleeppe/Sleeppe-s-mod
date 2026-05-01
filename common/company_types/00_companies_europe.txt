@@ -28,7 +28,7 @@ company_ccci = {
 		OR = {
 			any_subject_or_below = {
 				any_scope_state = {
-					region = sr:region_congo
+					region = sr:region_equatorial_africa
 					any_scope_building = {
 						is_building_type = building_rubber_plantation
 						level >= 5
@@ -36,7 +36,7 @@ company_ccci = {
 				}
 			}
 			any_scope_state = {
-				region = sr:region_congo
+				region = sr:region_equatorial_africa
 				any_scope_building = {
 					is_building_type = building_rubber_plantation
 					level >= 5
@@ -56,11 +56,11 @@ company_ccci = {
 		OR = {
 			any_subject_or_below = {
 				any_scope_state = {
-					region = sr:region_congo
+					region = sr:region_equatorial_africa
 				}
 			}
 			any_scope_state = {
-				region = sr:region_congo
+				region = sr:region_equatorial_africa
 			}
 		}
 	}
@@ -69,7 +69,7 @@ company_ccci = {
 		building_rubber_plantation = {
 			level = 5
 			state_trigger = {
-				region = sr:region_congo
+				region = sr:region_equatorial_africa
 			}
 		}
 	}
@@ -437,7 +437,7 @@ company_basileiades = {
 	}
 
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.2
+		country_ship_group_supply_ships_construction_efficiency_add = 0.2
 		state_infrastructure_mult = 0.05
 	}
 
@@ -835,7 +835,7 @@ company_aker_mek = {
 	}
 
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.15
+		country_ship_group_supply_ships_construction_efficiency_add = 0.15
 		building_fishing_wharf_throughput_add = 0.05
 	}
 
@@ -1745,7 +1745,7 @@ company_ap_moller = {
 	}
 
 	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.2
+		country_ship_group_supply_ships_construction_efficiency_add = 0.2
 		interest_group_ig_industrialists_pop_attraction_mult = 0.1
 	}
 
