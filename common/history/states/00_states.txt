@@ -7427,7 +7427,7 @@ STATES = {
 	s:STATE_FORMOSA = {
 		create_state = {
 			country = c:CHI
-			owned_provinces = { x44797F x9A5066 xE73B31 x6645CF xBB27F6 x6DAB21 xAEA2D8 x7070E0 }
+			owned_provinces = { x44797F x9A5066 xE73B31 x6645CF x6DAB21 xAEA2D8 x7070E0 }
 		}
 
 		add_homeland = cu:han
