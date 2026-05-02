@@ -4890,8 +4890,8 @@
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
-					company={
-						type=company_amsterdamse_effectenbeurs
+					building={
+						type="building_financial_district"
 						country="c:NET"
 						levels=6
 						region="STATE_HOLLAND"
@@ -5073,8 +5073,8 @@
 				building="building_trade_center"
 				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
 				add_ownership={
-					company={
-						type=company_amsterdamse_effectenbeurs
+					building={
+						type="building_financial_district"
 						country="c:NET"
 						levels=2
 						region="STATE_HOLLAND"

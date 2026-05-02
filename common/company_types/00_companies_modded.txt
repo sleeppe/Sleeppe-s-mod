@@ -169,7 +169,7 @@ company_van_houtum_en_palm = {
 	}
 
 	ai_construction_targets = {
-		building_building_paper_mill = {
+		building_paper_mill = {
 			level = 5
 			state_trigger = {
 				region = sr:region_western_europe

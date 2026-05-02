@@ -1,4 +1,4 @@
-#budget_mil_increase_button = {
+﻿#budget_mil_increase_button = {
 #	name = "budget_mil_increase"
 #	desc = "Increase Military Budget"
 #	
