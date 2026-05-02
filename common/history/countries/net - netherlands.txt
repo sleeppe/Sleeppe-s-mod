@@ -19,7 +19,6 @@
 		activate_law = law_type:law_monarchy
 		activate_law = law_type:law_dutch_provinces
 		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_mercantilism
@@ -29,6 +28,8 @@
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_right_of_assembly
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_moderate_consumption_tax
 
 		set_institution_investment_level = {
 			institution = institution_schools
