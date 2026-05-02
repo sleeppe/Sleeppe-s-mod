@@ -294,7 +294,6 @@ geographic_region_france = {
 		STATE_BURGUNDY
 		STATE_CHAMPAGNE
 		STATE_FRANCHE_COMTE
-		STATE_LORRAINE
 	}
 }
 
