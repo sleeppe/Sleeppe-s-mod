@@ -12,7 +12,7 @@ gui_skin_base = {
 
 main_menu_image_base = {
 	category = main_menu_image_theme
-	video = "gfx/interface/illustrations/frontend/menu_image.bk2"
+	video = "gfx/interface/illustrations/frontend/menu_video.bk2"
 }
 
 papermap_base = {
