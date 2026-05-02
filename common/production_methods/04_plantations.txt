@@ -199,13 +199,15 @@ pm_american_cotton_farming	 = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_fabric_add = 60
+			goods_output_fabric_add = 50
 		}
 
 		unscaled = {
 			building_laborers_mortality_mult = 0.3
+			building_slaves_mortality_mult = 0.3
 			building_laborers_job_attractiveness_mult = -0.5
 			building_slaves_standard_of_living_add = -4
+			building_laborers_standard_of_living_add = -4
 			building_minimum_wage_mult = -0.4
 		}
 	}

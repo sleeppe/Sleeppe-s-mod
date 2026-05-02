@@ -55,7 +55,7 @@ pm_river_of_the_gods = {
 			goods_input_fertilizer_add = 5 # 100
 
 			# output goods
-			goods_output_grain_add = 45 # 500
+			goods_output_grain_add = 40 # 500
 		}
 
 		level_scaled = {
