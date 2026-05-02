@@ -152,7 +152,7 @@
 				owner = {
 					any_scope_state = {
 						is_incorporated = yes
-						loyalty >= 0.10
+						loyalists >= 0.10
 					}
 				}
 			}
@@ -162,9 +162,9 @@
 					every_scope_state = {
 						limit = {
 							is_incorporated = yes
-							loyalty >= 0.10
+							loyalists >= 0.10
 						}
-						add = this.loyalty
+						add = this.loyalists
 					}
 					divide = num_incorporated_states
 					multiply = 3 # Maxes out at -3
@@ -213,13 +213,7 @@
 			limit = {
 				owner = {
 					any_scope_character = {
-						OR = {
-							has_ideology = ideology:ideology_communist
-							has_ideology = ideology:ideology_vanguardist
-							has_ideology = ideology:ideology_anarchist
-							has_ideology = ideology:ideology_nihilist
-							has_ideology = ideology:ideology_utopian
-						}
+						has_socialist_ideology = yes
 					}
 				}
 			}
@@ -228,13 +222,7 @@
 				owner = {
 					every_scope_character = {
 						limit = {
-							OR = {
-								has_ideology = ideology:ideology_communist
-								has_ideology = ideology:ideology_vanguardist
-								has_ideology = ideology:ideology_anarchist
-								has_ideology = ideology:ideology_nihilist
-								has_ideology = ideology:ideology_utopian
-							}
+							has_socialist_ideology = yes
 						}
 						add = this.popularity
 						divide = 100
@@ -329,13 +317,13 @@
 
 	default = yes
 
-	monthly_progress = {
+		monthly_progress = {
 		if = {
 			limit = {
 				owner = {
 					any_scope_state = {
 						is_incorporated = yes
-						loyalty >= 0.10
+						loyalists >= 0.10
 					}
 				}
 			}
@@ -344,9 +332,9 @@
 				every_scope_state = {
 					limit = {
 						is_incorporated = yes
-						loyalty >= 0.10
+						loyalists >= 0.10
 					}
-					add = this.loyalty
+					add = this.loyalists
 				}
 				divide = num_incorporated_states
 				multiply = 3 # Maxes out at -3

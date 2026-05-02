@@ -717,10 +717,10 @@ je_confederation_of_the_rhine_confederate_button = {
 		}
 		any_state = {
 			OR = {
-				region = sr:region_rhine
-				region = sr:region_north_germany
-				region = sr:region_south_germany
-			}
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
+						}
 			state_region = {
 				OR = {
 					is_homeland = cu:south_german
@@ -739,9 +739,9 @@ je_confederation_of_the_rhine_confederate_button = {
 					}
 					capital = {
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
 						}
 					}
 					OR = {
@@ -788,9 +788,9 @@ je_confederation_of_the_rhine_expand_button = {
 					}
 					capital = {
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
 						}
 					}
 					OR = {
@@ -809,10 +809,10 @@ je_confederation_of_the_rhine_expand_button = {
 						}
 					}
 					OR = {
-						region = sr:region_rhine
-						region = sr:region_north_germany
-						region = sr:region_south_germany
-					}
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
+						}
 					is_incorporated = no
 					trigger_if = {
 						limit = {
@@ -846,9 +846,9 @@ je_confederation_of_the_rhine_expand_button = {
 					is_subject_of = ROOT
 					capital = {
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
 						}
 					}
 					OR = {
@@ -868,10 +868,10 @@ je_confederation_of_the_rhine_expand_button = {
 						is_subject_of = ROOT
 						capital = {
 							OR = {
-								region = sr:region_rhine
-								region = sr:region_north_germany
-								region = sr:region_south_germany
-							}
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
+						}
 						}
 						OR = {
 							country_has_primary_culture = cu:north_german
@@ -895,10 +895,10 @@ je_confederation_of_the_rhine_expand_button = {
 						}
 					}
 					OR = {
-						region = sr:region_rhine
-						region = sr:region_north_germany
-						region = sr:region_south_germany
-					}
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
+						}
 					is_incorporated = no
 					trigger_if = {
 						limit = {
@@ -926,9 +926,9 @@ je_confederation_of_the_rhine_expand_button = {
 							}
 						}
 						OR = {
-							region = sr:region_rhine
-							region = sr:region_north_germany
-							region = sr:region_south_germany
+							is_in_geographic_region = geographic_region_rhine_old
+							is_in_geographic_region = geographic_region_north_germany_old
+							is_in_geographic_region = geographic_region_south_germany_old
 						}
 						is_incorporated = no
 						trigger_if = {
