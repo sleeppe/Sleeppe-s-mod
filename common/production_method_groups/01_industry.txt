@@ -4,6 +4,7 @@
 		pm_bakery
 		pm_sweeteners
 		pm_baking_powder
+		pm_pizza_production
 	}
 }
 
@@ -40,6 +41,7 @@ pmg_base_building_textile_mill = {
 	production_methods = {
 		pm_handsewn_clothes
 		pm_dye_workshops
+		pm_american_slave_clothes
 		pm_sewing_machines
 		pm_electric_sewing_machines
 	}

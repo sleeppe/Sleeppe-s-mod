@@ -71,6 +71,40 @@ pm_baking_powder = {
 	}
 }
 
+pm_pizza_production = {
+	texture = "gfx/interface/icons/production_method_icons/automated_bakery.dds"
+
+	unlocking_technologies = {
+		baking_powder
+	}
+
+	is_hidden_when_unavailable = yes
+
+	unlocking_geographic_regions = {
+		geographic_region_italy_old
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_grain_add = 90		# x20 = 1600
+			goods_input_sugar_add = 15
+			goods_input_fruit_add = 15		# x30 =  900
+
+			# output goods
+			goods_output_groceries_add = 160	# x30 = 3600
+		}
+
+		level_scaled = {
+			# profit = 1100
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 3500
+			building_employment_machinists_add = 750
+			building_employment_engineers_add = 250
+		}
+	}
+}
+
 pm_disabled_canning = {
 	texture = "gfx/interface/icons/production_method_icons/no_canning.dds"
 }
@@ -304,6 +338,42 @@ pm_dye_workshops = {
 
 			# output goods
 			goods_output_clothes_add = 60	# x30 = 1800
+		}
+
+		level_scaled = {
+			# profit = 800 (8.8)
+			building_employment_shopkeepers_add = 500
+			building_employment_laborers_add = 4000
+			building_employment_machinists_add = 500
+		}
+	}
+}
+
+pm_american_slave_clothes = {
+	texture = "gfx/interface/icons/production_method_icons/exploitative_practices.dds"
+
+	unlocking_technologies = { lathe }
+
+	is_hidden_when_unavailable = yes
+
+	unlocking_geographic_regions = {
+		geographic_region_new_england_old
+	}
+
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery ## So India uses other category
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_fabric_add = 60		# x20 =  800
+			goods_input_dye_add = 5			# x40 =  200
+
+			# output goods
+			goods_output_clothes_add = 120	# x30 = 1800
 		}
 
 		level_scaled = {

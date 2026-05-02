@@ -176,6 +176,41 @@ default_building_cotton_plantation = {
 	}
 }
 
+pm_american_cotton_farming	 = {
+	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
+
+	is_hidden_when_unavailable = yes
+
+	unlocking_geographic_regions = {
+		geographic_region_dixie_old
+	}
+
+	state_modifiers = {
+		unscaled = {
+			state_slave_import_mult = 0.4
+		}
+	}
+
+	disallowing_laws = {
+		law_slavery_banned
+		law_colonial_slavery
+		law_debt_slavery ## So India uses other category
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_fabric_add = 60
+		}
+
+		unscaled = {
+			building_laborers_mortality_mult = 0.3
+			building_laborers_job_attractiveness_mult = -0.5
+			building_slaves_standard_of_living_add = -4
+			building_minimum_wage_mult = -0.4
+		}
+	}
+}
+
 automatic_irrigation_building_cotton_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -584,6 +619,7 @@ default_building_banana_plantation = {
 	}
 }
 
+
 automatic_irrigation_building_banana_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/automatic_irrigation.dds"
 
@@ -609,6 +645,26 @@ automatic_irrigation_building_banana_plantation = {
 			building_employment_laborers_add = 6000
 			building_employment_farmers_add = 3000
 			building_employment_machinists_add = 1000
+		}
+	}
+}
+
+agroforest_banana_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
+
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_fruit_add = 10
+			goods_output_wood_add = 7
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 9000
+			building_employment_farmers_add = 2000
+			building_employment_machinists_add = 500
 		}
 	}
 }

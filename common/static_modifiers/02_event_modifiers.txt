@@ -2070,7 +2070,7 @@ colonial_administration = {
 
 usa_capital_relocated = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	country_legitimacy_base_add = -15
+	country_legitimacy_base_add = -30
 	state_incorporation_speed_mult = -0.25
 }
 
