@@ -580,7 +580,7 @@ company_ericsson = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = region_northern_europe
 	}
 
 	attainable = {
@@ -654,7 +654,7 @@ company_lkab = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = region_northern_europe
 	}
 
 	attainable = {
@@ -811,7 +811,7 @@ company_aker_mek = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = region_northern_europe
 	}
 
 	attainable = {
@@ -892,7 +892,7 @@ company_nokia = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_finland
+		has_interest_marker_in_region = region_northern_europe
 	}
 
 	attainable = {
@@ -961,7 +961,7 @@ company_ursus = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_poland
+		has_interest_marker_in_region = region_eastern_europe
 	}
 
 	attainable = {
@@ -1042,7 +1042,7 @@ company_lilpop = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_poland
+		has_interest_marker_in_region = region_eastern_europe
 	}
 
 	attainable = {
@@ -1635,7 +1635,7 @@ company_chr_hansens = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = region_northern_europe
 	}
 
 	attainable = {
@@ -1722,7 +1722,7 @@ company_ap_moller = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_baltic
+		has_interest_marker_in_region = region_northern_europe
 	}
 
 	attainable = {
@@ -1856,7 +1856,7 @@ company_romanian_star = {
 	}
 
 	potential = {
-		has_interest_marker_in_region = region_danubia
+		has_interest_marker_in_region = region_balkans
 	}
 
 	attainable = {
