@@ -1168,3 +1168,6 @@
 {6d98395b-e3b5-4190-b2a1-0e3288d4e051} event:/Preußens Gloria
 {14db0955-8a1c-443d-b494-a26751ef4bff} event:/Deutscher Militärmarsch
 {847b2f5d-5551-4d2b-b669-3628c6cd0cf6} event:/Heil dir im Siegerkranz
+
+# JAPAN
+{95d1f63f-c390-4c95-9d82-c92d612d7136} event:/Battotai
