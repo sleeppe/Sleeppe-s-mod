@@ -387,4 +387,20 @@
  modifier_ottoman_army_modernization: "Succesfully Modernized Our Army"
  modifier_ottoman_bureaucratic_reform: "Succesfully Reformed Our Bureaucratic System"
 
- # BUDGET ALLOCATION TEMP LOC
+ # HUB NAMES
+ HUB_NAME_STATE_ERMLAND_MASUREN_port: "Elbing"
+ HUB_NAME_STATE_ERMLAND_MASUREN_wood: "Osterode"
+ HUB_NAME_STATE_ERMLAND_MASUREN_farm: "Johannisburg"
+ HUB_NAME_STATE_ERMLAND_MASUREN_mine: "Lyck"
+ HUB_NAME_STATE_ERMLAND_MASUREN_city: "Lotzen"
+
+ HUB_NAME_STATE_WESTERN_MANCHURIA_city: "Tongliao"
+ HUB_NAME_STATE_WESTERN_MANCHURIA_port: "Tianjin"
+ HUB_NAME_STATE_WESTERN_MANCHURIA_mine: "Chengde"
+ HUB_NAME_STATE_WESTERN_MANCHURIA_farm: "Langfang"
+ HUB_NAME_STATE_WESTERN_MANCHURIA_wood: "Tangshan"
+
+ HUB_NAME_STATE_BEIJING_city: "Beijing"
+ HUB_NAME_STATE_BEIJING_mine: "Changping"
+ HUB_NAME_STATE_BEIJING_farm: "Bohaizhen"
+ HUB_NAME_STATE_BEIJING_wood: "Tanzhesizhen"
