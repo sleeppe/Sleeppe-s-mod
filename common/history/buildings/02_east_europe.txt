@@ -313,7 +313,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=2
+						levels=1
 						region="STATE_EAST_PRUSSIA"
 					}
 				}
@@ -344,7 +344,7 @@
 					building={
 						type="building_financial_district"
 						country="c:PRU"
-						levels=4
+						levels=2
 						region="STATE_EAST_PRUSSIA"
 					}
 					building={
@@ -363,7 +363,7 @@
 					building={
 						type="building_manor_house"
 						country="c:PRU"
-						levels=2
+						levels=1
 						region="STATE_EAST_PRUSSIA"
 					}
 				}
@@ -1390,4 +1390,50 @@
 			}
 		}
 	}
+}
+
+s:STATE_ERMLAND_MASUREN={
+		region_state:PRU={
+			create_building={
+				building="building_trade_center"
+				activate_production_methods={ "pm_trade_center_trade_quantity_normal" }
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=1
+						region="STATE_ERMLAND_MASUREN"
+					}
+				}
+				reserves=1
+			}
+
+			create_building={
+				building="building_rye_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:PRU"
+						levels=1
+						region="STATE_ERMLAND_MASUREN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools"  }
+			}
+
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_financial_district"
+						country="c:PRU"
+						levels=2
+						region="STATE_ERMLAND_MASUREN"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts"  }
+			}
+		}
 }

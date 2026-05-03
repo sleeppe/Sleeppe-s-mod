@@ -5249,7 +5249,7 @@
 			}
 		}
 	}
-	s:STATE_WALLONIA={
+	s:STATE_LUXEMBERG={
 		region_state:LUX={
 			create_building={
 				building="building_wheat_farm"
@@ -5258,7 +5258,7 @@
 						type="building_manor_house"
 						country="c:LUX"
 						levels=1
-						region="STATE_WALLONIA"
+						region="STATE_LUXEMBERG"
 					}
 				}
 				reserves=1
@@ -5271,13 +5271,15 @@
 						type="building_manor_house"
 						country="c:LUX"
 						levels=1
-						region="STATE_WALLONIA"
+						region="STATE_LUXEMBERG"
 					}
 				}
 				reserves=1
 				activate_production_methods={ "pm_open_air_stockyards" "pm_simple_ranch" "pm_standard_fences" "pm_unrefrigerated"  }
 			}
 		}
+	}
+	s:STATE_WALLONIA={
 		region_state:BEL={
 			create_building={
 				building="building_government_administration"
@@ -6879,7 +6881,7 @@
 			}
 		}
 	}
-	s:STATE_RHINELAND={
+	s:STATE_NORTH_RHINE={
 		region_state:PRU={
 			create_building={
 				building="building_government_administration"
@@ -6899,13 +6901,13 @@
 						type="building_manor_house"
 						country="c:PRU"
 						levels=1
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 					building={
 						type="building_vineyard"
 						country="c:PRU"
 						levels=1
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -6919,7 +6921,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=3
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -6942,13 +6944,13 @@
 						type="building_tooling_workshop"
 						country="c:PRU"
 						levels=3
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 					building={
 						type="building_financial_district"
 						country="c:PRU"
 						levels=3
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -6961,7 +6963,7 @@
 						type="building_manor_house"
 						country="c:PRU"
 						levels=4
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -6974,7 +6976,7 @@
 						type="building_financial_district"
 						country="c:PRU"
 						levels=1
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -6989,7 +6991,7 @@
 						type="building_manor_house"
 						country="c:BAV"
 						levels=1
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -7002,7 +7004,7 @@
 						type="building_vineyard"
 						country="c:BAV"
 						levels=1
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
@@ -7015,7 +7017,7 @@
 						type="building_manor_house"
 						country="c:BAV"
 						levels=1
-						region="STATE_RHINELAND"
+						region="STATE_NORTH_RHINE"
 					}
 				}
 				reserves=1
