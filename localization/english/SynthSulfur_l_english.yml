@@ -1,0 +1,21 @@
+﻿l_english:
+
+building_sulfur_plant:0 "Sulfur Plant"
+building_sulfur_plant_option:0 "Expand $building_sulfur_plant$"
+
+pmg_base_building_sulfur_plant:0 "Base"
+pm_pyrite_separation_building_sulfur_plant:0 "Pyrite Separation"
+pm_oil_separation_building_sulfur_plant:0 "Petroleum Separation"
+
+pmg_refining_building_sulfur_plant:0 "Processing"
+pm_refining_disabled_building_sulfur_plant:0 "Processing Disabled"
+pm_lead_chamber_process_building_sulfur_plant:0 "Lead Chamber Process"
+pm_contact_process_building_sulfur_plant:0 "Contact Process"
+
+pmg_automation_building_sulfur_plant:0 "Automation"
+pm_automation_hand_assembly_building_sulfur_plant:0 "Manual Loading "
+pm_assembly_lines_building_sulfur_plant:0 "Conveyors"
+
+pmg_transportation_building_sulfur_plant:0 "Transportation"
+pm_road_carts_building_sulfur_plant:0 "Road Carts"
+pm_rail_transport_building_sulfur_plant:0 "Rail Transportation"

@@ -1,0 +1,36 @@
+﻿pmg_base_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_pyrite_separation_building_sulfur_plant
+        pm_oil_separation_building_sulfur_plant
+		
+	}
+}
+
+pmg_refining_building_sulfur_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_refining_disabled_building_sulfur_plant
+		pm_lead_chamber_process_building_sulfur_plant
+		pm_contact_process_building_sulfur_plant
+		
+	}
+}
+
+pmg_automation_building_sulfur_plant = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+	production_methods = {
+		pm_automation_hand_assembly_building_sulfur_plant
+		pm_assembly_lines_building_sulfur_plant
+		
+	}
+}
+
+pmg_transportation_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
+	production_methods = {
+		pm_road_carts_building_sulfur_plant
+		pm_rail_transport_building_sulfur_plant
+
+	}
+}
