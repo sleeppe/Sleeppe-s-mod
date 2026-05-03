@@ -1,0 +1,176 @@
+﻿pm_pyrite_separation_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/pyrite.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 10
+			goods_input_iron_add = 10
+			
+			# output goods
+			goods_output_sulfur_add = 10
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 4000
+			building_employment_machinists_add = 500
+		}
+	}
+}
+
+
+pm_oil_separation_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/oil.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+
+    unlocking_technologies = {
+		pumpjacks
+	}	
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 15
+			goods_input_oil_add = 5
+			
+			# output goods
+			goods_output_sulfur_add = 30
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = 2000
+			building_employment_machinists_add = 1500
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+
+pm_refining_disabled_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/disabled_refined.dds"
+}
+
+
+pm_lead_chamber_process_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/lead_chamber.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 5
+		}
+	}
+
+	unlocking_technologies = {
+		fractional_distillation
+	}
+	
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_lead_add = 5
+			
+			# output goods
+			goods_output_sulfur_add = 10
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+pm_contact_process_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/patent_stills.dds"
+
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+
+	unlocking_technologies = {
+		nitrogen_fixation
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 10
+			goods_input_lead_add = 10
+			
+			# output goods
+			goods_output_sulfur_add = 20
+		}
+
+		level_scaled = {
+			building_employment_engineers_add = 500
+		}
+	}
+}
+
+pm_automation_hand_assembly_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+}
+
+pm_assembly_lines_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/assembly_lines.dds"
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 15
+		}
+	}
+	
+	unlocking_technologies = {
+		conveyors
+	}
+
+	building_modifiers = {
+		workforce_scaled = {
+			# input goods
+			goods_input_tools_add = 5
+			goods_input_oil_add = 5
+			goods_input_electricity_add = 5
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
+
+pm_road_carts_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/no_rail_transport.dds"
+}
+
+pm_rail_transport_building_sulfur_plant = {
+	texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+
+	unlocking_technologies = {
+		railways
+	}
+
+	building_modifiers = {
+
+		workforce_scaled = {
+			# input goods
+			goods_input_transportation_add = 5
+		}
+
+		level_scaled = {
+			building_employment_laborers_add = -1000
+		}
+	}
+}
