@@ -540,7 +540,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:CHI"
-						levels=2
+						levels=1
 						region="STATE_BEIJING"
 					}
 				}

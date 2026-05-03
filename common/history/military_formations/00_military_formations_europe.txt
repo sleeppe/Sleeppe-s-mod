@@ -148,36 +148,7 @@
 				count = 1
 			}
 
-			# V. Armee-Korps
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_POSEN
-				count = 9
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_POSEN
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_POSEN
-				count = 2
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_POSEN
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_POSEN
-				count = 1
-			}
+		
 
 			# VI. Armee-Korps
 			combat_unit = {
@@ -1185,72 +1156,6 @@
 			transfer_to_formation = scope:west_indies_army
 		}
 
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_indochina
-			name = Army_of_India
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LANCASHIRE
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HOME_COUNTIES
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LEINSTER
-				count = 4
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_HIGHLANDS
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_LEINSTER
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_HOME_COUNTIES
-				count = 1
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_skirmish_infantry
-				state_region = s:STATE_LOWLANDS
-				count = 3
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_dragoons
-				state_region = s:STATE_MIDLANDS
-				count = 1
-			}
-			save_scope_as = army_india_army
-		}
 
 		create_character = {
 			template = GBR_hugh_gough
@@ -1327,21 +1232,6 @@
 			}
 		}
 
-		create_military_formation = {
-			type = fleet
-			hq_region = sr:region_indochina
-			name = East_Indies_and_China_Station # Includes Australia Station
-
-			ship = {
-				type = ship_type:ship_type_ship_of_the_line
-				count = 1
-			}
-
-			ship = {
-				type = ship_type:ship_type_frigate
-				count = 7
-			}
-		}
 
 		create_military_formation = {
 			type = fleet

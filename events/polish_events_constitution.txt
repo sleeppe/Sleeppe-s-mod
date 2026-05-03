@@ -128,6 +128,7 @@ polish_constitution.4 = {
 	}
 	option = {
 		name = polish_constitution.4.a
+		default_option = yes
 		c:POL = {
 			annex_with_incorporation = c:KRA
 		}

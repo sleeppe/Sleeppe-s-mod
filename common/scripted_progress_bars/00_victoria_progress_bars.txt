@@ -2564,7 +2564,7 @@ red_summer_counter_revolution_progress_bar = {
 			limit = {
 				NOT = {
 					has_law_or_variant = law_type:law_serfdom
-					has_law_or_variant = law_type:law_homesteading
+					has_law_or_variant = law_type:law_peasant_proprietorship
 				}
 			}
 			add = {
@@ -2574,7 +2574,7 @@ red_summer_counter_revolution_progress_bar = {
 		}
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_homesteading
+				has_law_or_variant = law_type:law_peasant_proprietorship
 			}
 			add = {
 				desc = "je_absolutism_serfs2"
