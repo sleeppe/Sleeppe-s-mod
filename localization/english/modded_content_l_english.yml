@@ -404,3 +404,15 @@
  HUB_NAME_STATE_BEIJING_mine: "Changping"
  HUB_NAME_STATE_BEIJING_farm: "Bohaizhen"
  HUB_NAME_STATE_BEIJING_wood: "Tanzhesizhen"
+
+ HUB_NAME_STATE_WEST_WALLONIA_wood: "Mons"
+ HUB_NAME_STATE_WEST_WALLONIA_city: "Charleroi"
+ HUB_NAME_STATE_WEST_WALLONIA_farm: "Namur"
+
+ HUB_NAME_STATE_WALLONIA_city: "Liège"
+ HUB_NAME_STATE_WALLONIA_farm: "Ciney"
+ HUB_NAME_STATE_WALLONIA_mine: "Bastogne"
+
+ HUB_NAME_STATE_LUXEMBERG_city: "Luxembourg"
+ HUB_NAME_STATE_LUXEMBERG_farm: "Ettelbruck"
+ 
