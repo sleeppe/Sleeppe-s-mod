@@ -26,7 +26,6 @@
  law_ayllu_kinship_desc: "Society is organised around the traditional Ayllu Communities. This system derives from the creation legend of the Ican Empire. Loyalty comes through communal bonds, which ensure cohesion. The state does not govern directly but rather interact with the Communities as a whole. That decreases the bureaucratic expenditure, while in turn limiting social mobility."
 
 # Poll Taxation
- lawgroup_taxation:0 "Poll Taxation"
  lawgroup_poll_tax_desc:0 "A tax levied as a fixed sum on every liable individual without reference to income or resources."
  
  law_no_poll_taxes:0 "No Poll Taxes"
@@ -71,7 +70,7 @@
  law_high_consumption_tax:0 "High Consumption Tax"
  law_high_consumption_tax_desc:0 "A high tax is applied on applicable goods and services."
 
-##Modded Goods
+ ##Modded Goods
 
  prestige_good_delftware: "Delftware"
  prestige_good_cockerill_tools: "Cockerill Tools"
@@ -79,6 +78,17 @@
  prestige_good_heineken_beer: "Heineken Pilsener"
  prestige_good_prestige_coal_australia: "Australian Coal"
  prestige_good_moskovskaya_osobaya: "Moskovskaya Osobaya"
+
+ ##Modded Production methods etc
+
+ pm_agroforestry:0 "Agroforestry"
+ pm_american_cotton_farming:0 "American Cotton Farming"
+ agroforest_banana_plantation:0 "Agroforest Banana Plantation"
+ pm_river_of_the_gods:0 "River of the Gods"
+ pm_pizza_production:0 "Pizza Production"
+ pm_american_slave_clothes:0 "American Slave Clothes"  
+ pm_synth_rubber_production:0 "Synthetic Rubber"
+ pmg_base_building_synthetic_rubber_plants:0 "Synthetic Rubber"
 
  pm_synth_rubber_production:0 "Synthetic Rubber"
  pmg_base_building_synthetic_rubber_plants:0 "Synthetic Rubber"
@@ -417,18 +427,9 @@
  HUB_NAME_STATE_WESTERN_MANCHURIA_farm: "Langfang"
  HUB_NAME_STATE_WESTERN_MANCHURIA_wood: "Tangshan"
 
- HUB_NAME_STATE_BEIJING_city: "Beijing"
- HUB_NAME_STATE_BEIJING_mine: "Changping"
- HUB_NAME_STATE_BEIJING_farm: "Bohaizhen"
- HUB_NAME_STATE_BEIJING_wood: "Tanzhesizhen"
-
  HUB_NAME_STATE_WEST_WALLONIA_wood: "Mons"
  HUB_NAME_STATE_WEST_WALLONIA_city: "Charleroi"
  HUB_NAME_STATE_WEST_WALLONIA_farm: "Namur"
-
- HUB_NAME_STATE_WALLONIA_city: "Liège"
- HUB_NAME_STATE_WALLONIA_farm: "Ciney"
- HUB_NAME_STATE_WALLONIA_mine: "Bastogne"
 
  HUB_NAME_STATE_LUXEMBERG_city: "Luxembourg"
  HUB_NAME_STATE_LUXEMBERG_farm: "Ettelbruck"

@@ -1160,38 +1160,6 @@ RUS_mikhail_vorontsov = { # General
 
 }
 
-RUS_aleksandr_chernyshyov = { # General
-	is_general = yes
-	first_name = Aleksandr
-	last_name = Chernyshyov
-	historical = yes
-	culture = primary_culture
-	birth_date = 1786.1.10 # Gregorian Calendar
-	interest_group = ig_armed_forces
-	ideology = ideology_luddite
-	hq = region_dnieper
-	traits = {
-		brave
-		romantic
-	}
-}
-
-RUS_matvey_khrapovitsky = {
-	is_general = yes
-	first_name = Matvey
-	last_name = Khrapovitsky
-	historical = yes
-	culture = primary_culture
-	age = 52
-	interest_group = ig_landowners
-	ideology = ideology_moderate
-	hq = region_caucasus
-	traits = {
-		innovative
-		mountain_commander
-	}
-}
-
 RUS_nikolay_muravyov_karsky = {
 	is_general = yes
 	first_name = Nikolay
@@ -1204,23 +1172,6 @@ RUS_nikolay_muravyov_karsky = {
 	hq = region_central_asia
 	traits = {
 		persistent
-	}
-}
-
-RUS_pavel_grabbe = {
-	is_general = yes
-	first_name = Pavel
-	last_name = Grabbe
-	historical = yes
-	culture = primary_culture
-	age = 47
-	hq = region_west_siberia
-	commander_rank = commander_rank_2
-	interest_group = ig_landowners
-	ideology = ideology_reformer
-	traits = {
-		ambitious
-		experienced_artillery_commander
 	}
 }
 
@@ -1563,21 +1514,7 @@ RUS_fabian_gottlieb_von_bellingshausen = { # RUS, Admiral
 	}
 }
 
-RUS_vasily_zavoyko = { # RUS, Admiral
-	is_admiral = yes
-	first_name = Vasily
-	last_name = Zavoyko
-	historical = yes
-	culture = cu:ukrainian
-	interest_group = ig_landowners
-	ideology = ideology_royalist
-	birth_date = 1809.7.15
-	hq = region_dnieper
-	traits = {
-		explorer
-		brave
-	}
-}
+
 
 RUS_pyotr_ricord = { # RUS, Admiral
 	is_admiral = yes

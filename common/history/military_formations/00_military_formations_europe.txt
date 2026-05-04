@@ -1605,14 +1605,6 @@
 			save_scope_as = ii_pekhotniy_korpus
 		}
 
-		create_character = {
-			template = RUS_matvey_khrapovitsky
-			save_scope_as = khrapovitsky_gen
-		}
-
-		scope:khrapovitsky_gen = {
-			transfer_to_formation = scope:ii_pekhotniy_korpus
-		}
 
 		create_military_formation = {
 			type = army
@@ -1787,15 +1779,6 @@
 				count = 4
 			}
 			save_scope_as = iiii_pekhotniy_korpus
-		}
-
-		create_character = {
-			template = RUS_aleksandr_chernyshyov
-			save_scope_as = chernyshyov_gen
-		}
-
-		scope:chernyshyov_gen = {
-			transfer_to_formation = scope:iiii_pekhotniy_korpus
 		}
 
 		create_military_formation = {
@@ -2038,22 +2021,6 @@
 			save_scope_as = rus_baltic_fleet
 		}
 
-		create_character = {
-			template = RUS_mikhail_lazarev
-			save_scope_as = lazarev_adm
-		}
-		scope:lazarev_adm = {
-			transfer_to_formation = scope:rus_baltic_fleet
-		}
-
-		create_character = {
-			template = RUS_pyotr_ricord
-			save_scope_as = ricord_adm
-		}
-
-		scope:ricord_adm = {
-			transfer_to_formation = scope:rus_baltic_fleet
-		}
 
 		create_military_formation = {
 			type = fleet

@@ -15,7 +15,6 @@ law_no_consumption_taxes = {
 	
 	modifier = {
 		country_legitimacy_base_add = 5
-		country_authority_add = 100
 	}
 	
 	ai_will_do = {
@@ -36,7 +35,6 @@ law_low_consumption_tax = {
 
 	modifier = {
 		state_tax_capacity_mult = -0.02
-		country_authority_add = 200
 	}
 	
 	tax_modifier_very_low = {
@@ -82,7 +80,6 @@ law_moderate_consumption_tax = {
 	modifier = {
 		country_consumption_tax_cost_mult = -0.20
 		state_tax_capacity_mult = -0.05
-		country_authority_add = 300
 	}
 	
 	tax_modifier_very_low = {
@@ -127,7 +124,6 @@ law_high_consumption_tax = {
 	modifier = {
 		country_consumption_tax_cost_mult = -0.40
 		state_tax_capacity_mult = -0.1
-		country_authority_add = 500
 	}
 	
 	tax_modifier_very_low = {

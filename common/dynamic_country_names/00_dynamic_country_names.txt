@@ -850,7 +850,7 @@ AFS = { #African Free State
 
 		trigger = {
 			scope:actor ?= {
-				capital = { region = sr:region_equitorial_africa }
+				capital = { region = sr:region_equatorial_africa}
 			}
 		}
 	}
