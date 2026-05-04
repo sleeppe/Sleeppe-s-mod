@@ -59,13 +59,6 @@ law_natalist_incentives = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
 		}
-
-		if = {
-			limit = { 
-				country_population < 50000000
-			}
-			add = 200
-		}
 	}
 }
 
@@ -95,13 +88,6 @@ law_natalist_subsidies = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
-		}
-
-		if = {
-			limit = { 
-				country_population < 50000000
-			}
-			add = 400
 		}
 	}
 }
@@ -138,19 +124,7 @@ law_natalist_mandate = {
 			add = 750
 		}
 
-		if = {
-			limit = { 
-				country_population < 50000000
-			}
-			add = 600
-		}
-
-		if = {
-			limit = {
-				has_authority = authority_monarchy
-			}
-			add = 150
-		}
+		
 	}
 }
 
@@ -186,24 +160,6 @@ law_aggressive_natalist_policy = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
-		}
-
-		if = {
-			limit = { 
-				country_population < 50000000
-			}
-			add = 800
-		}
-
-		if = {
-			limit = {
-				NOR = {
-					has_authority = authority_parliamentary_democracy
-					has_authority = authority_liberal_democracy
-					has_authority = authority_radicaldemocracy
-				}
-			}
-			add = 250
 		}
 	}
 }
