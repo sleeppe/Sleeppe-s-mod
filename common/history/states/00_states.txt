@@ -3930,7 +3930,7 @@ STATES = {
 
 		add_homeland = cu:portuguese
 	}
-	s:STATE_WALLONIA = {
+	s:STATE_EAST_WALLONIA = {
 		create_state = {
 			country = c:BEL
 			owned_provinces = { x3A5FB9 x916574 xEF2040 }

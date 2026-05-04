@@ -5279,7 +5279,7 @@
 			}
 		}
 	}
-	s:STATE_WALLONIA={
+	s:STATE_EAST_WALLONIA={
 		region_state:BEL={
 			create_building={
 				building="building_government_administration"
@@ -5300,7 +5300,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=2
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5335,7 +5335,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=2
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5348,7 +5348,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=1
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5373,7 +5373,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=5
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5386,7 +5386,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=6
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5399,7 +5399,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=2
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5412,7 +5412,7 @@
 						type="building_manor_house"
 						country="c:BEL"
 						levels=7
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5425,7 +5425,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=3
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1
@@ -5438,7 +5438,7 @@
 						type="building_financial_district"
 						country="c:BEL"
 						levels=1
-						region="STATE_WALLONIA"
+						region="STATE_EAST_WALLONIA"
 					}
 				}
 				reserves=1

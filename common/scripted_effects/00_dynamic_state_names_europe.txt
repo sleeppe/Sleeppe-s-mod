@@ -556,7 +556,7 @@ assign_state_name_region_rhine  = { # region_rhine
 	else_if = {
         limit = {
             state_region = {
-                s:STATE_WALLONIA ?= this
+                s:STATE_EAST_WALLONIA ?= this
             }
         }
         STATE_WALLONIA_state_name_assign = yes
