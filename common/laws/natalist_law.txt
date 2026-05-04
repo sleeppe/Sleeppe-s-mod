@@ -34,8 +34,14 @@ law_natalist_incentives = {
 		
 	}
 
+	unlocking_laws = {
+		law_no_natalist_policy
+	}
+
 	modifier = {
-		
+		state_birth_rate_mult = 0.03
+		state_welfare_payments_add = 0.05
+		state_peasants_consumption_multiplier_add = 0.025
 	}
 
 	ai_will_do = {
@@ -72,9 +78,15 @@ law_natalist_subsidies = {
 	unlocking_technologies = {
 		
 	}
-
+	unlocking_laws = {
+		law_natalist_incentives
+	}
 	modifier = {
-		
+		state_birth_rate_mult = 0.06
+		state_welfare_payments_add = 0.1
+		state_food_security_add = -0.05
+		state_dependent_wage_mult = -0.1
+		state_peasants_consumption_multiplier_add = 0.05
 	}
 
 	ai_enact_weight_modifier = {
@@ -104,8 +116,18 @@ law_natalist_mandate = {
 		
 	}
 
+	unlocking_laws = {
+		law_natalist_subsidies
+	}
+
 	modifier = {
-		
+		state_birth_rate_mult = 0.095
+		state_standard_of_living_add = -0.75
+		state_tax_capacity_mult = -0.075
+		state_welfare_payments_add = 0.15
+		state_food_security_add = -0.075
+		state_dependent_wage_mult = -0.15
+		state_peasants_consumption_multiplier_add = 0.075
 	}
 
 	ai_enact_weight_modifier = {
@@ -142,15 +164,20 @@ law_aggressive_natalist_policy = {
 		
 	}
 
+	unlocking_laws = {
+		law_natalist_mandate
+	}
+
 	modifier = {
-		state_birth_rate_mult = 0.10
-		state_education_access_mult = 0.1
+		state_birth_rate_mult = 0.125
 		interest_group_ig_rural_folk_pol_str_mult = 0.15
 		interest_group_ig_devout_pol_str_mult = 0.10
 		state_standard_of_living_add = -1
 		state_tax_capacity_mult = -0.1
-		state_welfare_payments_add = 0.1
+		state_welfare_payments_add = 0.2
 		state_food_security_add = -0.1
+		state_dependent_wage_mult = -0.2
+		state_peasants_consumption_multiplier_add = 0.1
 	}
 
 	ai_enact_weight_modifier = {

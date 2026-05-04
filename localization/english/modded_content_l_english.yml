@@ -80,6 +80,9 @@
  prestige_good_prestige_coal_australia: "Australian Coal"
  prestige_good_moskovskaya_osobaya: "Moskovskaya Osobaya"
 
+ pm_synth_rubber_production:0 "Synthetic Rubber"
+ pmg_base_building_synthetic_rubber_plants:0 "Synthetic Rubber"
+
 ##Modded Decision
  extend_ayllu_kinship_sa: "Extend the Ayllu Bonds to the South Andeans"
  extend_ayllu_kinship_sa_desc: "We have expanded and regained territory once held by our ancestors. We shall now begin with the integration process! Trace the Settlers lineage in our ancestoral Pantheon!"
@@ -256,6 +259,20 @@
  law_shifts2_desc: "12 Hour shifts are the most common taken on by industries, and the state guarantees this to protect from near slave-like conidtions in the factories. Industrialists benefit from 24/7 work, and workers benefit from less hours."
  law_shifts3_desc: "8 Hour shifts are protected by the state, protecting workers from the worst conditions of overworking."
  law_shifts4_desc: "Shifts are negotiated between unions and their factory management, this protects the rights of workers to have a fair days work within manageable conditions. This also increases the influence of unions as they are the primary form of negotiation in working hours."
+
+ lawgroup_natalist_policy: "Natalist Policy"
+ law_no_natalist_policy: "No Natalist Policy"
+ law_natalist_incentives: "Natalist Incentives"
+ law_natalist_subsidies: "Natalist Subsidies"
+ law_natalist_mandate: "Natalist Mandate"
+ law_aggressive_natalist_policy: "Aggressive Natalist Policy"
+
+ law_no_natalist_policy_desc: "The state does not intervene in the birth rate of the population, and there are no incentives or disincentives to have children."
+ law_natalist_incentives_desc: "The state provides incentives to have children, such as tax breaks or direct payments, to encourage population growth."
+ law_natalist_subsidies_desc: "The state provides subsidies to families with children, such as child care support or education subsidies, to encourage population growth."
+ law_natalist_mandate_desc: "The state mandates a certain number of children per family or provides significant benefits for having more children, to aggressively encourage population growth."
+ law_aggressive_natalist_policy_desc: "The state implements aggressive policies to encourage population growth, such as mandatory childbearing or severe penalties for not having children, to rapidly increase the population."
+
 
 # PM's
  pmg_automation_management: "Management Structure"

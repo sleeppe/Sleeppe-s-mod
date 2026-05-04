@@ -141,7 +141,13 @@ ideology_traditionalist = { # Average Progressiveness - -70
 		law_total_separation = strongly_disapprove
 		law_state_atheism = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	lawgroup_labour_associations = {
 		law_combination_acts = neutral
 		law_guild_system = approve
@@ -1724,7 +1730,13 @@ ideology_reformer = { # Average Progressiveness - 10
 		law_right_to_associate = approve
 		law_factory_councils = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	lawgroup_edo_social_system = {
 		law_strict_edo_system = disapprove
 		law_intermediate_edo_system = neutral
@@ -1952,7 +1964,13 @@ ideology_feminist = { # Average Progressiveness - 50
 		law_women_own_property = disapprove
 		law_no_womens_rights = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	country_trigger = {
 		has_technology_researched = feminism
 	}
@@ -2206,7 +2224,13 @@ ideology_abolitionist = { # Average Progressiveness - 75
 		law_debt_slavery = strongly_disapprove
 		law_slave_trade = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
 		law_tenant_farmers = neutral
@@ -2403,7 +2427,13 @@ ideology_slaver = { # Average Progressiveness - -50
 		law_debt_slavery = neutral
 		law_slavery_banned = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	country_trigger = {
 		NOR = {
 			has_law_or_variant = law_type:law_slavery_banned
@@ -4568,7 +4598,13 @@ ideology_fascist = { # Average Progressiveness - 4.17
 		law_wealth_voting = disapprove
 		law_landed_voting = disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_approve
 		law_national_supremacy = approve
@@ -5528,7 +5564,13 @@ ideology_ethno_nationalist = { # Average Progressiveness - -37.5
 		law_closed_borders = approve
 		law_no_migration_controls = disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	country_trigger = {
 		has_technology_researched = pan-nationalism
 	}
@@ -6656,7 +6698,13 @@ ideology_authoritarian = { # Average Progressiveness - -27.77
 		law_autocracy = approve
 		law_single_party_state = approve
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	lawgroup_free_speech = {
 		law_protected_speech = strongly_disapprove
 		law_right_of_assembly = disapprove
@@ -7270,7 +7318,13 @@ ideology_humanitarian = { # Average Progressiveness - 66.66
 		law_multicultural = approve
 		law_subjecthood = disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = approve
 		law_national_guard = neutral
@@ -10425,6 +10479,14 @@ ideology_modernizer_leader = { # Average Progressiveness - 34.82
 		law_low_consumption_tax = neutral
 		law_moderate_consumption_tax = approve
 		law_high_consumption_tax = strongly_approve
+	}
+
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
 	}
 
 	lawgroup_education_system = {
