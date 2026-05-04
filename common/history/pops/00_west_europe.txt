@@ -1052,7 +1052,7 @@
 			}
 		}
 	}
-	s:STATE_WALLONIA = {
+	s:STATE_EAST_WALLONIA = {
 		# Hainaut, Liège, Luxembourg, and Namur
 		region_state:BEL = { #
 			create_pop = {

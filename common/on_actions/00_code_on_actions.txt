@@ -7216,7 +7216,7 @@ on_state_owner_change = {
 						was_formed_from = FRA
 					}
 				}
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_EAST_WALLONIA
 			}
 			state_region = {
 				add_homeland = cu:french

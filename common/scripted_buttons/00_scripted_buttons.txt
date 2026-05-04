@@ -823,7 +823,7 @@ je_confederation_of_the_rhine_expand_button = {
 						NOR = {
 							state_region = s:STATE_RHINELAND
 							state_region = s:STATE_NORTH_RHINE
-							state_region = s:STATE_WALLONIA
+							state_region = s:STATE_EAST_WALLONIA
 							state_region = s:STATE_FLANDERS
 						}
 					}
@@ -909,7 +909,7 @@ je_confederation_of_the_rhine_expand_button = {
 						NOR = {
 							state_region = s:STATE_RHINELAND
 							state_region = s:STATE_NORTH_RHINE
-							state_region = s:STATE_WALLONIA
+							state_region = s:STATE_EAST_WALLONIA
 							state_region = s:STATE_FLANDERS
 						}
 					}
@@ -940,7 +940,7 @@ je_confederation_of_the_rhine_expand_button = {
 							NOR = {
 								state_region = s:STATE_RHINELAND
 								state_region = s:STATE_NORTH_RHINE
-								state_region = s:STATE_WALLONIA
+								state_region = s:STATE_EAST_WALLONIA
 								state_region = s:STATE_FLANDERS
 							}
 						}

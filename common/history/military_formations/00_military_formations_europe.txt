@@ -3523,7 +3523,7 @@
 
 			combat_unit = { # 1-3 régiment de chasseurs à pied, 1-6 régiment de ligne
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_EAST_WALLONIA
 				count = 9
 			}
 
@@ -3541,19 +3541,19 @@
 
 			combat_unit = { # 1er régiment de cuirassiers
 				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_EAST_WALLONIA
 				count = 1
 			}
 
 			combat_unit = { # 1 Régiment de Guides
 				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_EAST_WALLONIA
 				count = 1
 			}
 
 			combat_unit = { # 1-2 Régiment de Lanciers
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_WALLONIA
+				state_region = s:STATE_EAST_WALLONIA
 				count = 2
 			}
 

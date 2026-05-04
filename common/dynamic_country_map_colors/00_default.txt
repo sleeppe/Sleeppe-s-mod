@@ -151,7 +151,7 @@ united_netherlands = {
 		exists = c:NET
 		c:NET ?= THIS
 		owns_entire_state_region = STATE_FLANDERS
-		owns_entire_state_region = STATE_WALLONIA
+		owns_entire_state_region = STATE_EAST_WALLONIA
 	}
 }
 

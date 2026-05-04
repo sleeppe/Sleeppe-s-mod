@@ -448,7 +448,7 @@ WLL = {
 	tier = principality
 
 	cultures = { wallonian }
-	capital = STATE_WALLONIA
+	capital = STATE_EAST_WALLONIA
 	is_named_from_capital = yes
 }
 
@@ -611,7 +611,7 @@ LUX = {
 	tier = grand_principality
 
 	cultures = { wallonian north_german }
-	capital = STATE_WALLONIA
+	capital = STATE_LUXEMBERG
 }
 
 MEC = {
@@ -5307,5 +5307,5 @@ BGD = { #Regna de Burgondie
 	tier = empire
 
 	cultures = { dutch wallonian flemish alemannic }
-	capital = STATE_WALLONIA 
+	capital = STATE_EAST_WALLONIA 
 }
