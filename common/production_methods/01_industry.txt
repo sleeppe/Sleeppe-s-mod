@@ -2810,12 +2810,17 @@ pm_management2 = {
 
 pm_synth_rubber_production = {
 	texture = "gfx/interface/icons/production_method_icons/rayon.dds"
-	pollution_generation = 10
 
 	unlocking_technologies = {
 		plastics
 	}
 
+	state_modifiers = {
+		workforce_scaled = {
+			state_pollution_generation_add = 10
+		}
+	}
+	
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_oil_add = 30

@@ -1855,14 +1855,6 @@
 			save_scope_as = v_pekhotniy_korpus
 		}
 
-		create_character = {
-			template = RUS_ivan_paskevich
-			save_scope_as = paskevich_gen
-		}
-
-		scope:paskevich_gen = {
-			transfer_to_formation = scope:v_pekhotniy_korpus
-		}
 
 		create_military_formation = {
 			type = army

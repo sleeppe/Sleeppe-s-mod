@@ -804,7 +804,7 @@ country_gdp = {
 # COUNTRY_GDP_CONSTRUCTION_MODIFIER_BASE_MULTIPLIER is added to this before the scaling effect
 # Clamped by COUNTRY_GDP_CONSTRUCTION_MODIFIER_MAX_MULTIPLIER
 country_gdp_construction = {
-	country_construction_add = 10
+	country_construction_add = 25
 }
 
 # Scales with total army power projection of a country

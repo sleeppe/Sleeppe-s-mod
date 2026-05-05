@@ -27,10 +27,7 @@ hungry_forties.1 = {
 			}
 			save_scope_as = relevant_state
 		}
-	}
-
-	immediate = {
-	every_scope_state = {
+		every_scope_state = {
 				limit = {
 					is_in_geographic_region = geographic_region_europe
 				}
@@ -44,6 +41,8 @@ hungry_forties.1 = {
 				}
 			}
 	}
+
+
 
 	duration = 3
 

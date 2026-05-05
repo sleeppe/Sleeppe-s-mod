@@ -372,11 +372,11 @@ geographic_region_urals_old = {
 ## AFRICA
 
 ## Unchanged
-#geographic_region_nile_basin_old = {
-#	short_key = "nile_basin_old"
-#
-#	state_regions = { STATE_EGYPTIAN_DESERT STATE_MIDDLE_EGYPT STATE_UPPER_EGYPT STATE_LOWER_EGYPT STATE_SINAI STATE_DONGOLA STATE_DARFUR STATE_KORDOFAN STATE_EQUATORIA STATE_BLUE_NILE STATE_MATRUH }
-#}
+geographic_region_nile_basin_old = {
+	short_key = "nile_basin_old"
+
+	state_regions = { STATE_EGYPTIAN_DESERT STATE_MIDDLE_EGYPT STATE_UPPER_EGYPT STATE_LOWER_EGYPT STATE_SINAI STATE_DONGOLA STATE_DARFUR STATE_KORDOFAN STATE_EQUATORIA STATE_BLUE_NILE STATE_MATRUH }
+}
 
 geographic_region_ethiopia_old = {
 	short_key = "ethiopia_old"
