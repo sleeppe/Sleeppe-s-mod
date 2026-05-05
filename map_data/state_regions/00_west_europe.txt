@@ -1103,7 +1103,7 @@ STATE_POMERANIA = {
         building_logging_camp = 11
         building_fishing_wharf = 10
     }
-    naval_exit_id = 3019
+    naval_exit_id = 3074
 }
 
 STATE_ELBE = {
@@ -1275,7 +1275,7 @@ STATE_SCHLESWIG_HOLSTEIN = {
         building_logging_camp = 6
         building_fishing_wharf = 6
     }
-    naval_exit_id = 3019
+    naval_exit_id = 3074
 }
 
 STATE_WURTTEMBERG = {
@@ -1446,7 +1446,7 @@ STATE_MECKLENBURG = {
         building_logging_camp = 8
         building_fishing_wharf = 10
     }
-    naval_exit_id = 3019
+    naval_exit_id = 3074
 }
 
 STATE_RUHR = {
