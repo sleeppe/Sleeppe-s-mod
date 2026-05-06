@@ -744,7 +744,7 @@ bengal_free_state = {
 		c:BIC ?= this
 		has_variable = bengal_free_state
 		capital ?= {
-			region = sr:region_north_india
+			is_in_geographic_region = geographic_region_bengal_old
 		}
 		any_primary_culture = {
 			cu:british = this

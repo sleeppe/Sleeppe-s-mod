@@ -369,8 +369,8 @@ AFS = {
             scope:actor ?= {
             	capital ?= {
             		OR = {
-            			region = sr:region_west_africa
-            			region = sr:region_west_africa
+            			is_in_geographic_region = geographic_region_senegal_old
+            			is_in_geographic_region = geographic_region_niger_old
             		}
             	}
             }
