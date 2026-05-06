@@ -19,14 +19,19 @@ gdp.1 = {
 		}
 
 		# Do calculation once and set to a variable to save on performance; loc will read from the variable directly
-		set_variable = {
-			name  = gdp_growth_rate
-			value = {
-				add      = var:current_gdp
-				subtract = var:before_gdp
-				divide   = var:before_gdp
-			}
-		}
+	if = {
+    	limit = {
+        	var:before_gdp > 0
+    	}
+    set_variable = {
+        name  = gdp_growth_rate
+        value = {
+            add      = var:current_gdp
+            subtract = var:before_gdp
+            divide   = var:before_gdp
+       	 	}
+   	 	}
+	}
 
 		# Used as a part of the tooltip, not for any meaningful logic
 		set_variable = {
