@@ -1,7 +1,6 @@
 ﻿COUNTRIES = {
 	c:GBR ?= {
 		set_next_election_date = 1836.2.1
-
 		ig:ig_intelligentsia ?= {
 			add_ruling_interest_group = yes
 		}
@@ -29,14 +28,13 @@
 		add_technology_researched = joint_stock_companies
 
 		set_tax_level = medium
-
 		add_taxed_goods = g:liquor
 		add_taxed_goods = g:luxury_clothes
 		add_taxed_goods = g:luxury_furniture
 		add_taxed_goods = g:tea
 
-		# Laws
-		activate_law = law_type:law_monarchy
+		# Laws 
+		activate_law = law_type:law_gbr_hanovermonarchy
 		activate_law = law_type:law_wealth_voting
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_women_own_property
@@ -44,7 +42,7 @@
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_protectionism # Corn Laws, babyyy
-		activate_law = law_type:law_interventionism
+		activate_law = law_type:law_gbr_profitfirst_philosophy
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_colonial_resettlement
 		activate_law = law_type:law_poor_laws
@@ -52,7 +50,7 @@
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_professional_navy
-		activate_law = law_type:law_tenant_farmers # enclosure acts
+		activate_law = law_type:law_gbr_copyholder # enclosure acts
 		activate_law = law_type:law_migration_controls
 		activate_law = law_type:law_anti_strike_laws # 1825 Combinations of Workmen Act
 		activate_law = law_type:law_no_poll_taxes
@@ -65,7 +63,6 @@
 			institution = institution_colonial_affairs
 			level = 2
 		}
-
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 3
@@ -108,7 +105,6 @@
 			set_company_state_region = s:STATE_HOME_COUNTIES
 			add_owned_country = c:BIC #links the country to this company
 		}
-
 		set_variable = free_elections_var
 		active_law:lawgroup_distribution_of_power ?= { # Wealth Voting - Reform Act
 			add_amendment = {
