@@ -20,6 +20,15 @@ law_no_consumption_taxes = {
 	ai_will_do = {
 		always = no
 	}
+	
+	ai_enact_weight_modifier = {
+		value = 0
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
 }
 
 law_low_consumption_tax = {
@@ -62,6 +71,22 @@ law_low_consumption_tax = {
 		ruler ?= {
 			has_ideology = ideology:ideology_loyalist
 			has_ideology = ideology:ideology_plutocratic
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_no_consumption_taxes
+			}
+			add = 500
+		}
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
 		}
 	}
 }
@@ -108,6 +133,22 @@ law_moderate_consumption_tax = {
 			has_ideology = ideology:ideology_proletarian
 		}
 	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_no_consumption_taxes
+			}
+			add = 500
+		}
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
+		}
+	}
 }
 
 law_high_consumption_tax = {
@@ -150,6 +191,22 @@ law_high_consumption_tax = {
 		ruler ?= {
 			has_ideology = ideology:ideology_loyalist
 			has_ideology = ideology:ideology_proletarian
+		}
+	}
+
+	ai_enact_weight_modifier = { #Petitions
+		value = 0
+
+		if = {
+			limit = {
+				has_law_or_variant = law_type:law_no_consumption_taxes
+			}
+			add = 500
+		}
+
+		if = {
+			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
+			add = 750
 		}
 	}
 }
