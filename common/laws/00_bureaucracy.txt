@@ -116,7 +116,6 @@ law_appointed_bureaucrats = {
 		NOT = {
 			has_law = law_type:law_usa_spoilsystem
 		}
-		has_law = law_technocracy
 		}
 
 	modifier = {
