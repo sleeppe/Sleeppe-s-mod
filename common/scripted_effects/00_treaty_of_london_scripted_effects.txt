@@ -15,14 +15,14 @@
 			limit = {
 				c:NET ?= {
 					any_scope_state = {
-						state_region = s:STATE_WALLONIA
+						state_region = s:STATE_EAST_WALLONIA
 					}
 				}
 			}
 			c:NET ?= {
 				random_scope_state = {
 					limit = {
-						state_region = s:STATE_WALLONIA
+						state_region = s:STATE_EAST_WALLONIA
 					}
 					set_state_owner = c:BEL
 				}
@@ -47,7 +47,7 @@
 			limit = {
 				exists = c:LUX
 			}
-			s:STATE_WALLONIA = {
+			s:STATE_EAST_WALLONIA = {
 				set_owner_of_provinces = {
 					country = c:LUX
 					provinces = {
@@ -62,7 +62,7 @@
 					exists = c:LUX
 				}
 			}
-			s:STATE_WALLONIA = {
+			s:STATE_EAST_WALLONIA = {
 				set_owner_of_provinces = {
 					country = c:NET
 					provinces = {
@@ -107,7 +107,7 @@
 		limit = {
 			has_global_variable = partition_compromise_global_var
 		}
-		s:STATE_WALLONIA = {
+		s:STATE_EAST_WALLONIA = {
 			set_owner_of_provinces = {
 				country = c:LUX
 				provinces = {
@@ -137,7 +137,7 @@
 			limit = {
 				exists = c:LUX
 			}
-			s:STATE_WALLONIA = {
+			s:STATE_EAST_WALLONIA = {
 				set_owner_of_provinces = {
 					country = c:LUX
 					provinces = {
@@ -147,7 +147,7 @@
 			}
 		}
 		else = {
-			s:STATE_WALLONIA = {
+			s:STATE_EAST_WALLONIA = {
 				set_owner_of_provinces = {
 					country = c:NET
 					provinces = {

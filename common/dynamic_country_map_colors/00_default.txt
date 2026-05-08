@@ -151,7 +151,7 @@ united_netherlands = {
 		exists = c:NET
 		c:NET ?= THIS
 		owns_entire_state_region = STATE_FLANDERS
-		owns_entire_state_region = STATE_WALLONIA
+		owns_entire_state_region = STATE_EAST_WALLONIA
 	}
 }
 
@@ -191,7 +191,6 @@ imperial_japan = {
 	possible = {
 		exists = c:JAP
 		c:JAP ?= THIS
-		has_global_variable = meiji_restoration_complete
 		OR = {
 			coa_absolute_monarchy_trigger = yes
 			coa_dictatorship_trigger = yes
@@ -360,7 +359,7 @@ ddr_germany = {
 					has_law_or_variant = law_type:law_oligarchy
 				}
 				any_scope_character = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 					OR = {
 						has_ideology = ideology:ideology_communist
 						has_ideology = ideology:ideology_vanguardist
@@ -745,7 +744,7 @@ bengal_free_state = {
 		c:BIC ?= this
 		has_variable = bengal_free_state
 		capital ?= {
-			region = sr:region_bengal
+			is_in_geographic_region = geographic_region_bengal_old
 		}
 		any_primary_culture = {
 			cu:british = this

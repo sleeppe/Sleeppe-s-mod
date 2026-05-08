@@ -149,6 +149,17 @@ STATE_CYPRUS = {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
         building_sulfur_mine = 5
     }
     naval_exit_id = 3034
@@ -257,7 +268,7 @@ STATE_BAGHDAD = {
     farm = "x205060"
     mine = "x4F90CC"
     wood = "x0CA064"
-    arable_land = 40
+    arable_land = 140
     arable_resources = { "building_rice_farm" "building_livestock_ranch" "building_silk_plantation" "building_tobacco_plantation" }
     resource = {
         type = "building_oil_rig"
@@ -274,7 +285,7 @@ STATE_MOSUL = {
     farm = "x07BB1D"
     mine = "xE4E63B"
     wood = "x4BE9F1"
-    arable_land = 30
+    arable_land = 130
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" }
     capped_resources = {
         building_sulfur_mine = 36

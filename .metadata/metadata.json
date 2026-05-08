@@ -1,9 +1,9 @@
 {
-    "name" : "Sleeppe's MP",
+    "name" : "Sleeppe's BETA",
     "id" : "",
-    "version" : "2.3.1",
+    "version" : "2.4.0",
     "game_id" : "victoria3",
-    "supported_game_version" : "1.12.5",
+    "supported_game_version" : "1.13.4",
     "short_description" : "MP mod",
     "tags" : [ "Balance", "Historical" ],
     "relationships" : [ ],

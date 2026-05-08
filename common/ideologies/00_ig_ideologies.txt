@@ -35,6 +35,14 @@
 		law_no_police = disapprove
 	}
 
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
+
 	lawgroup_economic_system = {
 		law_traditionalism = strongly_approve
 		law_agrarianism = approve
@@ -92,10 +100,54 @@ ideology_laissez_faire = {
 		law_collectivized_agriculture = strongly_disapprove
 		law_serfdom = disapprove
 		law_tenant_farmers = neutral
-		law_homesteading = neutral
+		law_peasant_proprietorship = neutral
 		law_commercialized_agriculture = approve
 	}
 }
+
+
+ideology_interventionist = {
+	icon = "gfx/interface/icons/ideology_icons/protectionism.dds"
+
+	lawgroup_economic_system = {
+		law_laissez_faire = approve
+		law_interventionism = strongly_approve
+		law_agrarianism = neutral
+		law_traditionalism = disapprove
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = disapprove
+		law_industry_banned = strongly_disapprove
+		law_extraction_economy = strongly_disapprove
+	}
+
+	lawgroup_trade_policy = {
+		law_free_trade = disapprove
+		law_mercantilism = neutral
+		law_protectionism = approve
+		law_isolationism = strongly_disapprove
+	}
+
+	lawgroup_childrens_rights = {
+		law_child_labor_allowed = approve
+		law_restricted_child_labor = neutral
+		law_compulsory_primary_school = disapprove
+	}
+
+	lawgroup_labor_rights = {
+		law_no_workers_rights = neutral
+		law_regulatory_bodies = disapprove
+		law_worker_protections = strongly_disapprove
+	}
+
+	lawgroup_land_reform = {
+		law_collectivized_agriculture = strongly_disapprove
+		law_serfdom = disapprove
+		law_tenant_farmers = neutral
+		law_peasant_proprietorship = neutral
+		law_commercialized_agriculture = approve
+	}
+}
+
 
 ideology_individualist = {
 	icon = "gfx/interface/icons/ideology_icons/individualist.dds"
@@ -158,16 +210,43 @@ ideology_hierarchic = {
 		law_serfdom = strongly_approve
 		law_tenant_farmers = approve
 		law_commercialized_agriculture = neutral
-		law_homesteading = strongly_disapprove
+		law_peasant_proprietorship = strongly_disapprove
 		law_collectivized_agriculture = strongly_disapprove
 	}
 
 	lawgroup_taxation = {
-		law_consumption_based_taxation = approve
+		law_no_poll_taxes = disapprove
 		law_land_based_taxation = approve
 		law_per_capita_based_taxation = neutral
-		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
+	}
+	
+	lawgroup_income_tax = {
+		law_no_income_taxes = approve
+		law_low_income_tax = neutral
+		law_moderate_income_tax = disapprove
+		law_high_income_tax = strongly_disapprove
+	}
+	
+	lawgroup_corporation_tax = {
+		law_no_corporation_taxes = neutral
+		law_low_corporation_tax = disapprove
+		law_moderate_corporation_tax = disapprove
+		law_high_corporation_tax = strongly_disapprove
+	}
+	
+	lawgroup_consumption_tax = {
+		law_no_consumption_taxes = approve
+		law_low_consumption_tax = neutral
+		law_moderate_consumption_tax = disapprove
+		law_high_consumption_tax = disapprove
+	}
+
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
 	}
 
 	lawgroup_welfare = {
@@ -208,16 +287,8 @@ ideology_oligarchic = {
 		law_tenant_farmers = strongly_approve
 		law_serfdom = approve
 		law_commercialized_agriculture = approve
-		law_homesteading = strongly_disapprove
+		law_peasant_proprietorship = strongly_disapprove
 		law_collectivized_agriculture = strongly_disapprove
-	}
-
-	lawgroup_taxation = {
-		law_consumption_based_taxation = approve
-		law_land_based_taxation = approve
-		law_per_capita_based_taxation = neutral
-		law_proportional_taxation = disapprove
-		law_graduated_taxation = strongly_disapprove
 	}
 
 	lawgroup_welfare = {
@@ -252,6 +323,14 @@ ideology_pious = {
 		law_private_health_insurance = disapprove
 	}
 
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
+
 	lawgroup_education_system = {
 		law_religious_schools = approve
 		law_no_schools = neutral
@@ -279,15 +358,13 @@ ideology_agrarian = {
 		law_tenant_farmers = disapprove
 		law_commercialized_agriculture = neutral
 		law_collectivized_agriculture = neutral
-		law_homesteading = approve
+		law_peasant_proprietorship = approve
 	}
 
 	lawgroup_taxation = {
-		law_consumption_based_taxation = approve
-		law_per_capita_based_taxation = neutral
-		law_proportional_taxation = neutral
-		law_graduated_taxation = neutral
+		law_no_poll_taxes = approve
 		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
 	}
 
 	lawgroup_caste_hegemony = {
@@ -368,7 +445,13 @@ ideology_moralist = {
 		law_corporate_state = neutral
 		law_council_republic = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_approve
 		law_freedom_of_conscience = neutral
@@ -426,11 +509,23 @@ ideology_meritocratic = {
 	}
 
 	lawgroup_taxation = {
-		law_per_capita_based_taxation = approve
-		law_proportional_taxation = approve
-		law_consumption_based_taxation = neutral
-		law_graduated_taxation = disapprove
+		law_no_poll_taxes = strongly_approve
 		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = approve
+	}
+	
+	lawgroup_income_tax = {
+		law_no_income_taxes = disapprove
+		law_low_income_tax = approve
+		law_moderate_income_tax = neutral
+		law_high_income_tax = disapprove
+	}
+	
+	lawgroup_corporation_tax = {
+		law_no_corporation_taxes = disapprove
+		law_low_corporation_tax = neutral
+		law_moderate_corporation_tax = neutral
+		law_high_corporation_tax = disapprove
 	}
 
 	lawgroup_caste_hegemony = {
@@ -477,11 +572,30 @@ ideology_loyalist = {
 	icon = "gfx/interface/icons/ideology_icons/loyalist.dds"
 
 	lawgroup_taxation = {
-		law_per_capita_based_taxation = approve
-		law_proportional_taxation = approve
-		law_graduated_taxation = approve
-		law_land_based_taxation = neutral
-		law_consumption_based_taxation = disapprove
+		law_no_poll_taxes = approve
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+	}
+	
+	lawgroup_income_tax = {
+		law_no_income_taxes = disapprove
+		law_low_income_tax = neutral
+		law_moderate_income_tax = approve
+		law_high_income_tax = approve
+	}
+	
+	lawgroup_corporation_tax = {
+		law_no_corporation_taxes = disapprove
+		law_low_corporation_tax = approve
+		law_moderate_corporation_tax = approve
+		law_high_corporation_tax = approve
+	}
+	
+	lawgroup_consumption_tax = {
+		law_no_consumption_taxes = neutral
+		law_low_consumption_tax = approve
+		law_moderate_consumption_tax = approve
+		law_high_consumption_tax = approve
 	}
 
 	lawgroup_caste_hegemony = {
@@ -528,7 +642,13 @@ ideology_liberal = {
 		law_local_police = disapprove
 		law_militarized_police = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = approve
 		law_national_guard = neutral
@@ -612,11 +732,30 @@ ideology_proletarian = {
 	icon = "gfx/interface/icons/ideology_icons/proletarian.dds"
 
 	lawgroup_taxation = {
-		law_per_capita_based_taxation = disapprove
-		law_land_based_taxation = neutral
-		law_proportional_taxation = neutral
-		law_consumption_based_taxation = neutral
-		law_graduated_taxation = approve
+		law_no_poll_taxes = approve
+		law_land_based_taxation = disapprove
+		law_per_capita_based_taxation = neutral
+	}
+	
+	lawgroup_income_tax = {
+		law_no_income_taxes = disapprove
+		law_low_income_tax = neutral
+		law_moderate_income_tax = approve
+		law_high_income_tax = strongly_approve
+	}
+	
+	lawgroup_corporation_tax = {
+		law_no_corporation_taxes = disapprove
+		law_low_corporation_tax = neutral
+		law_moderate_corporation_tax = approve
+		law_high_corporation_tax = strongly_approve
+	}
+	
+	lawgroup_consumption_tax = {
+		law_no_consumption_taxes = disapprove
+		law_low_consumption_tax = neutral
+		law_moderate_consumption_tax = approve
+		law_high_consumption_tax = strongly_approve
 	}
 
 	lawgroup_economic_system = {
@@ -670,7 +809,13 @@ ideology_egalitarian = {
 		law_censorship = neutral
 		law_outlawed_dissent = disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = strongly_approve
+		law_natalist_incentives = approve
+		law_natalist_subsidies = disapprove
+		law_natalist_mandate = disapprove
+		law_aggressive_natalist_policy = strongly_disapprove
+	}
 	lawgroup_childrens_rights = {
 		law_compulsory_primary_school = strongly_approve
 		law_restricted_child_labor = approve
@@ -764,7 +909,13 @@ ideology_reactionary = {
 		law_cultural_exclusion = neutral
 		law_multicultural = disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	lawgroup_labour_associations = {
 		law_combination_acts = approve
 		law_guild_system = approve
@@ -806,12 +957,31 @@ ideology_plutocratic = {
 	}
 
 	lawgroup_taxation = {
-		law_per_capita_based_taxation = approve
-		law_consumption_based_taxation = neutral
+		law_no_poll_taxes = approve
 		law_land_based_taxation = neutral
-		law_proportional_taxation = neutral
-		law_graduated_taxation = disapprove
+		law_per_capita_based_taxation = strongly_approve
 	}
+	
+	lawgroup_income_tax = {
+		law_no_income_taxes = neutral
+		law_low_income_tax = disapprove
+		law_moderate_income_tax = disapprove
+		law_high_income_tax = strongly_disapprove
+	}
+	
+	lawgroup_corporation_tax = {
+		law_no_corporation_taxes = approve
+		law_low_corporation_tax = neutral
+		law_moderate_corporation_tax = disapprove
+		law_high_corporation_tax = strongly_disapprove
+	}
+	
+	lawgroup_consumption_tax = {
+		law_no_consumption_taxes = approve
+		law_low_consumption_tax = approve
+		law_moderate_consumption_tax = neutral
+		law_high_consumption_tax = disapprove
+	}	
 
 	lawgroup_colonization = {
 		law_colonial_exploitation = approve
@@ -830,7 +1000,13 @@ ideology_patriarchal = {
 		law_women_in_the_workplace = disapprove
 		law_womens_suffrage = strongly_disapprove
 	}
-
+	lawgroup_natalist_policy = {
+		law_no_natalist_policy = disapprove
+		law_natalist_incentives = neutral
+		law_natalist_subsidies = approve
+		law_natalist_mandate = approve
+		law_aggressive_natalist_policy = strongly_approve
+	}
 	lawgroup_free_speech = {
 		law_outlawed_dissent = approve
 		law_censorship = approve
@@ -853,7 +1029,7 @@ ideology_anti_slavery = {
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
 		law_tenant_farmers = neutral
-		law_homesteading = neutral
+		law_peasant_proprietorship = neutral
 		law_collectivized_agriculture = neutral
 		law_commercialized_agriculture = neutral
 	}

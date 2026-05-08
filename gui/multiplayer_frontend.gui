@@ -39,7 +39,7 @@ JominiMultiplayerFrontendView = {
 		proportional_icon = {
 			size = { 100% 100% }
 			### v3 replacement
-			texture = "gfx/loadingscreens/victoria3_load_4.dds"
+			texture = "gfx/loadingscreens/victoria3_load_8.dds"
 			# texture = "[GetRandomFrontendIllustration]"
 			### to here
 		}

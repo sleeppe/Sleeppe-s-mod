@@ -1,4 +1,4 @@
 ﻿sleeppe_s_mod_rule_britannia_instrumental = {
-    music = "event:/Goodbye Forever"
+    music = "event:/Battotai"
     can_be_interrupted = no
 }

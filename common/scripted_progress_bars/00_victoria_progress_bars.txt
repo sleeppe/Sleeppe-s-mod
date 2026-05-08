@@ -152,7 +152,7 @@
 				owner = {
 					any_scope_state = {
 						is_incorporated = yes
-						loyalty >= 0.10
+						loyalists >= 0.10
 					}
 				}
 			}
@@ -162,9 +162,9 @@
 					every_scope_state = {
 						limit = {
 							is_incorporated = yes
-							loyalty >= 0.10
+							loyalists >= 0.10
 						}
-						add = this.loyalty
+						add = this.loyalists
 					}
 					divide = num_incorporated_states
 					multiply = 3 # Maxes out at -3
@@ -213,13 +213,7 @@
 			limit = {
 				owner = {
 					any_scope_character = {
-						OR = {
-							has_ideology = ideology:ideology_communist
-							has_ideology = ideology:ideology_vanguardist
-							has_ideology = ideology:ideology_anarchist
-							has_ideology = ideology:ideology_nihilist
-							has_ideology = ideology:ideology_utopian
-						}
+						has_socialist_ideology = yes
 					}
 				}
 			}
@@ -228,13 +222,7 @@
 				owner = {
 					every_scope_character = {
 						limit = {
-							OR = {
-								has_ideology = ideology:ideology_communist
-								has_ideology = ideology:ideology_vanguardist
-								has_ideology = ideology:ideology_anarchist
-								has_ideology = ideology:ideology_nihilist
-								has_ideology = ideology:ideology_utopian
-							}
+							has_socialist_ideology = yes
 						}
 						add = this.popularity
 						divide = 100
@@ -329,13 +317,13 @@
 
 	default = yes
 
-	monthly_progress = {
+		monthly_progress = {
 		if = {
 			limit = {
 				owner = {
 					any_scope_state = {
 						is_incorporated = yes
-						loyalty >= 0.10
+						loyalists >= 0.10
 					}
 				}
 			}
@@ -344,9 +332,9 @@
 				every_scope_state = {
 					limit = {
 						is_incorporated = yes
-						loyalty >= 0.10
+						loyalists >= 0.10
 					}
-					add = this.loyalty
+					add = this.loyalists
 				}
 				divide = num_incorporated_states
 				multiply = 3 # Maxes out at -3
@@ -545,8 +533,8 @@
 					any_scope_character = {
 						filter = {
 							OR = {
-								has_role = admiral
-								has_role = general
+								has_role_of_type = admiral
+								has_role_of_type = general
 							}
 						}
 						OR = {
@@ -2438,8 +2426,8 @@ red_summer_counter_revolution_progress_bar = {
 			limit = {
 				any_scope_character = {
 					OR = {
-						has_role = general
-						has_role = admiral
+						has_role_of_type = general
+						has_role_of_type = admiral
 					}
 					popularity >= 50 # Loved
 				}
@@ -2452,10 +2440,10 @@ red_summer_counter_revolution_progress_bar = {
 		if = {
 			limit = {
 				any_scope_character = {
-					has_role = politician
+					has_role_of_type = politician
 					NOR = {
-						has_role = general
-						has_role = admiral
+						has_role_of_type = general
+						has_role_of_type = admiral
 					}
 					popularity >= 50 # Loved
 					AND = {
@@ -2486,7 +2474,7 @@ red_summer_counter_revolution_progress_bar = {
 		if = {
 			limit = {
 				any_scope_character = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 					has_ideology = ideology:ideology_authoritarian
 				}
 			}
@@ -2576,7 +2564,7 @@ red_summer_counter_revolution_progress_bar = {
 			limit = {
 				NOT = {
 					has_law_or_variant = law_type:law_serfdom
-					has_law_or_variant = law_type:law_homesteading
+					has_law_or_variant = law_type:law_peasant_proprietorship
 				}
 			}
 			add = {
@@ -2586,7 +2574,7 @@ red_summer_counter_revolution_progress_bar = {
 		}
 		if = {
 			limit = {
-				has_law_or_variant = law_type:law_homesteading
+				has_law_or_variant = law_type:law_peasant_proprietorship
 			}
 			add = {
 				desc = "je_absolutism_serfs2"

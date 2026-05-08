@@ -1,4 +1,4 @@
-TREATIES = {
+﻿TREATIES = {
 	### Holy Alliance - Russia, Austria, Prussia
 	# Holy Alliance - RUS/AUS
 	create_treaty = {

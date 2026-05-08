@@ -231,15 +231,15 @@ IBE = {
 		trigger_if = {
 			limit = {
 				capital = {
-					is_in_geographic_region = geographic_region_iberia
+					is_in_geographic_region = geographic_region_europe
 				}
-				any_country_in_iberia = {
+				any_country_in_iberia_old = {
 					is_subject_of = ROOT
 				}
 			}
 			custom_tooltip = {
 				text = all_iberian_subjects_below_75_ld_tt
-				any_country_in_iberia = {
+				any_country_in_iberia_old = {
 					filter = {
 						is_subject_of = ROOT
 					}
@@ -706,7 +706,7 @@ UNL = {
 	states = {
 		STATE_HOLLAND
 		STATE_FLANDERS
-		STATE_WALLONIA
+		STATE_EAST_WALLONIA
 		STATE_WEST_WALLONIA
 		STATE_LUXEMBERG
 		STATE_FRIESLAND
@@ -1163,7 +1163,7 @@ RBU = {
 		STATE_GELRE
 		STATE_FRENCH_LOW_COUNTRIES
 		STATE_FLANDERS
-		STATE_WALLONIA
+		STATE_EAST_WALLONIA
 		STATE_RUHR
 		STATE_NORTH_RHINE
 		STATE_RHINELAND

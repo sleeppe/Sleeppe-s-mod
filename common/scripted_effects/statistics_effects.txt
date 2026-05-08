@@ -67,6 +67,12 @@ stat_global_list_effect = {
 			value = $value$
 		}
 	}
+	if = {
+		limit = {
+			NOT = { has_global_variable = stat_top_$name$ }
+		}
+		set_global_variable = { name = stat_top_$name$ value = 1 }
+	}
 	every_in_global_list = {
 		variable = stat_list_$name$
 		set_variable = {
@@ -127,7 +133,6 @@ total_statistics_effect = {
 	stat_global_list_effect = { name = 26 value = debt }
 	stat_global_list_effect = { name = 27 value = credit }
 	stat_global_list_effect = { name = 28 value = num_active_interests }
-	stat_global_list_effect = { name = 29 value = num_convoys_available }
 
 	set_global_variable = {
 		name = month_gvar

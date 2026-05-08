@@ -18,7 +18,7 @@ company_amsterdamse_effectenbeurs = {
 		building_trade_center
 		building_port
 		building_shipyard
-		building_military_shipyard
+		building_tooling_workshop
 	}
 
 	extension_building_types = {
@@ -109,7 +109,7 @@ company_porceleyne_fles = {
 		building_glassworks = {
 			level = 5
 			state_trigger = {
-				region = sr:region_rhine
+				region = sr:region_western_europe
 				is_incorporated = yes
 			}
 		}
@@ -169,10 +169,10 @@ company_van_houtum_en_palm = {
 	}
 
 	ai_construction_targets = {
-		building_building_paper_mill = {
+		building_paper_mill = {
 			level = 5
 			state_trigger = {
-				region = sr:region_rhine
+				region = sr:region_western_europe
 				is_incorporated = yes
 			}
 		}

@@ -850,7 +850,7 @@ AFS = { #African Free State
 
 		trigger = {
 			scope:actor ?= {
-				capital = { region = sr:region_congo }
+				capital = { region = sr:region_equatorial_africa }
 			}
 		}
 	}
@@ -875,7 +875,7 @@ AFS = { #African Free State
 
 		trigger = {
 			scope:actor ?= {
-				capital = { region = sr:region_zanj }
+				capital = { region = sr:region_east_africa }
 			}
 		}
 	}
@@ -900,8 +900,8 @@ AFS = { #African Free State
 		trigger = {
 			scope:actor ?= {
 				OR = {
-					capital = { region = sr:region_niger }
-					capital = { region = sr:region_senegal }
+					capital = { is_in_geographic_region = geographic_region_niger_old }
+					capital = { is_in_geographic_region = geographic_region_senegal_old }
 				}
 			}
 		}
@@ -1050,14 +1050,14 @@ BIC = { # East India Company
 			scope:actor ?= {
 				is_subject = yes
 				capital ?= {
-					region = sr:region_madras
+					is_in_geographic_region = geographic_region_madras_old
 				}
 				NOR = {
 					any_scope_state = {
-						region = sr:region_bengal
+						is_in_geographic_region = geographic_region_bengal_old
 					}
 					any_scope_state = {
-						region = sr:region_bombay
+						is_in_geographic_region = geographic_region_bombay_old
 					}
 				}
 			}
@@ -1075,14 +1075,14 @@ BIC = { # East India Company
 			scope:actor ?= {
 				is_subject = yes
 				capital ?= {
-					region = sr:region_bombay
+					is_in_geographic_region = geographic_region_bombay_old
 				}
 				NOR = {
 					any_scope_state = {
-						region = sr:region_bengal
+						is_in_geographic_region = geographic_region_madras_old
 					}
 					any_scope_state = {
-						region = sr:region_madras
+						is_in_geographic_region = geographic_region_bengal_old
 					}
 				}
 			}
@@ -1100,14 +1100,14 @@ BIC = { # East India Company
 			scope:actor ?= {
 				is_subject = yes
 				capital ?= {
-					region = sr:region_bengal
+					is_in_geographic_region = geographic_region_bengal_old
 				}
 				NOR = {
 					any_scope_state = {
-						region = sr:region_bombay
+						is_in_geographic_region = geographic_region_madras_old
 					}
 					any_scope_state = {
-						region = sr:region_madras
+						is_in_geographic_region = geographic_region_bombay_old
 					}
 				}
 			}
@@ -1125,7 +1125,7 @@ BIC = { # East India Company
 			scope:actor ?= {
 				has_variable = bengal_free_state
 				capital ?= {
-					region = sr:region_bengal
+					is_in_geographic_region = geographic_region_bengal_old
 				}
 				any_primary_culture = {
 					cu:british = this
@@ -3542,7 +3542,7 @@ ARG = { # Argentina
 
 			scope:actor ?= {
 				any_scope_character = {
-					is_ruler = yes
+					is_ruler_of_own_country = yes
 					has_template = ARG_Juan_Manuel_de_Rosas
 				}
 			}

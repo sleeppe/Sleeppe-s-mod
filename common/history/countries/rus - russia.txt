@@ -20,6 +20,7 @@
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_women_own_property
+		activate_law = law_type:law_moderate_consumption_tax
 		
 		add_taxed_goods = g:liquor
 
@@ -36,9 +37,6 @@
 			is_decaying = yes
 		}
 
-		scope:ruler_scope = {
-			save_scope_as = russian_ruler_scope
-		}
 
 		add_journal_entry = {
 			type = je_russian_absolutism

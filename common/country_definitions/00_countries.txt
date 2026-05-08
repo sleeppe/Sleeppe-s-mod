@@ -201,10 +201,12 @@ JAP = {
 	color = { 161 0 0 }
 	country_type = unrecognized
 
+	social_hierarchy = edo_system
+
 	tier = empire
 
 	cultures = { japanese }
-	capital = STATE_KANSAI
+	capital = STATE_KYOTO
 }
 
 ITA = {
@@ -446,7 +448,7 @@ WLL = {
 	tier = principality
 
 	cultures = { wallonian }
-	capital = STATE_WALLONIA
+	capital = STATE_EAST_WALLONIA
 	is_named_from_capital = yes
 }
 
@@ -609,7 +611,7 @@ LUX = {
 	tier = grand_principality
 
 	cultures = { wallonian north_german }
-	capital = STATE_WALLONIA
+	capital = STATE_LUXEMBERG
 }
 
 MEC = {
@@ -5225,6 +5227,40 @@ SC4 = { # River Plate
 	capital = STATE_BUENOS_AIRES
 }
 
+RYU = { # Ryukyu
+	color = { 90 138 133 }
+
+	country_type = unrecognized
+
+	tier = kingdom
+
+	cultures = { ryukyuan }
+	religion = confucian
+	capital = STATE_RYUKYU_ISLANDS
+}
+
+SKH = { # Sakhalin
+	color = { 54 102 190 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { siberian }
+	capital = STATE_SAKHALIN
+}
+
+ULT = { # Ulta
+	color = { 122 229 256 }
+
+	country_type = decentralized
+
+	tier = principality
+
+	cultures = { siberian }
+	capital = STATE_SAKHALIN
+}
+
 # modded
 
 PZN = {
@@ -5271,5 +5307,5 @@ BGD = { #Regna de Burgondie
 	tier = empire
 
 	cultures = { dutch wallonian flemish alemannic }
-	capital = STATE_WALLONIA 
+	capital = STATE_EAST_WALLONIA 
 }

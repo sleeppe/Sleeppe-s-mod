@@ -42,6 +42,13 @@ lawgroup_caste_hegemony = {
 	linked_social_hierarchy = british_indian_caste_system
 }
 
+lawgroup_edo_social_system = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 0.5
+	affected_by_regime_change = yes
+	linked_social_hierarchy = edo_system
+}
+
 lawgroup_church_and_state = {
 	law_group_category = power_structure
 	ideological_opinion_impact = 1.0
@@ -59,6 +66,16 @@ lawgroup_army_model = {
 	ideological_opinion_impact = 0.25
 }
 
+lawgroup_navy_model = {
+	law_group_category = power_structure
+	ideological_opinion_impact = 0.25
+	enable = {
+		any_scope_state = {
+			is_coastal = yes
+		}
+	}
+}
+
 lawgroup_internal_security = {
 	law_group_category = power_structure
 	ideological_opinion_impact = 0.5
@@ -69,7 +86,6 @@ lawgroup_economic_system = {
 	law_group_category = economy
 	ideological_opinion_impact = 2.0
 	base_enactment_days = 150
-	affected_by_regime_change = yes
 }
 
 lawgroup_trade_policy = {
@@ -162,9 +178,35 @@ lawgroup_labour_associations = {
 	ideological_opinion_impact = 0.5
 }
 
+
 #modded
 
 lawgroup_shifts = {
 	law_group_category = human_rights
 	ideological_opinion_impact = 0.5
+}
+lawgroup_taxation = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.5
+}
+
+lawgroup_income_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.5
+}
+
+lawgroup_corporation_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.5
+}
+
+lawgroup_consumption_tax = {
+	law_group_category = economy
+	ideological_opinion_impact = 0.5
+}
+
+lawgroup_natalist_policy = {
+	law_group_category = human_rights
+	ideological_opinion_impact = 0.5
+	base_enactment_days = 150
 }

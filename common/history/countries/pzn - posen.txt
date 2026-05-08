@@ -4,10 +4,6 @@
 		
 		set_tax_level = low 
 
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 2
-		}
 
 		# Laws 
 		activate_law = law_type:law_monarchy

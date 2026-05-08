@@ -23,7 +23,7 @@ STATE_LOWER_SILESIA = {
     city = "x6E617F"
     farm = "xC108EA"
     mine = "x272E48"
-    wood = "x732DC0"
+    wood = "x90B12B"
     arable_land = 90
     arable_resources = { "building_rye_farm" "building_livestock_ranch" }
     capped_resources = {
@@ -111,7 +111,7 @@ STATE_WEST_PRUSSIA = {
         building_logging_camp = 8
         building_fishing_wharf = 10
     }
-    naval_exit_id = 3000
+    naval_exit_id = 3074
 }
 
 STATE_EAST_PRUSSIA = {
@@ -129,7 +129,7 @@ STATE_EAST_PRUSSIA = {
         building_logging_camp = 5
         building_fishing_wharf = 10
     }
-    naval_exit_id = 3000
+    naval_exit_id = 3074
 }
 
 STATE_ERMLAND_MASUREN = {
@@ -147,7 +147,7 @@ STATE_ERMLAND_MASUREN = {
         building_logging_camp = 17
         building_fishing_wharf = 4
     }
-    naval_exit_id = 4799
+    naval_exit_id = 3074
 }
 
 STATE_POSEN = {
