@@ -476,7 +476,7 @@ NEconomy = {
 
 	COUNTRY_MIN_CREDIT_BASE = 100000			# Added to the total Building Cash Reserves to determine credit limit (base)
 	COUNTRY_MIN_CREDIT_SCALED = 0.5 			# Added to the total Building Cash Reserves to determine credit limit (multiplied by GDP)
-	CREDIT_RATIO_MAX_OVERRUN = 0.01 			# Countries can accumulate this percentage more of a debt "hole" than their credit limit when in default
+	CREDIT_RATIO_MAX_OVERRUN = 100000 			# Countries can accumulate this percentage more of a debt "hole" than their credit limit when in default
 	GOLD_RESERVE_RATIO_AT_START = 0.25			# Unless a country history's 'treasury' parameter is set to a non-zero value, countries start with this ratio of their gold reserve in gold
 	BUILDING_INITIAL_WAGE_WEEKS = 2				# A building will not adjust its wages for the first this many weeks of its existence
 	MAX_WAGE_STEP_CHANGE = 0.1					# Wage rates can change at most this much each week
@@ -711,9 +711,9 @@ NEconomy = {
 	TOLL_RATE_HIGH_TOLLS = 0.30							# Toll rate on High Tolls setting. Value is multiplied with goods value crossing a strait
 	TOLL_RATE_MULTIPLIER_FULL_CONTROL = 2.0				# Multiplie on the above value if a country controls both sides of a strait
 	STRAIT_FULL_CONTROL_TRADE_IMPORTANCE_MULT = 1.5	# Multiplier on strait trade importance when the controller controls both sides of the strait
-	MAX_PIRATED_GOODS_PER_HUB = 0.25 					# Max % of goods that can be pirated in one Hub->Hub connection
+	MAX_PIRATED_GOODS_PER_HUB = 0.75 					# Max % of goods that can be pirated in one Hub->Hub connection
 	PIRACY_SHIP_SPEED_TO_GOODS_RATIO = 0.003 			# The % of goods trade quantity that are stolen per speed of a ship.
-	PIRATED_GOODS_SALE_DISCOUNT = 0.5 					# How much % value goods we get when being sold and turned into income for the country
+	PIRATED_GOODS_SALE_DISCOUNT = 2.5 					# How much % value goods we get when being sold and turned into income for the country
 	PIRACY_SELL_ORDERS_MIN_GOODS = 0.1					# The total amount of a good pirated needs to be at least this much to add it to sell orders, otherwise it's 100% lost
 }
 
