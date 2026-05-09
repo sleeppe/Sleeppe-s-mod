@@ -96,9 +96,6 @@
  pm_synth_rubber_production:0 "Synthetic Rubber"
  pmg_base_building_synthetic_rubber_plants:0 "Synthetic Rubber"
 
- pm_synth_rubber_production:0 "Synthetic Rubber"
- pmg_base_building_synthetic_rubber_plants:0 "Synthetic Rubber"
-
  pmg_automation_management: "Management Structure"
  pm_management: "No Management Structure"
  pm_management1: "Simple Structures"
