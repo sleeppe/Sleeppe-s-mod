@@ -1,0 +1,10 @@
+category = {
+    id = "Sleeppe_s_mod_category_8japanese_songs"
+    name = "japanese_songs_name"
+    tracks = {
+		"sleeppe_s_mod_battotai"
+		"sleeppe_s_mod_55_days_at_peking"
+		"sleeppe_s_mod_doki_no_sakura"
+		"sleeppe_s_mod_the_snowy_march"
+	}
+}
