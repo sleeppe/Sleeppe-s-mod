@@ -127,6 +127,7 @@ law_chi_yinpriv = {
 		state_tax_capacity_mult = 0.25
 		country_aristocrats_pol_str_mult = 0.50
 		state_decree_cost_mult = 2.5
+		country_consumption_tax_cost_mult = 3.0
 		country_law_enactment_max_setbacks_add = -2
 	}
 
@@ -330,6 +331,7 @@ law_chi_purchaseof_office = {
 		state_tax_capacity_mult = 0.45
 		state_decree_cost_mult = 1.5
 		country_law_enactment_max_setbacks_add = -1
+		country_consumption_tax_cost_mult = 0.15
 	}
 
 	on_enact = {
