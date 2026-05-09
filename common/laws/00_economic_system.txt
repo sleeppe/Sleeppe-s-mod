@@ -394,8 +394,8 @@ law_chi_physiocratic_policy = {
 		country_free_charters_add = 2
 		country_disable_nationalization_without_compensation_bool = yes
 		country_forbid_monopoly_bool = yes
-		building_group_bg_subsistence_agriculture_employee_mult = 1.5
-		building_group_bg_subsistence_agriculture_throughput_mult = 35
+		building_group_bg_subsistence_agriculture_employee_mult = 0.5
+		building_group_bg_subsistence_agriculture_throughput_mult = 15
 	}
 
 	ai_enact_weight_modifier = { 
@@ -435,8 +435,8 @@ law_chi_offical_supervision = {
 		building_nationalization_investment_return_add = 0.5
 		country_government_dividends_reinvestment_add = 0.50
 		country_government_dividends_efficiency_add = 0.30
-		building_group_bg_subsistence_agriculture_employee_mult = 0.5
-		building_group_bg_subsistence_agriculture_throughput_mult = 15
+		building_group_bg_subsistence_agriculture_employee_mult = 0.25
+		building_group_bg_subsistence_agriculture_throughput_mult = 5
 		country_free_charters_add = 3
 	}
 
