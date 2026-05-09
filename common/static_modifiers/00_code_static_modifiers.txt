@@ -58,7 +58,7 @@ base_values = {
 	country_max_weekly_construction_progress_add = 10
 	country_ship_construction_progress_max_add = 0
 
-	military_formation_organization_gain_add = 0.5 # 200 days to get max organization
+	military_formation_organization_gain_add = 1 # 100 days to get max organization
 
 	state_urbanization_per_level_add = 100
 
@@ -221,7 +221,7 @@ opposition_agitator_popularity = {
 
 in_default = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	building_throughput_add = -0.9
+	building_throughput_add = -0.75
 	unit_offense_mult = -0.9
 	unit_defense_mult = -0.9
 }
