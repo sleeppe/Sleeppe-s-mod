@@ -557,6 +557,12 @@ on_monthly_pulse_country = {
 
 		# Japan
 		japan_monarchy.5
+
+		# Treaty of Paris
+		treaty_of_paris_events.1
+
+		# italy
+		tuscan_italy.1
 	}
 
 	effect = {

@@ -1171,3 +1171,6 @@
 
 # JAPAN
 {95d1f63f-c390-4c95-9d82-c92d612d7136} event:/Battotai
+{3f556d4d-c778-412a-9862-b28fba2aeba3} event:/55 days at peking
+{085b7f9c-a93d-4b3b-bdf6-dc8ef5becc17} event:/Doki no Sakura
+{2418cd62-52b3-4e56-b30b-f5d20e0f060b} event:/The Snowy March

@@ -254,3 +254,37 @@ sleeppe_s_mod_the_internationale = {
     mood = yes
     can_be_interrupted = no
 }
+
+# JAPANESE SONGS
+
+sleeppe_s_mod_battotai = {
+    music = "event:/Battotai"
+    name = "sleeppe_s_mod_battotai_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = no
+}
+
+sleeppe_s_mod_55_days_at_peking = {
+    music = "event:/55 days at peking"
+    name = "sleeppe_s_mod_55_days_at_peking_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = no
+}
+
+sleeppe_s_mod_doki_no_sakura = {
+    music = "event:/Doki no Sakura"
+    name = "sleeppe_s_mod_doki_no_sakura_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = no
+}
+
+sleeppe_s_mod_the_snowy_march = {
+    music = "event:/The Snowy March"
+    name = "sleeppe_s_mod_the_snowy_march_name"
+    pause_factor = 50
+    mood = yes
+    can_be_interrupted = no
+}
