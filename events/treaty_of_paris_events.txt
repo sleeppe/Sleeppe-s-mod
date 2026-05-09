@@ -25,9 +25,7 @@ treaty_of_paris_events.1 = {
 			NOT = {
 				has_variable = treaty_of_paris_initiation_var 
 			}
-			c:TUR ?= {
 				is_diplomatic_play_enemy_of = c:RUS
-			}
 	}
 
 	immediate = {
