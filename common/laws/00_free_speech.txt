@@ -9,7 +9,7 @@ law_outlawed_dissent = {
 	progressiveness = -50
 
 	is_visible = { 
-		NOR = {
+		NAND = {
 			c:CHI ?= this
 			has_law_or_variant = law_type:law_monarchy
 		}
@@ -109,7 +109,7 @@ law_right_of_assembly = {
 	progressiveness = 50
 
 	is_visible = { 
-		NOR = {
+		NAND = {
 			c:CHI ?= this
 			has_law_or_variant = law_type:law_monarchy
 		}
