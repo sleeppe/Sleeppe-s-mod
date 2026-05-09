@@ -39,7 +39,7 @@ STATE_PIEDMONT = {
         building_logging_camp = 8
         building_fishing_wharf = 6
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3098
 }
 
 STATE_SARDINIA = {
@@ -98,7 +98,7 @@ STATE_UMBRIA = {
         building_logging_camp = 7
         building_fishing_wharf = 5
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_CORSICA = {
@@ -116,7 +116,7 @@ STATE_CORSICA = {
         building_logging_camp = 6
         building_fishing_wharf = 7
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3098
 }
 
 STATE_CAMPANIA = {
@@ -134,7 +134,7 @@ STATE_CAMPANIA = {
         building_logging_camp = 11
         building_fishing_wharf = 10
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3102
 }
 
 STATE_CALABRIA = {
@@ -191,7 +191,7 @@ STATE_ABRUZZO = {
         building_logging_camp = 9
         building_fishing_wharf = 7
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_SAVOY = {
@@ -230,7 +230,7 @@ STATE_EMILIA = {
         building_logging_camp = 13
         building_fishing_wharf = 3
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3098
 }
 
 STATE_TUSCANY = {
@@ -251,7 +251,7 @@ STATE_TUSCANY = {
         building_logging_camp = 11
         building_fishing_wharf = 5
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3098
 }
 
 STATE_ROMAGNA = {
@@ -271,7 +271,7 @@ STATE_ROMAGNA = {
         building_logging_camp = 8
         building_fishing_wharf = 6
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_LAZIO = {
@@ -289,7 +289,7 @@ STATE_LAZIO = {
         building_logging_camp = 11
         building_fishing_wharf = 7
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3102
 }
 
 STATE_VENETIA = {
@@ -310,7 +310,7 @@ STATE_VENETIA = {
         building_logging_camp = 7
         building_fishing_wharf = 12
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_SICILY = {
@@ -368,7 +368,7 @@ STATE_GALICIA = {
         building_gold_mine = 2
         building_iron_mine = 4
         building_logging_camp = 5
-        building_fishing_wharf = 4
+        building_fishing_wharf = 8
         building_whaling_station = 1
     }
     naval_exit_id = 3029
@@ -409,8 +409,8 @@ STATE_OLD_CASTILE = {
     arable_land = 69
     arable_resources = { "building_wheat_farm" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
-        building_coal_mine = 20
-        building_iron_mine = 15
+        building_coal_mine = 8
+        building_iron_mine = 5
         building_sulfur_mine = 2
         building_logging_camp = 6
         building_fishing_wharf = 3
@@ -467,7 +467,7 @@ STATE_CATALONIA = {
     farm = "x11E041"
     mine = "x08B4D6"
     wood = "x906040"
-    arable_land = 80
+    arable_land = 56
     arable_resources = { "building_wheat_farm" "building_silk_plantation" "building_livestock_ranch" "building_cotton_plantation" "building_tobacco_plantation" "building_vineyard" }
     capped_resources = {
         building_coal_mine = 20
@@ -476,7 +476,7 @@ STATE_CATALONIA = {
         building_logging_camp = 6
         building_fishing_wharf = 12
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3098
 }
 
 STATE_BALEARIC_ISLANDS = {
@@ -495,7 +495,7 @@ STATE_BALEARIC_ISLANDS = {
         building_logging_camp = 2
         building_fishing_wharf = 5
     }
-    naval_exit_id = 3032
+    naval_exit_id = 3098
 }
 
 STATE_LOWER_ANDALUSIA = {
@@ -516,7 +516,7 @@ STATE_LOWER_ANDALUSIA = {
         building_logging_camp = 4
         building_fishing_wharf = 9
     }
-    naval_exit_id = 3031
+    naval_exit_id = 3089
 }
 
 STATE_UPPER_ANDALUSIA = {
@@ -537,7 +537,7 @@ STATE_UPPER_ANDALUSIA = {
         building_logging_camp = 4
         building_fishing_wharf = 8
     }
-    naval_exit_id = 3031
+    naval_exit_id = 3032
 }
 
 STATE_EXTREMADURA = {
@@ -598,7 +598,7 @@ STATE_BEIRA = {
         building_logging_camp = 5
         building_fishing_wharf = 4
     }
-    naval_exit_id = 3029
+    naval_exit_id = 3089
 }
 
 STATE_ESTREMADURA = {
@@ -617,7 +617,7 @@ STATE_ESTREMADURA = {
         building_logging_camp = 4
         building_fishing_wharf = 8
     }
-    naval_exit_id = 3029
+    naval_exit_id = 3089
 }
 
 STATE_ALENTEJO = {
@@ -637,9 +637,9 @@ STATE_ALENTEJO = {
         building_iron_mine = 16
         building_sulfur_mine = 22
         building_logging_camp = 2
-        building_fishing_wharf = 4
+        building_fishing_wharf = 6
     }
-    naval_exit_id = 3029
+    naval_exit_id = 3089
 }
 
 STATE_CAPE_VERDE = {
@@ -698,7 +698,7 @@ STATE_AZORES = {
         building_fishing_wharf = 5
         building_whaling_station = 5
     }
-    naval_exit_id = 3069
+    naval_exit_id = 3085
 }
 
 STATE_MADEIRA = {
@@ -723,7 +723,7 @@ STATE_MADEIRA = {
 STATE_EASTERN_THRACE = {
     id = 108
     subsistence_building = "building_subsistence_farm"
-    traits = { "state_trait_bosporus" "state_trait_aegean_sea" }
+    traits = { "state_trait_bosporus" }
     provinces = { "x115006" "x194E90" "x2073F0" "x608BB0" "xF02082" "xF0A020" "xFCF160" }
     city = "xF0A020"
     port = "x2073F0"
@@ -780,7 +780,7 @@ STATE_ALBANIA = {
         type = "building_oil_rig"
         undiscovered_amount = 20
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_BOSNIA = {
@@ -872,7 +872,7 @@ STATE_DALMATIA = {
         building_logging_camp = 4
         building_fishing_wharf = 13
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_CROATIA = {
@@ -892,7 +892,7 @@ STATE_CROATIA = {
         building_logging_camp = 11
         building_fishing_wharf = 5
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_SLAVONIA = {
@@ -928,7 +928,7 @@ STATE_ISTRIA = {
         building_logging_camp = 5
         building_fishing_wharf = 14
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 # adjusted based on https://ipe.ro/Country%20Report%20Montenegro.pdf
 STATE_MONTENEGRO = {
@@ -949,7 +949,7 @@ STATE_MONTENEGRO = {
         building_logging_camp = 15
         building_fishing_wharf = 15
     }
-    naval_exit_id = 3033
+    naval_exit_id = 3093
 }
 
 STATE_WESTERN_SERBIA = {
@@ -1028,7 +1028,7 @@ STATE_WEST_AEGEAN_ISLANDS = {
     id = 123
     subsistence_building = "building_subsistence_orchard"
     provinces = { "x6090A0" "x6960A0" }
-    traits = { "state_trait_hermoupolis" "state_trait_aegean_sea" }
+    traits = { "state_trait_hermoupolis" }
     city = "x6090A0"
     port = "x6960A0"
     farm = "x6090A0"
@@ -1039,7 +1039,7 @@ STATE_WEST_AEGEAN_ISLANDS = {
     capped_resources = {
         building_fishing_wharf = 4
     }
-    naval_exit_id = 3034
+    naval_exit_id = 3117
 }
 
 STATE_EAST_AEGEAN_ISLANDS = {
@@ -1064,7 +1064,7 @@ STATE_ATTICA = {
     id = 124
     subsistence_building = "building_subsistence_farm"
     provinces = { "x0A645C" "x465F8D" "x518791" "x8D7F62" "xA010A0" "xBF5160" "xC72C61" "xCA246A" }
-    traits = { "state_trait_saronic_gulf" "state_trait_aegean_sea" }
+    traits = { "state_trait_saronic_gulf" }
     city = "xC72C61"
     port = "x518791"
     farm = "x0A645C"
@@ -1097,7 +1097,7 @@ STATE_THESSALIA = {
         building_logging_camp = 11
         building_fishing_wharf = 5
     }
-    naval_exit_id = 3034
+    naval_exit_id = 3117
 }
 
 STATE_SKOPIA = {
@@ -1132,7 +1132,7 @@ STATE_MACEDONIA = {
         building_logging_camp = 9
         building_fishing_wharf = 3
     }
-    naval_exit_id = 3034
+    naval_exit_id = 3117
 }
 
 STATE_WESTERN_THRACE = {
@@ -1152,7 +1152,7 @@ STATE_WESTERN_THRACE = {
         building_logging_camp = 5
         building_fishing_wharf = 10
     }
-    naval_exit_id = 3035
+    naval_exit_id = 3117
 }
 
 STATE_IONIAN_ISLANDS = {
@@ -1252,5 +1252,5 @@ STATE_ENTRE_DOURO_E_MINHO = {
         building_logging_camp = 7
         building_fishing_wharf = 6
     }
-    naval_exit_id = 3029
+    naval_exit_id = 3089
 }
