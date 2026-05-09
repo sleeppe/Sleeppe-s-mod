@@ -142,12 +142,12 @@ law_chi_queueorder = {
 	}
 
 	modifier = {
-		country_han_cultural_acceptance_add = -85
-		country_yue_cultural_acceptance_add = -20
-		country_min_cultural_acceptance_add = -20
-		country_hakka_cultural_acceptance_add = -20
-		country_miao_cultural_acceptance_add = -20
-		country_yi_cultural_acceptance_add = -20
+		country_han_cultural_acceptance_add = -95
+		country_yue_cultural_acceptance_add = -30
+		country_min_cultural_acceptance_add = -30
+		country_hakka_cultural_acceptance_add = -30
+		country_miao_cultural_acceptance_add = -30
+		country_yi_cultural_acceptance_add = -30
 		country_authority_add = 250
 		state_assimilation_mult = -0.50
 		country_support_separatism_resistance_mult = -0.5
