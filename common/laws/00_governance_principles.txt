@@ -331,6 +331,19 @@ law_monarchy = {
 			}
 		}
 		remove_regency_modifier = yes
+				if = {
+			limit = {
+				AND = {
+					has_law = law_type:law_chi_tuanlian
+					NOR = {s
+						has_law = law_type:law_theocracy
+						is_enacting_law = law_type:law_theocracy
+					}
+				}
+			}
+			custom_tooltip = because_tuanlian_is_active_tt
+			activate_law = law_type:law_chi_mintuan
+		}
 	}
 
 	ai_enact_weight_modifier = { #Petitions

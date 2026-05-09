@@ -120,12 +120,13 @@ law_chi_yinpriv = {
 
 	can_enact = {
 		has_law_or_variant = law_type:law_monarchy
+		has_law_or_variant = law_type:law_theocracy
 	}
 
 	modifier = {
 		state_tax_capacity_mult = 0.25
 		country_aristocrats_pol_str_mult = 0.50
-		state_decree_cost_mult = 1.5
+		state_decree_cost_mult = 2.5
 		country_law_enactment_max_setbacks_add = -2
 	}
 
@@ -319,13 +320,14 @@ law_chi_purchaseof_office = {
 	
 	can_enact = { 
 		has_law_or_variant = law_type:law_monarchy 
+		has_law_or_variant = law_type:law_theocracy
 	}
 
 	modifier = {
 		country_bureaucracy_investment_cost_factor_mult = 0.35
 		country_bureaucrats_pol_str_mult = 0.30
 		state_tax_capacity_mult = 0.35
-		state_decree_cost_mult = 1
+		state_decree_cost_mult = 1.5
 		country_law_enactment_max_setbacks_add = -1
 	}
 

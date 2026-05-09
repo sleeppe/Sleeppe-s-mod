@@ -301,6 +301,7 @@ law_tenant_farmers = {
 	modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.25
 		state_peasants_internal_migration_disallowed_bool = yes
+		state_minimum_incorporated_subsistence_arable_land_add = 0.25
 	}
 
 	on_enact = {
