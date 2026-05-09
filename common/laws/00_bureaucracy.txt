@@ -159,8 +159,8 @@ law_appointed_bureaucrats = {
 	is_visible = { 
 		NOT = {
 			has_law = law_type:law_usa_spoilsystem
+			c:CHI ?= this
 		}
-		c:CHI ?= this
 		}
 
 	modifier = {
@@ -261,7 +261,9 @@ law_elected_bureaucrats = {
 	progressiveness = 50
 
 	is_visible = { 
+		NOT = {
 		c:CHI ?= this
+		}
 	}
 
 	disallowing_laws = {
@@ -309,12 +311,18 @@ law_chi_purchaseof_office = {
 		c:CHI ?= this
 	}
 
+	disallowing_laws = {
+		law_traditionalism
+		law_industry_banned
+		law_chi_physiocratic_policy
+	}
+	
 	can_enact = { 
 		has_law_or_variant = law_type:law_monarchy 
 	}
 
 	modifier = {
-		country_bureaucracy_investment_cost_factor_mult = 0.25
+		country_bureaucracy_investment_cost_factor_mult = 0.35
 		country_bureaucrats_pol_str_mult = 0.30
 		state_tax_capacity_mult = 0.35
 		state_decree_cost_mult = 1
