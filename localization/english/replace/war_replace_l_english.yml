@@ -3,7 +3,6 @@
  WAR_EXHAUSTION_FROM_TURMOIL: "[concept_radical] Population ([SCOPE.GetRootScope.GetCountry.CalcTurmoil|%1v]) in [SCOPE.GetRootScope.GetCountry.GetName]"
  WAR_EXHAUSTION_FROM_EVENTS: "Other"
 
- MARKER_COMBAT_UNITS_TYPE_AND_NUM: "[SelectLocalization( FormationMarker.IsArmy, 'MARKER_ARMY', 'MARKER_NAVY' )]"
  MARKER_NAVY: "#v [FormationMarker.CalcTotalNumCombatUnits]#!"
  MARKER_ARMY: "[SelectLocalization(GreaterThan_int64(FormationMarker.CalcCurrentManpower, '(int64)100000'), 'MARKER_ARMY_BIG', 'MARKER_ARMY_SMALL')]"
  MARKER_ARMY_SMALL: "[FormationMarker.CalcCurrentManpower|0*v]"
