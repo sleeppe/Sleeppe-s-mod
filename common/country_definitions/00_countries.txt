@@ -1149,7 +1149,7 @@ YUG = {
 }
 
 ABU = {
-	color = { 113  112  96 }
+	color = { 71 71 59}
 
 	country_type = unrecognized
 
@@ -1231,7 +1231,7 @@ GEO = {
 }
 
 HDJ = {
-	color = { 121  229  215 }
+	color = { 62 115 108 }
 
 	country_type = unrecognized
 
@@ -1300,7 +1300,7 @@ MUG = {
 }
 
 NEJ = {
-	color = { 209 219 116}
+	color = { 80 84 43 }
 
 	country_type = unrecognized
 
@@ -1312,7 +1312,7 @@ NEJ = {
 }
 
 OMA = {
-	color = { 98  134  153 }
+	color = { 52 71 82 }
 
 	country_type = unrecognized
 
@@ -1336,7 +1336,7 @@ PER = {
 }
 
 JAB = {
-	color = { 183  62  62 }
+	color = { 82 29 29 }
 
 	country_type = unrecognized
 
@@ -1359,7 +1359,7 @@ YEM = {
 }
 
 MAH = {
-	color = { 0  153  76 }
+	color = { 8 84 46 }
 
 	country_type = unrecognized
 
@@ -1370,7 +1370,7 @@ MAH = {
 }
 
 KAT = {
-	color = { 79  152  64 }
+	color = { 44 87 36 }
 
 	country_type = unrecognized
 
@@ -1393,7 +1393,7 @@ ZAI = {
 }
 
 LAH = {
-	color = { 209  41  41 }
+	color = { 84 16 16 }
 
 	country_type = unrecognized
 
