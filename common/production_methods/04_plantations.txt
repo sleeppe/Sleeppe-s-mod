@@ -611,7 +611,7 @@ default_building_banana_plantation = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			goods_output_fruit_add = 20
+			goods_output_fruit_add = 25
 		}
 
 		level_scaled = {
@@ -639,7 +639,7 @@ automatic_irrigation_building_banana_plantation = {
 		workforce_scaled = {
 			# output goods
 			goods_input_engines_add = 5
-			goods_output_fruit_add = 25
+			goods_output_fruit_add = 35
 		}
 
 		level_scaled = {
@@ -658,8 +658,8 @@ agroforest_banana_plantation = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			goods_output_fruit_add = 10
-			goods_output_wood_add = 7
+			goods_output_fruit_add = 15
+			goods_output_wood_add = 15
 		}
 
 		level_scaled = {
