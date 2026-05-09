@@ -9,11 +9,9 @@ law_outlawed_dissent = {
 	progressiveness = -50
 
 	is_visible = { 
-		AND = {
-		c:CHI ?= this
-			NOT = {
-				has_law_or_variant = law_type:law_monarchy
-			}
+		NOR = {
+			c:CHI ?= this
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 	
@@ -111,11 +109,9 @@ law_right_of_assembly = {
 	progressiveness = 50
 
 	is_visible = { 
-		AND = {
-		c:CHI ?= this
-			NOT = {
-				has_law_or_variant = law_type:law_monarchy
-			}
+		NOR = {
+			c:CHI ?= this
+			has_law_or_variant = law_type:law_monarchy
 		}
 	}
 
@@ -136,7 +132,7 @@ law_right_of_assembly = {
 	}
 }
 
-law_chi_jieshejihuilv = { 
+law_chi_associations_assemble = { 
 	group = lawgroup_free_speech 
 	parent = law_right_of_assembly
 
