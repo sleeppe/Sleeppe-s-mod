@@ -220,7 +220,7 @@ law_usa_spoilsystem = {
 		has_law = law_type:law_usa_spoilsystem
 		AND = {
 			c:USA ?= this
-			has_law = law_elected_bureaucrats
+			has_law_or_variant = law_type:law_elected_bureaucrats
 		}
 	}
 	modifier = {
@@ -263,7 +263,8 @@ law_elected_bureaucrats = {
 
 	is_visible = { 
 		NOT = {
-		c:CHI ?= this
+			c:CHI ?= this
+			c:USA ?= this
 		}
 	}
 
@@ -324,9 +325,9 @@ law_chi_purchaseof_office = {
 	}
 
 	modifier = {
-		country_bureaucracy_investment_cost_factor_mult = 0.35
+		country_bureaucracy_investment_cost_factor_mult = 0.4
 		country_bureaucrats_pol_str_mult = 0.30
-		state_tax_capacity_mult = 0.35
+		state_tax_capacity_mult = 0.45
 		state_decree_cost_mult = 1.5
 		country_law_enactment_max_setbacks_add = -1
 	}

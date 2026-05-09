@@ -919,7 +919,7 @@ law_gbr_cashnexus = {
 	}
 
 	modifier = {
-		country_loan_interest_rate_mult = -0.15
+		country_loan_interest_rate_mult = -0.2
 		state_shopkeepers_investment_pool_efficiency_mult = 0.40
 		state_capitalists_investment_pool_efficiency_mult = 0.3
 		country_private_construction_allocation_mult = 0.75

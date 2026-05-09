@@ -712,8 +712,8 @@ NEconomy = {
 	TOLL_RATE_MULTIPLIER_FULL_CONTROL = 2.0				# Multiplie on the above value if a country controls both sides of a strait
 	STRAIT_FULL_CONTROL_TRADE_IMPORTANCE_MULT = 1.5	# Multiplier on strait trade importance when the controller controls both sides of the strait
 	MAX_PIRATED_GOODS_PER_HUB = 0.75 					# Max % of goods that can be pirated in one Hub->Hub connection
-	PIRACY_SHIP_SPEED_TO_GOODS_RATIO = 0.003 			# The % of goods trade quantity that are stolen per speed of a ship.
-	PIRATED_GOODS_SALE_DISCOUNT = 2.5 					# How much % value goods we get when being sold and turned into income for the country
+	PIRACY_SHIP_SPEED_TO_GOODS_RATIO = 0.01 			# The % of goods trade quantity that are stolen per speed of a ship.
+	PIRATED_GOODS_SALE_DISCOUNT = 0.5 					# How much % value goods we get when being sold and turned into income for the country
 	PIRACY_SELL_ORDERS_MIN_GOODS = 0.1					# The total amount of a good pirated needs to be at least this much to add it to sell orders, otherwise it's 100% lost
 }
 
