@@ -742,3 +742,18 @@
  EFFECTS_ON_ACCEPTANCE_law_usa_anggeluyizhixing: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Low Acceptance status Pops are punished, Pops in higher statuses more accepting of the government#!#!"
  EFFECTS_ON_ACCEPTANCE_law_usa_jimukelaofa: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Moderate consequences for Pops with low Acceptance values#!#!"
  EFFECTS_ON_ACCEPTANCE_law_usa_daosifaan: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Life for Pops with the lowest Acceptance status is not pleasant, but manageable#!#!"
+
+# Navy Model group
+ lawgroup_navy_model: "Navy Model"
+ lawgroup_navy_model_desc: "Organization and doctrine of your naval forces."
+
+ law_merchant_navy: "Merchant Navy"
+ law_merchant_navy_desc: "The fleet is focused on the propagation and protection of overseas trade and supply."
+ law_old_pirate_navy: "Old Pirate Ambations"
+ law_old_pirate_navy_desc: "The fleet has been filled with experience pirtes and raiders for century, and a new focus must be enforced to change this."
+ law_jeune_ecole: "Jeune École"
+ law_jeune_ecole_desc: "A naval model prioritizing the use of smaller, heavily armed ships to combat a larger enemy."
+ law_professional_navy: "Capital Fleet"
+ law_professional_navy_desc: "Focused on the construction and maintenance of a mighty battlefleet in order to impress and deter rivals."
+ law_diplomatic_navy: "Diplomatic Fleet"
+ law_diplomatic_navy_desc: "Prioritizing long-range cruising in order to build and maintain a global diplomatic presence."
