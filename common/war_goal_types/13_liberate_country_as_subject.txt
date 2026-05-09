@@ -1,0 +1,135 @@
+﻿REPLACE_OR_CREATE:liberate_country_as_subject = {
+	icon = "gfx/interface/icons/war_goals/liberate_country.dds"
+
+	kind = liberate_country
+
+	settings = {
+		require_target_be_part_of_war
+		country_creation
+		requires_interest
+
+		# Validation
+		conflicts_with_country_creation
+		conflicts_with_annex_state
+		conflicts_with_annex_country
+		conflicts_with_existing_subject
+	}
+
+	execution_priority = 95
+
+	contestion_type = control_any_releasable_state
+
+	target_type = country
+
+	possible = {
+		# trigger to determine if a goal with its target data is listed when selecting a war goal in the diplo play panel
+		# scopes: root = holder, creator_country, diplomatic_play, target_country, target_state, stakeholder, target_region, article_options
+	}
+
+	valid = {
+		# trigger in addition to some basic validation code-side
+		# scopes: root = holder, creator_country, diplomatic_play, target_country, target_state, stakeholder, target_region, article_options
+	}
+
+	maneuvers = {
+		value = 40
+	}
+
+	#infamy only for the capital state, other is done later
+	infamy = {
+		value = 0
+		
+		add = {
+			desc = "INFAMY_BASE_VALUE"
+			value = 2
+		}
+
+		multiply = {
+			desc = "INFAMY_TARGET_COUNTRY_POPULATION_FACTOR"
+			add = {
+				scope:target_state = {
+					add = {
+						add = state_population 
+						divide = define:NDiplomacy|WAR_GOAL_INFAMY_POPULATION_SCALING_FACTOR
+						multiply = define:NDiplomacy|WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER
+						multiply = {
+							add = 1
+							if = {
+								limit = {
+									is_incorporated = no
+								}
+								add = define:NDiplomacy|WAR_GOAL_INFAMY_UNINCORPORATED_FACTOR
+							}
+						}
+						min = 0.1
+						max = define:NDiplomacy|WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_PER_STATE
+					}
+				}
+			}
+			add = 1
+			max = define:NDiplomacy|WAR_GOAL_INFAMY_POPULATION_SCALING_MULTIPLIER_MAX_TOTAL
+		}
+
+		multiply = {
+			desc = "country_infamy_generation_against_unrecognized_mult"
+			value = 1
+			if = {
+				limit = {
+					scope:target_country = {
+						is_country_type = unrecognized
+					}
+				}
+				add = modifier:country_infamy_generation_against_unrecognized_mult
+			}
+		}
+
+		multiply = {
+			desc = "INFAMY_FROM_LOYAL_SUBJECT"
+			value = 1
+
+			if = {
+				limit = {
+					scope:target_country = {
+						is_subject_of = root
+						liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+					}
+				}
+				multiply = define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_SUBJECT_MULT
+			}
+		}
+
+		multiply = {
+			desc = "INFAMY_FROM_REBELLIOUS_SUBJECT" # Rebellious as in they are the aggressor in the play
+			value = 1
+
+			if = {
+				limit = {
+					scope:target_country = {
+						is_subject_of = root
+						is_diplomatic_play_enemy_of = root
+						scope:diplomatic_play ?= {
+							initiator_is = scope:target_country
+						}
+					}
+				}
+				multiply = define:NDiplomacy|WAR_GOAL_INFAMY_REBELLING_SUBJECT_MULT
+			}
+		}
+
+		divide = 1.5
+
+	}
+
+	on_enforced = {
+		scope:target_country = {
+			set_variable = waddle_female
+		}
+		scope:creator_country = {
+			set_variable = waddle_male
+		}
+	}
+
+	ai = {
+		is_significant_demand = no
+	}
+}
