@@ -138,15 +138,15 @@ budget_soc_decrease_effect = {
     }
 }
 
-budget_apply_modifiers_effect = {
-    name = budget_confirm
-    enabled = {
-        var:budget_total <= 10
-    }
-    effect = {
-        budget_apply_modifiers_effect = yes
-        trigger_event = {
-            id = budget_allocation.002 # "Budget allocated"
-            }
-        }
-    }
+#budget_apply_modifiers_effect = {
+#    name = budget_confirm              #Unexpected token: name, near line: 142" in file: "common/scripted_guis/budget_allocation_sgui.txt" near line: 142
+#    enabled = {                        #Unexpected token: enabled, near line: 143" in file: "common/scripted_guis/budget_allocation_sgui.txt" near line: 145
+#        var:budget_total <= 10
+#    }
+#    effect = {
+#        budget_apply_modifiers_effect = yes
+#        trigger_event = {
+#            id = budget_allocation.002 # "Budget allocated"
+#        }
+#    }
+#}
