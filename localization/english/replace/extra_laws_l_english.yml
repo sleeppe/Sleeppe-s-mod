@@ -682,7 +682,7 @@
  law_usa_angloconformity_desc: "A theory of American assimilation holding that immigrants must abandon their original cultures and fully adopt Anglo-Saxon language, values, and way of life."
  EFFECTS_ON_ACCEPTANCE_law_usa_angloconformity: "#tooltippable #tooltip:$BREAKDOWN_TAG$ Low Acceptance status Pops are punished, Pops in higher statuses more accepting of the government#!#!"
  law_usa_jimcrow: "Jim Crow Laws"
- law_usa_jimcrow:_desc: "Racial segregation laws enacted by Southern states in the United States from the late 19th to mid-20th centuries, mandating separate public facilities for different races."
+ law_usa_jimcrow_desc: "Racial segregation laws enacted by Southern states in the United States from the late 19th to mid-20th centuries, mandating separate public facilities for different races."
  EFFECTS_ON_ACCEPTANCE_law_usa_jimcrow: "#tooltippable #tooltip:$BREAKDOWN_TAG$  Moderate consequences for Pops with low Acceptance values#!#!"
  law_usa_dawes_act: "Dawes Act"
  law_usa_dawes_act_desc: "The General Allotment Act of 1887, providing for the distribution of tribal lands to individual Native Americans, aimed at breaking up tribal structures and promoting assimilation."
