@@ -29,7 +29,7 @@ je_vodka_monopoly = {
 	scripted_button = normalising_prices_button
 
 	immediate = {
-		company:company_vodka_monopoly = {
+		company_type:company_vodka_monopoly = {
 			save_scope_as = vodka_company
 		}
 	}

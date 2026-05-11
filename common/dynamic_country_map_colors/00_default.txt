@@ -876,6 +876,51 @@ iberia_esperanto = {
 	}
 }
 
+jap_imperial_court = {
+	color = "japan_red"
+
+	possible = {
+		AND = {
+			OR = {
+				is_revolutionary = yes
+				is_secessionist = yes
+			}
+			var:civil_war_type_var ?= movement_type:movement_meiji_restorationist
+			NOT = { has_variable = sonnojoi_contrast_color }
+		}
+	}
+}
+
+jap_sonnojoi_rebellion = {
+	color = "white"
+
+	possible = {
+		AND = {
+			OR = {
+				is_revolutionary = yes
+				is_secessionist = yes
+			}
+			var:civil_war_type_var ?= movement_type:movement_meiji_restorationist
+			has_variable = sonnojoi_contrast_color
+		}
+	}
+}
+
+jap_shogunate_rebellion = {
+	color = "tokugawa_green"
+
+	possible = {
+		OR = {
+			is_revolutionary = yes
+			is_secessionist = yes
+		}
+		var:civil_war_type_var ?= movement_type:movement_tokugawa_loyalist
+	}
+}
+
+
+## modded
+
 commune_italy = {
 	color = { 226 53 53 }
 
@@ -899,5 +944,3 @@ anarchist_italy = {
 		has_law_or_variant = law_type:law_anarchy
 	}
 }
-
-## modded

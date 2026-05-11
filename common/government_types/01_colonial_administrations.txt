@@ -79,14 +79,6 @@ gov_colonial_administration = {
 				is_subject = yes
 			}
 			AND = {
-				has_variable = niger_subject_var
-				is_subject = yes
-			}
-			AND = {
-				has_variable = ethiopia_subject_var
-				is_subject = yes
-			}
-			AND = {
 				has_variable = zanj_subject_var
 				is_subject = yes
 			}

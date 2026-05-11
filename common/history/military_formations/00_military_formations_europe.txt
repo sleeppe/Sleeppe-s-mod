@@ -1157,15 +1157,6 @@
 		}
 
 
-		create_character = {
-			template = GBR_hugh_gough
-			save_scope_as = gough_gen
-		}
-
-		scope:gough_gen = {
-			transfer_to_formation = scope:army_india_army
-		}
-
 		create_military_formation = {
 			type = fleet
 			hq_region = sr:region_southern_europe

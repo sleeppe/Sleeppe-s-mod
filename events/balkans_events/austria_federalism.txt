@@ -2382,6 +2382,59 @@ austria_federation.13 = { # Puppets decide how to respond
 	option = { # We'll go with it.
 		name = austria_federation.13.a
 		default_option = yes
+		ai_chance = {
+			base = 10
+			modifier = {
+				trigger = {
+					liberty_desire < define:NDiplomacy|WAR_GOAL_INFAMY_LOW_LIBERTY_DESIRE_THRESHOLD
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					liberty_desire <= 10
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:austria_scope)" >= relations_threshold:cordial
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:austria_scope)" >= relations_threshold:amicable
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:austria_scope)" >= relations_threshold:friendly
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					any_interest_group = {
+						is_in_government = yes
+						is_powerful = no
+						is_member_of_lobby = lobby_type:lobby_pro_overlord
+					}
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					any_interest_group = {
+						is_in_government = yes
+						is_powerful = yes
+						is_member_of_lobby = lobby_type:lobby_pro_overlord
+					}
+				}
+				add = 20
+			}
+		}
 		custom_tooltip = unlocks_actions_to_allow_federalization_tt
 		set_variable = danubian_federation_receptive
 		add_journal_entry = { type = je_danubian_federation_observer }
@@ -2407,6 +2460,90 @@ austria_federation.13 = { # Puppets decide how to respond
 				secret_goal = comply
 			}
 			set_strategy = ai_strategy_subject_overlord_compliance
+		}
+	}
+
+	option = { # NOH.
+		name = austria_federation.13.b
+		ai_chance = {
+			base = 20
+			modifier = {
+				trigger = {
+					liberty_desire > 25
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					liberty_desire > 50
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:austria_scope)" <= relations_threshold:poor
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:austria_scope)" <= relations_threshold:cold
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					"relations(scope:austria_scope)" <= relations_threshold:hostile
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					any_interest_group = {
+						is_in_government = yes
+						is_powerful = no
+						is_member_of_lobby = lobby_type:lobby_anti_overlord
+					}
+				}
+				add = 10
+			}
+			modifier = {
+				trigger = {
+					any_interest_group = {
+						is_in_government = yes
+						is_powerful = yes
+						is_member_of_lobby = lobby_type:lobby_anti_overlord
+					}
+				}
+				add = 20
+			}
+		}
+		custom_tooltip = unlocks_actions_to_prevent_federalization_tt
+		set_variable = danubian_federation_opposed
+		add_liberty_desire = 15
+		add_journal_entry = { type = je_danubian_federation_observer }
+		show_as_tooltip = {
+			add_modifier = {
+				name = modifier_resisting_federalization
+			}
+		}
+		je:je_danubian_federation_observer ?= {
+			add_modifier = {
+				name = modifier_resisting_federalization
+			}
+		}
+		c:AUS ?= {
+			set_secret_goal = {
+				country = ROOT
+				secret_goal = dominate
+			}
+		}
+		hidden_effect = {
+			set_secret_goal = {
+				country = c:AUS
+				secret_goal = defy
+			}
+			set_strategy = ai_strategy_subject_break_free
 		}
 	}
 }
