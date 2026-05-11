@@ -185,10 +185,6 @@ lawgroup_shifts = {
 	law_group_category = human_rights
 	ideological_opinion_impact = 0.5
 }
-lawgroup_taxation = {
-	law_group_category = economy
-	ideological_opinion_impact = 0.5
-}
 
 lawgroup_income_tax = {
 	law_group_category = economy

@@ -1,5 +1,5 @@
 ﻿pmg_base_building_sulfur_plant = {
-	texture = "gfx/interface/icons/production_method_icons/mixed_icon_base.dds"
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
 	production_methods = {
 		pm_pyrite_separation_building_sulfur_plant
         pm_oil_separation_building_sulfur_plant

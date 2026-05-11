@@ -283,9 +283,7 @@ law_elected_bureaucrats = {
 			custom_tooltip = urban_aristocrats_int_ig_shift_effect_negative_tt
 		}
 	}
-    is_visible = {
-		NOT = {c:USA ?= this}
-	}
+
 	modifier = {
 		country_bureaucracy_investment_cost_factor_mult = -0.15
 	}

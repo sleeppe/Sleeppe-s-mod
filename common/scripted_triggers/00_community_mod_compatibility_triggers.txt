@@ -1,4 +1,4 @@
-#################################################
+﻿#################################################
 # COMMUNITY MOD COMPATIBILITY SCRIPTED TRIGGERS #
 #################################################
 # FILE USAGE:
@@ -26,10 +26,6 @@ anzfp_is_active = { # Australia & New Zealand Flavor Pack
 }
 
 basileia_is_active = { # Basileia Romaion
-    always = no
-}
-
-betterdecrees_is_active = { # Better Decrees
     always = no
 }
 

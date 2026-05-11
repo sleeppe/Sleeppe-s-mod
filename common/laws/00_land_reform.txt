@@ -88,41 +88,23 @@ law_gbr_inclosure_act = {
 	on_enact = {
 		if = {
 			limit = {
-				NOR = {
+				OR = {
 					has_law_or_variant = law_type:law_commercialized_agriculture
-					has_law_or_variant = law_type:law_homesteading
+					has_law_or_variant = law_type:law_peasant_proprietorship
 				}
 			}
-			custom_tooltip = farmers_pb_ig_shift_effect_tt
+			custom_tooltip = farmers_pb_ig_shift_effect_negative_tt
 		}
 		if = {
 			limit = {
-				NOR = {
+				OR = {
 					has_law_or_variant = law_type:law_commercialized_agriculture
 					has_law_or_variant = law_type:law_collectivized_agriculture
 				}
 			}
-			custom_tooltip = rural_laborers_tu_ig_shift_effect_tt
-		}
-		if = {
-			limit = {
-				has_law_or_variant = law_type:law_serfdom
-				NOT = { has_strategy = ai_strategy_reactionary_agenda }
-				OR = {
-					NOT = { has_strategy = ai_strategy_conservative_agenda }
-					any_political_movement = {
-						law_enactment_stance = {
-							law = law_type:law_commercialized_agriculture
-							value > neutral
-						}
-						political_movement_support >= 0.10
-					}
-				}
-			}
-			add = 1000
+			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
 		}
 	}
-
 	modifier = {
 		country_financial_districts_buy_farms_likelihood = 0.75
 		interest_group_ig_landowners_pol_str_mult = 0.15
@@ -163,7 +145,7 @@ law_serfdom = {
 				c:AUS ?= { has_law = law_type:law_manorialism }
 			}
 			country_has_primary_culture = cu:romanian
-			c:GBR = this?
+			c:GBR ?= this
 		}
 	}
 
@@ -294,7 +276,7 @@ law_tenant_farmers = {
 		NOR = {
 			has_law = law_type:law_latifundias
 			has_law = law_type:law_expanded_latifundias
-			c:GBR = this?
+			c:GBR ?= this
 		}
 	}
 
@@ -392,7 +374,7 @@ law_commercialized_agriculture = {
 
 	is_visible = {
 		NOT = {
-			c:GBR = this?
+			c:GBR ?= this
 		}
 	}
 
@@ -439,30 +421,6 @@ law_commercialized_agriculture = {
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
-		}
-
-		if = {
-			limit = {
-				has_journal_entry = je_meiji_main
-				has_law_or_variant = law_type:law_serfdom
-			}
-			add = 10000 # Top priority for Meiji AI is to get out of Serfdom
-		}
-
-		if = {
-			limit = {
-				NOT = {
-					has_variable = is_carlist_spain
-				}
-				OR = {
-					has_journal_entry = je_portugal_regeneration_agriculture
-					has_journal_entry = je_spa_economic_regeneration_land_reform
-				}
-				NOT = {
-					has_law = law_type:law_peasant_proprietorship
-				}
-			}
-			add = 1000
 		}
 
 		# AI should really try to get out of Serfdom under the right circumstances

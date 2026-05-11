@@ -11,9 +11,8 @@ law_gbr_hanovermonarchy = {
 
 	progressiveness = 0 
 
-	can_enact = { limit = {
+	can_enact = { 
 		c:GBR ?= this
-		}
 	}
 
 	is_visible = {
@@ -23,7 +22,7 @@ law_gbr_hanovermonarchy = {
 	modifier = {
 		country_legitimacy_headofstate_add = 15
 		country_aristocrats_pol_str_mult = 0.15
-		country_industroal_pol_str_mult = 0.10
+		country_capitalists_pol_str_mult = 0.10
 		country_legitimacy_govt_size_add = 1
 		country_authority_add = 150
 	}
@@ -39,7 +38,7 @@ law_gbr_hanovermonarchy = {
 			limit = {
 				AND = {
 					has_law = law_type:law_subjecthood
-					NOR = {s
+					NOR = {
 						has_law = law_type:law_theocracy
 						is_enacting_law = law_type:law_theocracy
 					}
@@ -279,7 +278,7 @@ law_monarchy = {
 			limit = {
 				AND = {
 					has_law = law_type:law_subjecthood
-					NOR = {s
+					NOR = {
 						has_law = law_type:law_theocracy
 						is_enacting_law = law_type:law_theocracy
 					}
@@ -335,7 +334,7 @@ law_monarchy = {
 			limit = {
 				AND = {
 					has_law = law_type:law_chi_tuanlian
-					NOR = {s
+					NOR = {
 						has_law = law_type:law_theocracy
 						is_enacting_law = law_type:law_theocracy
 					}
