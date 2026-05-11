@@ -952,6 +952,83 @@ je_confederation_of_the_rhine_expand_button = {
 	}
 }
 
+je_unite_the_principalities_button = {
+	name = "je_unite_the_principalities_button"
+	desc = "je_unite_the_principalities_button_desc"
+
+	visible = { always = yes }
+
+	ai_chance = {
+		value = 100
+	}
+
+	possible = {
+        custom_tooltip = {
+            text = je_unite_the_principalities_friend_with_all_great_powers_tt
+			NOT = {
+		        any_country = {
+		            country_rank >= rank_value:great_power
+		            NOT = { has_war_with = ROOT }
+		            has_interest_marker_in_region = ROOT.capital.region
+		            relations:root < 0
+		        }
+	        }
+        }
+        custom_tooltip = {
+            text = je_unite_the_principalities_amicable_or_better_relations_tt
+            NOR = {
+            	has_variable = romania_unification_in_motion
+            	has_variable = ROM_united_principality
+            }
+            OR = {
+				is_subject_type = subject_type_protectorate
+				is_subject_type = subject_type_dominion
+				is_subject_type = subject_type_tributary
+				is_subject = no
+			}
+	        any_country = {
+	        	NOT = { this = ROOT }
+	        	country_has_primary_culture = cu:romanian
+	            relations:root >= 25
+	            OR = {
+	            	AND = {
+	            		exists = top_overlord
+						OR = {
+							is_subject_type = subject_type_protectorate
+							is_subject_type = subject_type_dominion
+							is_subject_type = subject_type_tributary
+						}
+						top_overlord = {
+							THIS = root.top_overlord
+						}
+					}
+					is_subject = no
+	            }
+				NOR = {
+					c:AUS ?= this
+					c:KUK ?= this
+				}
+	        }
+        }
+	}
+
+	effect = {
+		if = {
+			limit = {
+				is_subject = yes
+				exists = top_overlord
+			}
+			set_variable = romania_subject
+        	top_overlord = {
+        		trigger_event = {
+	        		id = romania.1
+	        	}
+	        }
+	    }
+	    trigger_event = { id = romania.2 }
+	}
+}
+
 je_south_bessarabian_retrocession = {
 	name = "je_south_bessarabian_retrocession_button"
 	desc = "je_south_bessarabian_retrocession_button_desc"
