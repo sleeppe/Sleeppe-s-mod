@@ -2828,4 +2828,17 @@
  concept_zaibatsu: "Zaibatsu"
  concept_zaibatsu_desc: "A #b #italic $concept_zaibatsu$#!#! is a family-owned and vertically-integrated industrial and financial conglomerate.\n\nA typical $concept_zaibatsu$ is organized around a holding company and a bank, which hold ownership shares in several, typically industrial, subsidiary companies. The $concept_zaibatsu$ emerged from family merchant congolomerates of the late Edo period, which made use of their pre-existing wealth and ties to the state to consolidate control of much of Japan's industrial base.\n\n[Concept('concept_company','$concept_companies$')] regarded as Zaibatsu include #v $company_mitsui$#!, #v $company_mitsubishi$#!, #v $company_yasuda$#!, and #v $company_sumitomo$#!."
 
+ #Raiding
+ concept_raiding: "Raiding"
+ concept_raiding_short: "Raiding"
+ concept_raiding_desc: "Raiding is income derived from the theft, pillage and plunder of neighboring lands over time. With little arable land, $MON$ must rely on $concept_raiding$ and [concept_russian_aid] to survive. \n\nOur income from raiding is dependent on our [concept_raiding_frequency] multiplied by our army's [concept_power_projection]. #g @money!+[GetPlayer.MakeScope.ScriptValue('max_raiding_income')]#! is the most we can possibly earn from raiding."
+ #"Raiding Fervor"
+ concept_raiding_frequency: "Raiding Fervor"
+ concept_raiding_frequency_short: "Raiding Fervor"
+ concept_raiding_frequency_desc: "$concept_raiding_frequency$ represents how often the tribes are permitted to [Concept('concept_raiding', 'raid')].\n\nIn addition to increasing our income from [concept_raiding], each #v 1%#! of $concept_raiding_frequency$ will also have the following effects:\n[GetStaticModifier('modifier_montenegrin_disobedience').GetDesc]"
+ #Russian Aid
+ concept_russian_aid: "Russian Aid"
+ concept_russian_aid_short: "Russian Aid"
+ concept_russian_aid_desc: "$concept_russian_aid$ is support from #v $RUS$#! to our tribes, as fellow brethren of the Orthodox Church. \n\nThe base amount we receive depends on our [concept_relations] with #v $RUS$#!: \n\n• #v Neutral Relations#! (or worse): @money!200 \n• #v Cordial Relations#! : @money!400 \n• #v Amicable Relations#! : @money!700 \n• #v Friendly Relations#! : @money!1000"
+
  because_tuanlian_is_active_tt:"Because [GetLawType('law_chi_tuanlian').GetName] is active: #indent_newline:3 "

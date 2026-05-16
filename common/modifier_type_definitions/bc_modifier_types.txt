@@ -53,7 +53,7 @@ building_group_bg_canals_throughput_add={
 	}
 }
 
-state_radicals_from_sol_change_mult={
+REPLACE_OR_CREATE:state_radicals_from_sol_change_mult={
 	decimals=0
 	color=bad
 	percent=yes

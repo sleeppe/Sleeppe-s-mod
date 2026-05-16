@@ -1237,7 +1237,6 @@ law_ayllu_kinship = {
 		law_chiefdom
 		law_colonial_administration
 		law_autocracy
-		law_mit_a_taxes
 	}
 
 	modifier = {
