@@ -13,7 +13,6 @@ INJECT:decree_road_maintenance = {
 		state_tax_capacity_mult = 0.25
 		building_government_administration_throughput_add = 0.25 
 		state_tax_waste_add = -0.15
-		state_radicals_from_sol_change_mult = 0.1
 		state_bureaucracy_population_base_cost_factor_mult = -0.15
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
@@ -332,7 +331,6 @@ decree_worker_exploitation = {
 		state_farmers_mortality_mult = 0.1
 		state_slaves_mortality_mult = 0.15
 		state_pop_qualifications_mult = -0.2
-		state_radicals_from_sol_change_mult = 0.2
 		building_minimum_wage_mult = -0.25
 		building_working_conditions_mult = 0.15
 	}
@@ -350,7 +348,6 @@ INJECT:decree_promote_national_values = {
 		state_allow_assimilation_in_homeland_bool = yes # maybe this should be a distinct decree?
 		state_assimilation_mult = 2
 		state_conversion_mult = 2
-		state_loyalists_from_sol_change_mult = 0.1
 		state_radicalism_increases_violent_hostility_mult = 0.4
 		state_radicalism_increases_cultural_erasure_mult = 0.3
 		state_radicalism_increases_open_prejudice_mult = 0.2
@@ -1055,7 +1052,6 @@ decree_disenfranchise = {
 		state_radicalism_increases_violent_hostility_mult = 0.075
 		state_radicalism_increases_cultural_erasure_mult = 0.05
 		state_radicalism_increases_open_prejudice_mult = 0.025
-		state_radicals_from_sol_change_mult = 0.05 
 	}
 	cost = 100
 	

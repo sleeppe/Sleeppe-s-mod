@@ -140,4 +140,4 @@ ig_trait_biedermanner = {
 		state_middle_strata_expected_sol_add = -1
 		country_loan_interest_rate_mult = -0.07
 	}
-}
+}d

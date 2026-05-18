@@ -1358,9 +1358,6 @@
  concept_loans:0 "Loans"
  concept_loans_desc:1 "Funds that the [concept_treasury] owes to the [Concept('concept_country','$concept_country_possessive$')] [concept_building_owners].\n\nWhenever the $concept_treasury$ is running a negative balance, it will automatically increase its $concept_loans$ unless it has sufficient [concept_gold_reserves] to cover it.\n\n[concept_budget_interest] is accrued on the [concept_principal] weekly. If the $concept_principal$ ever exceeds the $concept_country_possessive$ [concept_credit], it goes into [concept_default]."
 
- concept_war_support:0 "War Support"
- concept_war_support_desc:2 "A measure of how eager your [Concept('concept_country','$concept_country_possessive$')] population is to remain in a [concept_war]. Positive values indicate a desire to stay in the $concept_war$ while negative values indicate a general opposition to it. Once $concept_war_support$ reaches [GetDefine('NWar','AUTO_CAPITULATE_WAR_SUPPORT')|v0] the $concept_country$ will immediately capitulate, allowing all [Concept('concept_war_goal','$concept_war_goals$')] to be pressed on them. $concept_war_support$ can only drop below #v 0#! if the opposing side [Concept('concept_controlled_war_goal','$concept_controls_war_goal_short$')] all their $concept_war_goals$."
-
  concept_occupation:0 "Occupation"
  concept_occupied:0 "Occupied"
  concept_occupying:0 "Occupying"

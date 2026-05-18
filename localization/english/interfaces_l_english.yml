@@ -590,7 +590,6 @@
  ARTICLE_DRAFT_QUANTITY_ABOVE_ZERO: "[AddLocalizationIf(GreaterThan_CFixedPoint(ArticleDraft.GetQuantity, '(CFixedPoint)0'), ArticleDraft.GetQuantity)]"
  GOODS_NAME_ARTICLE_SELECTED: "[Goods.GetNameNoFormatting] (#i Selected#!)"
  ARTICLE_SELECTED: "#i Selected#!"
- ARTICLE_COUNTRY_WILL_NOT_COLONIZE: "[Country.GetName][ConcatIfNeitherEmpty(' ', AddLocalizationIf(Country.IsLocalPlayer, 'YOU'))] will #b not#! [Concept('concept_colony', '$concept_colonize$')] [StrategicRegion.GetName]"
  ARTICLE_DRAFT_COUNTRY_NOT_SIGNED: "Not signed yet"
  ARTICLE_SELECTED_LAW_COMMITMENT: "[Country.GetName] will commit to passing [LawType.GetName]"
  DUPLICATE_ARTICLE_SAME_INPUTS: "Only one [concept_article] of a certain type with the same inputs can be included"
@@ -1009,7 +1008,6 @@
  BUILDING_ARABLE_CAPACITY_PER_LEVEL:0 "#variable #N -$ARABLE_CAPACITY$#!#! [concept_arable_land] per Level"
  BUILDING_ARABLE_CAPACITY_TOTAL:0 "#variable #N -$ARABLE_CAPACITY$#!#! [concept_arable_land] Total"
 
- GDP_TOOLTIP:1 "#header [Country.GetAdjective] [concept_gdp]#!\n@money![Country.GetGDP|Dv] (#u #tooltippable #tooltip:[Country.GetTooltipTag],COUNTRY_GDP_OWNERSHIP_TOOLTIP [Country.GetDomesticallyOwnedGDPFraction|%1b]#!#!#!) domestically owned $concept_gdp_short$ ([Country.GetGDPRanking])\n@money![Country.GetGDPPerCapita|2*v] [Concept('concept_gdp_per_capita', '$concept_gdp_per_capita_short$')] ([Country.GetGDPPerCapitaRanking])"
  COUNTRY_GDP_OWNERSHIP_TOOLTIP: "#header [concept_gdp_ownership] in [Country.GetName]#!\n#u [Country.GetDomesticallyOwnedGDPFraction|%1b]#! (@money![Country.GetGDP|Dv]) domestically owned $concept_gdp_short$\n$TOOLTIP_DELIMITER$\n[SelectLocalization(IsZero_CFixedPoint(Country.GetForeignOwnedGDPFraction), 'NO_FOREIGNLY_OWNED_PERCENTAGE', 'COUNTRY_FOREIGNLY_OWNED_PERCENTAGE')]\n\n[SelectLocalization(IsZero_CFixedPoint(Country.GetGDPOwnedInForeignCountries), 'NO_OWNED_FOREIGN_GDP_BY_COUNTRY', 'OWNED_FOREIGN_GDP_BY_COUNTRY')]"
 
  COUNTRY_FOREIGNLY_OWNED_PERCENTAGE: "#title #o [Country.GetForeignOwnedGDPFraction|%1b]#! (@money![Country.GetForeignOwnedGDP|Dv]) of [Country.GetAdjective] $concept_gdp_short$ is foreign-owned:#!#indent_newline:3 \n[Country.GetForeignOwnedGDPDesc]#!"
@@ -3162,9 +3160,7 @@
  POWER_BASE_INCOME:0 "Base Income: #variable #P +$POWER_BASE_GENERATION|1$ #!#!\n"
  CAPITAL_TRUST:0 "#tooltip_header Trust#!\nCurrent: #HEADER [GetPlayer.GetTrust|2]#!\nMonthly decay: #BOLD #V [GetPlayer.GetMonthlyTrustChange|+=3]#!#!"
  CAPITAL_TRUST_DELAYED:0 "\n$TOOLTIP_DELIMITER$\n[GetPlayer.GetTrustBreakdown]\nMax amount: #variable 100#!\n\n$TRUST_CONCEPT$"
- POP_TOOLTIP:2 "#tooltip_header [Concept('concept_pop','$concept_population$')]#!\nCurrent: [Country.GetTotalPopulation|*2v] ([Country.GetPopulationRanking])\n[Country.GetPopGrowthDesc]$POP_TOOLTIP_DELAYED$\n$TOOLTIP_DELIMITER$\n[Country.GetAdjective] population is [Country.MakeScope.ScriptValue('larp_global_pop_percent')|%v1] of Global Population\nGlobal Population: [Country.MakeScope.ScriptValue('larp_global_pop')|*2v]"
  RADICALS_TOOLTIP:1 "#tooltip_header $RADICALS$#!\nThere are #v [Country.GetNumRadicals|D]#! $RADICALS$ in the total population of #v [Country.GetTotalPopulation|D]#! ([Country.MakeScope.ScriptValue('larp_radicals_percent')|%v1]) in [Country.GetName]\n$TOOLTIP_DELIMITER$\nThe number of $RADICALS$ changed by #v #tooltippable #tooltip:[Country.GetTooltipTag],RADICALS_CHANGE_TOOLTIP [Country.GetTotalNumRadicalsChange|D=-]#!#!#! since [Country.GetRadicalsLoyalistsChangeStartDate|v].\nThe most impactful factors are [Country.GetRadicalsChangeSummary]\n\n[Country.GetRadicalsSummaryDesc][ConcatIfNeitherEmpty('\n\n',SelectLocalization( GreaterThan_int32(Country.CalcNumStatesInTurmoil, '(int32)0'), 'STATES_IN_TURMOIL', '' ))][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromRadicals, 'RADICALS_IG_APPROVAL', '' ))]"
- LOYALISTS_TOOLTIP:1 "#tooltip_header $LOYALISTS$#!\nThere are #v [Country.GetNumLoyalists|D]#! $LOYALISTS$ in the total population of #v [Country.GetTotalPopulation|D]#! ([Country.MakeScope.ScriptValue('larp_loyalists_percent')|%v1]) in [Country.GetName]\n$TOOLTIP_DELIMITER$\nThe number of $LOYALISTS$ changed by #v #tooltippable #tooltip:[Country.GetTooltipTag],LOYALISTS_CHANGE_TOOLTIP [Country.GetTotalNumLoyalistsChange|D=+]#!#!#! since [Country.GetRadicalsLoyalistsChangeStartDate|v]\nThe most impactful factors are [Country.GetLoyalistsChangeSummary]\n\n[Country.GetLoyalistsSummaryDesc][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromLoyalists, 'LOYALISTS_IG_APPROVAL', '' ))]"
 
  RADICALS_SUMMARY_IG_HEADER: "\n\n$concept_radicals$ by [concept_interest_group]:"
  LOYALISTS_SUMMARY_IG_HEADER: "\n\n$concept_loyalists$ by [concept_interest_group]:"
@@ -3185,7 +3181,6 @@
  FORMATION_MAP_MARKER_INTERACTION_INFO: "#i Shift+Click#! to #b add#! to selection\n#i Ctrl+Click#! to #b remove#! from selection\n#i Drag select#! to #b select multiple#! Formations"
 
  RADICALS_LOYALISTS_SUMMARY_POLITICALLY_UNALIGNED_LIST_ITEM: "\n$TAB$$VAL|vD$ [Concept('concept_politically_unaligned_aligned', '$concept_politically_unaligned$')]"
- NEUTRALS_TOOLTIP:1 "#tooltip_header $NEUTRALS$#!\nThere are #v [Country.GetNumNeutrals|*2]#! $NEUTRALS$ in the total population of #v [Country.GetTotalPopulation|*2]#! ([Country.MakeScope.ScriptValue('larp_neutrals_percent')|%v1]) in [Country.GetName]"
  IG_RADICALS_TOOLTIP: "#tooltip_header $RADICALS$#!\nThere are #v [InterestGroup.GetNumRadicals|-*2]#! $RADICALS$ in [InterestGroup.GetName]\n[InterestGroup.GetNumRadicalsRatio|%2r] of #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],TOOLTIP_POPULATION [InterestGroup.GetPopulation|*2]#!#!#! supporting [Concept('concept_pop', '$concept_pops$')]"
  IG_LOYALISTS_TOOLTIP: "#tooltip_header $LOYALISTS$#!\nThere are #v [InterestGroup.GetNumLoyalists|+*2]#! $LOYALISTS$ in [InterestGroup.GetName]\n[InterestGroup.GetNumLoyalistsRatio|%2g] of #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],TOOLTIP_POPULATION [InterestGroup.GetPopulation|*2]#!#!#! supporting [Concept('concept_pop', '$concept_pops$')]"
  IG_NEUTRALS_TOOLTIP: "#tooltip_header $NEUTRALS$#!\nThere are #v [InterestGroup.GetNumNeutrals|*2]#! $NEUTRALS$ in [InterestGroup.GetName]\n[InterestGroup.GetNumNeutralsRatio|%2v] of #v #tooltippable #tooltip:[InterestGroup.GetTooltipTag],TOOLTIP_POPULATION [InterestGroup.GetPopulation|*2]#!#!#! supporting [Concept('concept_pop', '$concept_pops$')]"
@@ -5421,7 +5416,6 @@
  WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_EXTREME: "Extreme Enemy Occupation ([SCOPE.GetRootScope.GetCountry.GetEnemyOccupation|%1v])"
  WAR_EXHAUSTION_FROM_ENEMY_OCCUPATION_TOTAL: "Total Enemy Occupation ([SCOPE.GetRootScope.GetCountry.GetEnemyOccupation|%1v])"
  WAR_EXHAUSTION_FROM_ENEMY_CONTESTED_WARGOALS: "[SCOPE.sWar('war').GetEnemyContestedWarGoalsFraction(SCOPE.GetRootScope.GetCountry.Self)|%0v] enemy [Concept('concept_controlled_war_goal','$concept_control_war_goal_short$')] over $WARGOALS$"
- WAR_EXHAUSTION_FROM_CASUALTIES: "[SCOPE.sWar('war').GetCasualties(SCOPE.GetRootScope.GetCountry.Self)|Dv] [concept_casualties] suffered compared to max military size of #v [SCOPE.GetRootScope.GetCountry.GetNumCombatUnitsAndShips|D]K#! and their side has lost [SCOPE.sWar('war').GetSizeWeightedLostBattlesFraction(SCOPE.GetRootScope.GetCountry.Self)|%1v] of battles (scaled by battle size)"
  WAR_EXHAUSTION_FROM_ACCEPTANCE_OF_DEAD: "Cultural [concept_acceptance] of #negative_value [SCOPE.sWar('war').GetTotalDeadWithWarExhaustionTooltip(SCOPE.GetRootScope.GetCountry.Self)]#! total deaths"
  WAR_EXHAUSTION_TOTAL_DEAD_FORMATTED: "#tooltippable #tooltip:$TOOLTIP_TAG$ $VALUE|D$#!#!"
  WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE: "#header [concept_war_exhaustion] from [Concept('concept_culture','$concept_cultural$')] [concept_acceptance]#!\n#negative_value $VALUE|=2$#! per week\n$TOOLTIP_DELIMITER$\n$DEATHS|vK$ [concept_dead] to date\n$MOBILIZED|vK$ current [concept_manpower] in [concept_war]\n\n#indent_newline:3 #title $concept_war_exhaustion$ from deaths in each [concept_culture]#!:\n$BREAKDOWN$#!"
@@ -5429,11 +5423,9 @@
  WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE_NO_IMPACT_ENTRY: "No impact from $DEATHS|vD$ [Culture.GetName] deaths ([AcceptanceStatus.GetName])"
  WAR_EXHAUSTION_FROM_CULTURAL_ACCEPTANCE_ENTRY_BREAKDOWN: "#negative_value $IMPACT|=2$#! from $DEATHS|vD$ dead on [Country.GetAdjective] side"
  WAR_EXHAUSTION_FROM_country_war_exhaustion_casualties_mult: "$country_war_exhaustion_casualties_mult$"
- WAR_EXHAUSTION_FROM_TURMOIL: "[concept_radical] Population ([SCOPE.GetRootScope.GetCountry.CalcTurmoil|%1v])"
  WAR_SUPPORT_FROM_FERVOR: "[concept_fervor] of [SCOPE.GetRootScope.GetCountry.GetAdjective] [Concept('concept_primary_cultures','$concept_primary_culture$')]"
  WAR_SUPPORT_FROM_LOBBIES: "[concept_clout] of [Concept('concept_political_lobby', '$concept_political_lobbies_short$')] supporting the $concept_war$"
  WAR_OPPOSITION_FROM_LOBBIES: "[concept_clout] of [Concept('concept_political_lobby', '$concept_political_lobbies_short$')] opposing the $concept_war$"
- WAR_EXHAUSTION_FROM_EVENTS: "Events"
 
  WARGOAL_CONTESTED_DESC: "#header [concept_war_goal] in [WarGoal.GetWar.GetName]#!\n[WarGoal.GetName] is [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]\n$TOOLTIP_DELIMITER$\n[WarGoal.GetIsContestedDesc]"
  WARGOAL_NOT_CONTESTED_DESC: "#header [concept_war_goal] in [WarGoal.GetWar.GetName]#!\n[WarGoal.GetName] is #n not#! [Concept('concept_controlled_war_goal','$concept_controlled_war_goal_short$')]\n$TOOLTIP_DELIMITER$\n[WarGoal.GetIsContestedDesc]"
@@ -6532,13 +6524,6 @@
  WAR_DEFENDER_LEADER_TOOLTIP:0 "[War.AccessDefenderLeaderParticipant.GetWarSupportDesc]\n$TOOLTIP_DELIMITER$\n[War.AccessDefenderLeaderParticipant.GetWarSupportDescDelayed]\n[War.AccessDefenderLeaderParticipant.GetExhaustionDesc][ConcatIfNeitherEmpty('\n\n',War.AccessDefenderLeaderParticipant.GetCanCapitulateDesc)]"
  WAR_PANEL_RIGHT_LEADER_TOOLTIP:0 "[WarPanel.AccessWar.AccessParticipant(WarPanel.GetRightLeader.Self).GetWarSupportDesc]\n$TOOLTIP_DELIMITER$\n[WarPanel.AccessWar.AccessParticipant(WarPanel.GetRightLeader.Self).GetWarSupportDescDelayed]\n[WarPanel.AccessWar.AccessParticipant(WarPanel.GetRightLeader.Self).GetExhaustionDesc][ConcatIfNeitherEmpty('\n\n',WarPanel.AccessWar.AccessParticipant(WarPanel.GetRightLeader.Self).GetCanCapitulateDesc)]"
  WAR_PANEL_LEFT_LEADER_TOOLTIP:0 "[WarPanel.AccessWar.AccessParticipant(WarPanel.GetLeftLeader.Self).GetWarSupportDesc]\n$TOOLTIP_DELIMITER$\n[WarPanel.AccessWar.AccessParticipant(WarPanel.GetLeftLeader.Self).GetWarSupportDescDelayed]\n[WarPanel.AccessWar.AccessParticipant(WarPanel.GetLeftLeader.Self).GetExhaustionDesc][ConcatIfNeitherEmpty('\n\n',WarPanel.AccessWar.AccessParticipant(WarPanel.GetLeftLeader.Self).GetCanCapitulateDesc)]"
-
- WAR_PANEL_WAR_SUPPORT_DESC:0 "#HEADER War Support#! ($COUNTRY_NAME$)\nCurrent Value: #variable $SUPPORT|1+=$#!"
- WAR_PANEL_WAR_SUPPORT_DESC_INITIAL:1 "Initial [concept_war_support]: #variable [GetDefine('NDiplomacy','BASE_WAR_SUPPORT')|+=1]#!"
- WAR_PANEL_WAR_SUPPORT_DESC_BATTLES:0 "\nFrom Battles: #variable $BATTLES|1+=$#!"
- WAR_PANEL_WAR_SUPPORT_DESC_EXHAUSTION:0 "\nFrom Exhaustion: #variable $EXHAUSTION|1+=$#!"
- WAR_PANEL_WAR_SUPPORT_DESC_SITUATIONS:1 "\nFrom Events: #variable $SITUATIONS|1+=$#!"
- WAR_PANEL_WAR_SUPPORT_UNABLE_TO_CAPITULATE: "@warning! Unable to capitulate due to:\n$DETAILS$"
 
  PEACE_TOAST_TITLE:0 "Peace Treaty between [DiplomaticPlay.GetInitiator.GetName] and [DiplomaticPlay.GetTarget.GetName]"
  PEACE_SIGNED_DATE: "Signed on [DiplomaticPlay.GetEndDate|v], [DiplomaticPlay.GetWarDurationString]"

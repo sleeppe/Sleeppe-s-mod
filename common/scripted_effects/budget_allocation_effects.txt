@@ -236,10 +236,10 @@ budget_apply_modifiers_effect = {
 		name = budget_total
 		value = var:budget_fin
 	}
-	set_variable = {
-		name = budget_total
-		value = var:budget_soc
-	}
+#	set_variable = {
+#		name = budget_total
+#		value = var:budget_soc
+#	}
 
 	if = {
 		limit = {
