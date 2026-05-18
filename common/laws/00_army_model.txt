@@ -123,8 +123,10 @@ law_chi_tuanlian = {
 	}
 
 	can_enact = {
-		has_law_or_variant = law_type:law_monarchy 
-		has_law_or_variant = law_type:law_theocracy
+		OR = {
+			has_law_or_variant = law_type:law_monarchy 
+			has_law_or_variant = law_type:law_theocracy
+		}
 	}
 
 	modifier = {
@@ -181,10 +183,12 @@ law_chi_mintuan = {
 	}
 
 	can_enact = { 
+		OR = {
 		has_law_or_variant = law_type:law_presidential_republic
 		has_law_or_variant = law_type:law_parliamentary_republic
 		has_law_or_variant = law_type:law_corporate_state
 		has_law_or_variant = law_type:law_council_republic
+		}
 	}
 
 	modifier = {
