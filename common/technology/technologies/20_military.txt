@@ -441,10 +441,6 @@ modern_nursing = {
 		triage
 	}
 
-	can_research = {	
-		has_global_variable = era_3_unlocked
-	}
-
 	ai_weight = {
 		value = 1
 	}
@@ -462,10 +458,6 @@ enlistment_offices = {
 
 	unlocking_technologies = {
 		logistics
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -491,10 +483,6 @@ electric_telegraph = {
 
 	unlocking_technologies = {
 		logistics
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -544,10 +532,6 @@ repeaters = {
 		rifling
 	}
 
-	can_research = {	
-		has_global_variable = era_3_unlocked
-	}
-
 	ai_weight = {
 		value = 1.5 # Important tech in general
 	}
@@ -564,10 +548,6 @@ breech_loading_artillery = {
 	unlocking_technologies = {
 		rifling
 		shell_gun
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -597,10 +577,6 @@ handcranked_machine_gun = {
 		breech_loading_artillery
 	}
 
-	can_research = {	
-		has_global_variable = era_3_unlocked
-	}
-
 	ai_weight = {
 		value = 1
 	}
@@ -614,10 +590,6 @@ self_propelled_torpedoes = {
 
 	unlocking_technologies = {
 		power_of_the_purse
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -638,10 +610,6 @@ monitor_tech = {
 	unlocking_technologies = {
 		ironclad_tech
 		breech_loading_artillery
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -665,10 +633,6 @@ ironclad_tech = {
 
 	unlocking_technologies = {
 		screw_frigate
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -697,10 +661,6 @@ jeune_ecole = {
 		self_propelled_torpedoes
 	}
 
-	can_research = {	
-		has_global_variable = era_3_unlocked
-	}
-
 	ai_weight = {
 		value = 1
 	}
@@ -715,10 +675,6 @@ floating_harbor = {
 
 	unlocking_technologies = {
 		gantry_cranes
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -745,10 +701,6 @@ gantry_cranes = {
 	unlocking_technologies = {
 		hydraulic_cranes
 		screw_frigate
-	}
-
-	can_research = {	
-		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
