@@ -597,6 +597,10 @@ handcranked_machine_gun = {
 		breech_loading_artillery
 	}
 
+	can_research = {	
+		has_global_variable = era_3_unlocked
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -634,6 +638,10 @@ monitor_tech = {
 	unlocking_technologies = {
 		ironclad_tech
 		breech_loading_artillery
+	}
+
+	can_research = {	
+		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -689,6 +697,10 @@ jeune_ecole = {
 		self_propelled_torpedoes
 	}
 
+	can_research = {	
+		has_global_variable = era_3_unlocked
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -703,6 +715,10 @@ floating_harbor = {
 
 	unlocking_technologies = {
 		gantry_cranes
+	}
+
+	can_research = {	
+		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
