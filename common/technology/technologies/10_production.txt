@@ -458,6 +458,11 @@ improved_fertilizer = {
 		state_birth_rate_mult = 0.02
 	}
 
+	can_research = {	
+		has_global_variable = era_3_unlocked
+	}
+
+
 	ai_weight = {
 		value = 1
 	}
@@ -506,6 +511,10 @@ dynamite = {
 		nitroglycerin
 	}
 
+	can_research = {	
+		has_global_variable = era_3_unlocked
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -520,6 +529,10 @@ rubber_mastication = {
 	unlocking_technologies = {
 		fractional_distillation
 		chemical_bleaching
+	}
+
+	can_research = {	
+		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -547,6 +560,10 @@ rotary_valve_engine = {
 		watertube_boiler
 	}
 
+	can_research = {	
+		has_global_variable = era_3_unlocked
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -564,6 +581,10 @@ reinforced_concrete = {
 
 	unlocking_technologies = {
 		bessemer_process
+	}
+
+	can_research = {	
+		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
@@ -648,6 +669,10 @@ open_hearth_process = {
 		bessemer_process
 	}
 
+	can_research = {	
+		has_global_variable = era_3_unlocked
+	}
+
 	ai_weight = {
 		value = 1
 	}
@@ -711,6 +736,10 @@ steel_railway_cars = {
 
 	unlocking_technologies = {
 		railways
+	}
+
+	can_research = {	
+		has_global_variable = era_3_unlocked
 	}
 
 	ai_weight = {
