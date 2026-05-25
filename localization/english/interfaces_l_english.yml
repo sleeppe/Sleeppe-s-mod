@@ -1169,7 +1169,8 @@
  GOVERNMENT_TRANSFER_OF_POWER_TOOLTIP:0 "#header [GovernmentType.GetTransferOfPowerName]#!\n[GovernmentType.GetTransferOfPowerDesc]"
 
  LOYALISTS_TOOLTIP_POP:0 "#header $LOYALISTS$#!\nThere are #v [Pop.GetNumLoyalists|K]#! $LOYALISTS$ in this [concept_pop]"
- RADICALS_TOOLTIP_POP:0 "#header $RADICALS$#!\nThere are #v [Pop.GetNumRadicals|K]#! $RADICALS$ in this [concept_pop]"
+ RADICALS_TOOLTIP:1 "#tooltip_header $RADICALS$#!\nThere are #v [Country.GetNumRadicals|D]#! $RADICALS$ in the total population of #v [Country.GetTotalPopulation|D]#! ([Country.MakeScope.ScriptValue('larp_radicals_percent')|%v1]) in [Country.GetName]\n$TOOLTIP_DELIMITER$\nThe number of $RADICALS$ changed by #v #tooltippable #tooltip:[Country.GetTooltipTag],RADICALS_CHANGE_TOOLTIP [Country.GetTotalNumRadicalsChange|D=-]#!#!#! since [Country.GetRadicalsLoyalistsChangeStartDate|v].\nThe most impactful factors are [Country.GetRadicalsChangeSummary]\n\n[Country.GetRadicalsSummaryDesc][ConcatIfNeitherEmpty('\n\n',SelectLocalization( GreaterThan_int32(Country.CalcNumStatesInTurmoil, '(int32)0'), 'STATES_IN_TURMOIL', '' ))][ConcatIfNeitherEmpty('\n\n',SelectLocalization( Country.HasIGApprovalFromRadicals, 'RADICALS_IG_APPROVAL', '' ))]"
+
  SUPPORTING_RADICALS_TOOLTIP_POP: "#header $RADICALS$#!\nThere are #v [Pop.GetPoliticalMovementSupportersRadicals(PoliticalMovement.Self)|K]#! $RADICALS$ in this [concept_pop]"
  LOYALISTS_TOOLTIP_POP_LIST: "#header $LOYALISTS$#!\nThere are #v [PopListItem.GetNumLoyalists|d]#! $LOYALISTS$ among these [PopListItem.GetTotalPopSize|dv] [PopListItem.GetPopType.GetName]"
  RADICALS_TOOLTIP_POP_LIST: "#header $RADICALS$#!\nThere are #v [PopListItem.GetNumRadicals|d]#! $RADICALS$ among these [PopListItem.GetTotalPopSize|dv] [PopListItem.GetPopType.GetName]"

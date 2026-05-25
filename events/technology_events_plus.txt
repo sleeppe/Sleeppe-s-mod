@@ -1,4 +1,4 @@
-namespace = era_unlock
+﻿namespace = era_unlock
 
 # event required to unlock the 3rd era of research. 
 era_unlock.1 = {
