@@ -7995,3 +7995,9 @@ on_monthly_pulse_country = {
 		statistics_on_actions
 	}
 }
+
+on_yearly_pulse_country = {
+	events = {
+		era_unlock.1
+	}
+}
