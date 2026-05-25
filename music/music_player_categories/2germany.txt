@@ -2,9 +2,9 @@
     id = "Sleeppe_s_mod_category_2german_songs"
     name = "german_songs_name"
     tracks = {
-		"sleeppe_s_mod_deutscher"
-		"sleeppe_s_mod_german2"
-		"sleeppe_s_mod_german3"
-		"sleeppe_s_mod_german4"
+		"mx_mood_deutscher"
+		"mx_mood_german2"
+		"mx_mood_german3"
+		"mx_mood_german4"
 	}
 }

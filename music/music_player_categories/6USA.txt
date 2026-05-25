@@ -2,10 +2,10 @@
     id = "Sleeppe_s_mod_category_6american_songs"
     name = "american_songs_name"
     tracks = {
-		"sleeppe_s_mod_battle_cry_of_freedom"
-		"sleeppe_s_mod_dixie_union"
-		"sleeppe_s_mod_dixie"
-		"sleeppe_s_mod_over_there"
-		"sleeppe_s_mod_yankee_doodle"
+		"mx_mood_battle_cry_of_freedom"
+		"mx_mood_dixie_union"
+		"mx_mood_dixie"
+		"mx_mood_over_there"
+		"mx_mood_yankee_doodle"
 	}
 }
