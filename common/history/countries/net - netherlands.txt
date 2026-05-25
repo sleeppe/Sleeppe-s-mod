@@ -55,10 +55,5 @@
 			name = modifier_financial_crisis
 			months = 600 # 50 Years
 		}
-
-		set_variable = {
-			name = dutch_debt_progress
-			value = 0
-		}
 	}
 }
