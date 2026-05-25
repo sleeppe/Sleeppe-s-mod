@@ -1,40 +1,39 @@
-﻿namespace = era_unlock
+﻿# namespace = era_unlock
 
 # event required to unlock the 3rd era of research. 
-era_unlock.1 = {
-	type = country_event
-	
-	title = era_unlock.1.t
-	desc = era_unlock.1.d
-	flavor = era_unlock.1.f
-
-	event_image = {
-		video = "unspecific_world_fair"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
-
-	duration = 3
-
-	trigger = {
-		date > 1840.1.1
-		NOT = {
-			has_global_variable = era_3_unlocked
-		}
-	}
-
-	immediate = {
-		set_global_variable = {
-			name = era_3_unlocked
-		}
-	}
-
-	option = {
-		name = era_unlock.1.a
-		default_option = yes
-	}
-
-}
+# era_unlock.1 = {
+#	type = country_event
+#	
+#	title = era_unlock.1.t
+#	desc = era_unlock.1.d
+#	flavor = era_unlock.1.f
+#
+#	event_image = {
+#		video = "unspecific_world_fair"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#
+#	icon = "gfx/interface/icons/event_icons/tutorial_icon.dds"
+#
+#	duration = 3
+#
+#	trigger = {
+#		date > 1840.1.1
+#		NOT = {
+#			has_global_variable = era_3_unlocked
+#		}
+#	}
+#
+#	immediate = {
+#		set_global_variable = {
+#		}
+#	}
+#
+#	option = {
+#		name = era_unlock.1.a
+#		default_option = yes
+#	}
+#
+#}
 
