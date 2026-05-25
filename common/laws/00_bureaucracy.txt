@@ -214,9 +214,6 @@ law_usa_spoilsystem = {
 
 	progressiveness = 0 
 
-	can_enact = { 
-	}
-
 	is_visible = { 
 		has_law = law_type:law_usa_spoilsystem
 		AND = {
