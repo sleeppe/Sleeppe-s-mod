@@ -1,4 +1,4 @@
-# in theory should check whether era 3 is unlocked or not..
+﻿# in theory should check whether era 3 is unlocked or not..
 can_research_era_3_trigger = {
 	has_global_variable = era_3_unlocked
 }

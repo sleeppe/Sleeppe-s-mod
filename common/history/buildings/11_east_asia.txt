@@ -551,16 +551,6 @@
 				building="building_forbidden_city"
 				level=1
 			}
-			create_building={
-				building="building_naval_fortification"
-				add_ownership={
-					country={
-						country="c:CHI"
-						levels=1
-					}
-				}
-				activate_production_methods={ "pm_naval_fortification_basic"  }
-			}
 		}
 	}
 	s:STATE_SHENGJING={
@@ -2088,7 +2078,7 @@
 				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated"  }
 			}
 		}
-		region_state:ALK={
+		region_state:RUS={
 			create_building={
 				building="building_port"
 				add_ownership={

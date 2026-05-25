@@ -512,9 +512,9 @@ military_statistics = {
 		general_staff
 	}
 
-	can_research = {	
-		has_global_variable = era_3_unlocked
-	}
+	# can_research = {	
+	# 	has_global_variable = era_3_unlocked
+	# }
 
 	ai_weight = {
 		value = 1

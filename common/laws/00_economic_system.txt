@@ -32,7 +32,7 @@ law_traditionalism = {
 		state_farmers_investment_pool_efficiency_mult = -0.5
 		state_clergymen_investment_pool_efficiency_mult = -0.5
 		state_aristocrats_investment_pool_efficiency_mult = -0.5
-		state_bureaucracy_population_base_cost_factor_mult = -0.25
+		state_bureaucracy_population_base_cost_factor_mult = -0.40
 		country_government_dividends_reinvestment_add = 0.25
 		state_tax_capacity_mult = -0.25
 		country_private_construction_allocation_mult = 0.25
@@ -43,7 +43,7 @@ law_traditionalism = {
 		building_self_investment_chance_add = 0.25
 		country_disable_nationalization_without_compensation_bool = yes
 		building_group_bg_subsistence_agriculture_employee_mult = 0.25
-		building_group_bg_subsistence_agriculture_throughput_add = 0.1
+		building_group_bg_subsistence_agriculture_throughput_add = 0.20
 	}
 
 	# AI should never switch back to traditionalism
@@ -395,7 +395,7 @@ law_chi_physiocratic_policy = {
 		country_disable_nationalization_without_compensation_bool = yes
 		country_forbid_monopoly_bool = yes
 		building_group_bg_subsistence_agriculture_employee_mult = 0.5
-		building_group_bg_subsistence_agriculture_throughput_add = 15
+		building_group_bg_subsistence_agriculture_throughput_add = 0.10
 	}
 
 	ai_enact_weight_modifier = { 
@@ -436,7 +436,7 @@ law_chi_offical_supervision = {
 		country_government_dividends_reinvestment_add = 0.50
 		country_government_dividends_efficiency_add = 0.30
 		building_group_bg_subsistence_agriculture_employee_mult = 0.25
-		building_group_bg_subsistence_agriculture_throughput_add = 5
+		building_group_bg_subsistence_agriculture_throughput_add = 0.05
 		country_free_charters_add = 3
 	}
 

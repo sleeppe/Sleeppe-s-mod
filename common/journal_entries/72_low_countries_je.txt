@@ -59,6 +59,7 @@ je_dutch_fiscal_crisis = {
 		company:company_amsterdamse_effectenbeurs = {
 			save_scope_as = amsterdam_company
 		}
+		set_variable = { name = dutch_debt_progress value = 0 }
     }
 
     complete = {
