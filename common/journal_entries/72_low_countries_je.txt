@@ -97,7 +97,7 @@ je_dutch_fiscal_crisis = {
 	}
 
 	current_value = {
-		value = var:dutch_debt_progress
+		value = root.var:dutch_debt_progress
 	}
 
 	on_monthly_pulse = {
