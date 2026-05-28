@@ -1,0 +1,28 @@
+﻿COUNTRIES = {
+	c:SOK ?= {
+		effect_starting_technology_tier_4_tech = yes
+
+		effect_starting_politics_traditional = yes
+		activate_law = law_type:law_traditionalism
+		activate_law = law_type:law_mercantilism
+		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_amabutho
+		activate_law = law_type:law_slave_trade
+		activate_law = law_type:law_sokoto_religion
+
+		ig:ig_devout ?= {
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_landowners ?= {
+			add_ruling_interest_group = yes
+		}
+		active_law:lawgroup_slavery ?= { 
+			add_amendment = {
+				type = amendment_sokotan_slave_state
+				sponsor = PREV.ig:ig_landowners
+			}
+		}
+	}
+}

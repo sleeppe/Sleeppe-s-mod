@@ -671,4 +671,26 @@
 	c:WAL ?= {
 		add_liberty_desire = 20
 	}
+	c:SOK ?= {
+		create_diplomatic_pact = {
+			country = c:BEN
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:OYO
+			type = vassal	
+		}
+		create_diplomatic_pact = {
+			country = c:DAH
+			type = vassal
+		}
+		create_diplomatic_pact = {
+			country = c:BRG
+			type = vassal	
+		}
+		create_diplomatic_pact = {
+			country = c:BOR
+			type = vassal
+		}
+	}
 }
