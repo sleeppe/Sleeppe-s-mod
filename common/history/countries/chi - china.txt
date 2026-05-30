@@ -19,7 +19,7 @@
 		activate_law = law_type:law_canton_system
 		activate_law = law_type:law_chi_confucius
 		activate_law = law_type:law_land_based_taxation
-		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_consumption_taxes
 		activate_law = law_type:law_chi_tuanlian
 
 		set_tax_level = low
