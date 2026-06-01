@@ -1,0 +1,35 @@
+﻿namespace = qing_events
+
+qing_events.1 = {
+    type = country_event
+    placement = ROOT
+
+    title = qing_events.1.t
+    desc = qing_events.1.d
+    flavor = qing_events.1.f
+
+    duration = 30
+
+    cooldown = { days =  2000}
+
+	event_image = {
+		video = "europenorthamerica_opium_smoker"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    trigger = {
+        exists = c:CHI
+        c:CHI ?= THIS
+        has_modifier = forced_market_opening
+        is_country_type = unrecognized
+    }
+
+    immediate = {
+        trigger = {
+			has_law_or_variant = law_type:law_chi_five_treaty
+		}
+    }
+}

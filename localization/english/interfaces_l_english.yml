@@ -6325,7 +6325,10 @@
  EXPENSES_POWER_BLOC: "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],POWER_BLOC_EXPENSES_BREAKDOWN,PowerBlocExpenseTooltip #N @money!-[GetPlayer.GetPowerBlocExpenseRaw|D-]#!#!#! [concept_budget_power_bloc]"
  EXPENSES_CONSTRUCTION_GOODS:0 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN,ConstructionGoodsExpenseTooltip #N @money!-[GetPlayer.GetConstructionGoodsExpenses|D-]#!#!#! [concept_budget_construction_goods]"
  EXPENSES_SHIP_CONSTRUCTION_GOODS: "$TAB$#tooltippable;tooltip:[GetPlayer.GetTooltipTag],SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN @money![Negate(GetPlayer.GetShipConstructionGoodsExpenses)|D+]#! [concept_ship_construction]"
+<<<<<<< HEAD
  EXPENSES_SUPPLY_SHIP_CONSTRUCTION_GOODS: "$TAB$#tooltippable;tooltip:[GetPlayer.GetTooltipTag],SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN @money![Negate(GetPlayer.GetSupplyShipConstructionGoodsExpenses)|D+]#! [Concept('concept_supply_ship', '$concept_supply_ship_construction$')]"
+=======
+>>>>>>> 5627a1b2f9c4ce0971ec08c7566e9b4ad2e66ab0
  EXPENSES_MILITARY_SHIP_CONSTRUCTION_GOODS: "$TAB$#tooltippable;tooltip:[GetPlayer.GetTooltipTag],SHIP_CONSTRUCTION_GOODS_EXPENSES_BREAKDOWN @money![Negate(GetPlayer.GetMilitaryShipConstructionGoodsExpenses)|D+]#! [concept_ship_construction]"
  EXPENSES_INTEREST:1 "$TAB$#tooltippable #tooltip:[GetPlayer.GetTooltipTag],INTEREST_EXPENSE_TOOLTIP,InterestExpenseTooltip #N @money!-[GetPlayer.GetInterestPayment|D-]#!#!#! [concept_budget_interest]"
  ECONOMY_HEALTH:0 "Your economy is $HEALTH$\n$TAB$$INCOME_RATIO$\n$TAB$$CREDIT_RATIO$ (Principal: #variable @money!$CURRENT_LOAN_BALANCE|D$#!)"

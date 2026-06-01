@@ -429,7 +429,7 @@ opium_wars.4 = {
 			triggered_desc = {
 				desc = opium_wars.4.d
 				trigger = {
-					has_law_or_variant = law_type:law_free_trade
+					has_law_or_variant = law_type:law_chi_five_treaty
 				}
 			}
 			triggered_desc = {
