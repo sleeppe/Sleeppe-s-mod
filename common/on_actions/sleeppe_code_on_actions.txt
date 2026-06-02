@@ -1,0 +1,4 @@
+on_monthly_pulse_country = {
+    # Treaty of Paris
+		treaty_of_paris_events.1
+}
