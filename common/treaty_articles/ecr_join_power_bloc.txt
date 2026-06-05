@@ -1,0 +1,46 @@
+﻿INJECT:join_power_bloc = {
+	ai = {
+		inherent_accept_score = {
+			if = {
+				if = {
+					limit = {
+						scope:target_country.country_rank > rank_value:insignificant_power
+					}
+					add = {
+						desc = "DIPLOMATIC_ACCEPTANCE_IDENTITY_AFFINITY_TO_RANK"
+						if = {
+							limit = {
+								scope:target_country.country_rank >= rank_value:great_power
+							}
+							add = modifier:power_bloc_invite_acceptance_great_power_add
+						}
+						else_if = {
+							limit = {
+								scope:target_country.country_rank = rank_value:major_power
+							}
+							add = modifier:power_bloc_invite_acceptance_major_power_add
+						}
+						else_if = {
+							limit = {
+								scope:target_country.country_rank = rank_value:minor_power
+							}
+							add = modifier:power_bloc_invite_acceptance_minor_power_add
+						}
+						else_if = {
+							limit = {
+								scope:target_country.country_rank = rank_value:unrecognized_major_power
+							}
+							add = modifier:power_bloc_invite_acceptance_unrecognized_major_power_add
+						}
+						else_if = {
+							limit = {
+								scope:target_country.country_rank = rank_value:unrecognized_regional_power
+							}
+							add = modifier:power_bloc_invite_acceptance_unrecognized_regional_power_add
+						}
+					}
+				}
+			}
+		}
+	}
+}

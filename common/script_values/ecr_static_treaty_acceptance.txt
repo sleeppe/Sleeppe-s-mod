@@ -1,0 +1,9 @@
+﻿INJECT:threaten_naval_hostilities_infamy = {
+	if = {
+		limit = {
+			scope:other_country.country_rank >= rank_value:great_power
+		}
+
+		multiply = 3.0
+	}
+}

@@ -1,0 +1,27 @@
+﻿INJECT:je_the_balkan_league_research_mil_tech_start_button = {
+	possible = {
+		NOT = {
+			has_modifier = balkan_wars_military_tech_boost_mod
+		}
+		any_country = {
+			NOT = {
+				c:TUR ?= THIS
+			}
+			country_rank >= rank_value:great_power
+			custom_tooltip = {
+				text = hates_turkey_tt
+				c:TUR ?= {
+					relations:prev <= relations_threshold:poor
+				}
+			}
+			relations:root >= relations_threshold:cordial
+		}
+        hidden_trigger = {
+        	has_variable = balkan_league_acceptor
+        	NOT = {
+        		has_variable = resign_button_pressed
+        	}
+        	has_journal_entry = je_the_balkan_league
+        }
+	}
+}

@@ -138,6 +138,6 @@ ig_trait_biedermanner = {
 	modifier = {
 		state_radicals_from_political_movements_mult = -0.05
 		state_middle_strata_expected_sol_add = -1
-		country_loan_interest_rate_mult = -0.07
+		country_loan_interest_rate_mult = -0.10
 	}
 }d

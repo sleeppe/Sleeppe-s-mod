@@ -1,0 +1,5 @@
+﻿INJECT:je_greater_power = {
+	complete = {
+		country_rank >= rank_value:great_power
+	}
+}

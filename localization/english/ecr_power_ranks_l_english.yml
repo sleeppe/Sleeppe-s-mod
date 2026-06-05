@@ -1,0 +1,17 @@
+﻿l_english:
+
+hyperpower:1 "[concept_hyperpower]"
+hyperpower_desc:0 "[concept_hyperpower_desc]"
+
+concept_hyperpower:0 "Hyperpower"
+concept_hyperpowers:1 "Hyperpowers"
+concept_hyperpower_desc:3 "None can dispute the totality of control of the [Concept('concept_hyperpower','$concept_hyperpower$')]; even the mightiest of [Concept('concept_superpower','$concept_superpowers$')] bow their heads. These historic [Concept('concept_country', '$concept_countries$')] are not bound to the simple concept of a [Concept('concept_superpower','$concept_superpower$')]; they dominate in all matters of international politics, economics, and military influence. Thus earning the domineering title of global hegemon. These hegemonic powers alone holds the reins of global destiny, shaping the currents of international politics with their immense reach and unparalleled resources. [AddLocalizationIf(GetPlayer.IsValid,'concept_hyperpower_desc_added')]"
+concept_hyperpower_desc_added:0 "\n\n$concept_hyperpowers$ gain the following benefits:\n[GetRankModifier('hyperpower').GetDesc]"
+
+superpower:1 "[concept_superpower]"
+superpower_desc:0 "[concept_superpower_desc]"
+
+concept_superpower:0 "Superpower"
+concept_superpowers:1 "Superpowers"
+concept_superpower_desc:3 "In the realm of geopolitical influence and global dominance, there exist a select group of nations that stand head and shoulders above even the mightiest of [Concept('concept_great_power','$concept_great_powers$')]. These distinguished [Concept('concept_country', '$concept_countries$')] are not merely confined by the definition of a [Concept('concept_great_power','$concept_great_power$')]; they transcend it, earning the illustrious title of a superpower. [AddLocalizationIf(GetPlayer.IsValid,'concept_superpower_desc_added')]"
+concept_superpower_desc_added:0 "\n\n$concept_superpowers$ gain the following benefits:\n[GetRankModifier('superpower').GetDesc]"

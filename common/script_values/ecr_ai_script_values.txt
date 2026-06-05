@@ -1,0 +1,47 @@
+﻿INJECT:wanted_army_size_script_value = {
+# Extra army size from rank
+	if = {
+		limit = { country_rank >= rank_value:great_power }
+		add = 25
+	}
+}
+
+INJECT:wanted_marines_size_script_value = {
+	# Special logic for Great Britain - this should be reworked to be less specific later
+	if = {
+		limit = {
+			country_rank >= rank_value:great_power
+			capital = {
+				OR = {
+					is_in_geographic_region = geographic_region_england_old
+					is_in_geographic_region = geographic_region_north_sea_coast_old
+				}
+			}
+		}
+		add = 10
+	}
+	else_if = { # GPs and MPs should want to maintain some marines
+		limit = { country_rank >= rank_value:great_power }
+		add = 5
+	}
+}
+
+INJECT:wanted_navy_size_script_value = {
+	# Special logic for Great Britain - this should be reworked to be less specific later
+	if = {
+		limit = {
+			country_rank >= rank_value:great_power
+			capital = {
+				OR = {
+					is_in_geographic_region = geographic_region_england_old
+					is_in_geographic_region = geographic_region_north_sea_coast_old
+				}
+			}
+		}
+		add = 100
+	}
+	else_if = { # GPs and MPs should want to maintain a bit of a navy
+		limit = { country_rank >= rank_value:great_power }
+		add = 25
+	}
+}

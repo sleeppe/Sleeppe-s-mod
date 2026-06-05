@@ -1,0 +1,25 @@
+﻿INJECT:suez_survey_decision = {
+	is_shown = {
+		OR = {
+			country_rank >= rank_value:great_power
+			s:STATE_SINAI = {
+				any_scope_state = {
+					owner = ROOT
+				}
+			}
+		}
+	}
+}
+
+INJECT:panama_survey_decision = {
+	is_shown = {
+		OR = {
+			country_rank >= rank_value:great_power
+			s:STATE_PANAMA = {
+				any_scope_state = {
+					owner = ROOT
+				}
+			}
+		}
+	}
+}

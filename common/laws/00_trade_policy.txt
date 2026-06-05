@@ -351,6 +351,10 @@ law_usa_monroe = {
 	can_enact = {
 	}
 
+	unlocking_technologies = {
+		nationalism
+	}
+
 	modifier = {
 		country_authority_mult = 0.25
 		state_tax_capacity_mult = 0.15

@@ -1,0 +1,15 @@
+﻿INJECT:abandon_piracy = {
+	ai = {
+		evaluation_chance = {
+			value = 0.025
+
+			if = {
+				limit = {
+					country_rank >= rank_value:great_power
+					navy_size >= 25
+				}
+				add = 0.075
+			}
+		}
+	}
+}

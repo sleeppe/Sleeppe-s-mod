@@ -1,0 +1,156 @@
+﻿INJECT:subject_type_protectorate = {
+	
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+		minor_power
+	}
+
+	valid_subject_ranks = {
+		major_power
+		unrecognized_major_power
+		minor_power
+		insignificant_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+}
+
+INJECT:subject_type_puppet = {
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+		minor_power
+	}
+
+	valid_subject_ranks = {
+		major_power
+		unrecognized_major_power
+		minor_power
+		insignificant_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+}
+
+INJECT:subject_type_dominion = {
+
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+		minor_power
+	}
+
+	valid_subject_ranks = {
+		great_power
+		major_power
+		unrecognized_major_power
+		minor_power
+		insignificant_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+}
+
+INJECT:subject_type_colony = {
+
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+		minor_power
+	}
+
+		valid_subject_ranks = {
+		major_power
+		unrecognized_major_power
+		minor_power
+		insignificant_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+}
+
+INJECT:subject_type_personal_union = {
+	
+
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+		minor_power
+		insignificant_power
+		unrecognized_major_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+	valid_subject_ranks = {
+		great_power
+		major_power
+		minor_power
+		insignificant_power
+		unrecognized_major_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+}
+
+
+INJECT:subject_type_crown_land = {
+	
+
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+	}
+
+	valid_subject_ranks = {
+		major_power
+		minor_power
+		insignificant_power
+		unrecognized_major_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+}
+
+INJECT:subject_type_chartered_company = {
+	
+
+	valid_overlord_ranks = {
+		hyperpower
+		superpower
+		great_power
+		major_power
+		minor_power
+	}
+	valid_subject_ranks = {
+		
+		great_power
+		major_power
+		minor_power
+		insignificant_power
+		unrecognized_major_power
+		unrecognized_regional_power
+		unrecognized_power
+	}
+
+}
+
+
