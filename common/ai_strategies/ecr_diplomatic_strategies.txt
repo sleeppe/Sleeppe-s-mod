@@ -1,0 +1,189 @@
+﻿INJECT:ai_strategy_colonial_expansion = {
+	weight = {
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			add = 5
+		}
+	}
+}
+
+INJECT:ai_strategy_armed_isolationism = {
+	possible = {
+		NOT = { country_rank >= rank_value:great_power }
+	}
+
+	weight = {
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			multiply = 0.1
+		}
+	}
+}
+
+INJECT:ai_strategy_economic_imperialism = {
+	agression = {
+		# Very aggressive about opening up Japan
+		if = {
+			limit = {
+				has_technology_researched = nationalism # Just to make sure it doesn't happen immediately in 1836
+				country_rank >= rank_value:great_power
+				navy_size >= 25
+				scope:target_country = {
+					exists = c:JAP
+					c:JAP ?= THIS
+					has_law_or_variant = law_type:law_isolationism
+					gdp >= 5000000
+				}
+			}
+			add = 20
+		}
+	}
+
+	strategic_region_scores = {
+		if = { # Great Powers with significant navies should pay attention to Japan
+			limit = {
+				scope:region = {
+					this = sr:region_northeast_asia
+				}
+			}
+			if = {
+				limit = {
+					exists = c:JAP
+					c:JAP ?= { has_law_or_variant = law_type:law_isolationism }
+					country_rank >= rank_value:great_power
+					navy_size >= 25
+				}
+				add = 1000
+			}
+		}
+	}
+
+	secret_goal_scores = {
+		dominate = {
+			score = {
+				if = {
+					limit = {
+						NOT = { scope:target_country = { is_subject_of = root } }
+						has_technology_researched = nationalism  # Just to make sure it doesn't happen immediately in 1836
+						country_rank >= rank_value:great_power
+						navy_size >= 25
+						scope:target_country = {
+							country_has_primary_culture = cu:japanese
+							has_law_or_variant = law_type:law_isolationism
+							gdp >= 2000000
+							capital.region = sr:region_northeast_asia
+						}
+					}
+					add = 500
+				}
+			}
+		}
+	}
+
+	wargoal_scores = {
+		# Need to have identical weights for foreign_investment_rights and open_market here as which one is used depends on whether Foreign Investment is available
+		foreign_investment_rights = {
+			value = 0
+
+			if = {
+				limit = {
+					country_rank >= rank_value:great_power
+					can_reach_target_country = yes
+					scope:target_country = {
+						has_law_or_variant = law_type:law_isolationism
+						gdp >= 5000000 # Not worth doing against small markets
+					}
+				}
+				add = {
+					value = 100
+
+					# Less interested in foreign investment rights as a sway or defensive wargoal
+					if = {
+						limit = { is_diplomatic_play_involved_with = scope:target_country }
+						multiply = 0.2
+					}
+					else_if = { # Very high score for opening Japan
+						limit = {
+							scope:target_country = {
+								exists = c:JAP
+								c:JAP ?= THIS
+								has_law_or_variant = law_type:law_isolationism
+							}
+						}
+						multiply = 10
+					}
+				}
+			}
+		}
+		open_market = {
+			value = 0
+
+			if = {
+				limit = {
+					country_rank >= rank_value:great_power
+					can_reach_target_country = yes
+					scope:target_country = {
+						has_law_or_variant = law_type:law_isolationism
+						gdp >= 5000000 # Not worth doing against small markets
+					}
+				}
+				add = {
+					value = 100
+
+					# Less interested in open market as a sway or defensive wargoal
+					if = {
+						limit = { is_diplomatic_play_involved_with = scope:target_country }
+						multiply = 0.2
+					}
+					else_if = { # Very high score for opening Japan
+						limit = {
+							scope:target_country = {
+								exists = c:JAP
+								c:JAP ?= THIS
+								has_law_or_variant = law_type:law_isolationism
+							}
+						}
+						multiply = 10
+					}
+				}
+			}
+		}
+	}
+
+	possible = {
+		is_subject = no
+		navy_size >= 25
+		is_country_type = recognized
+		NOT = { has_law_or_variant = law_type:law_isolationism }
+		OR = {
+			country_rank = rank_value:major_power
+			country_rank >= rank_value:great_power
+		}
+	}
+
+	weight = {
+
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			add = 10
+		}
+	}
+}
+
+INJECT:ai_strategy_socialism_in_one_country = {
+	weight = {
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			multiply = 0.25
+		}
+	}
+}
+
+INJECT:ai_strategy_world_revolution = {
+	weight = {
+		if = {
+			limit = { country_rank >= rank_value:great_power }
+			multiply = 1.25
+		}
+	}
+}

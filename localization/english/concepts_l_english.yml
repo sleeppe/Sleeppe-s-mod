@@ -944,6 +944,13 @@
  concept_blockade_strength: "Blockade Strength"
  concept_blockade_strength_desc: "Determines the degree to which a [concept_fleet] is able to successfully [concept_blockade] enemy [Concept('concept_state', '$concept_states$')]."
 
+ concept_blockade_efficiency: "Blockade Efficiency"
+ concept_blockade_efficiency_desc: "$concept_blockade_efficiency$ is the average [concept_blockade] level a [concept_fleet] achieves across all hostile ports in its [concept_naval_mission] area. It is based on [concept_blockade_strength] vs the [concept_blockade_resistance] of each target port, distributed evenly across all targeted ports."
+
+ concept_blockade_resistance: "Blockade Resistance"
+ concept_blockade_resistance_short: "Resistance"
+ concept_blockade_resistance_desc: "$concept_blockade_resistance$ is the amount of [concept_blockade_strength] required to fully [concept_blockade] a [concept_state]. It is based on factors such as coastal [concept_building] output and local [concept_trade] volumes."
+
  concept_blockade: "Blockade"
  concept_blockade_level: "Blockade Level"
  concept_blockades: "Blockades"
@@ -1584,6 +1591,15 @@
  concept_interest_tiers: "Interest Tiers"
  concept_interest_tier_short: "Tier"
  concept_interest_tier_desc: "An [concept_interest_tier] signifies the level of presence that a [concept_country] has in a [concept_strategic_region] and can be upgraded by increasing [concept_involvement] in a given $concept_strategic_region_short$.\nHigher tiers unlock new interactions and benefits."
+
+ concept_diplomatic_relevancy: "Diplomatic Relevancy"
+ concept_diplomatically_relevant: "Diplomatically Relevant"
+ concept_diplomatically_irrelevant: "Diplomatically Irrelevant"
+ concept_diplomatic_relevancy_desc: "Having $concept_diplomatic_relevancy$ is required for a [concept_country] to engage in certain interactions like signing [Concept('concept_treaty', '$concept_treaties$')]. A $concept_country$ is considered $concept_diplomatically_relevant$ for another if one of the following conditions is fulfilled:\n$EFFECT_LIST_BULLET$They share a direct border\n$EFFECT_LIST_BULLET$They share a direct border with only one [concept_sea_node] between them\n$EFFECT_LIST_BULLET$One $concept_country$ is bordering a [concept_subject] of the other\n$EFFECT_LIST_BULLET$One $concept_country_possessive$ $concept_subject$ is bordering the other $concept_country_possessive$ $concept_subject$\n$EFFECT_LIST_BULLET$An existing $concept_treaty$ between the two $concept_countries$\n$EFFECT_LIST_BULLET$Both $concept_countries$ being [Concept('concept_great_power','$concept_great_powers$')]\n$EFFECT_LIST_BULLET$One of the $concept_countries$ declaring a [concept_rivalry] towards the other\n$EFFECT_LIST_BULLET$One of the $concept_countries$ conducting [concept_piracy] targetting the other\n$EFFECT_LIST_BULLET$Both $concept_countries$ having overlapping [Concept('concept_interest', '$concept_interests$')]"
+
+ concept_strategic_adjacency: "Strategic Adjacency"
+ concept_strategically_adjacent: "Strategically Adjacent"
+ concept_strategic_adjacency_desc: "$concept_strategic_adjacency$ is an adjacency check for two [Concept('concept_country', '$concept_countries$')] that is used to allow certain interactions between them if they fulfill the conditions. Two $concept_countries$ count as $concept_strategically_adjacent$ if one of these conditions is fulfilled:\n$EFFECT_LIST_BULLET$They share a direct border\n$EFFECT_LIST_BULLET$They share a direct border with only one [concept_sea_node] between them\n$EFFECT_LIST_BULLET$One $concept_country$ is bordering a [concept_subject] of the other\n$EFFECT_LIST_BULLET$One $concept_country_possessive$ $concept_subject$ is bordering the other $concept_country_possessive$ $concept_subject$\n$EFFECT_LIST_BULLET$One $concept_country$ is bordering an unpressed [concept_war_goal]"
 
  concept_obligation:0 "Obligation"
  concept_obligations:0 "Obligations"
@@ -2837,5 +2853,8 @@
  concept_russian_aid: "Russian Aid"
  concept_russian_aid_short: "Russian Aid"
  concept_russian_aid_desc: "$concept_russian_aid$ is support from #v $RUS$#! to our tribes, as fellow brethren of the Orthodox Church. \n\nThe base amount we receive depends on our [concept_relations] with #v $RUS$#!: \n\n• #v Neutral Relations#! (or worse): @money!200 \n• #v Cordial Relations#! : @money!400 \n• #v Amicable Relations#! : @money!700 \n• #v Friendly Relations#! : @money!1000"
+
+ concept_government_premium: "Government Premium"
+ concept_government_premium_desc: "Coverage for services provided."
 
  because_tuanlian_is_active_tt:"Because [GetLawType('law_chi_tuanlian').GetName] is active: #indent_newline:3 "

@@ -400,6 +400,11 @@
  treaty_of_paris_events.5.a: "We must prepare for the future!"
  treaty_of_paris_explanation_tt: "#bold $RUS$#! agrees to negotiate with #bold $dyn_c_ottoman_empire$#! over the Black Sea crisis. The Great Powers of Europe may now agree to a peaceful settlement to the crisis"
 
+ qing_events.1: "An Unequal Treaty"
+ qing_events.1.t: "An Open Port Mandate"
+ qing_events.1.d: "The forced opening of our ports we are humliated by the world powers to accept their demands of 'free' commerce"
+ qing_events.1.f: "An large empire such as ours can't win every battle."
+
  # BLANK EVENTS ( FOR AI ONLY )
  tuscan_italy.1.t: ""
  tuscan_italy.1.d: ""
@@ -439,4 +444,3 @@
  HUB_NAME_STATE_LUXEMBERG_farm: "Ettelbruck"
 
  Polish_army: "Army of Poland"
- 

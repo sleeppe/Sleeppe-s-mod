@@ -1,4 +1,4 @@
-amendment_sokotan_slave_state = {
+﻿amendment_sokotan_slave_state = {
 
 	parent = law_slave_trade
 

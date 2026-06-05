@@ -1,0 +1,16 @@
+﻿INJECT:je_french_natural_borders = {
+	complete = {
+		custom_tooltip = {
+			text = no_german_great_powers_tt
+			NOT = {
+				any_country_in_german_confederation = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					country_rank >= rank_value:great_power
+				}
+			}
+		}
+	}
+}
