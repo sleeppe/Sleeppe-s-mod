@@ -821,6 +821,23 @@
  ZND_ADJ:0 "Zande"
  ZUL:0 "Zulu"
  ZUL_ADJ:0 "Zulu"
+
+ # Moved from other base loc files. Should ideally be sorted later. Probably never will :)
+ KUR: "Kurdistan"
+ KUR_ADJ: "Kurdish"
+ GLI: "Galicia"
+ GLI_ADJ: "Galician"
+ PRA: "Grão-Pará"
+ PRA_ADJ: "Grão-Parán"
+ PAL: "Palestine"
+ PAL_ADJ: "Palestinian"
+ IDN: "Indonesia"
+ IDN_ADJ: "Indonesian"
+ BHT: "India"
+ BHT_ADJ: "Indian"
+ LOU: "Louisiana"
+ LOU_ADJ: "Louisianian"
+
  # MAC:0 "Manchester"
  # MAC_ADJ:0 "Mancunian"
  SMI:0 "Sapmi"

@@ -452,15 +452,19 @@ law_peasant_proprietorship = { # Homesteading for old world countries
 	progressiveness = 50
 
 	is_visible = {
-		NOT = {
-			has_law = law_type:law_homesteading
+		OR = {
+			NOT = {
+				has_law = law_type:law_homesteading
+			}
+			NOT = {
+				country_is_colonial_or_company = yes
+			}
+			capital ?= {
+				is_in_geographic_region = geographic_region_old_world
+			}
+			c:GBR ?= this
 		}
-		NOT = {
-			country_is_colonial_or_company = yes
-		}
-		capital ?= {
-			is_in_geographic_region = geographic_region_old_world
-		}
+
 	}
 
 	modifier = {

@@ -234,7 +234,7 @@ opium_wars.2 = {
 		}
 		add_involvement = {
 			strategic_region = sr:region_south_china
-			value = 2500
+			value = 3000
 		}
 		hidden_effect = {
 			every_country = {
