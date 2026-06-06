@@ -25,14 +25,15 @@ law_traditionalism = {
 	}
 
 	modifier = {
-		building_group_bg_heavy_industry_construction_efficiency_add = -0.15
+		building_group_bg_heavy_industry_construction_efficiency_add = -0.25
+		building_group_bg_light_industry_construction_efficiency_add = -0.15
 		state_shopkeepers_investment_pool_efficiency_mult = -0.5
 		state_bureaucrats_investment_pool_efficiency_mult = -0.5
 		state_capitalists_investment_pool_efficiency_mult = -0.5
 		state_farmers_investment_pool_efficiency_mult = -0.5
 		state_clergymen_investment_pool_efficiency_mult = -0.5
 		state_aristocrats_investment_pool_efficiency_mult = -0.5
-		state_bureaucracy_population_base_cost_factor_mult = -0.5
+		state_bureaucracy_population_base_cost_factor_mult = -0.4
 		country_government_dividends_reinvestment_add = 0.25
 		state_tax_capacity_mult = -0.25
 		country_private_construction_allocation_mult = 0.25
