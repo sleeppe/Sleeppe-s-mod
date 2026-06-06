@@ -86,8 +86,7 @@ REPLACE_OR_CREATE:decree_road_maintenance = {
 decree_encourage_construction = {
 	texture = "gfx/interface/icons/decree/enc_con.dds"
 	modifier = {
-		building_construction_sector_throughput_add = 0.25
-		state_construction_mult = 0.15
+		building_construction_sector_throughput_add = 0.40
 	}
 
 	unlocking_technologies = { 

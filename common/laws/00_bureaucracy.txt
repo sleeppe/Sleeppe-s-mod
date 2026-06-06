@@ -117,6 +117,13 @@ law_chi_yinpriv = {
 	is_visible = {
 		c:CHI ?= this
 	}
+	disallowing_laws = {
+		law_multicultural
+		law_cultural_exclusion
+		law_racial_segregation
+		law_national_supremacy
+		law_ethnostate
+	}
 
 	can_enact = {
 		has_law_or_variant = law_type:law_monarchy
@@ -124,11 +131,13 @@ law_chi_yinpriv = {
 	}
 
 	modifier = {
+		country_bureaucracy_investment_cost_factor_mult = 0.25
 		state_tax_capacity_mult = 0.25
 		country_aristocrats_pol_str_mult = 0.50
 		state_decree_cost_mult = 2.5
 		country_consumption_tax_cost_mult = 3.0
 		country_law_enactment_max_setbacks_add = -2
+		tax_land_add = -0.1
 	}
 
 	on_enact = {
@@ -313,6 +322,8 @@ law_chi_purchaseof_office = {
 		law_traditionalism
 		law_industry_banned
 		law_chi_physiocratic_policy
+		law_multicultural
+		law_cultural_exclusion
 	}
 	
 	can_enact = { 

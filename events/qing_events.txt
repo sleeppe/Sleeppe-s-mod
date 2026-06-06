@@ -10,7 +10,7 @@ qing_events.1 = {
 
     duration = 30
 
-    cooldown = { days =  2000}
+    cooldown = { days =  30}
 
 	event_image = {
 		video = "europenorthamerica_opium_smoker"
@@ -26,10 +26,9 @@ qing_events.1 = {
         has_modifier = forced_market_opening
         is_country_type = unrecognized
     }
-
-    immediate = {
-        trigger = {
-			has_law_or_variant = law_type:law_chi_five_treaty
-		}
+	option = {
+		name = qing_events.1.a
+		default_option = yes
+        activate_law = law_type:law_chi_five_treaty
     }
 }

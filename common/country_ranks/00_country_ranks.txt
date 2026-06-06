@@ -22,7 +22,7 @@ great_power = {
 	diplo_pact_cost = 2.0
 	treaty_article_cost = 2.0
 
-	prestige_average_threshold = 5.0
+	prestige_average_threshold = 7.5
 	prestige_relative_threshold = 0.75
 
 	infamy_aggressor_scaling = 0.20
