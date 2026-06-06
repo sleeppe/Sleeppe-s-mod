@@ -7,7 +7,7 @@
 # state_trigger										A trigger in state context that determines if the Decree is permitted or not; should invalidate the Decree on a weekly basis if found invalid 
 # ai_weight											Scripted value which determines the chance of getting the Decree by AI
 
-INJECT:decree_road_maintenance = {
+REPLACE_OR_CREATE:decree_road_maintenance = {
 	texture = "gfx/interface/icons/decree/efficient_admin.dds"
 	modifier = {
 		state_tax_capacity_mult = 0.25
@@ -155,7 +155,7 @@ decree_encourage_construction = {
 		}			
 	}
 }
-INJECT:decree_violent_suppression = {
+REPLACE_OR_CREATE:decree_violent_suppression = {
 	texture = "gfx/interface/icons/decree/decree_violent_suppression.dds"		
 	
 	unlocking_technologies = {
@@ -200,7 +200,7 @@ INJECT:decree_violent_suppression = {
 	}
 }
 
-INJECT:decree_emergency_relief = {
+REPLACE_OR_CREATE:decree_emergency_relief = {
 	texture = "gfx/interface/icons/decree/decree_emergency_relief.dds"
 	unlocking_technologies = {
 		#egalitarianism
@@ -243,7 +243,7 @@ INJECT:decree_emergency_relief = {
 	}
 }
 
-INJECT:decree_promote_social_mobility = {
+REPLACE_OR_CREATE:decree_promote_social_mobility = {
 	texture = "gfx/interface/icons/decree/learning.dds"
 #	unlocking_technologies = {
 #		academia
@@ -337,7 +337,7 @@ decree_worker_exploitation = {
 	cost = 75
 }
 
-INJECT:decree_promote_national_values = {
+REPLACE_OR_CREATE:decree_promote_national_values = {
 	texture = "gfx/interface/icons/decree/decree_promote_national_values.dds"
 	unlocking_technologies = {
 		centralization
@@ -624,14 +624,14 @@ decree_encourage_urban_services = {
 		}		
 	}
 }
-INJECT:decree_encourage_manufacturing_industry = {
+REPLACE_OR_CREATE:decree_encourage_manufacturing_industry = {
 	texture = "gfx/interface/icons/decree/decree_encourage_manufacturing_industry.dds"
 	unlocking_technologies = {
 		manufacturies
 	}	
 
 	modifier = {
-		building_group_bg_manufacturing_throughput_add = 0.25
+		building_group_bg_manufacturing_throughput_add = 0.20
 		state_construction_mult = 0.05
 	}
 	cost = 75
@@ -675,7 +675,7 @@ INJECT:decree_encourage_manufacturing_industry = {
 	}
 }
 
-INJECT:decree_encourage_agricultural_industry = {
+REPLACE_OR_CREATE:decree_encourage_agricultural_industry = {
 	texture = "gfx/interface/icons/decree/decree_encourage_agricultural_industry.dds"
 	unlocking_technologies = {
 		enclosure
@@ -743,7 +743,7 @@ INJECT:decree_encourage_agricultural_industry = {
 	}
 }
 
-INJECT:decree_encourage_resource_industry = {
+REPLACE_OR_CREATE:decree_encourage_resource_industry = {
 	texture = "gfx/interface/icons/decree/decree_encourage_resource_industry.dds"
 	unlocking_technologies = {
 		shaft_mining
@@ -816,7 +816,7 @@ INJECT:decree_encourage_resource_industry = {
 		}		
 	}
 }
-INJECT:decree_greener_grass_campaign = {
+REPLACE_OR_CREATE:decree_greener_grass_campaign = {
 	texture = "gfx/interface/icons/decree/decree_greener_grass_campaign.dds"
 	modifier = {
 		state_migration_pull_mult = 0.50
@@ -937,7 +937,7 @@ decree_penal_colony = {
 	cost = 75
 }
 
-INJECT:decree_enlistment_efforts = { 
+REPLACE_OR_CREATE:decree_enlistment_efforts = { 
 	texture = "gfx/interface/icons/decree/decree_enlistment_efforts.dds"			
 	modifier = {
 		state_conscription_rate_add = 0.05
