@@ -27,8 +27,6 @@ INJECT:subject_type_puppet = {
 	}
 
 	valid_subject_ranks = {
-		major_power
-		unrecognized_major_power
 		minor_power
 		insignificant_power
 		unrecognized_regional_power
@@ -48,9 +46,6 @@ INJECT:subject_type_dominion = {
 	}
 
 	valid_subject_ranks = {
-		great_power
-		major_power
-		unrecognized_major_power
 		minor_power
 		insignificant_power
 		unrecognized_regional_power
@@ -70,8 +65,6 @@ INJECT:subject_type_colony = {
 	}
 
 		valid_subject_ranks = {
-		major_power
-		unrecognized_major_power
 		minor_power
 		insignificant_power
 		unrecognized_regional_power
@@ -95,11 +88,8 @@ INJECT:subject_type_personal_union = {
 	}
 
 	valid_subject_ranks = {
-		great_power
-		major_power
 		minor_power
 		insignificant_power
-		unrecognized_major_power
 		unrecognized_regional_power
 		unrecognized_power
 	}
@@ -118,10 +108,8 @@ INJECT:subject_type_crown_land = {
 	}
 
 	valid_subject_ranks = {
-		major_power
 		minor_power
 		insignificant_power
-		unrecognized_major_power
 		unrecognized_regional_power
 		unrecognized_power
 	}
@@ -139,12 +127,8 @@ INJECT:subject_type_chartered_company = {
 		minor_power
 	}
 	valid_subject_ranks = {
-		
-		great_power
-		major_power
 		minor_power
 		insignificant_power
-		unrecognized_major_power
 		unrecognized_regional_power
 		unrecognized_power
 	}
