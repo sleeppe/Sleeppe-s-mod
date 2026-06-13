@@ -1311,9 +1311,9 @@ NDiplomacy = {
 	DEFAULT_WAR_REPARATIONS_MONEY_TRANSFER = 0.1
 	TREATY_PROPOSAL_COOLDOWN_DAYS = 7 			# The number of days before you can send another treaty proposal after having one rejected
 	TREATY_DEFAULT_BINDING_DURATION_YEARS = 5
-	TREATY_THREATEN_HOSTILITIES_DURATION_DAYS = 182
+	TREATY_THREATEN_HOSTILITIES_DURATION_DAYS = 365
 	THREATEN_NAVAL_HOSTILITIES_COOLDOWN_DAYS = 1825					# 5 years before you can threaten naval hostilities against the same country again
-	NAVAL_HOSTILITIES_POINTS_MAX = 50								# Maximum damage points that can be inflicted in a single instance of naval hostilities
+	NAVAL_HOSTILITIES_POINTS_MAX = 100								# Maximum damage points that can be inflicted in a single instance of naval hostilities
 	NAVAL_VULNERABILITY_MAX = 1.0									# Maximum naval vulnerability score. This is used to determine how afraid a country should be of naval hostilities.
 	NAVAL_VULNERABILITY_TRADE_MULTIPLIER = 0.75						# Vulnerability from trade: this value * (trade base cost / GDP) = vulnerability points
 	NAVAL_VULNERABILITY_COASTAL_GDP_MULTIPLIER = 0.5				# Vulnerability from coastal GDP: this value * (coastal GDP / GDP) = vulnerability points
@@ -1321,7 +1321,7 @@ NDiplomacy = {
 	NAVAL_HOSTILITIES_POINTS_SHIPS_SUNK_AT_FULL_FLEET = 500			# Damage points awarded when 100% of a country's fleet construction cost is sunk
 	NAVAL_HOSTILITIES_POINTS_BLOCKADE_GDP_WEEKLY = 20				# Damage points per week when 100% of a country's GDP is blockaded
 	NAVAL_HOSTILITIES_POINTS_PIRACY_GDP_WEEKLY = 20					# Damage points per week when 100% of a country's GDP in goods is seized via piracy
-	NAVAL_HOSTILITIES_POINTS_BOMBARDMENT_DEVASTATION = 50			# Damage points per unit of devastation added, scaled by state GDP / victim GDP
+	NAVAL_HOSTILITIES_POINTS_BOMBARDMENT_DEVASTATION = 20			# Damage points per unit of devastation added, scaled by state GDP / victim GDP
 	NAVAL_HOSTILITIES_POINTS_BOMBARDMENT_BUILDING_DESTROYED = 10	# Fixed damage points per building level destroyed by bombardment
 	PAST_TEMPORARY_HOSTILITIES_KEEP_YEARS = 20						# Number of years to keep temporary hostilities data after expiry
 	PIRACY_DAMAGE_TRACKING_WEEKS = 26								# Number of weeks of piracy damage history to keep for averaging
