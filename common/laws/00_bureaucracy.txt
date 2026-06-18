@@ -376,8 +376,7 @@ law_chi_purchaseof_office = {
 
 	disallowing_laws = {
 		law_traditionalism
-		law_industry_banned
-		law_chi_physiocratic_policy
+		law_chi_industry_banned
 		law_multicultural
 		law_cultural_exclusion
 	}

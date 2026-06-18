@@ -42,11 +42,11 @@ ideology_scholar_paternalistic = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_theocracy = neutral
-		law_presidential_republic = neutral
-		law_parliamentary_republic = neutral
-		law_corporate_state = neutral
-		law_social_monarchy = neutral
+		law_theocracy = disapprove
+		law_presidential_republic = disapprove
+		law_parliamentary_republic = disapprove
+		law_corporate_state = disapprove
+		law_social_monarchy = disapprove
 		law_council_republic = strongly_disapprove
 	}
 
@@ -56,16 +56,16 @@ ideology_scholar_paternalistic = {
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
 		law_wealth_voting = neutral
-		law_census_voting = disapprove
+		law_census_voting = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
 		law_anarchy = strongly_disapprove
 		law_technocracy = strongly_disapprove
 	}
 
 	lawgroup_bureaucracy = {
-		law_appointed_bureaucrats = approve
-		law_elected_bureaucrats = disapprove
-		law_hereditary_bureaucrats = disapprove
+		law_appointed_bureaucrats = disapprove
+		law_elected_bureaucrats = strongly_disapprove
+		law_hereditary_bureaucrats = strongly_approve
 	}
 
 	lawgroup_policing = {
@@ -78,6 +78,16 @@ ideology_scholar_paternalistic = {
 		law_strict_edo_system = strongly_approve
 		law_intermediate_edo_system = disapprove
 		law_lax_edo_system = strongly_disapprove
+	}
+	lawgroup_economic_system = {
+		law_laissez_faire = strongly_disapprove
+		law_interventionism = disapprove
+		law_agrarianism = neutral
+		law_traditionalism = strongly_approve
+		law_cooperative_ownership = strongly_disapprove
+		law_command_economy = strongly_disapprove
+		law_industry_banned = approve
+		law_extraction_economy = strongly_disapprove
 	}
 }
 

@@ -222,6 +222,8 @@ law_millet_system = { # Ottoman Empire
 	}
 
 	modifier = {
+		state_landowners_education_access_add = 0.25
+		state_clergyman_education_access_add = 0.50
 		interest_group_ig_devout_pol_str_mult = 0.3
 		country_authority_add = 200
 		state_conversion_mult = -0.50
@@ -323,6 +325,7 @@ law_people_of_the_book = { # Other Muslim states
 	}
 
 	modifier = {
+		state_clergyman_education_access_add = 0.35
 		interest_group_ig_devout_pol_str_mult = 0.3
 		country_authority_add = 200
 		state_conversion_mult = -0.50

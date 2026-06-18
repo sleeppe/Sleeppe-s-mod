@@ -256,6 +256,19 @@ GLOBAL = {
 		}
 	}
 
+	c:CHI ?= {
+		if = {
+			limit = {
+				state_region = s:STATE_BEIJING
+			}
+			add_modifier = {
+				name = capital_china
+				days = very_long_modifier_time
+				is_decaying = yes
+			}
+		}
+	}
+
 	# Starting debts - commented out for now until we can do more budget balancing
 	# We'll bring this back in a later version
 	
