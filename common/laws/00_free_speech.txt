@@ -60,7 +60,7 @@ law_chi_palacememorials= {
 		country_tech_spread_mult = -0.25
 		country_leverage_resistance_mult = 0.5
 		country_support_separatism_resistance_mult = 0.5
-		state_mortality_turmoil_mult = 0.03
+		state_mortality_turmoil_mult = 0.02
 		country_disallow_agitator_invites_bool = yes
 	}
 

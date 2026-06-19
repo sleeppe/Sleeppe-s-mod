@@ -355,7 +355,7 @@ law_chi_merchent_led = {
 
 	institution = institution_schools
 	institution_modifier = {
-		country_institution_cost_institution_schools_mult = 0.25
+		country_institution_cost_institution_schools_mult = 0.1
 		state_education_access_wealth_add = 0.002
 		country_production_tech_spread_mult = 0.10
 	}
