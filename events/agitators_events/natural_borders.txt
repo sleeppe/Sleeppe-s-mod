@@ -78,6 +78,14 @@ natural_borders.1 = {
 		}
 		if = {
 			limit = {
+				NOT = { owns_entire_state_region = STATE_WEST_WALLONIA }
+			}
+			s:STATE_WEST_WALLONIA = {
+				add_claim = ROOT
+			}
+		}
+		if = {
+			limit = {
 				NOT = { owns_entire_state_region = STATE_FLANDERS }
 			}
 			s:STATE_FLANDERS = {
