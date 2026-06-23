@@ -1,0 +1,168 @@
+je_middle_period = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_historical_content
+
+	possible = {
+		root = c:USA
+	}
+
+	is_shown_in_lobby = {
+		root = c:USA
+	}
+
+	is_shown_when_inactive = {
+		root = c:USA
+	}
+
+	modifiers_while_active = {
+		modifier_middle_period_usa
+		modifier_slavery_debate_middle_period
+	}
+
+	scripted_button = button_je_middle_period_religious_revival
+	scripted_button = button_je_middle_period_economic_boom
+	scripted_button = button_je_middle_period_tribal_colonisation
+
+	immediate = {
+		if = {
+			limit = {
+				any_political_movement = {
+					OR = {
+						is_political_movement_type = movement_pro_slavery
+						is_political_movement_type = movement_anti_slavery
+					}
+				}
+			}
+			add = {
+				desc = "usa_middle_period_political_activity"
+				every_political_movement = {
+					limit = {
+						OR = {
+							is_political_movement_type = movement_pro_slavery
+							is_political_movement_type = movement_anti_slavery
+						}
+					}
+					add = {
+						value = 5
+					}
+				}
+			}
+		}
+	}
+
+	custom_completion_header = je_middle_period_completion_header
+
+	complete = {
+		custom_tooltip = {
+			text = je_middle_period_success_tt
+			middle_period_total_agenda_goals_completed >= 5
+		}
+	}
+
+	on_complete = {
+		custom_tooltip = je_middle_period_success_2_tt
+		trigger_event = {
+			id = middle_period_events.3
+			popup = yes
+		}
+		hidden_effect = {
+			remove_variable = middle_period_gdp_goal
+		}
+	}
+
+	event_outcome_completed_effect_desc = {
+		header = je_middle_period_success_outcome_1_tt
+		effect = {
+			add_modifier = {
+				name = modifier_middle_period_reward_slaver
+				days = long_modifier_time
+			}
+			add_loyalists = {
+				value = medium_radicals
+				strata = upper
+			}
+		}
+	}
+
+	event_outcome_completed_effect_desc = {
+		header = je_middle_period_success_outcome_2_tt
+		effect = {
+			add_modifier = {
+				name = modifier_middle_period_reward_abolitionist
+				days = long_modifier_time
+			}
+			add_loyalists = {
+				value = medium_radicals
+				strata = lower
+			}
+		}
+	}
+
+	event_outcome_completed_effect_desc = {
+		header = je_middle_period_success_outcome_3_tt
+		effect = {
+			add_modifier = {
+				name = modifier_middle_period_reward_balanced
+				days = long_modifier_time
+			}
+			add_loyalists = {
+				value = medium_radicals
+				strata = middle
+			}
+		}
+	}
+
+	custom_failure_header = je_middle_period_failure_header
+
+	timeout = 4380 # ~12 years. Roughly spanning Tenpo and Koka eras.
+
+	on_timeout = {
+		trigger_event = {
+			id = middle_period_events.4
+			popup = yes
+		}
+		hidden_effect = {
+			remove_variable = middle_period_gdp_goal
+		}
+	}
+
+	event_outcome_timeout_effect_desc = {
+        header = middle_period_events.4.a
+        effect = {
+			add_modifier = {
+				name = modifier_middle_period_fail
+				days = normal_modifier_time
+			}
+			custom_tooltip = middle_period_events_4_demotion_tt
+        }
+    }
+    event_outcome_timeout_effect_desc = {
+        header = middle_period_events.4.b
+        effect = {
+        	custom_tooltip = middle_period_events_4_demotion_tt
+        }
+    }
+	possible = {
+	}
+
+	on_monthly_pulse = {
+		random_events = {
+			chance_to_happen = 8 # Approximately once a year
+			60 = middle_period_events.2
+			3 = middle_period_events.7
+			3 = middle_period_events.8
+			3 = middle_period_events.9
+		}
+	}
+
+	modifiers_while_active = {
+	}
+
+	invalid = {
+	}
+
+	weight = 5000
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}
