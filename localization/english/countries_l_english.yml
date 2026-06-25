@@ -1,6 +1,6 @@
 ﻿l_english:
- ABS:0 "Apsáalooke"
- ABS_ADJ:0 "Apsáalooke"
+ ABS:0 "Absaroka"
+ ABS_ADJ:0 "Absaroka"
  ABK: "Abkhazia"
  ABK_ADJ: "Abkhaz"
  ABU:0 "Trucial States"
@@ -160,6 +160,8 @@
  CAY_ADJ:0 "Cayor"
  CHE:0 "Cherokee"
  CHE_ADJ:0 "Cherokee"
+ CHI:0 "China"
+ CHI_ADJ:0 "Chinese"
  CHK:0 "Chokwe"
  CHK_ADJ:0 "Chokwe"
  CHL:0 "Chile"
@@ -856,6 +858,8 @@
  TIR_ADJ:0 "Tiris"
  KSS:0 "Kissi"
  KSS_ADJ:0 "Kissi"
+ IBL: "Ibibioland"
+ IBL_ADJ: "Ibibio"
  GAO:0 "Gao"
  GAO_ADJ:0 "Gao"
  TIV:0 "Tivland"
@@ -1420,7 +1424,8 @@
  RYU_ADJ: "Ryukyuan"
  ULT: "Ulta"
  ULT_ADJ: "Ulta"
- #Spanish American Colonies
+
+ # Spanish American Colonies
  SC1: "Nueva España"
  SC1_ADJ: "New Spanish"
  SC2: "Nueva Granada"
@@ -1429,6 +1434,8 @@
  SC3_ADJ: "Peruvian"
  SC4: "Río de la Plata"
  SC4_ADJ: "Platinean"
+
+ # Australia
  KLN: "Kulin"
  KLN_ADJ: "Kulinic"
  KRI: "Douriango"
@@ -1492,7 +1499,7 @@
  PMA: "Pama"
  PMA_ADJ: "Pama"
 
-  # Dynamic countries
+ ### Dynamic country names ###
  dyn_c_united_sovereign_archduchy:0 "United Sovereign Archduchy"
  dyn_c_united_sovereign_archduchy_adj:0 "Archducal American"
  dyn_c_united_senators:0 "United Senators of America"
@@ -1522,6 +1529,8 @@
  dyn_c_communist_states_of_america:0 "Communist States of America"
  dyn_c_communist_states_of_america_adj:0 "Communist American"
  dyn_c_confederate_synods_of_america:0 "Confederate Synods of America"
+ dyn_c_great_qing:0 "Great Qing"
+ dyn_c_great_qing_adj:0 "Qing"
  dyn_c_bavarian_raterepublic:0 "Bavarian Räterepublik"
  dyn_c_bremener_raterepublic:0 "Bremener Räterepublik"
  dyn_c_van_diemans_land:0 "Van Diemen’s Land"
@@ -1806,6 +1815,8 @@
  dyn_c_mahdist_state_adj: "Mahdist Sudanese"
  dyn_c_scandinavia_kalmar_union: "Kalmar Union"
  dyn_c_scandinavia_kalmar_union_adj: "Scandinavian"
+ dyn_c_gotland_revolt: "Gotland Revolt"
+ dyn_c_gotland_revolt_adj: "Gotlandic"
  dyn_c_welsh_patagonia: "Y Wladfa"
  dyn_c_welsh_patagonia_adj: "Welsh Patagonian"
  dyn_c_peru_bolivia: "Peru-Bolivia"
@@ -1931,6 +1942,14 @@
  dyn_c_empire_of_japan_adj: "Japanese"
  dyn_c_republic_of_japan: "Republic of Japan"
  dyn_c_republic_of_japan_adj: "Japanese"
+
+ dyn_c_ezo_government: "Ezo Government"
+ dyn_c_ezo_republic: "Ezo Republic"
+
+ dyn_c_earth_kingdom: "Earth Kingdom"
+ dyn_c_earth_republic: "Earth Republic"
+ dyn_c_taiping_republic: "Heavenly Republic"
+
 
 # Sleeppe's mod additions
 # Spain
