@@ -2,6 +2,7 @@
 	c:PAP ?= {
 		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_conservative = yes
+		add_technology_researched = banking
 		
         set_ruling_interest_groups = {
         	ig_devout
