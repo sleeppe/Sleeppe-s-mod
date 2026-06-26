@@ -57,3 +57,80 @@ naval_mission_type_port_bombardment = {
     ai_will_cancel_for_transportation = yes
     experience = 2
 }
+
+naval_mission_type_hunt_pirates = {
+    icon = "gfx/interface/icons/commander_order_icons/hunt_pirates.dds"
+    clicksound = "event:/SFX/UI/NavalBattle/Missions/naval_mission_hunt_pirates"
+
+    intercept = yes
+    intercept_targets = { piracy }
+    ai_will_cancel_for_transportation = yes
+    experience = 2
+
+    potential = {
+        has_dlc_feature = ep2_content
+    }
+}
+
+naval_mission_type_piracy = {
+    icon = "gfx/interface/icons/commander_order_icons/piracy_privateering.dds"
+    clicksound = "event:/SFX/UI/NavalBattle/Missions/naval_mission_piracy"
+
+    piracy = yes
+    piracy_targets = { non_allies }
+    ai_will_cancel_for_transportation = yes
+    experience = 2
+
+    command_modifier = {
+        character_piracy_goods_capacity_mult = 1.5
+        ship_vulnerability_mult = 0.25
+        ship_visibility_mult = -0.5
+    }
+
+    potential = {
+        has_dlc_feature = ep2_content
+        owner ?= {
+            is_country_type = unrecognized
+            NOT = {
+                any_scope_treaty = {
+                    any_scope_article = {
+                        has_type = abandon_piracy
+                        source_country ?= root.owner
+                    }
+                }
+            }
+        }
+        trigger_if = {
+            limit = {
+                exists = owner.top_overlord
+            }
+            owner.top_overlord ?= {
+                is_country_type = unrecognized
+            }
+        }
+    }
+}
+
+naval_mission_type_privateer = {
+    icon = "gfx/interface/icons/commander_order_icons/piracy_privateering.dds"
+    clicksound = "event:/SFX/UI/NavalBattle/Missions/naval_mission_privateer"
+
+    piracy = yes
+    piracy_import_targets = { hostile }
+    piracy_export_targets = { non_allies }
+    ai_will_cancel_for_transportation = yes
+    experience = 2
+
+    command_modifier = {
+        character_piracy_goods_capacity_mult = 1.0
+        ship_visibility_mult = -0.25
+    }
+
+    potential = {
+        has_dlc_feature = ep2_content
+        owner ?= {
+            NOT = { is_country_type = unrecognized }
+        }
+    }
+}
+
