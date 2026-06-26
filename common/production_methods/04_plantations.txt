@@ -1200,6 +1200,7 @@ radio_stations_tobacco = {
 	}
 }
 
+
 pm_american_cotton_farming	 = {
 	texture = "gfx/interface/icons/production_method_icons/violent_treatment.dds"
 
