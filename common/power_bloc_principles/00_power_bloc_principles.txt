@@ -6,6 +6,24 @@ principle_construction_1 = {
 	icon = "gfx/interface/icons/principles_icons/construction.dds"
 	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
 
+	member_modifier = {
+		# Modifiers from previous level(s)
+
+		state_construction_mult = 0.1
+
+		# Members Construction Sectors cost less infrastructure
+		building_group_bg_construction_infrastructure_usage_mult = -0.75
+	}
+
+	ai_weight = {
+		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
+	}
+}
+
+principle_construction_2 = {
+	icon = "gfx/interface/icons/principles_icons/construction.dds"
+	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
+
 	visible = {
 		has_dlc_feature = power_bloc_features
 	}
@@ -33,24 +51,6 @@ principle_construction_1 = {
 			limit = { has_strategy = ai_strategy_resource_expansion }
 			multiply = 1.25
 		}
-	}
-}
-
-principle_construction_2 = {
-	icon = "gfx/interface/icons/principles_icons/construction.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_2.dds"
-
-	member_modifier = {
-		# Modifiers from previous level(s)
-
-		state_construction_mult = 0.1
-
-		# Members Construction Sectors cost less infrastructure
-		building_group_bg_construction_infrastructure_usage_mult = -0.75
-	}
-
-	ai_weight = {
-		value = 1000 # AI prefers upgrading groups it has already picked to unlocking new ones
 	}
 }
 
