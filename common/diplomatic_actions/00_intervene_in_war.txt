@@ -2,6 +2,8 @@
 	groups = { general }
 	should_notify_third_parties = yes
 
+	texture = "gfx/interface/icons/formation_order_icons/strategic_objective.dds"
+
 	potential = {
 		
 		#Parties are not decentralized
