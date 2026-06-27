@@ -463,7 +463,7 @@
     
 
  subject_type_us_territory: "@US territory! $subject_type_us_territory_no_icon$"
- subject_type_us_territory_no_icon: "$concept_us_territory"
+ subject_type_us_territory_no_icon: "$concept_us_territory$"
 
  concept_us_territory:0 "US Territory"
  concept_us_territory: "US Territories"

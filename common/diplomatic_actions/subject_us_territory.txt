@@ -28,7 +28,7 @@ us_territory = {
 		}
 
 		actor_can_break = {
-			is_diplomatic_play_committed_participant = no
+			always = no
 		}
 
 		target_can_break = { # Has to use diplomatic play to break
