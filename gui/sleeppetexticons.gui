@@ -1,0 +1,8 @@
+texticon = {
+	icon = us_territory
+	iconsize = {
+		offset = { 0 7 }
+		texture = "gfx/interface/icons/lens_toolbar_icons/us_territory.dds"
+		fontsize = 22
+	}
+}

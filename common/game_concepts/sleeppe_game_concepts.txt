@@ -1,0 +1,3 @@
+concept_us_territory_subject = {
+	texture = "gfx/interface/icons/subject_icons/us_territory.dds"
+}

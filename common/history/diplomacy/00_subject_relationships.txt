@@ -124,6 +124,10 @@
 			country = c:FLO
 			type = us_territory
 		}
+		create_diplomatic_pact = {
+			country = c:MIT
+			type = us_territory
+		}
 	}
 	c:GBR ?= {
 		create_diplomatic_pact = {

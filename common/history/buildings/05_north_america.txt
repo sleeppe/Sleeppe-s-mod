@@ -787,7 +787,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:MIT"
 						levels=1
 						region="STATE_MICHIGAN"
 					}
@@ -800,7 +800,7 @@
 				add_ownership={
 					building={
 						type="building_financial_district"
-						country="c:USA"
+						country="c:MIT"
 						levels=4
 						region="STATE_MICHIGAN"
 					}
@@ -813,7 +813,7 @@
 				add_ownership={
 					building={
 						type="building_livestock_ranch"
-						country="c:USA"
+						country="c:MIT"
 						levels=1
 						region="STATE_MICHIGAN"
 					}
@@ -1271,7 +1271,7 @@
 				building="building_naval_fortification"
 				add_ownership={
 					country={
-						country="c:USA"
+						country="c:FLO"
 						levels=1
 					}
 				}
