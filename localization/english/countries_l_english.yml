@@ -2102,3 +2102,7 @@
  # Posen
  PZN:0 "Grand Duchy of Posen"
  PZN_ADJ:0 "Posenian"
+
+# Territory of Florida
+ FLO:0 "Territory of Florida"
+ FLO_ADJ:0 "Floridian"

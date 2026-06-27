@@ -642,7 +642,7 @@ STATES = {
 	}
 	s:STATE_FLORIDA = {
 		create_state = {
-			country = c:USA
+			country = c:FLO
 			owned_provinces = {
 				x4070C0 xC000F0 x65ECBE
 				x2E5E47 x3126CA x88BDEA x31C481 xB06E20 x1714EE xA03000 xD0761D x23B4D0 x8C16F9 x6E31DE x976584 xE3533E xE58A3D
@@ -953,14 +953,14 @@ STATES = {
 			country = c:ATB
 			owned_provinces = {
 				xDA9446 xC2BDC8 x097AEB xA0472D x1E2C08 x023ABC x5D8481 x4D14A8 xC0F03C xBE898B x21A007 xFB2B8C 
-				x3FE00A xCEB3E5
+				x3FE00A xCEB3E5 xC0E080
 			}
 		}
 		create_state = {
 			country = c:HBC 
 			owned_provinces = {
 				x4A2D69 xFD269C x233603 x84BC34 x8BC79E x157AAD x6DADA3 x9E9910 x1B24D4 x3A74FA x1BC323 x6D1B75 xD1F86F x68EFDA x97A74B 
-				x0E7E33 x3BE1AF xC0E080 x4A2D69
+				x0E7E33 x3BE1AF x4A2D69
 			}
 		}
 		create_state = {

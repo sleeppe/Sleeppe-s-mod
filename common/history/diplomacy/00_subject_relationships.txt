@@ -120,6 +120,10 @@
 			country = c:LIB
 			type = protectorate
 		}
+		create_diplomatic_pact = {
+			country = c:FLO
+			type = us_territory
+		}
 	}
 	c:GBR ?= {
 		create_diplomatic_pact = {

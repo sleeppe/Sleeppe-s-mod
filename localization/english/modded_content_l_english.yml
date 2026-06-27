@@ -461,3 +461,10 @@
  join_war_effects_desc:0 "• An agreement established by one [concept_country] targeting another, where the first $concept_country$ shall join any [concept_war] where the second $concept_country$ is the [concept_war_leader]."
  join_war_article_short_desc:0 "[SOURCE_COUNTRY.GetNameNoFormatting] will join all wars where [TARGET_COUNTRY.GetNameNoFormatting] is the $concept_war_leader$"
     
+
+ subject_type_us_territory: "@US territory! $subject_type_us_territory_no_icon$"
+ subject_type_us_territory_no_icon: "$concept_us_territory"
+
+ concept_us_territory:0 "US Territory"
+ concept_us_territory: "US Territories"
+ concept_us_territory_desc:2 "Territories of the United States are subnational geographical and political areas governed as administrative divisions and dependent territories under the sovereignty of the United States. This cannot be acquired outside of events and [concept_journal_entry]."
