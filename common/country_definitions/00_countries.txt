@@ -5331,3 +5331,14 @@ MIT = { #Michigan Territory
 	cultures = { yankee }
 	capital = STATE_MICHIGAN
 }
+
+WIS = { #Wisconsin Territory
+	color = { 16 24 54 }
+
+	country_type = recognised
+
+	tier = principality
+
+	cultures = { yankee }
+	capital = STATE_WISCONSIN
+}

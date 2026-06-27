@@ -551,7 +551,7 @@
 		}
 	}
 	s:STATE_NORTH_DAKOTA={
-		region_state:USA={
+		region_state:WIS={
 		}
 		region_state:LKT={
 		}
@@ -559,7 +559,7 @@
 	s:STATE_SOUTH_DAKOTA={
 		region_state:LKT={
 		}
-		region_state:USA={
+		region_state:WIS={
 		}
 	}
 	s:STATE_NEBRASKA={
@@ -701,17 +701,17 @@
 		}
 	}
 	s:STATE_IOWA={
-		region_state:USA={
+		region_state:WIS={
 		}
 	}
 	s:STATE_MINNESOTA={
-		region_state:USA={
+		region_state:WIS={
 		}
 		region_state:LKT={
 		}
 	}
 	s:STATE_WISCONSIN={
-		region_state:USA={
+		region_state:WIS={
 		}
 	}
 	s:STATE_INDIANA={

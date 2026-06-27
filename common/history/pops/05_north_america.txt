@@ -315,7 +315,7 @@
 		}
 	}
 	s:STATE_NORTH_DAKOTA = {
-		region_state:USA = {
+		region_state:WIS = {
 			create_pop = {
 				culture = siouan
 				size = 6000
@@ -340,7 +340,7 @@
 				size = 34000
 			}
 		}
-		region_state:USA = {
+		region_state:WIS = {
 			create_pop = {
 				culture = siouan
 				size = 4000
@@ -485,7 +485,7 @@
 		}
 	}
 	s:STATE_IOWA = {
-		region_state:USA = {
+		region_state:WIS = {
 			create_pop = {
 				culture = algonquian
 				size = 12000
@@ -501,7 +501,7 @@
 		}
 	}
 	s:STATE_MINNESOTA = {
-		region_state:USA = {
+		region_state:WIS = {
 			create_pop = {
 				culture = algonquian
 				size = 16000
@@ -515,7 +515,7 @@
 		}
 	}
 	s:STATE_WISCONSIN = {
-		region_state:USA = {
+		region_state:WIS = {
 			create_pop = {
 				culture = algonquian
 				size = 8000
