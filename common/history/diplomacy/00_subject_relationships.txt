@@ -114,7 +114,7 @@
 	c:USA ?= {
 		create_diplomatic_pact = {
 			country = c:SEQ
-			type = puppet
+			type = us_territory
 		}
 		create_diplomatic_pact = {
 			country = c:LIB
