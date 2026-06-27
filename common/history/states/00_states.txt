@@ -657,7 +657,7 @@ STATES = {
 			}
 		}
 
-		add_claim = c:USA
+		add_claim = c:FLO
 		add_homeland = cu:dixie
 		add_homeland = cu:afro_american
 		add_homeland = cu:muskogean

@@ -466,5 +466,10 @@
  subject_type_us_territory_no_icon: "$concept_us_territory$"
 
  concept_us_territory:0 "US Territory"
- concept_us_territory: "US Territories"
+ concept_us_territories: "US Territories"
  concept_us_territory_desc:2 "Territories of the United States are subnational geographical and political areas governed as administrative divisions and dependent territories under the sovereignty of the United States. This cannot be acquired outside of events and [concept_journal_entry]."
+
+ us_territory: "US Territories"
+ us_territory_desc: "Establishes a [concept_us_territory] [concept_subject_type] relationship between two [Concept('concept_country', '$concept_countries$')]."
+
+ us_territory_action_break_name: "Grant Independence"
