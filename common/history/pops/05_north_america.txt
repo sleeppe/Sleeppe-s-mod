@@ -420,7 +420,7 @@
 		}
 	}
 	s:STATE_ARKANSAS = {
-		region_state:USA = {
+		region_state:AKS = {
 			create_pop = {
 				culture = cajun
 				religion = catholic

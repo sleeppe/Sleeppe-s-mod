@@ -2110,3 +2110,11 @@
 #Territory of Michigan
  MIT:0 "Territory of Michigan"
  MIT_ADJ:0 "Michiganian"
+
+#Territory of Wisconsin
+ WIS:0 "Territory of Wisconsin"
+ WIS_ADJ:0 "Wisconsinite"
+
+#Territory of Arkansas
+ AKS:0 "Arkansas Territory"
+ AKS_ADJ:0 "Arkansan"
