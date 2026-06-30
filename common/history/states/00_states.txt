@@ -2404,7 +2404,7 @@ STATES = {
 		create_state = {
 			country = c:APC
 			owned_provinces = {
-				x1BD480 xB65993 x08C98F x059C97 X592CDF
+				x1BD480 xB65993 x08C98F x059C97 x592CDF
 			}
 		}
 
