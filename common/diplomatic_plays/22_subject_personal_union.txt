@@ -34,7 +34,7 @@
 
 		requirement_to_maintain = {
 			trigger = {
-				country_has_monarchy_law = yes
+				has_law_or_variant = law_type:law_monarchy
 				NOT = { has_law = law_type:law_bakufu } # I have seen things
 			}
 		}
@@ -42,7 +42,7 @@
 		requirement_to_maintain = { # PLEASE SAVE ME JOHN PARADOX
 			trigger = {
 				scope:target_country = {
-					country_has_monarchy_law = yes
+					has_law_or_variant = law_type:law_monarchy
 					NOT = { has_law = law_type:law_bakufu }
 				}
 			}
