@@ -144,7 +144,7 @@
 		}
 		create_diplomatic_pact = {
 			country = c:HAN
-			type = personal_union
+			type = puppet #TEMPORARY FIX FOR THE FUCKING PERSONAL UNION BUG
 		}
 		create_diplomatic_pact = {
 			country = c:SAF
