@@ -1237,3 +1237,23 @@ pm_american_cotton_farming	 = {
 		}
 	}
 }
+
+agroforest_banana_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/simple_forestry.dds"
+
+
+	building_modifiers = {
+		workforce_scaled = {
+			# output goods
+			goods_output_fruit_add = 10
+			goods_output_wood_add = 7
+		}
+
+		level_scaled = {
+			# profit
+			building_employment_laborers_add = 9000
+			building_employment_farmers_add = 2000
+			building_employment_machinists_add = 500
+		}
+	}
+}
