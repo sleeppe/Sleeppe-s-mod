@@ -2021,7 +2021,7 @@ gov_hm_gov = {
 	female_heir = "RULER_TITLE_PRINCESS"
 
 	possible = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		AND = { exists = c:GBR c:GBR = ROOT }
 		NOT = { has_global_variable = empire_of_great_britain }
 		NOT = { is_subject_type = subject_type_crown_land }
@@ -2036,21 +2036,22 @@ gov_hm_gov = {
 	}
 }
 
-gov_hm_gov_empire = {
+gov_hm_gov = {
 	transfer_of_power = hereditary
 
-	male_ruler = "RULER_TITLE_EMPEROR"
-	female_ruler = "RULER_TITLE_EMPRESS"
+	male_ruler = "RULER_TITLE_KING"
+	female_ruler = "RULER_TITLE_QUEEN"
 
 	male_heir = "RULER_TITLE_PRINCE"
 	female_heir = "RULER_TITLE_PRINCESS"
 
 	possible = {
-		has_law = law_type:law_monarchy
+		has_law_or_variant = law_type:law_monarchy
 		AND = { exists = c:GBR c:GBR = ROOT }
-		has_global_variable = empire_of_great_britain
+		NOT = { has_global_variable = empire_of_great_britain }
 		NOT = { is_subject_type = subject_type_crown_land }
 		has_gov_regency = no
+		is_domain_alliance_gov = no
 	}
 
 	on_government_type_change = {

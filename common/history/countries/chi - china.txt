@@ -21,6 +21,7 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_no_consumption_taxes
 		activate_law = law_type:law_chi_tuanlian
+		activate_law = law_type:law_chi_no_schools
 
 		set_tax_level = low
 
