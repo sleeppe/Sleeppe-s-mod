@@ -1,16 +1,9 @@
 ﻿##Modded Decisions for the Journal Tab
-
-
-
 polish_constitution = {
 	is_shown = {
-		c:POL = ROOT
-		OR = {
-			NOT = { exists = global_var:polish_constitution_global }
-		}
-		c:POL = {
-			is_subject_of= c:RUS
-		}
+		is_subject_of = c:RUS
+		country_has_primary_culture = cu:polish
+		NOT = { has_global_variable = polish_constitution_global }
 	}
 
 	possible = {
